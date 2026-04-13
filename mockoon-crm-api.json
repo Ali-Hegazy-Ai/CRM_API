@@ -1,0 +1,217 @@
+{
+  "uuid": "crm-mock-api-v1",
+  "lastMigration": 29,
+  "name": "CRM Mock API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "routes": [
+    {
+      "uuid": "customers-list",
+      "documentation": "Get all customers with messy data",
+      "method": "get",
+      "endpoint": "api/v1/customers",
+      "responses": [
+        {
+          "uuid": "customers-response",
+          "body": "{\n  \"data\": [\n    {\n      \"id\": \"cust_8x9k2m4n5p\",\n      \"customer_id\": \"CUST-10234\",\n      \"name\": \"Acme Corporation\",\n      \"email\": \"contact@acmecorp.com\",\n      \"phone\": \"+1-555-0123\",\n      \"status\": \"active\",\n      \"created_at\": \"2023-01-15T10:30:00Z\",\n      \"updated_at\": \"2024-03-20T14:22:11Z\",\n      \"owner_id\": \"usr_445\",\n      \"source_system\": \"salesforce\",\n      \"sync_status\": \"synced\",\n      \"country\": \"USA\",\n      \"currency\": \"USD\"\n    },\n    {\n      \"id\": \"cust_7h3j9k1m2n\",\n      \"customer_id\": \"CUST-10235\",\n      \"name\": \"TechStart Inc.\",\n      \"email\": \"info@techstart\",\n      \"phone\": \"555.0124\",\n      \"status\": \"Active\",\n      \"created_at\": \"2023-02-10 11:45:30\",\n      \"updated_at\": \"2024-01-15T09:10:22Z\",\n      \"owner_id\": \"usr_447\",\n      \"source_system\": \"hubspot\",\n      \"sync_status\": \"pending\",\n      \"country\": \"US\",\n      \"currency\": \"USD\"\n    },\n    {\n      \"id\": \"cust_8x9k2m4n5p\",\n      \"customer_id\": \"CUST-10236\",\n      \"name\": \"Global Solutions Ltd\",\n      \"email\": null,\n      \"phone\": \"+44 20 7123 4567\",\n      \"status\": \"active\",\n      \"created_at\": \"2023-03-22T08:15:00Z\",\n      \"updated_at\": null,\n      \"owner_id\": null,\n      \"source_system\": \"salesforce\",\n      \"sync_status\": \"synced\",\n      \"country\": \"UK\",\n      \"currency\": \"GBP\"\n    },\n    {\n      \"id\": \"cust_2p9k8m3n1x\",\n      \"customer_id\": \"CUST-10237\",\n      \"name\": \"innovate labs\",\n      \"email\": \"CONTACT@INNOVATELABS.COM\",\n      \"phone\": \"(555) 0125\",\n      \"Status\": \"inactive\",\n      \"created_at\": \"2022-11-05T14:20:00Z\",\n      \"updated_at\": \"2023-12-01T10:30:00Z\",\n      \"owner_id\": \"usr_445\",\n      \"source_system\": \"pipedrive\",\n      \"sync_status\": \"failed\",\n      \"country\": \"USA\"\n    },\n    {\n      \"id\": \"cust_5k2m9n4p7x\",\n      \"customer_id\": \"CUST-10238\",\n      \"name\": \"DataFlow Systems\",\n      \"email\": \"admin@dataflow.io\",\n      \"status\": \"ACTIVE\",\n      \"created_at\": \"2023-06-18T16:45:00Z\",\n      \"updated_at\": \"2024-04-10T11:20:33Z\",\n      \"owner_id\": \"usr_449\",\n      \"source_system\": \"salesforce\",\n      \"sync_status\": \"synced\",\n      \"country\": \"Canada\",\n      \"currency\": \"CAD\"\n    },\n    {\n      \"id\": \"cust_7h3j9k1m2n\",\n      \"customer_id\": \"CUST-10239\",\n      \"name\": \"TechStart Inc\",\n      \"email\": \"sales@techstart.com\",\n      \"phone\": \"+1 555 0124\",\n      \"status\": \"active\",\n      \"created_at\": \"2023-02-10T11:45:30Z\",\n      \"updated_at\": \"2024-03-28T15:40:12Z\",\n      \"owner_id\": \"usr_447\",\n      \"source_system\": \"salesforce\",\n      \"sync_status\": \"synced\",\n      \"country\": \"USA\",\n      \"currency\": \"USD\"\n    },\n    {\n      \"id\": \"cust_9m2n5p8k3x\",\n      \"customer_id\": \"CUST-10240\",\n      \"name\": \"CloudVentures\",\n      \"email\": \"contact@cloudventures.com\",\n      \"phone\": \"\",\n      \"status\": \"deleted\",\n      \"created_at\": \"2022-08-12T09:00:00Z\",\n      \"updated_at\": \"2023-10-15T13:25:00Z\",\n      \"deleted_at\": \"2023-10-15T13:25:00Z\",\n      \"owner_id\": \"usr_450\",\n      \"source_system\": \"hubspot\",\n      \"sync_status\": \"synced\",\n      \"country\": \"USA\",\n      \"currency\": \"USD\"\n    }\n  ],\n  \"total\": 7,\n  \"page\": 1,\n  \"per_page\": 20\n}",
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "contacts-list",
+      "documentation": "Get all contacts with inconsistent data",
+      "method": "get",
+      "endpoint": "api/v1/contacts",
+      "responses": [
+        {
+          "uuid": "contacts-response",
+          "body": "{\n  \"contacts\": [\n    {\n      \"contact_id\": \"cont_8k2m9n5p3x\",\n      \"first_name\": \"John\",\n      \"last_name\": \"Smith\",\n      \"email\": \"john.smith@acmecorp.com\",\n      \"phone\": \"+1-555-0199\",\n      \"title\": \"VP of Engineering\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"status\": \"active\",\n      \"created_date\": \"2023-01-20T09:15:00Z\",\n      \"last_modified\": \"2024-03-15T10:20:00Z\",\n      \"owner\": \"usr_445\",\n      \"source\": \"salesforce\"\n    },\n    {\n      \"contact_id\": \"cont_3n5p8k2m9x\",\n      \"firstName\": \"sarah\",\n      \"lastName\": \"johnson\",\n      \"email\": \"SARAH.JOHNSON@TECHSTART.COM\",\n      \"phone\": null,\n      \"title\": \"CTO\",\n      \"customer_id\": \"cust_7h3j9k1m2n\",\n      \"status\": \"Active\",\n      \"created_date\": \"2023-02-15 14:30:00\",\n      \"last_modified\": \"2024-01-20T11:45:00Z\",\n      \"owner\": \"usr_447\",\n      \"source\": \"hubspot\"\n    },\n    {\n      \"contact_id\": \"cont_5p8k3m2n9x\",\n      \"first_name\": \"Michael\",\n      \"last_name\": \"Chen\",\n      \"email\": \"m.chen@globalsolutions\",\n      \"phone\": \"+44-20-7123-4570\",\n      \"title\": \"Director of Operations\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"status\": \"active\",\n      \"created_date\": \"2023-03-25T10:00:00Z\",\n      \"last_modified\": \"2023-03-25T10:00:00Z\",\n      \"owner\": \"usr_445\",\n      \"source\": \"salesforce\"\n    },\n    {\n      \"contact_id\": \"cont_2m9n5p3k8x\",\n      \"first_name\": \"Emily\",\n      \"last_name\": \"\",\n      \"email\": \"emily@innovatelabs.com\",\n      \"phone\": \"555-0177\",\n      \"customer_id\": \"cust_2p9k8m3n1x\",\n      \"Status\": \"INACTIVE\",\n      \"created_date\": \"2022-11-10T08:30:00Z\",\n      \"last_modified\": \"2023-11-30T16:20:00Z\",\n      \"owner\": null,\n      \"source\": \"pipedrive\"\n    },\n    {\n      \"contact_id\": \"cont_8k2m9n5p3x\",\n      \"first_name\": \"John\",\n      \"last_name\": \"Smith\",\n      \"email\": \"j.smith@acmecorp.com\",\n      \"phone\": \"+1 555 0199\",\n      \"title\": \"Vice President of Engineering\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"status\": \"active\",\n      \"created_date\": \"2023-01-20T09:15:00Z\",\n      \"last_modified\": \"2024-04-01T14:10:00Z\",\n      \"owner\": \"usr_445\",\n      \"source\": \"manual_entry\"\n    },\n    {\n      \"contact_id\": \"cont_7k3m2n9p5x\",\n      \"first_name\": \"David\",\n      \"last_name\": \"Williams\",\n      \"email\": \"dwilliams@dataflow.io\",\n      \"phone\": \"\",\n      \"title\": \"Product Manager\",\n      \"customer_id\": \"cust_5k2m9n4p7x\",\n      \"status\": \"active\",\n      \"created_date\": \"2023-07-01T12:00:00Z\",\n      \"last_modified\": \"2024-02-14T09:30:00Z\",\n      \"owner\": \"usr_449\",\n      \"source\": \"salesforce\",\n      \"linkedin_url\": \"https://linkedin.com/in/davidwilliams\"\n    }\n  ],\n  \"count\": 6\n}",
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ]
+}
+,
+    {
+      "uuid": "leads-list",
+      "documentation": "Get all leads with varying quality",
+      "method": "get",
+      "endpoint": "api/v1/leads",
+      "responses": [
+        {
+          "uuid": "leads-response",
+          "body": "{\n  \"results\": [\n    {\n      \"lead_id\": \"lead_9k5m2n8p3x\",\n      \"company_name\": \"NextGen Analytics\",\n      \"contact_name\": \"Robert Martinez\",\n      \"email\": \"rmartinez@nextgen.com\",\n      \"phone\": \"+1-555-0188\",\n      \"lead_status\": \"qualified\",\n      \"lead_score\": 85,\n      \"created_at\": \"2024-01-10T08:30:00Z\",\n      \"updated_at\": \"2024-03-25T14:15:00Z\",\n      \"owner_id\": \"usr_445\",\n      \"source\": \"website\",\n      \"campaign_id\": \"camp_123\"\n    },\n    {\n      \"lead_id\": \"lead_3m8n2p5k9x\",\n      \"company_name\": \"smart solutions inc\",\n      \"contact_name\": \"jennifer lee\",\n      \"email\": \"JLEE@SMARTSOLUTIONS.COM\",\n      \"phone\": \"555.0166\",\n      \"lead_status\": \"New\",\n      \"lead_score\": null,\n      \"created_at\": \"2024-02-05 10:20:15\",\n      \"updated_at\": \"2024-02-05 10:20:15\",\n      \"owner_id\": \"usr_447\",\n      \"source\": \"trade_show\",\n      \"campaign_id\": null\n    },\n    {\n      \"lead_id\": \"lead_5p2k9m3n8x\",\n      \"company_name\": \"FutureTech Corp\",\n      \"contact_name\": \"Alex Thompson\",\n      \"email\": \"athompson@\",\n      \"phone\": \"+1 (555) 0177\",\n      \"leadStatus\": \"contacted\",\n      \"score\": 62,\n      \"created_at\": \"2024-01-28T11:45:00Z\",\n      \"updated_at\": \"2024-03-10T09:20:00Z\",\n      \"owner_id\": \"usr_449\",\n      \"source\": \"referral\"\n    },\n    {\n      \"lead_id\": \"lead_8k3m5n2p9x\",\n      \"company_name\": \"DataDriven LLC\",\n      \"contact_name\": null,\n      \"email\": \"info@datadriven.com\",\n      \"phone\": \"\",\n      \"lead_status\": \"QUALIFIED\",\n      \"lead_score\": 78,\n      \"created_at\": \"2024-03-01T14:00:00Z\",\n      \"updated_at\": \"2024-04-05T16:30:00Z\",\n      \"owner_id\": null,\n      \"source\": \"linkedin\",\n      \"campaign_id\": \"camp_125\"\n    },\n    {\n      \"lead_id\": \"lead_2n9p5k3m8x\",\n      \"company_name\": \"CloudFirst Technologies\",\n      \"contact_name\": \"Maria Garcia\",\n      \"email\": \"m.garcia@cloudfirst.io\",\n      \"phone\": \"+1-555-0144\",\n      \"lead_status\": \"lost\",\n      \"lead_score\": 45,\n      \"created_at\": \"2023-11-15T09:00:00Z\",\n      \"updated_at\": \"2024-01-20T11:30:00Z\",\n      \"lost_reason\": \"budget_constraints\",\n      \"owner_id\": \"usr_450\",\n      \"source\": \"cold_call\"\n    },\n    {\n      \"lead_id\": \"lead_9k5m2n8p3x\",\n      \"company_name\": \"NextGen Analytics Inc\",\n      \"contact_name\": \"Bob Martinez\",\n      \"email\": \"bob.martinez@nextgen.com\",\n      \"phone\": \"+1 555 0188\",\n      \"lead_status\": \"Qualified\",\n      \"lead_score\": 87,\n      \"created_at\": \"2024-01-10T08:30:00Z\",\n      \"updated_at\": \"2024-04-08T10:45:00Z\",\n      \"owner_id\": \"usr_445\",\n      \"source\": \"website_form\",\n      \"campaign_id\": \"camp_123\"\n    }\n  ],\n  \"total_count\": 6,\n  \"page\": 1\n}",
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "deals-list",
+      "documentation": "Get all deals with nested and flat structures",
+      "method": "get",
+      "endpoint": "api/v1/deals",
+      "responses": [
+        {
+          "uuid": "deals-response",
+          "body": "{\n  \"data\": [\n    {\n      \"deal_id\": \"deal_7k2m9n5p8x\",\n      \"deal_name\": \"Acme Corp - Enterprise License\",\n      \"amount\": 125000,\n      \"currency\": \"USD\",\n      \"stage\": \"negotiation\",\n      \"probability\": 75,\n      \"expected_close_date\": \"2024-05-15\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"owner_id\": \"usr_445\",\n      \"created_at\": \"2024-02-01T10:00:00Z\",\n      \"updated_at\": \"2024-04-10T15:30:00Z\",\n      \"source_system\": \"salesforce\",\n      \"sync_status\": \"synced\",\n      \"contact\": {\n        \"id\": \"cont_8k2m9n5p3x\",\n        \"name\": \"John Smith\",\n        \"email\": \"john.smith@acmecorp.com\"\n      }\n    },\n    {\n      \"deal_id\": \"deal_3n5p8k2m9x\",\n      \"deal_name\": \"TechStart - Annual Subscription\",\n      \"amount\": 45000.00,\n      \"currency\": \"usd\",\n      \"stage\": \"Proposal\",\n      \"probability\": 60,\n      \"expected_close_date\": \"2024-04-30\",\n      \"customer_id\": \"cust_7h3j9k1m2n\",\n      \"owner_id\": \"usr_447\",\n      \"created_at\": \"2024-01-15 09:30:00\",\n      \"updated_at\": \"2024-03-28T11:20:00Z\",\n      \"source_system\": \"hubspot\",\n      \"sync_status\": \"pending\",\n      \"contact_id\": \"cont_3n5p8k2m9x\",\n      \"contact_name\": \"Sarah Johnson\",\n      \"contact_email\": \"sarah.johnson@techstart.com\"\n    },\n    {\n      \"deal_id\": \"deal_5p8k3m2n9x\",\n      \"deal_name\": \"Global Solutions - Consulting Package\",\n      \"amount\": 85000,\n      \"currency\": \"GBP\",\n      \"stage\": \"discovery\",\n      \"probability\": null,\n      \"expected_close_date\": \"2024-06-20\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"owner_id\": \"usr_445\",\n      \"created_at\": \"2024-03-10T14:15:00Z\",\n      \"updated_at\": \"2024-04-01T10:00:00Z\",\n      \"source_system\": \"salesforce\",\n      \"sync_status\": \"synced\"\n    },\n    {\n      \"deal_id\": \"deal_2m9n5p3k8x\",\n      \"deal_name\": \"DataFlow - Implementation Services\",\n      \"amount\": 67500,\n      \"currency\": \"CAD\",\n      \"Stage\": \"CLOSED_WON\",\n      \"probability\": 100,\n      \"expected_close_date\": \"2024-03-31\",\n      \"actual_close_date\": \"2024-03-28T16:45:00Z\",\n      \"customer_id\": \"cust_5k2m9n4p7x\",\n      \"owner_id\": \"usr_449\",\n      \"created_at\": \"2024-01-20T11:00:00Z\",\n      \"updated_at\": \"2024-03-28T16:45:00Z\",\n      \"source_system\": \"salesforce\",\n      \"sync_status\": \"synced\",\n      \"contact\": {\n        \"id\": \"cont_7k3m2n9p5x\",\n        \"name\": \"David Williams\"\n      }\n    },\n    {\n      \"deal_id\": \"deal_8k3m5n2p9x\",\n      \"deal_name\": \"NextGen - Platform Migration\",\n      \"amount\": null,\n      \"currency\": \"USD\",\n      \"stage\": \"qualification\",\n      \"probability\": 30,\n      \"expected_close_date\": \"2024-07-15\",\n      \"customer_id\": null,\n      \"lead_id\": \"lead_9k5m2n8p3x\",\n      \"owner_id\": \"usr_445\",\n      \"created_at\": \"2024-03-20T13:00:00Z\",\n      \"updated_at\": \"2024-04-05T09:15:00Z\",\n      \"source_system\": \"salesforce\",\n      \"sync_status\": \"synced\"\n    },\n    {\n      \"deal_id\": \"deal_9m2n5p8k3x\",\n      \"deal_name\": \"CloudVentures - Support Contract\",\n      \"amount\": 24000,\n      \"currency\": \"USD\",\n      \"stage\": \"closed_lost\",\n      \"probability\": 0,\n      \"expected_close_date\": \"2023-12-31\",\n      \"actual_close_date\": \"2023-12-15\",\n      \"lost_reason\": \"competitor\",\n      \"customer_id\": \"cust_9m2n5p8k3x\",\n      \"owner_id\": \"usr_450\",\n      \"created_at\": \"2023-10-01T10:00:00Z\",\n      \"updated_at\": \"2023-12-15T14:30:00Z\",\n      \"source_system\": \"hubspot\",\n      \"sync_status\": \"synced\"\n    }\n  ],\n  \"total\": 6,\n  \"page\": 1,\n  \"limit\": 20\n}",
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "activities-list",
+      "documentation": "Get all activities with inconsistent structures",
+      "method": "get",
+      "endpoint": "api/v1/activities",
+      "responses": [
+        {
+          "uuid": "activities-response",
+          "body": "{\n  \"activities\": [\n    {\n      \"activity_id\": \"act_5k2m9n8p3x\",\n      \"type\": \"call\",\n      \"subject\": \"Discovery Call\",\n      \"description\": \"Initial discovery call to understand requirements\",\n      \"duration_minutes\": 45,\n      \"activity_date\": \"2024-04-08T14:00:00Z\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"contact_id\": \"cont_8k2m9n5p3x\",\n      \"deal_id\": \"deal_7k2m9n5p8x\",\n      \"owner_id\": \"usr_445\",\n      \"status\": \"completed\",\n      \"created_at\": \"2024-04-08T14:45:00Z\",\n      \"source\": \"salesforce\"\n    },\n    {\n      \"activity_id\": \"act_3n8p5k2m9x\",\n      \"type\": \"Email\",\n      \"subject\": \"Follow up on proposal\",\n      \"description\": null,\n      \"activity_date\": \"2024-04-09 10:30:00\",\n      \"customer_id\": \"cust_7h3j9k1m2n\",\n      \"contact_id\": \"cont_3n5p8k2m9x\",\n      \"deal_id\": \"deal_3n5p8k2m9x\",\n      \"owner_id\": \"usr_447\",\n      \"Status\": \"Completed\",\n      \"created_at\": \"2024-04-09T10:35:00Z\",\n      \"source\": \"hubspot\"\n    },\n    {\n      \"activity_id\": \"act_8p2k9m5n3x\",\n      \"type\": \"meeting\",\n      \"subject\": \"Product Demo\",\n      \"description\": \"Demonstrated key features of the platform\",\n      \"duration_minutes\": 60,\n      \"activity_date\": \"2024-04-10T15:00:00Z\",\n      \"customer_id\": \"cust_5k2m9n4p7x\",\n      \"contact_id\": \"cont_7k3m2n9p5x\",\n      \"owner_id\": \"usr_449\",\n      \"status\": \"completed\",\n      \"created_at\": \"2024-04-10T16:05:00Z\",\n      \"updated_at\": \"2024-04-10T16:05:00Z\",\n      \"source\": \"salesforce\"\n    },\n    {\n      \"activity_id\": \"act_2m5n9p3k8x\",\n      \"type\": \"CALL\",\n      \"subject\": \"Check-in call\",\n      \"activity_date\": \"2024-04-11T11:00:00Z\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"contact_id\": \"cont_5p8k3m2n9x\",\n      \"deal_id\": \"deal_5p8k3m2n9x\",\n      \"owner_id\": \"usr_445\",\n      \"status\": \"scheduled\",\n      \"created_at\": \"2024-04-07T09:20:00Z\",\n      \"source\": \"salesforce\"\n    },\n    {\n      \"activity_id\": \"act_9k3m2n5p8x\",\n      \"type\": \"task\",\n      \"subject\": \"Send contract for review\",\n      \"description\": \"Prepare and send final contract documents\",\n      \"due_date\": \"2024-04-12\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"deal_id\": \"deal_7k2m9n5p8x\",\n      \"owner_id\": \"usr_445\",\n      \"status\": \"in_progress\",\n      \"priority\": \"high\",\n      \"created_at\": \"2024-04-10T17:00:00Z\",\n      \"source\": \"salesforce\"\n    },\n    {\n      \"activity_id\": \"act_7k5m3n2p9x\",\n      \"type\": \"email\",\n      \"subject\": \"RE: Pricing Question\",\n      \"description\": \"Responded to pricing inquiry\",\n      \"activity_date\": \"2024-03-15T09:45:00Z\",\n      \"lead_id\": \"lead_9k5m2n8p3x\",\n      \"owner_id\": \"usr_445\",\n      \"status\": \"COMPLETED\",\n      \"created_at\": \"2024-03-15T09:50:00Z\",\n      \"source\": \"gmail_sync\"\n    }\n  ],\n  \"count\": 6,\n  \"page\": 1\n}",
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "notes-list",
+      "documentation": "Get all notes with varying formats",
+      "method": "get",
+      "endpoint": "api/v1/notes",
+      "responses": [
+        {
+          "uuid": "notes-response",
+          "body": "{\n  \"data\": [\n    {\n      \"note_id\": \"note_8k2m9n5p3x\",\n      \"title\": \"Meeting Notes - Q1 Planning\",\n      \"content\": \"Discussed Q1 goals and budget allocation. Customer is interested in expanding to 3 additional departments.\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"contact_id\": \"cont_8k2m9n5p3x\",\n      \"deal_id\": \"deal_7k2m9n5p8x\",\n      \"created_by\": \"usr_445\",\n      \"created_at\": \"2024-04-08T14:50:00Z\",\n      \"updated_at\": \"2024-04-08T14:50:00Z\",\n      \"is_pinned\": true,\n      \"tags\": [\"planning\", \"expansion\"]\n    },\n    {\n      \"note_id\": \"note_3n5p8k2m9x\",\n      \"title\": null,\n      \"content\": \"Customer mentioned they are evaluating 2 other vendors. Need to follow up with competitive analysis.\",\n      \"customer_id\": \"cust_7h3j9k1m2n\",\n      \"deal_id\": \"deal_3n5p8k2m9x\",\n      \"created_by\": \"usr_447\",\n      \"created_at\": \"2024-04-09 11:15:00\",\n      \"updated_at\": \"2024-04-09 11:15:00\",\n      \"is_pinned\": false\n    },\n    {\n      \"note_id\": \"note_5p8k3m2n9x\",\n      \"title\": \"Technical Requirements\",\n      \"content\": \"Must integrate with existing Salesforce instance. SSO required. Data residency in EU.\",\n      \"customer_id\": \"cust_8x9k2m4n5p\",\n      \"contact_id\": \"cont_5p8k3m2n9x\",\n      \"deal_id\": \"deal_5p8k3m2n9x\",\n      \"created_by\": \"usr_445\",\n      \"created_at\": \"2024-03-12T16:30:00Z\",\n      \"updated_at\": \"2024-03-25T10:15:00Z\",\n      \"is_pinned\": true,\n      \"tags\": [\"technical\", \"requirements\", \"integration\"]\n    },\n    {\n      \"note_id\": \"note_2m9n5p3k8x\",\n      \"Title\": \"Post-Sale Follow-up\",\n      \"content\": \"Customer very satisfied with implementation. Mentioned potential referral to sister company.\",\n      \"customer_id\": \"cust_5k2m9n4p7x\",\n      \"deal_id\": \"deal_2m9n5p3k8x\",\n      \"created_by\": \"usr_449\",\n      \"created_at\": \"2024-04-01T09:00:00Z\",\n      \"is_pinned\": false,\n      \"tags\": [\"success\", \"referral\"]\n    },\n    {\n      \"note_id\": \"note_7k3m2n9p5x\",\n      \"title\": \"Budget Concerns\",\n      \"content\": \"\",\n      \"customer_id\": \"cust_7h3j9k1m2n\",\n      \"contact_id\": \"cont_3n5p8k2m9x\",\n      \"deal_id\": \"deal_3n5p8k2m9x\",\n      \"created_by\": \"usr_447\",\n      \"created_at\": \"2024-03-28T15:20:00Z\",\n      \"updated_at\": \"2024-03-28T15:20:00Z\",\n      \"is_pinned\": false\n    }\n  ],\n  \"total\": 5\n}",
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "companies-list",
+      "documentation": "Get all companies with partial data",
+      "method": "get",
+      "endpoint": "api/v1/companies",
+      "responses": [
+        {
+          "uuid": "companies-response",
+          "body": "{\n  \"companies\": [\n    {\n      \"company_id\": \"comp_8x9k2m4n5p\",\n      \"name\": \"Acme Corporation\",\n      \"industry\": \"Technology\",\n      \"employee_count\": 1250,\n      \"annual_revenue\": 45000000,\n      \"website\": \"https://www.acmecorp.com\",\n      \"address\": {\n        \"street\": \"123 Tech Boulevard\",\n        \"city\": \"San Francisco\",\n        \"state\": \"CA\",\n        \"postal_code\": \"94105\",\n        \"country\": \"USA\"\n      },\n      \"created_at\": \"2023-01-15T10:30:00Z\",\n      \"updated_at\": \"2024-03-20T14:22:11Z\",\n      \"source\": \"salesforce\"\n    },\n    {\n      \"company_id\": \"comp_7h3j9k1m2n\",\n      \"name\": \"TechStart Inc.\",\n      \"industry\": \"software\",\n      \"employee_count\": \"50-100\",\n      \"annual_revenue\": null,\n      \"website\": \"www.techstart.com\",\n      \"address\": {\n        \"street\": \"456 Innovation Drive\",\n        \"city\": \"Austin\",\n        \"state\": \"TX\",\n        \"postal_code\": \"78701\",\n        \"country\": \"US\"\n      },\n      \"created_at\": \"2023-02-10 11:45:30\",\n      \"updated_at\": \"2024-01-15T09:10:22Z\",\n      \"source\": \"hubspot\"\n    },\n    {\n      \"company_id\": \"comp_8x9k2m4n5p\",\n      \"name\": \"Global Solutions Ltd\",\n      \"industry\": \"Consulting\",\n      \"employee_count\": 850,\n      \"annual_revenue\": 28000000,\n      \"website\": \"https://globalsolutions.co.uk\",\n      \"street\": \"789 Business Park\",\n      \"city\": \"London\",\n      \"postal_code\": \"SW1A 1AA\",\n      \"country\": \"UK\",\n      \"created_at\": \"2023-03-22T08:15:00Z\",\n      \"updated_at\": null,\n      \"source\": \"salesforce\"\n    },\n    {\n      \"company_id\": \"comp_5k2m9n4p7x\",\n      \"name\": \"DataFlow Systems\",\n      \"Industry\": \"DATA_ANALYTICS\",\n      \"employee_count\": 320,\n      \"annual_revenue\": 15500000,\n      \"website\": \"https://www.dataflow.io\",\n      \"address\": {\n        \"street\": \"100 Data Lane\",\n        \"city\": \"Toronto\",\n        \"state\": \"ON\",\n        \"postal_code\": \"M5H 2N2\",\n        \"country\": \"Canada\"\n      },\n      \"created_at\": \"2023-06-18T16:45:00Z\",\n      \"updated_at\": \"2024-04-10T11:20:33Z\",\n      \"source\": \"salesforce\"\n    },\n    {\n      \"company_id\": \"comp_2p9k8m3n1x\",\n      \"name\": \"innovate labs\",\n      \"industry\": \"Research\",\n      \"employee_count\": null,\n      \"website\": \"innovatelabs.com\",\n      \"address\": {\n        \"city\": \"Boston\",\n        \"state\": \"MA\",\n        \"country\": \"USA\"\n      },\n      \"created_at\": \"2022-11-05T14:20:00Z\",\n      \"updated_at\": \"2023-12-01T10:30:00Z\",\n      \"source\": \"pipedrive\",\n      \"is_active\": false\n    }\n  ],\n  \"total_count\": 5,\n  \"page_number\": 1,\n  \"page_size\": 20\n}",
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ]
+}

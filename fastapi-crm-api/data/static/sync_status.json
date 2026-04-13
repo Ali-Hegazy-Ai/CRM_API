@@ -1,0 +1,40 @@
+{
+  "salesforce": {
+    "status": "healthy",
+    "last_sync": "2024-04-12T06:30:00Z",
+    "next_sync": "2024-04-12T12:30:00Z",
+    "records_synced": 1247,
+    "records_failed": 3,
+    "sync_duration_seconds": 45,
+    "error_rate": 0.24
+  },
+  "hubspot": {
+    "status": "degraded",
+    "last_sync": "2024-04-11T22:15:00Z",
+    "next_sync": "2024-04-12T10:15:00Z",
+    "records_synced": 456,
+    "records_failed": 12,
+    "sync_duration_seconds": 120,
+    "error_rate": 2.56,
+    "last_error": "Rate limit exceeded"
+  },
+  "pipedrive": {
+    "status": "error",
+    "last_sync": "2024-04-10T12:00:00Z",
+    "next_sync": "2024-04-12T18:00:00Z",
+    "records_synced": 0,
+    "records_failed": 89,
+    "sync_duration_seconds": 5,
+    "error_rate": 100.0,
+    "last_error": "Authentication failed"
+  },
+  "zoho": {
+    "status": "healthy",
+    "last_sync": "2024-04-12T05:30:00Z",
+    "next_sync": "2024-04-12T11:30:00Z",
+    "records_synced": 234,
+    "records_failed": 0,
+    "sync_duration_seconds": 28,
+    "error_rate": 0.0
+  }
+}

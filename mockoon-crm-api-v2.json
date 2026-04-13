@@ -1,0 +1,57 @@
+{
+  "uuid": "crm-production-api",
+  "lastMigration": 29,
+  "name": "CRM Production Mock API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "rootChildren": [
+    {"type": "route", "uuid": "customers-list"},
+    {"type": "route", "uuid": "customers-detail"},
+    {"type": "route", "uuid": "contacts-list"},
+    {"type": "route", "uuid": "contacts-detail"},
+    {"type": "route", "uuid": "leads-list"},
+    {"type": "route", "uuid": "leads-detail"},
+    {"type": "route", "uuid": "deals-list"},
+    {"type": "route", "uuid": "deals-detail"},
+    {"type": "route", "uuid": "activities-list"},
+    {"type": "route", "uuid": "activities-detail"},
+    {"type": "route", "uuid": "notes-list"},
+    {"type": "route", "uuid": "companies-list"},
+    {"type": "route", "uuid": "companies-detail"},
+    {"type": "route", "uuid": "owners-list"},
+    {"type": "route", "uuid": "pipeline-stages"},
+    {"type": "route", "uuid": "sync-status"},
+    {"type": "route", "uuid": "metadata"},
+    {"type": "route", "uuid": "search"},
+    {"type": "route", "uuid": "events"}
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "X-API-Version",
+      "value": "{{queryParam 'version' 'v3'}}"
+    }
+  ],
+  "proxyReqHeaders": [],
+  "proxyResHeaders": [],
+  "data": []
+}
