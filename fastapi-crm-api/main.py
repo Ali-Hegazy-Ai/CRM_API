@@ -5,7 +5,7 @@ A realistic, intentionally messy CRM API for data engineering testing.
 """
 
 from fastapi import FastAPI, Query, HTTPException, Path
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from typing import Optional
 from datetime import datetime
 import uvicorn
@@ -20,6 +20,13 @@ from pagination import (
 )
 from search import search_entities
 from events import generate_events
+from stream_engine import (
+    start_stream_engine,
+    stop_stream_engine,
+    refresh_stream_state,
+    get_recent_changes,
+    sse_event_generator,
+)
 
 
 # Initialize FastAPI app
@@ -30,6 +37,18 @@ app = FastAPI(
     docs_url="/docs",
     redoc_url="/redoc"
 )
+
+
+@app.on_event("startup")
+async def on_startup():
+    """Start lightweight background stream tasks for live CRM behavior."""
+    await start_stream_engine()
+
+
+@app.on_event("shutdown")
+async def on_shutdown():
+    """Stop stream tasks cleanly when the app instance is shutting down."""
+    await stop_stream_engine()
 
 
 # Custom exception handler
@@ -67,7 +86,9 @@ async def root():
             "sync_status": "/sync-status",
             "metadata": "/metadata",
             "search": "/search?q=query",
-            "events": "/events"
+            "events": "/events",
+            "stream_changes": "/stream/changes",
+            "stream_events": "/stream/events"
         },
         "versioning": "Add ?version=v1, ?version=v2, or ?version=v3",
         "pagination": "Add ?page=1&limit=20",
@@ -455,6 +476,47 @@ async def list_events(
     }
 
 
+@app.get("/stream/changes")
+async def stream_changes(
+    limit: int = Query(100, ge=1, le=500, description="How many recent changes to return"),
+    entity: Optional[str] = Query(None, description="Optional entity filter"),
+    event_type: Optional[str] = Query(None, description="Optional event_type filter"),
+):
+    """
+    Polling-friendly change feed.
+
+    Returns the latest in-memory create/update/delete events.
+    """
+    events = await get_recent_changes(limit=limit, entity=entity, event_type=event_type)
+    return {
+        "events": events,
+        "count": len(events),
+        "generated_at": datetime.utcnow().isoformat() + "Z"
+    }
+
+
+@app.get("/stream/events")
+async def stream_events(
+    limit: int = Query(100, ge=1, le=500, description="Initial backlog size before live stream")
+):
+    """
+    Optional SSE endpoint for near-real-time event streaming.
+
+    Keep-alive frames are emitted while idle so serverless proxies don't
+    prematurely close quiet connections.
+    """
+    headers = {
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+        "X-Accel-Buffering": "no"
+    }
+    return StreamingResponse(
+        sse_event_generator(limit=limit),
+        media_type="text/event-stream",
+        headers=headers
+    )
+
+
 # ============================================================================
 # UTILITY ENDPOINTS
 # ============================================================================
@@ -473,6 +535,7 @@ async def health_check():
 async def reload_data():
     """Reload data from disk (useful for development)"""
     data_loader.reload_data()
+    await refresh_stream_state()
     return {
         "status": "success",
         "message": "Data reloaded from disk",
