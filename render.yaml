@@ -1,7 +1,8 @@
 services:
   - type: web
     name: crm-mock-api
-    env: docker
+    runtime: docker
+    rootDir: fastapi-crm-api
     plan: free
     healthCheckPath: /health
     envVars:

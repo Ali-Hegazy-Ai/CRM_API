@@ -18,10 +18,20 @@ class DataLoader:
     """Loads and caches CRM data from JSON files"""
     
     def __init__(self, data_dir: str = "data"):
-        self.data_dir = Path(data_dir)
+        self.base_dir = Path(__file__).resolve().parent
+        self.data_dir = self._resolve_data_dir(data_dir)
         self.cache: Dict[str, Dict[str, List[Dict[str, Any]]]] = {}
         self.static_cache: Dict[str, Any] = {}
         self._load_all_data()
+
+    def _resolve_data_dir(self, data_dir: str) -> Path:
+        """Resolve the data directory relative to the module when needed."""
+        candidate = Path(data_dir)
+
+        if candidate.is_absolute() or candidate.exists():
+            return candidate
+
+        return self.base_dir / candidate
     
     def _load_all_data(self):
         """Load all data files at startup"""
@@ -48,8 +58,8 @@ class DataLoader:
                         with open(file_path, 'r', encoding='utf-8') as f:
                             self.cache[version][entity] = json.load(f)
                     else:
-                        self.cache[version][entity] = []
                         missing_files.append(f"{version}/{entity}.json")
+                        self.cache[version][entity] = []
         
         # Load static data (not versioned)
         static_dir = self.data_dir / "static"
@@ -66,14 +76,17 @@ class DataLoader:
                 else:
                     missing_files.append(f"static/{filename}.json")
         
-        # Log missing files
+        # Fail fast if required data is missing so the API does not start in a broken state.
         if missing_files:
-            logger.warning("=" * 60)
-            logger.warning("DATA FILES MISSING - API will return empty arrays")
-            logger.warning("=" * 60)
+            logger.error("=" * 60)
+            logger.error("DATA FILES MISSING - startup aborted")
+            logger.error("=" * 60)
             for missing in missing_files:
-                logger.warning(f"  - data/{missing}")
-            logger.warning("=" * 60)
+                logger.error(f"  - data/{missing}")
+            logger.error("=" * 60)
+            raise RuntimeError(
+                "Missing required CRM data files: " + ", ".join(missing_files)
+            )
     
     def get_data(self, entity: str, version: str = "v3") -> List[Dict[str, Any]]:
         """

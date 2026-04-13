@@ -8,6 +8,7 @@ from fastapi import FastAPI, Query, HTTPException, Path
 from fastapi.responses import JSONResponse
 from typing import Optional
 from datetime import datetime
+import uvicorn
 
 from data_loader import data_loader
 from pagination import (
@@ -19,7 +20,6 @@ from pagination import (
 )
 from search import search_entities
 from events import generate_events
-from models import ErrorResponse
 
 
 # Initialize FastAPI app
@@ -297,7 +297,7 @@ async def list_notes(
     data = data_loader.get_data("notes", version)
     
     # Notes use simple wrapper
-    page_data, metadata = paginate_with_wrapper(data, page, limit, wrapper_key="data", add_issues=True)
+    page_data = paginate_with_wrapper(data, page, limit, wrapper_key="data", add_issues=True)
     
     return {
         "data": page_data.get("data", []),
@@ -485,5 +485,4 @@ async def reload_data():
 # ============================================================================
 
 if __name__ == "__main__":
-    import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")

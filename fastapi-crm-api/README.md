@@ -33,7 +33,13 @@ python main.py
 Or with uvicorn directly:
 
 ```bash
-uvicorn main:app --reload --port 8000
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
+For deployment platforms that inject `PORT`, use:
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port $PORT
 ```
 
 ### 3. Test the API
@@ -196,6 +202,24 @@ fastapi-crm-api/
 ### Modifying Data
 
 Edit JSON files in `data/` directory. Changes take effect on restart.
+
+### Docker Deployment
+
+The repository includes a Dockerfile in `fastapi-crm-api/` and a Render Blueprint at the repository root (`render.yaml`).
+
+Build and run locally:
+
+```bash
+cd fastapi-crm-api
+docker build -t crm-mock-api .
+docker run -p 8000:8000 -e PORT=8000 crm-mock-api
+```
+
+The container starts with:
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port $PORT
+```
 
 ## Testing
 

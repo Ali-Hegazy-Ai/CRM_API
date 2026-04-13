@@ -28,7 +28,11 @@ def search_entities(query: str, version: str = "v3", entity_type: Optional[str] 
     
     # Filter by entity type if specified
     if entity_type:
-        results = [r for r in results if r.get('entity_type') == entity_type]
+        normalized_entity_type = entity_type.lower().rstrip("s")
+        results = [
+            r for r in results
+            if r.get('entity_type', '').lower().rstrip("s") == normalized_entity_type
+        ]
     
     # Entity type mapping (handle pluralization correctly)
     entity_type_map = {
@@ -46,7 +50,7 @@ def search_entities(query: str, version: str = "v3", entity_type: Optional[str] 
     for result in results:
         entity_type_raw = result.pop('entity_type', 'unknown')
         entity_type = entity_type_map.get(entity_type_raw, entity_type_raw)
-        entity_id = result.get('id')
+        entity_id = result.get('id') or result.get('entity_id')
         match_field = result.pop('match_field', 'unknown')
         match_score = result.pop('match_score', 0.0)
         

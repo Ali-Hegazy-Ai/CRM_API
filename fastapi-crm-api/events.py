@@ -9,6 +9,17 @@ from datetime import datetime
 from data_loader import data_loader
 
 
+ENTITY_PLURAL_MAP = {
+    "customer": "customers",
+    "contact": "contacts",
+    "lead": "leads",
+    "deal": "deals",
+    "activity": "activities",
+    "note": "notes",
+    "company": "companies",
+}
+
+
 def generate_events(version: str = "v3", limit: int = 50) -> List[Dict[str, Any]]:
     """
     Generate change events by comparing data versions
@@ -35,30 +46,34 @@ def generate_events(version: str = "v3", limit: int = 50) -> List[Dict[str, Any]
         prev_version = versions[version_idx - 1]
         
         # Check customers for changes
+        before_count = len(events)
         events.extend(_generate_entity_events(
             "customer", 
             prev_version, 
             version, 
             event_counter
         ))
-        event_counter += len(events)
+        event_counter += len(events) - before_count
         
         # Check contacts for changes
+        before_count = len(events)
         events.extend(_generate_entity_events(
             "contact", 
             prev_version, 
             version, 
             event_counter
         ))
-        event_counter += len(events)
+        event_counter += len(events) - before_count
         
         # Check deals for changes
+        before_count = len(events)
         events.extend(_generate_entity_events(
             "deal", 
             prev_version, 
             version, 
             event_counter
         ))
+        event_counter += len(events) - before_count
     
     # Add some synthetic events for current version
     current_customers = data_loader.get_data("customers", version)
@@ -154,7 +169,7 @@ def _generate_entity_events(
         List of events
     """
     events = []
-    entity_plural = f"{entity_type}s"
+    entity_plural = ENTITY_PLURAL_MAP.get(entity_type, f"{entity_type}s")
     
     prev_data = data_loader.get_data(entity_plural, prev_version)
     current_data = data_loader.get_data(entity_plural, current_version)
