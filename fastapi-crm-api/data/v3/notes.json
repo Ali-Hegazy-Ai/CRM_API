@@ -53,8 +53,8 @@
     "title": "Technical Requirements",
     "content": "Must integrate with existing Salesforce instance. SSO required via SAML 2.0. Data residency in EU. GDPR compliance mandatory. API rate limit concerns for batch processing.",
     "note_type": "technical",
-    "customer_id": "cust_8x9k2m4n5p",
-    "company_id": "comp_8x9k2m4n5p",
+    "customer_id": "cust_6p3k8m2n9x",
+    "company_id": "comp_6p3k8m2n9x",
     "contact_id": "cont_5p8k3m2n9x",
     "deal_id": "deal_5p8k3m2n9x",
     "created_by": "usr_445",
@@ -140,7 +140,7 @@
     "tags": ["cultural", "emea", "account_planning"]
   },
   {
-    "id": "note_8k2m9n5p3x",
+    "id": "note_8k2m9n5p3x_dup",
     "external_id": "SF-NOTE-6007",
     "note_id": "NOTE-6007",
     "title": "Meeting Notes - Q1 Planning Session",

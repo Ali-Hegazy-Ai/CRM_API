@@ -86,7 +86,7 @@
     "region": "North America"
   },
   {
-    "id": "comp_8x9k2m4n5p",
+    "id": "comp_6p3k8m2n9x",
     "external_id": "SF-ACC-10236",
     "company_id": "COMP-10236",
     "name": "Global Solutions Ltd",
@@ -263,7 +263,7 @@
     "timezone": "Africa/Cairo"
   },
   {
-    "id": "comp_8x9k2m4n5p",
+    "id": "comp_8x9k2m4n5p_dup",
     "external_id": "SF-ACC-10242",
     "company_id": "COMP-10242",
     "name": "Acme Corporation",

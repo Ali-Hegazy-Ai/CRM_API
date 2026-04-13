@@ -93,8 +93,8 @@
     "due_date": "2024-04-11T11:00:00Z",
     "status": "scheduled",
     "priority": "medium",
-    "customer_id": "cust_8x9k2m4n5p",
-    "company_id": "comp_8x9k2m4n5p",
+    "customer_id": "cust_6p3k8m2n9x",
+    "company_id": "comp_6p3k8m2n9x",
     "contact_id": "cont_5p8k3m2n9x",
     "deal_id": "deal_5p8k3m2n9x",
     "owner_id": "usr_445",
@@ -202,7 +202,7 @@
     "last_synced_at": "2024-04-11T22:15:00Z"
   },
   {
-    "id": "act_5k2m9n8p3x",
+    "id": "act_5k2m9n8p3x_dup",
     "external_id": "SF-TASK-1004",
     "activity_id": "ACT-1009",
     "type": "call",

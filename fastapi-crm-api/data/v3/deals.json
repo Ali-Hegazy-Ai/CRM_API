@@ -95,8 +95,8 @@
     "status": "open",
     "priority": "high",
     "deal_type": "new_business",
-    "customer_id": "cust_8x9k2m4n5p",
-    "company_id": "comp_8x9k2m4n5p",
+    "customer_id": "cust_6p3k8m2n9x",
+    "company_id": "comp_6p3k8m2n9x",
     "contact_id": "cont_5p8k3m2n9x",
     "owner_id": "usr_445",
     "created_at": "2024-03-10T14:15:00Z",
@@ -240,7 +240,7 @@
     "timezone": "Africa/Cairo"
   },
   {
-    "id": "deal_7k2m9n5p8x",
+    "id": "deal_7k2m9n5p8x_dup",
     "external_id": "SF-OPP-9008",
     "deal_id": "DEAL-9008",
     "deal_name": "Acme Corporation - Enterprise License Renewal",
