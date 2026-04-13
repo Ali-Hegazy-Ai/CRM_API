@@ -17,6 +17,11 @@ from data_loader import data_loader
 
 LIVE_VERSION = "v3"
 MAX_CHANGE_LOG = 800
+MAX_ENTITY_RECORDS = {
+    "customers": 3500,
+    "leads": 3500,
+    "activities": 7000,
+}
 
 # Live data is based on the existing loader cache. We mutate only v3 incrementally.
 DATA_STORE: Dict[str, Dict[str, List[Dict[str, Any]]]] = data_loader.cache
@@ -77,6 +82,15 @@ _EVENT_SEQUENCE = 0
 
 _ID_COUNTERS = {entity: 0 for entity in _ENTITY_CONFIG}
 _USED_IDS = {entity: set() for entity in _ENTITY_CONFIG}
+
+
+def _entity_can_grow(entity: str) -> bool:
+    limit = MAX_ENTITY_RECORDS.get(entity)
+    if limit is None:
+        return True
+
+    current_count = len(DATA_STORE.get(LIVE_VERSION, {}).get(entity, []))
+    return current_count < limit
 
 
 def _now_iso() -> str:
@@ -580,10 +594,31 @@ async def _creation_loop() -> None:
             batch_size = 2 if random.random() < 0.18 else 1
 
             async with _LOCK:
+                available_entities = [
+                    entity for entity in ["customers", "leads", "activities"]
+                    if _entity_can_grow(entity)
+                ]
+                if not available_entities:
+                    continue
+
+                version_bucket = DATA_STORE.setdefault(LIVE_VERSION, {})
+
                 for _ in range(batch_size):
+                    current_available = [
+                        entity for entity in available_entities
+                        if _entity_can_grow(entity)
+                    ]
+                    if not current_available:
+                        break
+
+                    weighted_map = {
+                        "customers": 0.34,
+                        "leads": 0.33,
+                        "activities": 0.33,
+                    }
                     entity = random.choices(
-                        ["customers", "leads", "activities"],
-                        weights=[0.34, 0.33, 0.33],
+                        current_available,
+                        weights=[weighted_map[item] for item in current_available],
                         k=1,
                     )[0]
 
@@ -594,7 +629,7 @@ async def _creation_loop() -> None:
                     else:
                         record = _create_activity()
 
-                    DATA_STORE[LIVE_VERSION].setdefault(entity, []).append(record)
+                    version_bucket.setdefault(entity, []).append(record)
                     _record_change("create", entity, record)
     except asyncio.CancelledError:
         return

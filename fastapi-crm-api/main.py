@@ -534,13 +534,17 @@ async def health_check():
 @app.post("/reload")
 async def reload_data():
     """Reload data from disk (useful for development)"""
-    data_loader.reload_data()
-    await refresh_stream_state()
-    return {
-        "status": "success",
-        "message": "Data reloaded from disk",
-        "timestamp": datetime.utcnow().isoformat() + "Z"
-    }
+    await stop_stream_engine()
+    try:
+        data_loader.reload_data()
+        await refresh_stream_state()
+        return {
+            "status": "success",
+            "message": "Data reloaded from disk",
+            "timestamp": datetime.utcnow().isoformat() + "Z"
+        }
+    finally:
+        await start_stream_engine()
 
 
 # ============================================================================
