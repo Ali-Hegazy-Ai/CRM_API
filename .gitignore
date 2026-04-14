@@ -7,3 +7,6 @@ __pycache__/
 
 # Local runtime logs and SQL traces
 logs/
+
+# Runtime CDC database artifacts
+fastapi-crm-api/data/*.sqlite3
