@@ -32,6 +32,7 @@ _ENTITY_CONFIG = {
     "customers": {"prefix": "cust_", "id_field": "customer_id", "singular": "customer"},
     "leads": {"prefix": "lead_", "id_field": "lead_id", "singular": "lead"},
     "activities": {"prefix": "act_", "id_field": "activity_id", "singular": "activity"},
+    "deals": {"prefix": "deal_", "id_field": "deal_id", "singular": "deal"},
 }
 
 _SOURCE_WEIGHTS = {
@@ -73,12 +74,94 @@ _LEAD_STATUS = ["new", "contacted", "qualified", "converted", "disqualified"]
 _ACTIVITY_STATUS = ["pending", "done", "overdue", "cancelled"]
 _ACTIVITY_TYPE = ["call", "email", "meeting", "task", "demo"]
 _ACTIVITY_PRIORITY = ["low", "medium", "high", "urgent"]
+_DEAL_STAGES = ["prospecting", "qualified", "negotiation", "contract_sent", "won", "lost"]
+_DEAL_STATUS = ["open", "won", "lost"]
+
+_DATE_FORMATS = [
+    "%Y-%m-%dT%H:%M:%SZ",
+    "%Y.%m.%d %H:%M:%S",
+    "%m/%d/%Y %H:%M",
+    "%Y-%m-%d %H:%M:%S",
+    "%Y-%m-%d",
+]
+
+_COMPANY_POOL = [
+    "Apex Technologies",
+    "Silver Ventures",
+    "Blue Harbor Systems",
+    "Summit Analytics",
+    "Northstar Dynamics",
+    "Cedar Point Labs",
+    "Nimbus Industrial",
+    "Atlas Retail Group",
+    "Beacon Logistics",
+    "Evergreen Capital",
+]
+
+_ALLOWED_STATUS = {
+    "customers": {"active", "inactive", "churned"},
+    "leads": {"new", "contacted", "qualified", "converted", "disqualified"},
+    "activities": {"pending", "done", "overdue", "cancelled"},
+    "deals": {"open", "won", "lost"},
+}
+
+_DEFAULT_STATUS = {
+    "customers": "active",
+    "leads": "new",
+    "activities": "pending",
+    "deals": "open",
+}
+
+_COUNTRY_ALIASES = {
+    "us": "US",
+    "usa": "US",
+    "united states": "US",
+    "gb": "GB",
+    "uk": "GB",
+    "united kingdom": "GB",
+    "eg": "EG",
+    "egypt": "EG",
+    "ae": "AE",
+    "uae": "AE",
+    "united arab emirates": "AE",
+}
+
+_NONSENSE_STRINGS = {
+    "phone missing",
+    "000-000",
+    "000000",
+    "0000000000",
+    "none",
+    "null",
+    "n/a",
+    "na",
+}
+
+_DATE_FIELDS = [
+    "created_at",
+    "created_date",
+    "updated_at",
+    "last_activity_at",
+    "due_date",
+    "completed_at",
+    "deleted_at",
+    "expected_close_date",
+    "last_synced_at",
+]
 
 
 _TASKS: List[asyncio.Task] = []
 _STOP_EVENT = asyncio.Event()
 _LOCK = asyncio.Lock()
 _EVENT_SEQUENCE = 0
+
+_CREATION_PATTERN = {"name": "normal", "remaining": 0, "source": None}
+_MUTATION_PATTERN = {"name": "normal", "remaining": 0, "source": None}
+
+LATE_ARRIVAL_CREATE_RATE = 0.18
+LATE_UPDATE_PICK_RATE = 0.34
+PARTIAL_UPDATE_EVENT_RATE = 0.24
+DUPLICATE_EVENT_RATE = 0.10
 
 _ID_COUNTERS = {entity: 0 for entity in _ENTITY_CONFIG}
 _USED_IDS = {entity: set() for entity in _ENTITY_CONFIG}
@@ -91,6 +174,195 @@ def _entity_can_grow(entity: str) -> bool:
 
     current_count = len(DATA_STORE.get(LIVE_VERSION, {}).get(entity, []))
     return current_count < limit
+
+
+def _clamp_probability(value: float, low: float = 0.0, high: float = 1.0) -> float:
+    return max(low, min(high, value))
+
+
+def _parse_datetime(value: Any) -> Optional[datetime]:
+    if value is None:
+        return None
+
+    if isinstance(value, (int, float)):
+        if value > 0:
+            return datetime.fromtimestamp(float(value), tz=timezone.utc)
+        return None
+
+    if not isinstance(value, str):
+        return None
+
+    raw = value.strip()
+    if not raw:
+        return None
+
+    if raw.isdigit():
+        return datetime.fromtimestamp(float(raw), tz=timezone.utc)
+
+    try:
+        iso_raw = raw.replace("Z", "+00:00") if raw.endswith("Z") else raw
+        parsed = datetime.fromisoformat(iso_raw)
+        if parsed.tzinfo is None:
+            return parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc)
+    except ValueError:
+        pass
+
+    for pattern in _DATE_FORMATS:
+        try:
+            parsed = datetime.strptime(raw, pattern)
+            return parsed.replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+
+    return None
+
+
+def _record_age_days(record: Dict[str, Any]) -> int:
+    created_value = record.get("created_at")
+    if created_value is None:
+        created_value = record.get("created_date")
+    if created_value is None:
+        created_value = record.get("updated_at")
+
+    parsed = _parse_datetime(created_value)
+    if parsed is None:
+        return 90
+
+    delta = datetime.now(timezone.utc) - parsed
+    return max(0, int(delta.total_seconds() / 86400))
+
+
+def _record_stale_days(record: Dict[str, Any]) -> int:
+    last_sync_value = record.get("last_synced_at")
+    if last_sync_value is None:
+        last_sync_value = record.get("updated_at")
+
+    parsed = _parse_datetime(last_sync_value)
+    if parsed is None:
+        return 30
+
+    delta = datetime.now(timezone.utc) - parsed
+    return max(0, int(delta.total_seconds() / 86400))
+
+
+def _age_multiplier(age_days: int) -> float:
+    if age_days <= 30:
+        return 0.75
+    if age_days <= 180:
+        return 1.0
+    if age_days <= 365:
+        return 1.22
+    if age_days <= 730:
+        return 1.45
+    return 1.7
+
+
+def _source_cleanliness(source: str) -> float:
+    source_key = source.lower()
+    profile_map = {
+        "salesforce": 0.75,
+        "hubspot": 0.95,
+        "zoho": 1.1,
+        "pipedrive": 1.15,
+        "internal_crm": 1.25,
+        "manual_entry": 1.5,
+    }
+    return profile_map.get(source_key, 1.1)
+
+
+def _apply_dirty_evolution(record: Dict[str, Any], entity: str, source: str) -> None:
+    profile = _source_profile(source)
+    age_days = _record_age_days(record)
+    stale_days = _record_stale_days(record)
+
+    age_factor = _age_multiplier(age_days)
+    stale_factor = 1.0 + min(0.8, stale_days / 220.0)
+    source_factor = _source_cleanliness(source)
+
+    decay_optional_fields = {
+        "customers": ["external_id", "phone", "owner_id", "source_record_id", "last_activity_at"],
+        "leads": ["campaign", "phone", "owner_id", "source_record_id", "contact_id"],
+        "activities": ["notes", "owner_id", "completed_at", "source_record_id"],
+        "deals": ["expected_close_date", "contact", "owner_id", "source_record_id", "currency"],
+    }
+
+    options = decay_optional_fields.get(entity, [])
+
+    missing_chance = _clamp_probability(
+        profile["missing_field"] * age_factor * source_factor * 0.45 + (stale_days / 1500.0)
+    )
+    null_chance = _clamp_probability(
+        profile["null_field"] * age_factor * source_factor * 0.55 + (stale_days / 1800.0)
+    )
+    casing_chance = _clamp_probability(profile["casing"] * age_factor * source_factor * 0.65)
+    stale_sync_chance = _clamp_probability(profile["stale"] * stale_factor * source_factor * 0.7)
+
+    if options and random.random() < missing_chance:
+        remove_field = random.choice(options)
+        record.pop(remove_field, None)
+
+    if options and random.random() < null_chance:
+        null_field = random.choice(options)
+        record[null_field] = None
+
+    if random.random() < casing_chance:
+        for field_name in ["source_system", "type", "priority"]:
+            if field_name in record and isinstance(record.get(field_name), str):
+                record[field_name] = _random_case(record[field_name])
+
+    if random.random() < stale_sync_chance:
+        record["sync_status"] = random.choices(
+            ["pending", "failed", "ok", "synced"],
+            weights=[0.35, 0.3, 0.2, 0.15],
+            k=1,
+        )[0]
+        record["last_synced_at"] = _past_iso(20, 220)
+
+
+def _decrement_pattern(pattern: Dict[str, Any]) -> None:
+    if pattern["remaining"] > 0:
+        pattern["remaining"] -= 1
+    if pattern["remaining"] <= 0:
+        pattern["name"] = "normal"
+        pattern["remaining"] = 0
+        pattern["source"] = None
+
+
+def _maybe_start_creation_pattern() -> None:
+    if _CREATION_PATTERN["remaining"] > 0:
+        return
+    if random.random() >= 0.14:
+        return
+
+    mode = random.choices(
+        ["lead_campaign_burst", "activity_burst"],
+        weights=[0.58, 0.42],
+        k=1,
+    )[0]
+    _CREATION_PATTERN["name"] = mode
+    _CREATION_PATTERN["remaining"] = random.randint(3, 7)
+
+    if mode == "lead_campaign_burst":
+        _CREATION_PATTERN["source"] = random.choice(["hubspot", "manual_entry", "internal_crm"])
+    else:
+        _CREATION_PATTERN["source"] = random.choice(["salesforce", "internal_crm", "manual_entry"])
+
+
+def _maybe_start_mutation_pattern() -> None:
+    if _MUTATION_PATTERN["remaining"] > 0:
+        return
+    if random.random() >= 0.13:
+        return
+
+    mode = random.choices(
+        ["pipeline_shift", "sync_batch"],
+        weights=[0.52, 0.48],
+        k=1,
+    )[0]
+    _MUTATION_PATTERN["name"] = mode
+    _MUTATION_PATTERN["remaining"] = random.randint(2, 5)
+    _MUTATION_PATTERN["source"] = _choose_source()
 
 
 def _now_iso() -> str:
@@ -155,30 +427,57 @@ def _random_name_parts() -> Tuple[str, str]:
 
 
 def _random_company_name() -> str:
+    if random.random() < 0.85:
+        return random.choice(_COMPANY_POOL)
     return f"{random.choice(_LAST_NAMES)} {random.choice(_COMPANY_SUFFIX)}"
 
 
-def _random_phone() -> str:
-    if random.random() < 0.15:
-        return f"+1-{random.randint(200, 999)}-{random.randint(100, 999)}-{random.randint(1000, 9999)}"
-    if random.random() < 0.25:
-        return f"({random.randint(200, 999)}){random.randint(100, 999)}-{random.randint(1000, 9999)}"
-    return f"{random.randint(200, 999)}-{random.randint(100, 999)}-{random.randint(1000, 9999)}"
+def _random_hex_id(length: int = 12) -> str:
+    alphabet = "0123456789abcdef"
+    return "".join(random.choice(alphabet) for _ in range(length))
 
 
-def _invalid_email(base_email: str) -> str:
-    options = [
-        "",
-        "unknown",
-        base_email.replace("@", " at "),
-        base_email.split("@")[0],
-        f"{base_email} ",
-    ]
-    return random.choice(options)
+def _normalize_country_code(value: Any) -> Optional[str]:
+    if value is None:
+        return None
+    text = str(value).strip().lower()
+    if not text:
+        return None
+    return _COUNTRY_ALIASES.get(text)
 
 
-def _build_email(first_name: str, last_name: str) -> str:
-    return f"{first_name.lower()}.{last_name.lower()}@{random.choice(_EMAIL_DOMAINS)}"
+def _random_phone(country_code: Optional[str] = None) -> Optional[str]:
+    code = _normalize_country_code(country_code) or random.choice(["US", "GB", "EG", "AE"])
+
+    if code == "US":
+        return f"({random.randint(200, 999)}) {random.randint(100, 999)}-{random.randint(1000, 9999)}"
+    if code == "GB":
+        return f"+44 {random.randint(1000, 9999)} {random.randint(100000, 999999)}"
+    if code == "EG":
+        return f"+20 {random.randint(100, 999)} {random.randint(1000000, 9999999)}"
+    return f"+971 {random.randint(50, 58)} {random.randint(1000000, 9999999)}"
+
+
+def _company_domain(company_name: Optional[str]) -> str:
+    base = "apextechnologies"
+    if isinstance(company_name, str) and company_name.strip():
+        cleaned = "".join(ch.lower() for ch in company_name if ch.isalnum())
+        if len(cleaned) >= 4:
+            base = cleaned
+    return f"{base}.com"
+
+
+def _build_email(first_name: str, last_name: str, company_name: Optional[str] = None) -> str:
+    first = "".join(ch.lower() for ch in str(first_name) if ch.isalnum())
+    last = "".join(ch.lower() for ch in str(last_name) if ch.isalnum())
+
+    if not first:
+        first = "x"
+    if not last:
+        last = "user"
+
+    local = f"{first[0]}.{last}"
+    return f"{local}@{_company_domain(company_name)}"
 
 
 def _pick_owner_id(source: str) -> Optional[str]:
@@ -213,15 +512,7 @@ def _pick_related_id(entity: str, broken_rate: float = 0.02) -> Optional[str]:
         if record_id:
             return record_id
 
-    prefix_map = {
-        "companies": "comp_",
-        "contacts": "cont_",
-        "customers": "cust_",
-        "leads": "lead_",
-        "deals": "deal_",
-    }
-    prefix = prefix_map.get(entity, "badref_")
-    return f"{prefix}{random.randint(900000, 999999)}"
+    return _random_hex_id(12)
 
 
 def _pick_company_details(broken_rate: float = 0.02) -> Tuple[Optional[str], str]:
@@ -232,15 +523,275 @@ def _pick_company_details(broken_rate: float = 0.02) -> Tuple[Optional[str], str
         company_name = company.get("name") or company.get("legal_name") or _random_company_name()
         return company_id, company_name
 
-    return f"comp_{random.randint(900000, 999999)}", _random_company_name()
+    return _random_hex_id(12), _random_company_name()
 
 
 def _sync_status_for_source(source: str) -> str:
-    if source == "manual_entry":
+    source_key = _normalize_source(source)
+    if source_key == "manual_entry":
         return random.choices(["pending", "failed", "synced", "ok"], weights=[0.35, 0.25, 0.25, 0.15], k=1)[0]
-    if source in {"pipedrive", "internal_crm"}:
+    if source_key in {"pipedrive", "internal_crm"}:
         return random.choices(["synced", "ok", "pending", "failed"], weights=[0.45, 0.2, 0.25, 0.1], k=1)[0]
     return random.choices(["synced", "ok", "pending", "failed"], weights=[0.65, 0.2, 0.12, 0.03], k=1)[0]
+
+
+def _lead_status_for_source(source: str) -> str:
+    source_key = _normalize_source(source)
+    if source_key == "manual_entry":
+        return random.choices(
+            ["new", "contacted", "qualified", "converted", "disqualified"],
+            weights=[0.40, 0.28, 0.17, 0.06, 0.09],
+            k=1,
+        )[0]
+    if source_key in {"hubspot", "internal_crm"}:
+        return random.choices(
+            ["new", "contacted", "qualified", "converted", "disqualified"],
+            weights=[0.28, 0.27, 0.25, 0.12, 0.08],
+            k=1,
+        )[0]
+    return random.choices(
+        ["new", "contacted", "qualified", "converted", "disqualified"],
+        weights=[0.18, 0.24, 0.29, 0.19, 0.10],
+        k=1,
+    )[0]
+
+
+def _creation_weights_and_batch() -> Tuple[Dict[str, float], int, Optional[str]]:
+    _maybe_start_creation_pattern()
+
+    mode = _CREATION_PATTERN["name"]
+    source = _CREATION_PATTERN["source"]
+
+    if mode == "lead_campaign_burst":
+        batch = random.randint(2, 5)
+        return ({"customers": 0.12, "leads": 0.70, "activities": 0.18}, batch, source)
+
+    if mode == "activity_burst":
+        batch = random.randint(2, 4)
+        return ({"customers": 0.08, "leads": 0.20, "activities": 0.72}, batch, source)
+
+    batch = 2 if random.random() < 0.16 else 1
+    return ({"customers": 0.14, "leads": 0.52, "activities": 0.34}, batch, None)
+
+
+def _creation_timestamp_for_source(source: str) -> str:
+    source_key = _normalize_source(source)
+
+    if random.random() < LATE_ARRIVAL_CREATE_RATE:
+        if source_key == "manual_entry":
+            return _past_iso(45, 420)
+        if source_key == "internal_crm":
+            return _past_iso(30, 320)
+        if source_key == "hubspot":
+            return _past_iso(20, 240)
+        return _past_iso(10, 180)
+
+    if source_key == "manual_entry" and random.random() < 0.35:
+        return _past_iso(5, 120)
+    if source_key == "internal_crm" and random.random() < 0.22:
+        return _past_iso(3, 75)
+    if source_key == "hubspot" and random.random() < 0.14:
+        return _past_iso(2, 30)
+    return _now_iso()
+
+
+def _pick_pattern_filtered_record(
+    entity: str,
+    source: Optional[str],
+    prefer_old: bool = False,
+) -> Optional[Dict[str, Any]]:
+    records = DATA_STORE.get(LIVE_VERSION, {}).get(entity, [])
+    if not records:
+        return None
+
+    pool = records
+
+    if source:
+        source_key = _normalize_source(source)
+        filtered = [
+            rec for rec in records
+            if _normalize_source(rec.get("source_system")) == source_key
+        ]
+        if filtered:
+            pool = filtered
+
+    if prefer_old and random.random() < LATE_UPDATE_PICK_RATE:
+        old_candidates = [
+            rec for rec in pool
+            if _record_age_days(rec) >= random.randint(120, 540)
+        ]
+        if old_candidates:
+            return random.choice(old_candidates)
+
+    return random.choice(pool)
+
+
+def _normalize_bool_value(value: Any) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return value != 0
+    if isinstance(value, str):
+        lowered = value.strip().lower()
+        if lowered in {"true", "1", "yes", "y"}:
+            return True
+        if lowered in {"false", "0", "no", "n", ""}:
+            return False
+    return bool(value)
+
+
+def _normalize_date_value(value: Any) -> Optional[str]:
+    if value is None:
+        return None
+
+    parsed = _parse_datetime(value)
+    if parsed is None:
+        return None
+
+    now_dt = datetime.now(timezone.utc)
+    if parsed > now_dt:
+        parsed = now_dt
+
+    return parsed.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def _normalize_phone_value(value: Any, country_hint: Optional[str] = None) -> Optional[str]:
+    if value is None:
+        return None
+
+    text = str(value).strip()
+    if not text:
+        return None
+
+    if text.lower() in _NONSENSE_STRINGS:
+        return None
+
+    digits = "".join(ch for ch in text if ch.isdigit())
+    if not digits:
+        return None
+
+    if len(digits) == 10:
+        return f"({digits[0:3]}) {digits[3:6]}-{digits[6:10]}"
+    if len(digits) == 11 and digits[0] == "1":
+        return f"+1-{digits[1:4]}-{digits[4:7]}-{digits[7:11]}"
+    if 8 <= len(digits) <= 15:
+        return _random_phone(country_hint)
+
+    return None
+
+
+def _normalize_email_value(value: Any) -> Optional[str]:
+    if value is None:
+        return None
+
+    text = str(value).strip().lower()
+    if not text:
+        return None
+
+    if text in _NONSENSE_STRINGS:
+        return None
+
+    if "@" not in text:
+        return None
+
+    local, domain = text.split("@", 1)
+    local = local.strip()
+    domain = domain.strip()
+
+    if not local or not domain:
+        return None
+    if "." not in domain:
+        return None
+    if " " in local or " " in domain:
+        return None
+
+    return f"{local}@{domain}"
+
+
+def _sanitize_record(entity: str, record: Dict[str, Any]) -> None:
+    if not isinstance(record, dict):
+        return
+
+    for key, value in list(record.items()):
+        if isinstance(value, str):
+            stripped = value.strip()
+            if not stripped or stripped.lower() in _NONSENSE_STRINGS:
+                record[key] = None
+            else:
+                record[key] = stripped
+        elif isinstance(value, dict):
+            for sub_key, sub_value in list(value.items()):
+                if isinstance(sub_value, str):
+                    sub_text = sub_value.strip()
+                    value[sub_key] = sub_text if sub_text else None
+
+    if "country" in record:
+        normalized_country = _normalize_country_code(record.get("country"))
+        record["country"] = normalized_country or "US"
+
+    for phone_field in ["phone", "phone_number"]:
+        if phone_field in record:
+            record[phone_field] = _normalize_phone_value(record.get(phone_field), record.get("country"))
+
+    if "email" in record:
+        normalized_email = _normalize_email_value(record.get("email"))
+        if normalized_email is None:
+            first_name = str(record.get("first_name") or "john")
+            last_name = str(record.get("last_name") or "smith")
+            company_name = record.get("company_name") or record.get("name")
+            normalized_email = _build_email(first_name, last_name, str(company_name) if company_name else None)
+        record["email"] = normalized_email
+
+    status_values = _ALLOWED_STATUS.get(entity)
+    if status_values and "status" in record:
+        current_status = str(record.get("status") or "").strip().lower()
+        if current_status in status_values:
+            record["status"] = current_status
+        else:
+            record["status"] = _DEFAULT_STATUS.get(entity, "active")
+
+    if entity == "leads":
+        for lead_status_field in ["lead_status", "leadStatus"]:
+            if lead_status_field in record:
+                status_text = str(record.get(lead_status_field) or "").strip().lower()
+                if status_text in _ALLOWED_STATUS["leads"]:
+                    record[lead_status_field] = status_text
+                else:
+                    record[lead_status_field] = "new"
+
+    if entity == "deals":
+        if "Stage" in record and "stage" not in record:
+            record["stage"] = record.pop("Stage")
+        if "stage" in record:
+            stage_text = str(record.get("stage") or "").strip().lower()
+            if stage_text not in _DEAL_STAGES:
+                stage_text = "prospecting"
+            record["stage"] = stage_text
+
+    if "sync_status" in record and isinstance(record.get("sync_status"), str):
+        sync_text = str(record.get("sync_status") or "").strip().lower()
+        if sync_text not in {"synced", "ok", "pending", "failed"}:
+            sync_text = "pending"
+        record["sync_status"] = sync_text
+
+    for date_field in _DATE_FIELDS:
+        if date_field in record:
+            record[date_field] = _normalize_date_value(record.get(date_field))
+
+    if "is_deleted" in record:
+        record["is_deleted"] = _normalize_bool_value(record.get("is_deleted"))
+    elif record.get("deleted_at"):
+        record["is_deleted"] = True
+
+
+def _sanitize_live_dataset() -> None:
+    version_bucket = DATA_STORE.setdefault(LIVE_VERSION, {})
+    for entity_name, records in version_bucket.items():
+        if not isinstance(records, list):
+            continue
+        for record in records:
+            if isinstance(record, dict):
+                _sanitize_record(entity_name, record)
 
 
 def _sync_version() -> Any:
@@ -274,11 +825,8 @@ def _refresh_id_tracking() -> None:
 
 
 def _next_primary_id(entity: str) -> str:
-    prefix = _ENTITY_CONFIG[entity]["prefix"]
-
     while True:
-        _ID_COUNTERS[entity] += 1
-        candidate = f"{prefix}{_ID_COUNTERS[entity]:06d}"
+        candidate = _random_hex_id(12)
         if candidate not in _USED_IDS[entity]:
             _USED_IDS[entity].add(candidate)
             return candidate
@@ -286,40 +834,35 @@ def _next_primary_id(entity: str) -> str:
 
 def _apply_messiness(record: Dict[str, Any], entity: str, source: str) -> None:
     profile = _source_profile(source)
+    source_factor = _source_cleanliness(source)
 
     optional_fields = {
         "customers": ["external_id", "phone", "owner_id", "source_record_id"],
         "leads": ["campaign", "owner_id", "source_record_id", "phone"],
         "activities": ["notes", "owner_id", "completed_at", "source_record_id"],
+        "deals": ["expected_close_date", "owner_id", "source_record_id", "currency"],
     }
 
     options = optional_fields.get(entity, [])
 
-    if options and random.random() < profile["missing_field"]:
+    if options and random.random() < _clamp_probability(profile["missing_field"] * source_factor * 0.85):
         field_to_drop = random.choice(options)
         if field_to_drop in record:
             record.pop(field_to_drop, None)
 
-    if options and random.random() < profile["null_field"]:
+    if options and random.random() < _clamp_probability(profile["null_field"] * source_factor * 0.9):
         field_to_null = random.choice(options)
         record[field_to_null] = None
 
-    if "email" in record and isinstance(record.get("email"), str) and random.random() < profile["invalid_email"]:
-        record["email"] = _invalid_email(record["email"])
-
-    if random.random() < profile["casing"]:
-        for field in ["status", "lead_status", "type", "sync_status"]:
-            if field in record and isinstance(record.get(field), str):
-                record[field] = _random_case(record[field])
-
-    if "source_system" in record and random.random() < profile["casing"]:
+    if "source_system" in record and random.random() < _clamp_probability(profile["casing"] * source_factor):
         record["source_system"] = _source_label(source, 1.0)
 
 
-def _create_customer() -> Dict[str, Any]:
-    source = _choose_source()
+def _create_customer(source_override: Optional[str] = None) -> Dict[str, Any]:
+    source = _normalize_source(source_override) if source_override else _choose_source()
     profile = _source_profile(source)
-    now_value = _now_iso()
+    created_value = _creation_timestamp_for_source(source)
+    updated_value = _now_iso() if random.random() < 0.72 else created_value
 
     customer_id = _next_primary_id("customers")
     first_name, last_name = _random_name_parts()
@@ -330,15 +873,15 @@ def _create_customer() -> Dict[str, Any]:
         "customer_id": customer_id,
         "external_id": f"EXT-{random.randint(1000, 9999)}",
         "name": company_name,
-        "email": _build_email(first_name, last_name),
-        "phone": _random_phone(),
+        "email": _build_email(first_name, last_name, company_name),
+        "phone": _random_phone("US"),
         "status": random.choice(_CUSTOMER_STATUS),
         "company_id": company_id,
         "owner_id": _pick_owner_id(source),
-        "created_at": now_value,
-        "updated_at": now_value,
-        "last_activity_at": now_value,
-        "country": random.choice(["US", "usa", "united states", "gb", "eg", "de"]),
+        "created_at": created_value,
+        "updated_at": updated_value,
+        "last_activity_at": _past_iso(0, 30) if random.random() < 0.45 else updated_value,
+        "country": random.choice(["US", "GB", "EG", "AE"]),
         "source_system": _source_label(source, profile["casing"]),
         "source_record_id": f"SRC-{random.randint(10000, 99999)}",
         "sync_status": _sync_status_for_source(source),
@@ -346,17 +889,16 @@ def _create_customer() -> Dict[str, Any]:
         "last_synced_at": _sync_timestamp(profile["stale"]),
     }
 
-    if random.random() < 0.08:
-        record["created_date"] = record.pop("created_at")
-
     _apply_messiness(record, "customers", source)
+    _sanitize_record("customers", record)
     return record
 
 
-def _create_lead() -> Dict[str, Any]:
-    source = _choose_source()
+def _create_lead(source_override: Optional[str] = None) -> Dict[str, Any]:
+    source = _normalize_source(source_override) if source_override else _choose_source()
     profile = _source_profile(source)
-    now_value = _now_iso()
+    created_value = _creation_timestamp_for_source(source)
+    updated_value = _now_iso() if random.random() < 0.76 else created_value
 
     lead_id = _next_primary_id("leads")
     first_name, last_name = _random_name_parts()
@@ -369,17 +911,17 @@ def _create_lead() -> Dict[str, Any]:
         "first_name": first_name,
         "last_name": last_name,
         "contact_name": f"{contact_first} {contact_last}",
-        "email": _build_email(first_name, last_name),
-        "phone": _random_phone(),
+        "email": _build_email(first_name, last_name, company_name),
+        "phone": _random_phone("US"),
         "company_name": company_name,
         "company_id": company_id,
         "contact_id": _pick_related_id("contacts", profile["broken_ref"]),
-        "lead_status": random.choice(_LEAD_STATUS),
+        "lead_status": _lead_status_for_source(source),
         "score": random.randint(1, 100),
         "campaign": random.choice(["webinar", "referral", "paid_search", "event", "outbound"]),
         "owner_id": _pick_owner_id(source),
-        "created_at": now_value,
-        "updated_at": now_value,
+        "created_at": created_value,
+        "updated_at": updated_value,
         "source_system": _source_label(source, profile["casing"]),
         "source_record_id": f"SRC-{random.randint(10000, 99999)}",
         "sync_status": _sync_status_for_source(source),
@@ -387,22 +929,24 @@ def _create_lead() -> Dict[str, Any]:
         "last_synced_at": _sync_timestamp(profile["stale"]),
     }
 
-    if random.random() < 0.06:
-        record["leadStatus"] = record.pop("lead_status")
-
     _apply_messiness(record, "leads", source)
+    _sanitize_record("leads", record)
     return record
 
 
-def _create_activity() -> Dict[str, Any]:
-    source = _choose_source()
+def _create_activity(source_override: Optional[str] = None) -> Dict[str, Any]:
+    source = _normalize_source(source_override) if source_override else _choose_source()
     profile = _source_profile(source)
-    now_value = _now_iso()
+    created_value = _creation_timestamp_for_source(source)
+    updated_value = _now_iso() if random.random() < 0.8 else created_value
 
     activity_id = _next_primary_id("activities")
-    status = random.choice(_ACTIVITY_STATUS)
+    if source == "manual_entry":
+        status = random.choices(_ACTIVITY_STATUS, weights=[0.45, 0.15, 0.3, 0.1], k=1)[0]
+    else:
+        status = random.choice(_ACTIVITY_STATUS)
     activity_type = random.choice(_ACTIVITY_TYPE)
-    due_date = _future_iso(-2, 21)
+    due_date = _past_iso(0, 10)
 
     relation_choices = [
         ("contact_id", "contacts"),
@@ -426,10 +970,10 @@ def _create_activity() -> Dict[str, Any]:
         "status": status,
         "priority": random.choice(_ACTIVITY_PRIORITY),
         "owner_id": _pick_owner_id(source),
-        "created_at": now_value,
-        "updated_at": now_value,
+        "created_at": created_value,
+        "updated_at": updated_value,
         "due_date": due_date,
-        "completed_at": now_value if status == "done" and random.random() < 0.7 else None,
+        "completed_at": updated_value if status == "done" and random.random() < 0.7 else None,
         relation_field: _pick_related_id(relation_entity, profile["broken_ref"]),
         "notes": random.choice([
             "Customer requested pricing clarification.",
@@ -445,30 +989,95 @@ def _create_activity() -> Dict[str, Any]:
     }
 
     _apply_messiness(record, "activities", source)
+    _sanitize_record("activities", record)
     return record
 
 
 def _set_update_timestamp(record: Dict[str, Any], source: str) -> None:
     profile = _source_profile(source)
-    if random.random() < profile["stale"] * 0.35:
-        record["updated_at"] = _past_iso(15, 120)
+    age_days = _record_age_days(record)
+    stale_days = _record_stale_days(record)
+    age_factor = _age_multiplier(age_days)
+    stale_factor = 1.0 + min(0.8, stale_days / 210.0)
+
+    if random.random() < _clamp_probability(profile["stale"] * 0.22 * age_factor * stale_factor):
+        record["updated_at"] = _past_iso(6, 180)
     else:
         record["updated_at"] = _now_iso()
 
 
+def _pick_deal_stage_field(record: Dict[str, Any]) -> str:
+    if "stage" in record:
+        return "stage"
+    if "Stage" in record:
+        return "Stage"
+    record["stage"] = random.choice(_DEAL_STAGES)
+    return "stage"
+
+
+def _stage_to_probability(stage: str) -> int:
+    table = {
+        "prospecting": 20,
+        "qualified": 40,
+        "negotiation": 65,
+        "contract_sent": 80,
+        "won": 100,
+        "lost": 10,
+    }
+    return table.get(stage, random.randint(20, 75))
+
+
+def _apply_pipeline_shift_to_deal(record: Dict[str, Any], source: str, burst_mode: bool = False) -> None:
+    stage_field = _pick_deal_stage_field(record)
+    current_stage = str(record.get(stage_field) or "prospecting").lower()
+
+    if current_stage in _DEAL_STAGES and random.random() < (0.75 if burst_mode else 0.55):
+        stage_index = _DEAL_STAGES.index(current_stage)
+        next_index = min(stage_index + random.choice([0, 1, 1, 2]), len(_DEAL_STAGES) - 1)
+        next_stage = _DEAL_STAGES[next_index]
+    else:
+        next_stage = random.choice(_DEAL_STAGES)
+
+    record[stage_field] = next_stage
+
+    if next_stage == "won":
+        status_value = "won"
+    elif next_stage == "lost":
+        status_value = "lost"
+    else:
+        status_value = "open"
+
+    record["status"] = status_value
+
+    probability = _stage_to_probability(next_stage)
+    if random.random() < 0.22:
+        record["probability"] = str(probability)
+    else:
+        record["probability"] = probability
+
+
 def _mutate_customer(record: Dict[str, Any], source: str) -> None:
-    action = random.choice(["status", "email", "sync", "partial", "activity_time"])
+    source_factor = _source_cleanliness(source)
+    age_factor = _age_multiplier(_record_age_days(record))
+
+    action = random.choices(
+        ["status", "email", "sync", "partial", "activity_time"],
+        weights=[
+            1.0,
+            0.9,
+            0.9,
+            0.65 * source_factor * age_factor,
+            1.1,
+        ],
+        k=1,
+    )[0]
 
     if action == "status":
         record["status"] = random.choice(_CUSTOMER_STATUS)
-        if random.random() < _source_profile(source)["casing"]:
-            record["status"] = _random_case(record["status"])
     elif action == "email":
         first_name, last_name = _random_name_parts()
-        if random.random() < _source_profile(source)["invalid_email"]:
-            record["email"] = _invalid_email(_build_email(first_name, last_name))
-        else:
-            record["email"] = _build_email(first_name, last_name)
+        company_name = record.get("company_name") or record.get("name")
+        record["email"] = _build_email(first_name, last_name, str(company_name) if company_name else None)
     elif action == "sync":
         record["sync_status"] = _sync_status_for_source(source)
         record["last_synced_at"] = _sync_timestamp(_source_profile(source)["stale"])
@@ -485,17 +1094,30 @@ def _mutate_customer(record: Dict[str, Any], source: str) -> None:
         else:
             record["last_activity_at"] = _past_iso(0, 3)
 
+    _apply_dirty_evolution(record, "customers", source)
     _set_update_timestamp(record, source)
+    _sanitize_record("customers", record)
 
 
 def _mutate_lead(record: Dict[str, Any], source: str) -> None:
-    action = random.choice(["status", "score", "email", "refs", "partial"])
+    source_factor = _source_cleanliness(source)
+    age_factor = _age_multiplier(_record_age_days(record))
+
+    action = random.choices(
+        ["status", "score", "email", "refs", "partial"],
+        weights=[
+            1.25,
+            0.95,
+            0.85,
+            0.75,
+            0.55 * source_factor * age_factor,
+        ],
+        k=1,
+    )[0]
 
     if action == "status":
         field_name = "lead_status" if "lead_status" in record else "leadStatus"
-        record[field_name] = random.choice(_LEAD_STATUS)
-        if random.random() < _source_profile(source)["casing"]:
-            record[field_name] = _random_case(record[field_name])
+        record[field_name] = _lead_status_for_source(source)
     elif action == "score":
         if random.random() < 0.15:
             record["score"] = None
@@ -506,11 +1128,8 @@ def _mutate_lead(record: Dict[str, Any], source: str) -> None:
     elif action == "email":
         first_name = record.get("first_name") or random.choice(_FIRST_NAMES)
         last_name = record.get("last_name") or random.choice(_LAST_NAMES)
-        clean_email = _build_email(str(first_name), str(last_name))
-        if random.random() < _source_profile(source)["invalid_email"]:
-            record["email"] = _invalid_email(clean_email)
-        else:
-            record["email"] = clean_email
+        company_name = record.get("company_name")
+        record["email"] = _build_email(str(first_name), str(last_name), str(company_name) if company_name else None)
     elif action == "refs":
         broken = _source_profile(source)["broken_ref"]
         if random.random() < 0.5:
@@ -526,22 +1145,35 @@ def _mutate_lead(record: Dict[str, Any], source: str) -> None:
         else:
             record.pop(field, None)
 
+    _apply_dirty_evolution(record, "leads", source)
     _set_update_timestamp(record, source)
+    _sanitize_record("leads", record)
 
 
 def _mutate_activity(record: Dict[str, Any], source: str) -> None:
-    action = random.choice(["status", "type", "schedule", "partial", "refs"])
+    source_factor = _source_cleanliness(source)
+    age_factor = _age_multiplier(_record_age_days(record))
+
+    action = random.choices(
+        ["status", "type", "schedule", "partial", "refs"],
+        weights=[
+            0.95,
+            0.9,
+            1.2,
+            0.6 * source_factor * age_factor,
+            0.85,
+        ],
+        k=1,
+    )[0]
 
     if action == "status":
         record["status"] = random.choice(_ACTIVITY_STATUS)
-        if random.random() < _source_profile(source)["casing"]:
-            record["status"] = _random_case(record["status"])
     elif action == "type":
         record["type"] = random.choice(_ACTIVITY_TYPE)
         if random.random() < _source_profile(source)["casing"]:
             record["type"] = _random_case(record["type"])
     elif action == "schedule":
-        record["due_date"] = _future_iso(-3, 20)
+        record["due_date"] = _past_iso(0, 5)
         if record.get("status") == "done" and random.random() < 0.6:
             record["completed_at"] = _past_iso(0, 5)
         elif random.random() < 0.30:
@@ -564,10 +1196,255 @@ def _mutate_activity(record: Dict[str, Any], source: str) -> None:
             record.pop(field_name, None)
         record[relation_field] = _pick_related_id(relation_entity, _source_profile(source)["broken_ref"])
 
+    _apply_dirty_evolution(record, "activities", source)
     _set_update_timestamp(record, source)
+    _sanitize_record("activities", record)
 
 
-def _record_change(event_type: str, entity: str, record: Dict[str, Any]) -> None:
+def _mutate_deal(record: Dict[str, Any], source: str) -> None:
+    source_factor = _source_cleanliness(source)
+    age_factor = _age_multiplier(_record_age_days(record))
+
+    action = random.choices(
+        ["pipeline", "amount", "sync", "partial", "refs"],
+        weights=[
+            1.25,
+            0.75,
+            0.8,
+            0.55 * source_factor * age_factor,
+            0.65,
+        ],
+        k=1,
+    )[0]
+
+    if action == "pipeline":
+        _apply_pipeline_shift_to_deal(record, source)
+    elif action == "amount":
+        base_amount = record.get("amount")
+        try:
+            amount_value = float(base_amount)
+        except (TypeError, ValueError):
+            amount_value = random.uniform(12000.0, 250000.0)
+
+        amount_value = round(amount_value * random.uniform(0.82, 1.22), 2)
+        if random.random() < 0.28:
+            record["amount"] = f"{amount_value:.2f}"
+        else:
+            record["amount"] = amount_value
+    elif action == "sync":
+        record["sync_status"] = _sync_status_for_source(source)
+        record["last_synced_at"] = _sync_timestamp(_source_profile(source)["stale"])
+        record["sync_version"] = _sync_version()
+    elif action == "partial":
+        field = random.choice(["expected_close_date", "owner_id", "source_record_id", "currency", "probability"])
+        if random.random() < 0.5:
+            record[field] = None
+        else:
+            record.pop(field, None)
+    else:
+        if random.random() < 0.45:
+            record["lead_id"] = _pick_related_id("leads", _source_profile(source)["broken_ref"])
+        if random.random() < 0.45:
+            record["contact_id"] = _pick_related_id("contacts", _source_profile(source)["broken_ref"])
+        if random.random() < 0.45:
+            record["customer_id"] = _pick_related_id("customers", _source_profile(source)["broken_ref"])
+
+    _apply_dirty_evolution(record, "deals", source)
+    _set_update_timestamp(record, source)
+    _sanitize_record("deals", record)
+
+
+def _run_pipeline_shift_batch(source: Optional[str]) -> int:
+    updates = 0
+    batch_size = random.randint(3, 8)
+
+    for _ in range(batch_size):
+        target_entity = random.choices(["leads", "deals"], weights=[0.44, 0.56], k=1)[0]
+        record = _pick_pattern_filtered_record(target_entity, source, prefer_old=True)
+        if not record:
+            continue
+
+        source_key = _normalize_source(record.get("source_system") or source)
+
+        if target_entity == "leads":
+            field_name = "lead_status" if "lead_status" in record else "leadStatus"
+            record[field_name] = _lead_status_for_source(source_key)
+            if random.random() < 0.35:
+                record[field_name] = _random_case(record[field_name])
+            if random.random() < 0.5:
+                record["score"] = random.choice([random.randint(1, 100), str(random.randint(1, 100))])
+            _apply_dirty_evolution(record, "leads", source_key)
+        else:
+            _apply_pipeline_shift_to_deal(record, source_key, burst_mode=True)
+            _apply_dirty_evolution(record, "deals", source_key)
+
+        _set_update_timestamp(record, source_key)
+        _sanitize_record(target_entity, record)
+        _record_change("update", target_entity, record)
+        updates += 1
+
+    return updates
+
+
+def _run_sync_batch(source: Optional[str]) -> int:
+    updates = 0
+    batch_size = random.randint(4, 12)
+
+    for _ in range(batch_size):
+        target_entity = random.choices(
+            ["customers", "leads", "activities", "deals"],
+            weights=[0.2, 0.25, 0.3, 0.25],
+            k=1,
+        )[0]
+        record = _pick_pattern_filtered_record(target_entity, source, prefer_old=True)
+        if not record:
+            continue
+
+        source_key = _normalize_source(record.get("source_system") or source)
+
+        if source_key == "salesforce":
+            next_sync = random.choices(["synced", "ok", "pending"], weights=[0.72, 0.2, 0.08], k=1)[0]
+        elif source_key == "manual_entry":
+            next_sync = random.choices(["pending", "failed", "ok", "synced"], weights=[0.4, 0.32, 0.14, 0.14], k=1)[0]
+        elif source_key == "internal_crm":
+            next_sync = random.choices(["pending", "synced", "failed", "ok"], weights=[0.32, 0.38, 0.18, 0.12], k=1)[0]
+        else:
+            next_sync = _sync_status_for_source(source_key)
+
+        record["sync_status"] = next_sync
+        if next_sync in {"pending", "failed"}:
+            record["last_synced_at"] = _past_iso(12, 160)
+        else:
+            record["last_synced_at"] = _past_iso(0, 8)
+        record["sync_version"] = _sync_version()
+
+        _apply_dirty_evolution(record, target_entity, source_key)
+        _set_update_timestamp(record, source_key)
+        _sanitize_record(target_entity, record)
+        _record_change("update", target_entity, record)
+        updates += 1
+
+    return updates
+
+
+def _trim_change_log() -> None:
+    overflow = len(CHANGE_LOG) - MAX_CHANGE_LOG
+    if overflow > 0:
+        del CHANGE_LOG[:overflow]
+
+
+def _entity_id_field(entity: str) -> str:
+    config = _ENTITY_CONFIG.get(entity, {})
+    return str(config.get("id_field") or "id")
+
+
+def _build_partial_event_data(entity: str, record: Dict[str, Any]) -> Dict[str, Any]:
+    if not isinstance(record, dict):
+        return {}
+
+    partial: Dict[str, Any] = {}
+    id_field = _entity_id_field(entity)
+
+    if "id" in record:
+        partial["id"] = copy.deepcopy(record.get("id"))
+    if id_field in record:
+        partial[id_field] = copy.deepcopy(record.get(id_field))
+
+    preferred_fields = [
+        "updated_at",
+        "last_synced_at",
+        "sync_status",
+        "sync_version",
+        "status",
+        "lead_status",
+        "leadStatus",
+        "stage",
+        "Stage",
+        "amount",
+        "probability",
+        "score",
+        "owner_id",
+        "source_system",
+    ]
+
+    selected: List[str] = []
+    for key in preferred_fields:
+        if key in record and key not in partial and random.random() < 0.6:
+            selected.append(key)
+        if len(selected) >= 4:
+            break
+
+    remaining = [
+        key for key in record.keys()
+        if key not in partial and key not in selected
+    ]
+
+    while len(selected) < 2 and remaining:
+        picked = random.choice(remaining)
+        selected.append(picked)
+        remaining.remove(picked)
+
+    if remaining:
+        extra_count = random.randint(0, min(3, len(remaining)))
+        if extra_count > 0:
+            selected.extend(random.sample(remaining, extra_count))
+
+    for key in selected:
+        partial[key] = copy.deepcopy(record.get(key))
+
+    return partial
+
+
+def _mutate_duplicate_payload(entity: str, payload: Dict[str, Any]) -> None:
+    if not isinstance(payload, dict):
+        return
+
+    string_fields = [
+        field for field in ["status", "lead_status", "leadStatus", "stage", "Stage", "sync_status", "type", "priority"]
+        if field in payload and isinstance(payload.get(field), str)
+    ]
+
+    if string_fields and random.random() < 0.7:
+        chosen_field = random.choice(string_fields)
+        payload[chosen_field] = _random_case(str(payload.get(chosen_field)))
+
+    if "sync_version" in payload and random.random() < 0.5:
+        current_sync = payload.get("sync_version")
+        if isinstance(current_sync, int):
+            payload["sync_version"] = str(current_sync)
+        elif isinstance(current_sync, str) and current_sync.isdigit():
+            payload["sync_version"] = int(current_sync)
+
+    if "updated_at" in payload and random.random() < 0.7:
+        payload["updated_at"] = _now_iso() if random.random() < 0.6 else _past_iso(0, 3)
+
+    if "last_synced_at" in payload and random.random() < 0.5:
+        payload["last_synced_at"] = _past_iso(0, 30)
+
+    if "score" in payload and random.random() < 0.35:
+        current_score = payload.get("score")
+        if isinstance(current_score, int):
+            payload["score"] = str(current_score)
+        elif isinstance(current_score, str) and current_score.isdigit():
+            payload["score"] = int(current_score)
+
+    if "amount" in payload and random.random() < 0.35:
+        current_amount = payload.get("amount")
+        if isinstance(current_amount, str):
+            try:
+                payload["amount"] = round(float(current_amount), 2)
+            except ValueError:
+                pass
+        elif isinstance(current_amount, (int, float)):
+            payload["amount"] = f"{float(current_amount):.2f}"
+
+
+def _append_change_event(
+    event_type: str,
+    entity: str,
+    record_id: Any,
+    data: Dict[str, Any],
+) -> None:
     global _EVENT_SEQUENCE
     _EVENT_SEQUENCE += 1
 
@@ -575,15 +1452,34 @@ def _record_change(event_type: str, entity: str, record: Dict[str, Any]) -> None
         "sequence": _EVENT_SEQUENCE,
         "event_type": event_type,
         "entity": _ENTITY_CONFIG[entity]["singular"],
-        "id": record.get("id"),
+        "id": record_id,
         "timestamp": _now_iso(),
-        "data": copy.deepcopy(record),
+        "data": data,
     }
 
     CHANGE_LOG.append(event)
-    overflow = len(CHANGE_LOG) - MAX_CHANGE_LOG
-    if overflow > 0:
-        del CHANGE_LOG[:overflow]
+    _trim_change_log()
+
+
+def _record_change(event_type: str, entity: str, record: Dict[str, Any]) -> None:
+    full_data = copy.deepcopy(record)
+    record_id = full_data.get("id")
+
+    if event_type == "update" and random.random() < PARTIAL_UPDATE_EVENT_RATE:
+        base_data = _build_partial_event_data(entity, full_data)
+    else:
+        base_data = full_data
+
+    _append_change_event(event_type, entity, record_id, base_data)
+
+    if event_type in {"create", "update"} and random.random() < DUPLICATE_EVENT_RATE:
+        if random.random() < 0.55:
+            duplicate_data = _build_partial_event_data(entity, full_data)
+        else:
+            duplicate_data = copy.deepcopy(base_data)
+
+        _mutate_duplicate_payload(entity, duplicate_data)
+        _append_change_event(event_type, entity, record_id, duplicate_data)
 
 
 async def _creation_loop() -> None:
@@ -591,14 +1487,14 @@ async def _creation_loop() -> None:
         while not _STOP_EVENT.is_set():
             await asyncio.sleep(random.uniform(0.5, 2.0))
 
-            batch_size = 2 if random.random() < 0.18 else 1
-
             async with _LOCK:
+                weights_map, batch_size, source_hint = _creation_weights_and_batch()
                 available_entities = [
                     entity for entity in ["customers", "leads", "activities"]
                     if _entity_can_grow(entity)
                 ]
                 if not available_entities:
+                    _decrement_pattern(_CREATION_PATTERN)
                     continue
 
                 version_bucket = DATA_STORE.setdefault(LIVE_VERSION, {})
@@ -611,26 +1507,25 @@ async def _creation_loop() -> None:
                     if not current_available:
                         break
 
-                    weighted_map = {
-                        "customers": 0.34,
-                        "leads": 0.33,
-                        "activities": 0.33,
-                    }
                     entity = random.choices(
                         current_available,
-                        weights=[weighted_map[item] for item in current_available],
+                        weights=[weights_map.get(item, 0.1) for item in current_available],
                         k=1,
                     )[0]
 
+                    source_override = source_hint if source_hint and random.random() < 0.86 else None
+
                     if entity == "customers":
-                        record = _create_customer()
+                        record = _create_customer(source_override=source_override)
                     elif entity == "leads":
-                        record = _create_lead()
+                        record = _create_lead(source_override=source_override)
                     else:
-                        record = _create_activity()
+                        record = _create_activity(source_override=source_override)
 
                     version_bucket.setdefault(entity, []).append(record)
                     _record_change("create", entity, record)
+
+                _decrement_pattern(_CREATION_PATTERN)
     except asyncio.CancelledError:
         return
 
@@ -638,35 +1533,49 @@ async def _creation_loop() -> None:
 async def _mutation_loop() -> None:
     try:
         while not _STOP_EVENT.is_set():
-            await asyncio.sleep(random.uniform(0.7, 2.0))
-
-            entity = random.choices(
-                ["customers", "leads", "activities"],
-                weights=[0.36, 0.33, 0.31],
-                k=1,
-            )[0]
+            await asyncio.sleep(random.uniform(0.6, 1.9))
 
             async with _LOCK:
-                records = DATA_STORE.get(LIVE_VERSION, {}).get(entity, [])
-                if not records:
+                _maybe_start_mutation_pattern()
+
+                mode = _MUTATION_PATTERN["name"]
+                if mode == "pipeline_shift":
+                    _run_pipeline_shift_batch(_MUTATION_PATTERN["source"])
+                    _decrement_pattern(_MUTATION_PATTERN)
+                    continue
+                if mode == "sync_batch":
+                    _run_sync_batch(_MUTATION_PATTERN["source"])
+                    _decrement_pattern(_MUTATION_PATTERN)
                     continue
 
-                record = random.choice(records)
+                entity = random.choices(
+                    ["customers", "leads", "activities", "deals"],
+                    weights=[0.12, 0.16, 0.42, 0.30],
+                    k=1,
+                )[0]
+
+                record = _pick_pattern_filtered_record(entity, None, prefer_old=True)
+                if not record:
+                    continue
+
                 source = _normalize_source(record.get("source_system"))
                 event_type = "update"
 
                 if random.random() < 0.03:
-                    record["is_deleted"] = random.choice([True, 1, "true"])
+                    record["is_deleted"] = True
                     record["deleted_at"] = _now_iso()
                     _set_update_timestamp(record, source)
+                    _sanitize_record(entity, record)
                     event_type = "delete"
                 else:
                     if entity == "customers":
                         _mutate_customer(record, source)
                     elif entity == "leads":
                         _mutate_lead(record, source)
-                    else:
+                    elif entity == "activities":
                         _mutate_activity(record, source)
+                    else:
+                        _mutate_deal(record, source)
 
                 _record_change(event_type, entity, record)
     except asyncio.CancelledError:
@@ -687,7 +1596,14 @@ async def start_stream_engine() -> None:
         DATA_STORE[LIVE_VERSION].setdefault(entity, [])
 
     async with _LOCK:
+        _sanitize_live_dataset()
         _refresh_id_tracking()
+        _CREATION_PATTERN["name"] = "normal"
+        _CREATION_PATTERN["remaining"] = 0
+        _CREATION_PATTERN["source"] = None
+        _MUTATION_PATTERN["name"] = "normal"
+        _MUTATION_PATTERN["remaining"] = 0
+        _MUTATION_PATTERN["source"] = None
 
     _STOP_EVENT.clear()
     _TASKS = [
@@ -714,6 +1630,7 @@ async def stop_stream_engine() -> None:
 async def refresh_stream_state() -> None:
     """Refresh internal counters after external reloads."""
     async with _LOCK:
+        _sanitize_live_dataset()
         _refresh_id_tracking()
 
 
@@ -721,14 +1638,27 @@ async def get_recent_changes(
     limit: int = 100,
     entity: Optional[str] = None,
     event_type: Optional[str] = None,
+    since: Optional[str] = None,
 ) -> List[Dict[str, Any]]:
     """Return latest change events with optional filters."""
     normalized_limit = max(1, min(limit, 500))
     normalized_entity = entity.lower().rstrip("s") if isinstance(entity, str) and entity else None
     normalized_event_type = event_type.lower() if isinstance(event_type, str) and event_type else None
+    parsed_since = _parse_datetime(since) if since else None
+
+    if since and parsed_since is None:
+        raise ValueError("Invalid 'since' timestamp format")
 
     async with _LOCK:
         events = list(CHANGE_LOG)
+
+    if parsed_since is not None:
+        filtered_events: List[Dict[str, Any]] = []
+        for event in events:
+            event_dt = _parse_datetime(event.get("timestamp"))
+            if event_dt and event_dt > parsed_since:
+                filtered_events.append(event)
+        events = filtered_events
 
     if normalized_entity:
         events = [event for event in events if str(event.get("entity", "")).lower() == normalized_entity]
@@ -737,6 +1667,41 @@ async def get_recent_changes(
         events = [event for event in events if str(event.get("event_type", "")).lower() == normalized_event_type]
 
     return events[-normalized_limit:]
+
+
+async def get_batch_export(
+    version: str = LIVE_VERSION,
+    include_static: bool = True,
+) -> Dict[str, Any]:
+    """Return a snapshot export suitable for batch pipeline ingestion tests."""
+    target_version = version if version in DATA_STORE else LIVE_VERSION
+    entities = ["customers", "contacts", "leads", "deals", "activities", "notes", "companies"]
+
+    async with _LOCK:
+        version_bucket = DATA_STORE.get(target_version, {})
+        snapshot_data: Dict[str, List[Dict[str, Any]]] = {}
+        record_counts: Dict[str, int] = {}
+
+        for entity_name in entities:
+            records = version_bucket.get(entity_name, [])
+            snapshot_data[entity_name] = copy.deepcopy(records)
+            record_counts[entity_name] = len(records)
+
+        export_payload: Dict[str, Any] = {
+            "exported_at": _now_iso(),
+            "version": target_version,
+            "record_counts": record_counts,
+            "data": snapshot_data,
+        }
+
+        if include_static:
+            export_payload["static"] = {
+                "owners": copy.deepcopy(data_loader.get_static_data("owners")),
+                "pipeline_stages": copy.deepcopy(data_loader.get_static_data("pipeline_stages")),
+                "sync_status": copy.deepcopy(data_loader.get_static_data("sync_status")),
+            }
+
+    return export_payload
 
 
 def _format_sse(event: Dict[str, Any]) -> str:

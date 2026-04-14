@@ -25,6 +25,7 @@ from stream_engine import (
     stop_stream_engine,
     refresh_stream_state,
     get_recent_changes,
+    get_batch_export,
     sse_event_generator,
 )
 
@@ -88,7 +89,8 @@ async def root():
             "search": "/search?q=query",
             "events": "/events",
             "stream_changes": "/stream/changes",
-            "stream_events": "/stream/events"
+            "stream_events": "/stream/events",
+            "batch_export": "/batch/export"
         },
         "versioning": "Add ?version=v1, ?version=v2, or ?version=v3",
         "pagination": "Add ?page=1&limit=20",
@@ -481,18 +483,36 @@ async def stream_changes(
     limit: int = Query(100, ge=1, le=500, description="How many recent changes to return"),
     entity: Optional[str] = Query(None, description="Optional entity filter"),
     event_type: Optional[str] = Query(None, description="Optional event_type filter"),
+    since: Optional[str] = Query(None, description="Return only events after this timestamp"),
 ):
     """
     Polling-friendly change feed.
 
     Returns the latest in-memory create/update/delete events.
     """
-    events = await get_recent_changes(limit=limit, entity=entity, event_type=event_type)
+    try:
+        events = await get_recent_changes(limit=limit, entity=entity, event_type=event_type, since=since)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
     return {
         "events": events,
         "count": len(events),
         "generated_at": datetime.utcnow().isoformat() + "Z"
     }
+
+
+@app.get("/batch/export")
+async def batch_export(
+    version: str = Query("v3", description="Data version (v1, v2, v3)"),
+    include_static: bool = Query(True, description="Include static reference data"),
+):
+    """
+    Batch snapshot export for ETL and reconciliation tests.
+
+    Returns a point-in-time export of the current in-memory dataset.
+    """
+    return await get_batch_export(version=version, include_static=include_static)
 
 
 @app.get("/stream/events")
