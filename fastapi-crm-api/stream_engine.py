@@ -8,11 +8,18 @@ records in memory. It is intentionally lightweight for serverless runtimes.
 import asyncio
 import copy
 import json
+import os
 import random
 from datetime import datetime, timedelta, timezone
 from typing import Any, Dict, List, Optional, Tuple
 
 from data_loader import data_loader
+
+try:
+    from behavior_extractor import extract_behavior_profile, profile_to_stream_settings
+except Exception:  # pragma: no cover - fallback keeps stream engine resilient.
+    extract_behavior_profile = None
+    profile_to_stream_settings = None
 
 
 LIVE_VERSION = "v3"
@@ -165,6 +172,87 @@ DUPLICATE_EVENT_RATE = 0.10
 
 _ID_COUNTERS = {entity: 0 for entity in _ENTITY_CONFIG}
 _USED_IDS = {entity: set() for entity in _ENTITY_CONFIG}
+
+_STREAM_DYNAMICS: Dict[str, float] = {
+    "burst_probability": 0.14,
+    "silence_probability": 0.08,
+    "out_of_order_probability": 0.07,
+    "activity_event_probability": 0.28,
+    "lead_convert_probability": 0.16,
+    "lead_stall_probability": 0.30,
+    "deal_stall_probability": 0.28,
+    "deal_close_probability": 0.18,
+    "deal_disappear_probability": 0.03,
+    "burst_batch_min": 2,
+    "burst_batch_max": 6,
+    "silence_min_seconds": 2.0,
+    "silence_max_seconds": 9.0,
+}
+
+_STREAM_BEHAVIOR_PROFILE: Dict[str, Any] = {}
+
+
+def _behavior_csv_candidates() -> List[str]:
+    candidates: List[str] = []
+    env_path = os.getenv("CRM_BEHAVIOR_CSV")
+    if env_path:
+        candidates.append(env_path)
+
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+    candidates.append(os.path.join(base_dir, "scripts", "exports", "ali.csv"))
+    candidates.append(os.path.join(base_dir, "scripts", "exports", "crm_behavioral_v3_flat.csv"))
+    candidates.append(os.path.join(base_dir, "scripts", "exports", "customers_realistic_v3.csv"))
+
+    unique: List[str] = []
+    seen = set()
+    for candidate in candidates:
+        normalized = os.path.abspath(candidate)
+        if normalized in seen:
+            continue
+        seen.add(normalized)
+        unique.append(normalized)
+    return unique
+
+
+def _load_stream_dynamics_profile() -> None:
+    global _STREAM_BEHAVIOR_PROFILE
+
+    if extract_behavior_profile is None or profile_to_stream_settings is None:
+        return
+
+    for candidate in _behavior_csv_candidates():
+        if not os.path.isfile(candidate):
+            continue
+
+        profile = extract_behavior_profile(candidate)
+        if not isinstance(profile, dict):
+            continue
+
+        settings = profile_to_stream_settings(profile)
+        if not isinstance(settings, dict):
+            continue
+
+        for key, value in settings.items():
+            if isinstance(value, (int, float)):
+                _STREAM_DYNAMICS[key] = float(value)
+
+        _STREAM_BEHAVIOR_PROFILE = {
+            "csv_path": candidate,
+            "profile": profile,
+        }
+        return
+
+
+async def _sleep_with_stream_dynamics(base_low: float, base_high: float) -> None:
+    if random.random() < _STREAM_DYNAMICS["silence_probability"]:
+        await asyncio.sleep(random.uniform(_STREAM_DYNAMICS["silence_min_seconds"], _STREAM_DYNAMICS["silence_max_seconds"]))
+        return
+
+    if random.random() < _STREAM_DYNAMICS["burst_probability"]:
+        await asyncio.sleep(random.uniform(0.08, 0.35))
+        return
+
+    await asyncio.sleep(random.uniform(base_low, base_high))
 
 
 def _entity_can_grow(entity: str) -> bool:
@@ -1457,7 +1545,13 @@ def _append_change_event(
         "data": data,
     }
 
-    CHANGE_LOG.append(event)
+    if CHANGE_LOG and random.random() < _STREAM_DYNAMICS["out_of_order_probability"]:
+        back_window = min(5, len(CHANGE_LOG))
+        insert_distance = random.randint(1, max(1, back_window))
+        insert_index = max(0, len(CHANGE_LOG) - insert_distance)
+        CHANGE_LOG.insert(insert_index, event)
+    else:
+        CHANGE_LOG.append(event)
     _trim_change_log()
 
 
@@ -1465,30 +1559,41 @@ def _record_change(event_type: str, entity: str, record: Dict[str, Any]) -> None
     full_data = copy.deepcopy(record)
     record_id = full_data.get("id")
 
+    normalized_event_type = event_type
+    if normalized_event_type == "delete":
+        normalized_event_type = "activity"
+    elif normalized_event_type == "update" and random.random() < _STREAM_DYNAMICS["activity_event_probability"]:
+        normalized_event_type = "activity"
+
     if event_type == "update" and random.random() < PARTIAL_UPDATE_EVENT_RATE:
         base_data = _build_partial_event_data(entity, full_data)
     else:
         base_data = full_data
 
-    _append_change_event(event_type, entity, record_id, base_data)
+    _append_change_event(normalized_event_type, entity, record_id, base_data)
 
-    if event_type in {"create", "update"} and random.random() < DUPLICATE_EVENT_RATE:
+    if normalized_event_type in {"create", "update", "activity"} and random.random() < DUPLICATE_EVENT_RATE:
         if random.random() < 0.55:
             duplicate_data = _build_partial_event_data(entity, full_data)
         else:
             duplicate_data = copy.deepcopy(base_data)
 
         _mutate_duplicate_payload(entity, duplicate_data)
-        _append_change_event(event_type, entity, record_id, duplicate_data)
+        _append_change_event(normalized_event_type, entity, record_id, duplicate_data)
 
 
 async def _creation_loop() -> None:
     try:
         while not _STOP_EVENT.is_set():
-            await asyncio.sleep(random.uniform(0.5, 2.0))
+            await _sleep_with_stream_dynamics(0.5, 2.0)
 
             async with _LOCK:
                 weights_map, batch_size, source_hint = _creation_weights_and_batch()
+                if random.random() < _STREAM_DYNAMICS["burst_probability"]:
+                    batch_size = max(
+                        batch_size,
+                        random.randint(int(_STREAM_DYNAMICS["burst_batch_min"]), int(_STREAM_DYNAMICS["burst_batch_max"])),
+                    )
                 available_entities = [
                     entity for entity in ["customers", "leads", "activities"]
                     if _entity_can_grow(entity)
@@ -1533,41 +1638,91 @@ async def _creation_loop() -> None:
 async def _mutation_loop() -> None:
     try:
         while not _STOP_EVENT.is_set():
-            await asyncio.sleep(random.uniform(0.6, 1.9))
+            await _sleep_with_stream_dynamics(0.6, 1.9)
 
             async with _LOCK:
-                _maybe_start_mutation_pattern()
+                mutation_iterations = 1
+                if random.random() < _STREAM_DYNAMICS["burst_probability"]:
+                    mutation_iterations = random.randint(
+                        int(_STREAM_DYNAMICS["burst_batch_min"]),
+                        int(_STREAM_DYNAMICS["burst_batch_max"]),
+                    )
 
-                mode = _MUTATION_PATTERN["name"]
-                if mode == "pipeline_shift":
-                    _run_pipeline_shift_batch(_MUTATION_PATTERN["source"])
-                    _decrement_pattern(_MUTATION_PATTERN)
-                    continue
-                if mode == "sync_batch":
-                    _run_sync_batch(_MUTATION_PATTERN["source"])
-                    _decrement_pattern(_MUTATION_PATTERN)
-                    continue
+                for _ in range(mutation_iterations):
+                    _maybe_start_mutation_pattern()
 
-                entity = random.choices(
-                    ["customers", "leads", "activities", "deals"],
-                    weights=[0.12, 0.16, 0.42, 0.30],
-                    k=1,
-                )[0]
+                    mode = _MUTATION_PATTERN["name"]
+                    if mode == "pipeline_shift":
+                        _run_pipeline_shift_batch(_MUTATION_PATTERN["source"])
+                        _decrement_pattern(_MUTATION_PATTERN)
+                        continue
+                    if mode == "sync_batch":
+                        _run_sync_batch(_MUTATION_PATTERN["source"])
+                        _decrement_pattern(_MUTATION_PATTERN)
+                        continue
 
-                record = _pick_pattern_filtered_record(entity, None, prefer_old=True)
-                if not record:
-                    continue
+                    entity = random.choices(
+                        ["customers", "leads", "activities", "deals"],
+                        weights=[0.12, 0.16, 0.42, 0.30],
+                        k=1,
+                    )[0]
 
-                source = _normalize_source(record.get("source_system"))
-                event_type = "update"
+                    record = _pick_pattern_filtered_record(entity, None, prefer_old=True)
+                    if not record:
+                        continue
 
-                if random.random() < 0.03:
-                    record["is_deleted"] = True
-                    record["deleted_at"] = _now_iso()
-                    _set_update_timestamp(record, source)
-                    _sanitize_record(entity, record)
-                    event_type = "delete"
-                else:
+                    source = _normalize_source(record.get("source_system"))
+                    event_type = "update"
+
+                    if entity == "leads":
+                        conversion_roll = random.random()
+                        if conversion_roll < _STREAM_DYNAMICS["lead_convert_probability"]:
+                            lead_field = "lead_status" if "lead_status" in record else "leadStatus"
+                            record[lead_field] = "converted"
+                            record["converted_at"] = _now_iso()
+                            event_type = "activity"
+                        elif conversion_roll < (
+                            _STREAM_DYNAMICS["lead_convert_probability"] + _STREAM_DYNAMICS["lead_stall_probability"]
+                        ):
+                            lead_field = "lead_status" if "lead_status" in record else "leadStatus"
+                            record[lead_field] = random.choice(["new", "contacted", "qualified"])
+                            record["last_activity_at"] = _past_iso(12, 220)
+
+                    if entity == "deals":
+                        deal_roll = random.random()
+                        disappear_threshold = _STREAM_DYNAMICS["deal_disappear_probability"]
+                        close_threshold = disappear_threshold + _STREAM_DYNAMICS["deal_close_probability"]
+                        stall_threshold = close_threshold + _STREAM_DYNAMICS["deal_stall_probability"]
+
+                        if deal_roll < disappear_threshold:
+                            record["is_deleted"] = True
+                            record["deleted_at"] = _now_iso()
+                            stage_field = _pick_deal_stage_field(record)
+                            record[stage_field] = "lost"
+                            record["status"] = "lost"
+                            record["deal_state"] = "disappeared"
+                            _set_update_timestamp(record, source)
+                            _sanitize_record(entity, record)
+                            event_type = "activity"
+                            _record_change(event_type, entity, record)
+                            continue
+
+                        if deal_roll < close_threshold:
+                            stage_field = _pick_deal_stage_field(record)
+                            if random.random() < 0.58:
+                                record[stage_field] = "won"
+                                record["status"] = "won"
+                            else:
+                                record[stage_field] = "lost"
+                                record["status"] = "lost"
+                            record["closed_at"] = _now_iso()
+                            event_type = "activity"
+                        elif deal_roll < stall_threshold:
+                            stage_field = _pick_deal_stage_field(record)
+                            record[stage_field] = random.choice(["prospecting", "qualified", "negotiation"])
+                            record["status"] = "open"
+                            record["last_activity_at"] = _past_iso(15, 280)
+
                     if entity == "customers":
                         _mutate_customer(record, source)
                     elif entity == "leads":
@@ -1577,7 +1732,7 @@ async def _mutation_loop() -> None:
                     else:
                         _mutate_deal(record, source)
 
-                _record_change(event_type, entity, record)
+                    _record_change(event_type, entity, record)
     except asyncio.CancelledError:
         return
 
@@ -1585,6 +1740,8 @@ async def _mutation_loop() -> None:
 async def start_stream_engine() -> None:
     """Start background generation/mutation tasks (idempotent)."""
     global _TASKS
+
+    _load_stream_dynamics_profile()
 
     active_tasks = [task for task in _TASKS if not task.done()]
     if active_tasks:

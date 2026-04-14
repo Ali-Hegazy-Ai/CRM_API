@@ -8,8 +8,8 @@
     "country": "EGYPT",
     "website": "http://www.lee.com/",
     "owner_id": "sales_17",
-    "created_at": "2022-05-25T23:39:00Z",
-    "updated_at": "2023-12-13T23:39:00Z",
+    "created_at": "2022-05-26T00:45:42Z",
+    "updated_at": "2023-12-14T00:45:42Z",
     "street": "3602 Smith Loaf Suite 746",
     "city": "Mooreport",
     "state": "IL",
@@ -18,9 +18,9 @@
     "source_record_id": "SRC-82845",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2023-11-23T23:39:00Z",
+    "last_synced_at": "2023-11-24T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-05-18T23:39:00Z"
+    "deleted_at": "2026-05-19T00:45:42Z"
   },
   {
     "id": "comp_000032",
@@ -31,8 +31,8 @@
     "country": "EG",
     "website": "http://www.sanchez-martinez.org/",
     "owner_id": "sales_17",
-    "created_at": "2023.09.12 23:39:00",
-    "updated_at": "2024-06-05T23:39:00Z",
+    "created_at": "2023.09.13 00:45:42",
+    "updated_at": "2024-06-06T00:45:42Z",
     "street": "84210 Alexis Turnpike",
     "city": "New Mario",
     "state": "HI",
@@ -41,7 +41,7 @@
     "source_record_id": "SRC-19632",
     "sync_status": "pending",
     "sync_version": "4",
-    "last_synced_at": "2026-03-14T23:39:00Z"
+    "last_synced_at": "2026-03-15T00:45:42Z"
   },
   {
     "id": "comp_000141",
@@ -52,8 +52,8 @@
     "website": "http://scott.com/",
     "phone": "551.583.0469x901 ext 54",
     "owner_id": "OWN_002",
-    "created_at": "2023-06-17T23:39:00Z",
-    "updated_at": "2023.12.16 23:39:00",
+    "created_at": "2023-06-18T00:45:42Z",
+    "updated_at": "2023.12.17 00:45:42",
     "street": "54033 Julie Throughway Suite 393",
     "city": "Hermanside",
     "state": "MD",
@@ -62,7 +62,7 @@
     "source_record_id": "SRC-64732",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2026-03-28T23:39:00Z",
+    "last_synced_at": "2026-03-29T00:45:42Z",
     "duplicate_of": "comp_000063"
   },
   {
@@ -75,8 +75,8 @@
     "website": null,
     "phone": "9508723688",
     "owner_id": "own_001",
-    "created_at": "2022.02.20 23:39:00",
-    "updated_at": "2024-03-03T23:39:00Z",
+    "created_at": "2022.02.21 00:45:42",
+    "updated_at": "2024-03-04T00:45:42Z",
     "street": "7721 Laura Forges Suite 043",
     "city": "Garymouth",
     "state": "OK",
@@ -85,7 +85,7 @@
     "source_record_id": "SRC-32069",
     "sync_status": "ok",
     "sync_version": "3",
-    "last_synced_at": "2026-04-09T23:39:00Z"
+    "last_synced_at": "2026-04-10T00:45:42Z"
   },
   {
     "id": "comp_000059",
@@ -97,8 +97,8 @@
     "website": "https://pham.org/",
     "phone": "587-485-1910",
     "owner_id": "sales_17",
-    "created_at": "2023-09-16T23:39:00Z",
-    "updated_at": "2024-07-13T23:39:00Z",
+    "created_at": "2023-09-17T00:45:42Z",
+    "updated_at": "2024-07-14T00:45:42Z",
     "address": {
       "line1": "8713 Davis Pass",
       "city": "Stokesmouth",
@@ -110,7 +110,7 @@
     "source_record_id": "SRC-99486",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-05T23:39:00Z"
+    "last_synced_at": "2026-04-06T00:45:42Z"
   },
   {
     "id": "comp_000019",
@@ -122,12 +122,12 @@
     "website": null,
     "phone": "+1-665-207-5273x54549",
     "owner_id": "owner_03",
-    "created_at": "2022.12.05 23:39:00",
-    "updated_at": "2023.12.29 23:39:00",
+    "created_at": "2022.12.06 00:45:42",
+    "updated_at": "2023.12.30 00:45:42",
     "source_system": "HubSpot",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-27T23:39:00Z"
+    "last_synced_at": "2026-03-28T00:45:42Z"
   },
   {
     "id": "comp_000132",
@@ -137,8 +137,8 @@
     "country": "us",
     "website": "https://www.martin.com/",
     "owner_id": "OWN_002",
-    "created_at": "2022.05.24 23:39:00",
-    "updated_at": "2023-12-06T23:39:00Z",
+    "created_at": "2022.05.25 00:45:42",
+    "updated_at": "2023-12-07T00:45:42Z",
     "street": "413 Randy Court",
     "city": "South Amytown",
     "state": "WI",
@@ -146,9 +146,9 @@
     "source_system": "pipedrive",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2023-11-20T23:39:00Z",
+    "last_synced_at": "2023-11-21T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2023-03-02T11:39:00Z"
+    "deleted_at": "2023-03-02T12:45:42Z"
   },
   {
     "id": "comp_000013",
@@ -160,7 +160,7 @@
     "website": "https://ortiz.com/",
     "phone": "266.629.9468",
     "owner_id": "own_001",
-    "created_at": "2023-05-09T23:39:00Z",
+    "created_at": "2023-05-10T00:45:42Z",
     "street": "69957 Ramos Forest Suite 214",
     "city": "Clarencebury",
     "state": "TX",
@@ -169,7 +169,7 @@
     "source_record_id": "SRC-19545",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-21T23:39:00Z"
+    "last_synced_at": "2026-03-22T00:45:42Z"
   },
   {
     "id": "comp_000077",
@@ -181,7 +181,7 @@
     "website": "http://carter.net/",
     "phone": "+1-412-660-4223x25367",
     "owner_id": "OWN_002",
-    "created_at": "2022.11.27 23:39:00",
+    "created_at": "2022.11.28 00:45:42",
     "address": {
       "line1": "7116 Neal Wells Suite 775",
       "city": "Port Kimland",
@@ -193,9 +193,9 @@
     "source_record_id": "SRC-27290",
     "sync_status": "failed",
     "sync_version": "3",
-    "last_synced_at": "2026-04-02 23:39:00",
+    "last_synced_at": "2026-04-03 00:45:42",
     "is_deleted": true,
-    "deleted_at": "2026-05-04T23:39:00Z"
+    "deleted_at": "2026-05-05T00:45:42Z"
   },
   {
     "id": "comp_000147",
@@ -207,8 +207,8 @@
     "website": "https://www.pham.com/",
     "phone": "+1-421-504-7095x21456 ext 20",
     "owner_id": "rep_99",
-    "created_at": "2021-12-20T23:39:00Z",
-    "updated_at": "2023-11-04T23:39:00Z",
+    "created_at": "2021-12-21T00:45:42Z",
+    "updated_at": "2023-11-05T00:45:42Z",
     "address": {
       "line1": "588 Rivas Glens",
       "city": "Coffeyport",
@@ -220,7 +220,7 @@
     "source_record_id": "SRC-26199",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-10T23:39:00Z",
+    "last_synced_at": "2026-03-11T00:45:42Z",
     "duplicate_of": "comp_000029"
   },
   {
@@ -231,7 +231,7 @@
     "employee_count": 3690,
     "country": "egypt",
     "owner_id": "owner_03",
-    "created_at": "2023.07.10 23:39:00",
+    "created_at": "2023.07.11 00:45:42",
     "address": {
       "line1": "69284 Garcia Islands Suite 479",
       "city": "Jacksonmouth",
@@ -242,7 +242,7 @@
     "source_system": "zoho",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2026-03-11T23:39:00Z"
+    "last_synced_at": "2026-03-12T00:45:42Z"
   },
   {
     "id": "comp_000054",
@@ -254,8 +254,8 @@
     "website": "http://nunez-whitney.org/",
     "phone": "809-474-9930x9728",
     "owner_id": "manual_queue",
-    "created_at": "2022-11-25T23:39:00Z",
-    "updated_at": "2023-11-18T23:39:00Z",
+    "created_at": "2022-11-26T00:45:42Z",
+    "updated_at": "2023-11-19T00:45:42Z",
     "address": {
       "line1": "91307 Barnes Loop",
       "city": "South Warren",
@@ -267,7 +267,7 @@
     "source_record_id": "SRC-29198",
     "sync_status": "SYNCED",
     "sync_version": 1,
-    "last_synced_at": "2024-05-29T23:39:00Z"
+    "last_synced_at": "2024-05-30T00:45:42Z"
   },
   {
     "id": "comp_000040",
@@ -279,8 +279,8 @@
     "website": "http://shepherd.com/",
     "phone": "820.737.7889x25546",
     "owner_id": "manual_queue",
-    "created_at": "09/02/2023 23:39",
-    "updated_at": "2024-01-24T23:39:00Z",
+    "created_at": "09/03/2023 00:45",
+    "updated_at": "2024-01-25T00:45:42Z",
     "street": "515 Angela Lights",
     "city": "Johnathanberg",
     "state": "MA",
@@ -289,7 +289,7 @@
     "source_record_id": "SRC-91006",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-01T23:39:00Z"
+    "last_synced_at": "2026-04-02T00:45:42Z"
   },
   {
     "id": "comp_000037",
@@ -300,8 +300,8 @@
     "country": "us",
     "phone": "(826)283-8851",
     "owner_id": "manual_queue",
-    "created_at": "2023-02-04T23:39:00Z",
-    "updated_at": "2024-03-31T23:39:00Z",
+    "created_at": "2023-02-05T00:45:42Z",
+    "updated_at": "2024-04-01T00:45:42Z",
     "street": "71596 Mckinney Mall Suite 160",
     "city": "Georgemouth",
     "state": "MP",
@@ -310,7 +310,7 @@
     "source_record_id": "SRC-68838",
     "sync_status": "failed",
     "sync_version": "4",
-    "last_synced_at": "2023-04-10T23:39:00Z"
+    "last_synced_at": "2023-04-11T00:45:42Z"
   },
   {
     "id": "comp_000050",
@@ -321,8 +321,8 @@
     "website": "http://jacobson.net/",
     "phone": "724-298-1829x922",
     "owner_id": "own_001",
-    "created_at": "2022-10-29T23:39:00Z",
-    "updated_at": "2024-05-22T23:39:00Z",
+    "created_at": "2022-10-30T00:45:42Z",
+    "updated_at": "2024-05-23T00:45:42Z",
     "street": "09439 Montgomery Burgs",
     "city": "Smallside",
     "state": "LA",
@@ -331,9 +331,9 @@
     "source_record_id": "SRC-30932",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2026-03-22T23:39:00Z",
+    "last_synced_at": "2026-03-23T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2023-05-13T05:39:00Z"
+    "deleted_at": "2023-05-13T06:45:42Z"
   },
   {
     "id": "comp_000016",
@@ -345,13 +345,13 @@
     "website": "http://nelson.com/",
     "phone": "(356)827-2980x6990",
     "owner_id": "own_001",
-    "created_at": "2022-03-13T23:39:00Z",
-    "updated_at": "2023-09-26T23:39:00Z",
+    "created_at": "2022-03-14T00:45:42Z",
+    "updated_at": "2023-09-27T00:45:42Z",
     "source_system": "Zoho",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2023-08-31T23:39:00Z",
-    "created_date": "2022-03-13T23:39:00Z"
+    "last_synced_at": "2023-09-01T00:45:42Z",
+    "created_date": "2022-03-14T00:45:42Z"
   },
   {
     "id": "comp_000053",
@@ -363,8 +363,8 @@
     "website": "https://www.hester.com/",
     "phone": "++2012",
     "owner_id": "sales_17",
-    "created_at": "2022-08-25T23:39:00Z",
-    "updated_at": "2023-11-28T23:39:00Z",
+    "created_at": "2022-08-26T00:45:42Z",
+    "updated_at": "2023-11-29T00:45:42Z",
     "street": "825 Martin Ridges",
     "city": null,
     "state": "MP",
@@ -373,7 +373,7 @@
     "source_record_id": "SRC-71814",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2023-10-29T23:39:00Z"
+    "last_synced_at": "2023-10-30T00:45:42Z"
   },
   {
     "id": "comp_000137",
@@ -385,8 +385,8 @@
     "website": "http://little-gonzalez.com/",
     "phone": "+1-231-936-5024x91630",
     "owner_id": "own_001",
-    "created_at": "2023.03.25 23:39:00",
-    "updated_at": "2024-03-22T23:39:00Z",
+    "created_at": "2023.03.26 00:45:42",
+    "updated_at": "2024-03-23T00:45:42Z",
     "address": {
       "line1": "1327 Gina Junction",
       "city": "North Michaelberg",
@@ -398,7 +398,7 @@
     "source_record_id": "SRC-96098",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "1773956340"
+    "last_synced_at": "1773960342"
   },
   {
     "id": "comp_000143",
@@ -410,8 +410,8 @@
     "website": "https://www.gutierrez-maxwell.net/",
     "phone": "698.926.2244 ext 31",
     "owner_id": "owner_03",
-    "created_at": "2021-10-21T23:39:00Z",
-    "updated_at": "2023-11-14T23:39:00Z",
+    "created_at": "2021-10-22T00:45:42Z",
+    "updated_at": "2023-11-15T00:45:42Z",
     "street": "26464 Patton Lake",
     "city": "Sherylfort",
     "state": "PA",
@@ -420,7 +420,7 @@
     "source_record_id": "SRC-41775",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-05T23:39:00Z",
+    "last_synced_at": "2026-04-06T00:45:42Z",
     "duplicate_of": "comp_000069"
   },
   {
@@ -432,8 +432,8 @@
     "website": "http://www.blackwell.com/",
     "phone": "(548)740-8588x7704",
     "owner_id": "manual_queue",
-    "created_at": "2023-05-07T23:39:00Z",
-    "updated_at": "2023-09-24T23:39:00Z",
+    "created_at": "2023-05-08T00:45:42Z",
+    "updated_at": "2023-09-25T00:45:42Z",
     "address": {
       "line1": "28801 Ellen Trail",
       "city": "Port Gina",
@@ -445,7 +445,7 @@
     "source_record_id": "SRC-61248",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2026-03-20T23:39:00Z"
+    "last_synced_at": "2026-03-21T00:45:42Z"
   },
   {
     "id": "comp_000086",
@@ -456,7 +456,7 @@
     "country": "eg",
     "phone": "000-000",
     "owner_id": "own_001",
-    "updated_at": "2024-05-08T23:39:00Z",
+    "updated_at": "2024-05-09T00:45:42Z",
     "address": {
       "line1": "044 Anthony Lodge Suite 883",
       "city": "South Curtisberg",
@@ -468,8 +468,8 @@
     "source_record_id": "SRC-46042",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-11T23:39:00Z",
-    "created_date": "2024-05-04T20:39:00Z"
+    "last_synced_at": "2026-04-12T00:45:42Z",
+    "created_date": "2024-05-04T21:45:42Z"
   },
   {
     "id": "comp_000096",
@@ -480,8 +480,8 @@
     "country": "gb",
     "website": "http://www.chan.com/",
     "owner_id": "sales_17",
-    "created_at": "2021-06-13T23:39:00Z",
-    "updated_at": "2024-04-02T23:39:00Z",
+    "created_at": "2021-06-14T00:45:42Z",
+    "updated_at": "2024-04-03T00:45:42Z",
     "address": {
       "line1": "3074 Smith Viaduct Suite 447",
       "city": "Port Jeremyport",
@@ -493,7 +493,7 @@
     "source_record_id": "SRC-41711",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-23T23:39:00Z"
+    "last_synced_at": "2026-03-24T00:45:42Z"
   },
   {
     "id": "comp_000063",
@@ -505,8 +505,8 @@
     "website": "http://scott.com/",
     "phone": "551.583.0469x901",
     "owner_id": "OWN_002",
-    "created_at": "2023-04-02T23:39:00Z",
-    "updated_at": "2023.10.12 23:39:00",
+    "created_at": "2023-04-03T00:45:42Z",
+    "updated_at": "2023.10.13 00:45:42",
     "street": "54033 Julie Throughway Suite 393",
     "city": "Hermanside",
     "state": "MD",
@@ -515,7 +515,7 @@
     "source_record_id": "SRC-64732",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-03 23:39:00"
+    "last_synced_at": "2026-04-04 00:45:42"
   },
   {
     "id": "comp_000005",
@@ -526,8 +526,8 @@
     "website": "https://www.allen.com/",
     "phone": "phone missing",
     "owner_id": "manual_queue",
-    "created_at": "08/16/2021 23:39",
-    "updated_at": "2024-06-09T23:39:00Z",
+    "created_at": "08/17/2021 00:45",
+    "updated_at": "2024-06-10T00:45:42Z",
     "address": {
       "line1": "346 Kim Path",
       "city": "Martinezbury",
@@ -539,7 +539,7 @@
     "source_record_id": "SRC-95180",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-11T23:39:00Z",
+    "last_synced_at": "2026-03-12T00:45:42Z",
     "Industry": "Manufacturing"
   },
   {
@@ -552,8 +552,8 @@
     "website": "http://www.bell-lewis.com/",
     "phone": "(597)631-1219x65652",
     "owner_id": "owner_03",
-    "created_at": "03/31/2023 23:39",
-    "updated_at": "2023.12.21 23:39:00",
+    "created_at": "04/01/2023 00:45",
+    "updated_at": "2023.12.22 00:45:42",
     "street": "89994 Melanie Shoals",
     "city": "Jamiehaven",
     "state": "ID",
@@ -562,9 +562,9 @@
     "source_record_id": "SRC-62727",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-09T23:39:00Z",
+    "last_synced_at": "2026-03-10T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2022-03-29T08:39:00Z"
+    "deleted_at": "2022-03-29T09:45:42Z"
   },
   {
     "id": "comp_000058",
@@ -583,8 +583,8 @@
     "source_record_id": "SRC-99167",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-30T23:39:00Z",
-    "created_date": "2023.09.12 07:39:00"
+    "last_synced_at": "2026-03-31T00:45:42Z",
+    "created_date": "2023.09.12 08:45:42"
   },
   {
     "id": "comp_000060",
@@ -595,8 +595,8 @@
     "country": "us",
     "website": null,
     "owner_id": "orphan_808816",
-    "created_at": "2022-03-08T23:39:00Z",
-    "updated_at": "2024-05-15T23:39:00Z",
+    "created_at": "2022-03-09T00:45:42Z",
+    "updated_at": "2024-05-16T00:45:42Z",
     "street": "2265 West Lane Suite 182",
     "city": "Davidside",
     "state": "MO",
@@ -605,7 +605,7 @@
     "source_record_id": "SRC-16380",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-03-17T23:39:00Z"
+    "last_synced_at": "2026-03-18T00:45:42Z"
   },
   {
     "id": "comp_000085",
@@ -616,8 +616,8 @@
     "website": "https://harris.biz/",
     "phone": "302.441.0386x5719",
     "owner_id": "own_001",
-    "created_at": "2021.06.08 23:39:00",
-    "updated_at": "2024-07-28T23:39:00Z",
+    "created_at": "2021.06.09 00:45:42",
+    "updated_at": "2024-07-29T00:45:42Z",
     "address": {
       "line1": "99062 Kelly Vista Suite 655",
       "city": "Nelsonland",
@@ -629,7 +629,7 @@
     "source_record_id": "SRC-69270",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2024-06-24T23:39:00Z",
+    "last_synced_at": "2024-06-25T00:45:42Z",
     "Industry": "retail",
     "phone_number": "302.441.0386x5719"
   },
@@ -642,8 +642,8 @@
     "website": "http://williams.com/",
     "phone": "898.851.5832x8182",
     "owner_id": "own_001",
-    "created_at": "2021.05.19 23:39:00",
-    "updated_at": "2024-06-01T23:39:00Z",
+    "created_at": "2021.05.20 00:45:42",
+    "updated_at": "2024-06-02T00:45:42Z",
     "street": "3355 Carter Terrace",
     "city": "Barajastown",
     "state": "DE",
@@ -652,10 +652,10 @@
     "source_record_id": "SRC-67047",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-04-09T23:39:00Z",
+    "last_synced_at": "2026-04-10T00:45:42Z",
     "Industry": "Logistics",
     "is_deleted": 1,
-    "deleted_at": "2026-05-14T23:39:00Z"
+    "deleted_at": "2026-05-15T00:45:42Z"
   },
   {
     "id": "comp_000115",
@@ -667,8 +667,8 @@
     "website": "https://www.parks.com/",
     "phone": "610-824-8193",
     "owner_id": "own_001",
-    "created_at": "2023.04.17 23:39:00",
-    "updated_at": "2024.01.20 23:39:00",
+    "created_at": "2023.04.18 00:45:42",
+    "updated_at": "2024.01.21 00:45:42",
     "address": {
       "line1": "6650 Nunez Place Apt. 919",
       "city": "Lake Melaniestad",
@@ -679,7 +679,7 @@
     "source_system": "manual_entry",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2026-03-13T23:39:00Z"
+    "last_synced_at": "2026-03-14T00:45:42Z"
   },
   {
     "id": "comp_000038",
@@ -691,7 +691,7 @@
     "website": "http://morales.com/",
     "phone": "752.718.1883",
     "owner_id": "OWN_002",
-    "created_at": "2021-10-22T23:39:00Z",
+    "created_at": "2021-10-23T00:45:42Z",
     "street": "12432 Kathleen Shoal",
     "city": "East Stephaniefort",
     "state": "NH",
@@ -699,7 +699,7 @@
     "source_system": "manual_entry",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2026-03-16T23:39:00Z"
+    "last_synced_at": "2026-03-17T00:45:42Z"
   },
   {
     "id": "comp_000099",
@@ -711,8 +711,8 @@
     "website": "https://robinson-turner.net/",
     "phone": "phone missing",
     "owner_id": "OWN_002",
-    "created_at": "2022-02-14T23:39:00Z",
-    "updated_at": "2024-06-09T23:39:00Z",
+    "created_at": "2022-02-15T00:45:42Z",
+    "updated_at": "2024-06-10T00:45:42Z",
     "street": "4544 Lopez Path",
     "city": "North Linda",
     "state": "AS",
@@ -721,7 +721,7 @@
     "source_record_id": "SRC-39131",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2026-03-16T23:39:00Z"
+    "last_synced_at": "2026-03-17T00:45:42Z"
   },
   {
     "id": "comp_000139",
@@ -733,8 +733,8 @@
     "website": "https://www.le-barrett.net/",
     "phone": "(338)278-2945x6511",
     "owner_id": "sales_17",
-    "created_at": "2022-03-12T23:39:00Z",
-    "updated_at": "2023-12-31T23:39:00Z",
+    "created_at": "2022-03-13T00:45:42Z",
+    "updated_at": "2024-01-01T00:45:42Z",
     "address": {
       "line1": "03173 Anthony Row",
       "city": "Barretthaven",
@@ -745,9 +745,9 @@
     "source_system": "hubspot",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-07T23:39:00Z",
+    "last_synced_at": "2026-03-08T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2024.10.18 03:39:00"
+    "deleted_at": "2024.10.18 04:45:42"
   },
   {
     "id": "comp_000009",
@@ -758,8 +758,8 @@
     "website": "http://www.howell-hart.com/",
     "phone": "N/A",
     "owner_id": "own_001",
-    "created_at": "2022-03-06T23:39:00Z",
-    "updated_at": "2024-05-24T23:39:00Z",
+    "created_at": "2022-03-07T00:45:42Z",
+    "updated_at": "2024-05-25T00:45:42Z",
     "street": "8498 Elizabeth Plaza",
     "city": "Sarahville",
     "state": "FM",
@@ -768,7 +768,7 @@
     "source_record_id": "SRC-54942",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-07T23:39:00Z"
+    "last_synced_at": "2026-03-08T00:45:42Z"
   },
   {
     "id": "comp_000057",
@@ -779,8 +779,8 @@
     "country": "uae",
     "phone": null,
     "owner_id": "own_001",
-    "created_at": "2022.10.28 23:39:00",
-    "updated_at": "2023-11-16T23:39:00Z",
+    "created_at": "2022.10.29 00:45:42",
+    "updated_at": "2023-11-17T00:45:42Z",
     "street": "87431 Martin Mount Suite 205",
     "city": "Ashleyborough",
     "state": "HI",
@@ -789,7 +789,7 @@
     "source_record_id": "SRC-50760",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-04-06T23:39:00Z"
+    "last_synced_at": "2026-04-07T00:45:42Z"
   },
   {
     "id": "comp_000073",
@@ -801,8 +801,8 @@
     "website": "http://rodriguez.com/",
     "phone": "228.525.8673x62266",
     "owner_id": "OWN_002",
-    "created_at": "2022.02.28 23:39:00",
-    "updated_at": "2024-02-02T23:39:00Z",
+    "created_at": "2022.03.01 00:45:42",
+    "updated_at": "2024-02-03T00:45:42Z",
     "street": "660 Jamie Terrace Apt. 918",
     "city": "West Mark",
     "state": "NH",
@@ -811,7 +811,7 @@
     "source_record_id": "SRC-80435",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-07T23:39:00Z"
+    "last_synced_at": "2026-03-08T00:45:42Z"
   },
   {
     "id": "comp_000028",
@@ -823,8 +823,8 @@
     "website": "https://estrada-nolan.info/",
     "phone": "882-917-5946x4743",
     "owner_id": "manual_queue",
-    "created_at": "2021-07-20T23:39:00Z",
-    "updated_at": "2024-01-03T23:39:00Z",
+    "created_at": "2021-07-21T00:45:42Z",
+    "updated_at": "2024-01-04T00:45:42Z",
     "address": {
       "line1": "69594 Johnson Village",
       "city": "Hillshire",
@@ -835,7 +835,7 @@
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-06T23:39:00Z"
+    "last_synced_at": "2026-03-07T00:45:42Z"
   },
   {
     "id": "comp_000135",
@@ -847,8 +847,8 @@
     "website": "https://www.duran.com/",
     "phone": "684-963-1224x1797",
     "owner_id": "owner_03",
-    "created_at": "2021-10-26T23:39:00Z",
-    "updated_at": "2024-04-23T23:39:00Z",
+    "created_at": "2021-10-27T00:45:42Z",
+    "updated_at": "2024-04-24T00:45:42Z",
     "street": "0208 Jacob Cove",
     "city": "Josephmouth",
     "state": "VA",
@@ -857,9 +857,9 @@
     "source_record_id": "SRC-82682",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-04T23:39:00Z",
+    "last_synced_at": "2026-03-05T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2024-11-19T18:39:00Z"
+    "deleted_at": "2024-11-19T19:45:42Z"
   },
   {
     "id": "comp_000068",
@@ -869,8 +869,8 @@
     "country": "us",
     "phone": "(829)761-9431x14262",
     "owner_id": "rep_99",
-    "created_at": "2022-03-06T23:39:00Z",
-    "updated_at": "2023.11.28 23:39:00",
+    "created_at": "2022-03-07T00:45:42Z",
+    "updated_at": "2023.11.29 00:45:42",
     "address": {
       "line1": "10475 Garcia Corners Apt. 678",
       "city": "Garcialand",
@@ -882,9 +882,9 @@
     "source_record_id": "SRC-49469",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2023-11-07T23:39:00Z",
+    "last_synced_at": "2023-11-08T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-05-06T23:39:00Z"
+    "deleted_at": "2026-05-07T00:45:42Z"
   },
   {
     "id": "comp_000146",
@@ -895,8 +895,8 @@
     "country": "gb",
     "phone": "271-874-6488x7719 ext 57",
     "owner_id": "rep_99",
-    "created_at": "2022.11.17 23:39:00",
-    "updated_at": "2024-05-22T23:39:00Z",
+    "created_at": "2022.11.18 00:45:42",
+    "updated_at": "2024-05-23T00:45:42Z",
     "street": "401 Suzanne Villages Apt. 490",
     "city": "South April",
     "state": "NV",
@@ -905,7 +905,7 @@
     "source_record_id": "SRC-64165",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-02T23:39:00Z",
+    "last_synced_at": "2026-04-03T00:45:42Z",
     "duplicate_of": "comp_000023"
   },
   {
@@ -918,8 +918,8 @@
     "website": "https://banks-robles.com/",
     "phone": "(402)816-9797 ext 41",
     "owner_id": "owner_03",
-    "created_at": "2021-09-08T23:39:00Z",
-    "updated_at": "2024.05.29 23:39:00",
+    "created_at": "2021-09-09T00:45:42Z",
+    "updated_at": "2024.05.30 00:45:42",
     "address": {
       "line1": "027 Rodriguez Loop Suite 014",
       "city": "Alexanderhaven",
@@ -931,7 +931,7 @@
     "source_record_id": "SRC-64046",
     "sync_status": "pending",
     "sync_version": 1,
-    "last_synced_at": "2026-02-28T23:39:00Z",
+    "last_synced_at": "2026-03-01T00:45:42Z",
     "duplicate_of": "comp_000106"
   },
   {
@@ -944,8 +944,8 @@
     "website": "http://www.pierce-tran.com/",
     "phone": "817.912.7484",
     "owner_id": "orphan_415406",
-    "created_at": "2021-12-22T23:39:00Z",
-    "updated_at": "2023-12-01T23:39:00Z",
+    "created_at": "2021-12-23T00:45:42Z",
+    "updated_at": "2023-12-02T00:45:42Z",
     "address": {
       "line1": "78263 Michelle Harbor Suite 584",
       "city": "West Jessicashire",
@@ -957,9 +957,9 @@
     "source_record_id": "SRC-59968",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-01T23:39:00Z",
+    "last_synced_at": "2026-04-02T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2024-04-26T20:39:00Z"
+    "deleted_at": "2024-04-26T21:45:42Z"
   },
   {
     "id": "comp_000082",
@@ -969,8 +969,8 @@
     "country": "gb",
     "phone": "+1-214-663-0316x1799",
     "owner_id": "own_001",
-    "created_at": "2023-09-05T23:39:00Z",
-    "updated_at": "2023-09-16T23:39:00Z",
+    "created_at": "2023-09-06T00:45:42Z",
+    "updated_at": "2023-09-17T00:45:42Z",
     "address": {
       "line1": "02027 Mills Tunnel",
       "city": "Garyberg",
@@ -984,7 +984,7 @@
     "sync_version": "v2",
     "last_synced_at": null,
     "is_deleted": true,
-    "deleted_at": "2025-09-27T09:39:00Z"
+    "deleted_at": "2025-09-27T10:45:42Z"
   },
   {
     "id": "comp_000138",
@@ -995,8 +995,8 @@
     "country": "us",
     "phone": "(424)707-7848x739",
     "owner_id": "sales_17",
-    "created_at": "2023-05-27T23:39:00Z",
-    "updated_at": "2023-09-18T23:39:00Z",
+    "created_at": "2023-05-28T00:45:42Z",
+    "updated_at": "2023-09-19T00:45:42Z",
     "address": {
       "line1": "749 Casey Drives Suite 448",
       "city": "Shawnhaven",
@@ -1008,7 +1008,7 @@
     "source_record_id": "SRC-68654",
     "sync_status": "SYNCED",
     "sync_version": 1,
-    "last_synced_at": "2026-04-05T23:39:00Z"
+    "last_synced_at": "2026-04-06T00:45:42Z"
   },
   {
     "id": "comp_000072",
@@ -1019,8 +1019,8 @@
     "website": "https://www.garcia.net/",
     "phone": "001-788-299-3756x7982",
     "owner_id": "owner_03",
-    "created_at": "2021-12-20T23:39:00Z",
-    "updated_at": "2024-04-30T23:39:00Z",
+    "created_at": "2021-12-21T00:45:42Z",
+    "updated_at": "2024-05-01T00:45:42Z",
     "address": {
       "line1": "46112 Collins Motorway Apt. 875",
       "city": "Davismouth",
@@ -1032,7 +1032,7 @@
     "source_record_id": "SRC-80371",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "comp_000035",
@@ -1044,7 +1044,7 @@
     "website": "https://garcia-romero.com/",
     "phone": "+1-273-615-8514x93689",
     "owner_id": "sales_17",
-    "created_at": "2022-05-18T23:39:00Z",
+    "created_at": "2022-05-19T00:45:42Z",
     "address": {
       "line1": "44550 Molly Port",
       "city": "Jonestown",
@@ -1056,9 +1056,9 @@
     "source_record_id": "SRC-24534",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2024-06-11T23:39:00Z",
+    "last_synced_at": "2024-06-12T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-05-21T23:39:00Z"
+    "deleted_at": "2026-05-22T00:45:42Z"
   },
   {
     "id": "comp_000006",
@@ -1070,8 +1070,8 @@
     "website": "http://www.zimmerman.com/",
     "phone": "405-918-3473",
     "owner_id": "sales_17",
-    "created_at": "2021-05-20T23:39:00Z",
-    "updated_at": "2024-06-18T23:39:00Z",
+    "created_at": "2021-05-21T00:45:42Z",
+    "updated_at": "2024-06-19T00:45:42Z",
     "street": "6311 Gomez Loop",
     "city": "Shieldston",
     "state": "TX",
@@ -1080,7 +1080,7 @@
     "source_record_id": "SRC-94696",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-02-28T23:39:00Z"
+    "last_synced_at": "2026-03-01T00:45:42Z"
   },
   {
     "id": "comp_000003",
@@ -1090,8 +1090,8 @@
     "country": "eg",
     "website": "http://www.trujillo.com/",
     "owner_id": "manual_queue",
-    "created_at": "2023-03-06T23:39:00Z",
-    "updated_at": "2023.09.25 23:39:00",
+    "created_at": "2023-03-07T00:45:42Z",
+    "updated_at": "2023.09.26 00:45:42",
     "address": {
       "line1": "884 Hurst Locks",
       "city": "Jeffreyberg",
@@ -1103,10 +1103,10 @@
     "source_record_id": "SRC-80644",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "08/25/2023 23:39",
+    "last_synced_at": "08/26/2023 00:45",
     "is_deleted": true,
-    "deleted_at": "2024.02.26 21:39:00",
-    "last_modified": "2024-02-19T21:39:00Z"
+    "deleted_at": "2024.02.26 22:45:42",
+    "last_modified": "2024-02-19T22:45:42Z"
   },
   {
     "id": "comp_000144",
@@ -1118,8 +1118,8 @@
     "website": "https://mills.biz/",
     "phone": "(200)634-2442 ext 66",
     "owner_id": "OWN_002",
-    "created_at": "2022-07-04T23:39:00Z",
-    "updated_at": "2024.07.28 23:39:00",
+    "created_at": "2022-07-05T00:45:42Z",
+    "updated_at": "2024.07.29 00:45:42",
     "address": {
       "line1": "057 Christina Spring",
       "city": "Lake Deborah",
@@ -1131,7 +1131,7 @@
     "source_record_id": "SRC-30290",
     "sync_status": "SYNCED",
     "sync_version": 3,
-    "last_synced_at": "2026-02-27T23:39:00Z",
+    "last_synced_at": "2026-02-28T00:45:42Z",
     "duplicate_of": "comp_000111"
   },
   {
@@ -1144,8 +1144,8 @@
     "website": "https://www.summers-simpson.com/",
     "phone": "358-492-9750x0170",
     "owner_id": "owner_03",
-    "created_at": "2022-06-24T23:39:00Z",
-    "updated_at": "2023-10-23T23:39:00Z",
+    "created_at": "2022-06-25T00:45:42Z",
+    "updated_at": "2023-10-24T00:45:42Z",
     "address": {
       "line1": "0632 Moore Wells Suite 154",
       "city": "West Elizabethburgh",
@@ -1156,7 +1156,7 @@
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-10T23:39:00Z"
+    "last_synced_at": "2026-03-11T00:45:42Z"
   },
   {
     "id": "comp_000074",
@@ -1166,7 +1166,7 @@
     "country": "united states",
     "website": null,
     "owner_id": "manual_queue",
-    "created_at": "2022-04-17T23:39:00Z",
+    "created_at": "2022-04-18T00:45:42Z",
     "street": "669 Bailey Manors",
     "city": "South Cynthia",
     "state": "UT",
@@ -1175,9 +1175,9 @@
     "source_record_id": "SRC-85066",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-04-04T23:39:00Z",
+    "last_synced_at": "2026-04-05T00:45:42Z",
     "Industry": "Manufacturing",
-    "last_modified": "2024-02-22T23:39:00Z"
+    "last_modified": "2024-02-23T00:45:42Z"
   },
   {
     "id": "comp_000103",
@@ -1189,7 +1189,7 @@
     "website": "https://cowan.com/",
     "phone": "001-732-260-3323x09821",
     "owner_id": "OWN_002",
-    "created_at": "2022.07.04 23:39:00",
+    "created_at": "2022.07.05 00:45:42",
     "street": "489 Brittney Causeway Apt. 001",
     "city": "Wallaceville",
     "state": "OH",
@@ -1198,7 +1198,7 @@
     "source_record_id": "SRC-97690",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2024-05-24T23:39:00Z"
+    "last_synced_at": "2024-05-25T00:45:42Z"
   },
   {
     "id": "comp_000102",
@@ -1210,7 +1210,7 @@
     "website": "http://jordan.com/",
     "phone": "2835505830",
     "owner_id": "own_001",
-    "created_at": "2021-07-15T23:39:00Z",
+    "created_at": "2021-07-16T00:45:42Z",
     "street": "542 Patrick Radial",
     "city": "Garyton",
     "state": "ME",
@@ -1218,7 +1218,7 @@
     "source_system": "pipedrive",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2023-10-27T23:39:00Z"
+    "last_synced_at": "2023-10-28T00:45:42Z"
   },
   {
     "id": "comp_000100",
@@ -1241,8 +1241,8 @@
     "source_record_id": "SRC-51079",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-13T23:39:00Z",
-    "created_date": "2025-05-10T19:39:00Z"
+    "last_synced_at": "2026-04-14T00:45:42Z",
+    "created_date": "2025-05-10T20:45:42Z"
   },
   {
     "id": "comp_000106",
@@ -1254,8 +1254,8 @@
     "website": "https://banks-robles.com/",
     "phone": "(402)816-9797",
     "owner_id": "owner_03",
-    "created_at": "2023-05-20T23:39:00Z",
-    "updated_at": "2024-02-07T23:39:00Z",
+    "created_at": "2023-05-21T00:45:42Z",
+    "updated_at": "2024-02-08T00:45:42Z",
     "address": {
       "line1": "027 Rodriguez Loop Suite 014",
       "city": "Alexanderhaven",
@@ -1267,7 +1267,7 @@
     "source_record_id": "SRC-64046",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-04-07T23:39:00Z"
+    "last_synced_at": "2026-04-08T00:45:42Z"
   },
   {
     "id": "comp_000095",
@@ -1279,8 +1279,8 @@
     "website": "http://rush.com/",
     "phone": "620.761.6329",
     "owner_id": "OWN_002",
-    "created_at": "2023-06-26T23:39:00Z",
-    "updated_at": "2024.01.19 23:39:00",
+    "created_at": "2023-06-27T00:45:42Z",
+    "updated_at": "2024.01.20 00:45:42",
     "street": "68685 Stone Well",
     "city": "Port Isabellashire",
     "state": "NC",
@@ -1289,7 +1289,7 @@
     "source_record_id": "SRC-45313",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2023-10-31T23:39:00Z"
+    "last_synced_at": "2023-11-01T00:45:42Z"
   },
   {
     "id": "comp_000142",
@@ -1300,13 +1300,13 @@
     "website": null,
     "phone": "+1-665-207-5273x54549 ext 86",
     "owner_id": "owner_03",
-    "created_at": "2023-09-21T23:39:00Z",
-    "updated_at": "2023.11.25 23:39:00",
+    "created_at": "2023-09-22T00:45:42Z",
+    "updated_at": "2023.11.26 00:45:42",
     "source_system": "HubSpot",
     "source_record_id": "SRC-80236",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-22T23:39:00Z",
+    "last_synced_at": "2026-03-23T00:45:42Z",
     "duplicate_of": "comp_000019"
   },
   {
@@ -1318,8 +1318,8 @@
     "website": "http://beasley-gutierrez.info/",
     "phone": "(361)856-5452x7111",
     "owner_id": "orphan_407273",
-    "created_at": "2022-02-28T23:39:00Z",
-    "updated_at": "1712180340",
+    "created_at": "2022-03-01T00:45:42Z",
+    "updated_at": "1712184342",
     "address": {
       "line1": "528 Brenda Points",
       "city": "Elizabethchester",
@@ -1331,7 +1331,7 @@
     "source_record_id": "SRC-45054",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2024-03-08T23:39:00Z",
+    "last_synced_at": "2024-03-09T00:45:42Z",
     "Industry": "FinTech"
   },
   {
@@ -1344,8 +1344,8 @@
     "website": "http://www.gutierrez-hawkins.com/",
     "phone": "799-248-8375",
     "owner_id": "manual_queue",
-    "created_at": "10/17/2021 23:39",
-    "updated_at": "1706737140",
+    "created_at": "10/18/2021 00:45",
+    "updated_at": "1706741142",
     "street": "5899 Moran Lakes",
     "city": "Wilsonbury",
     "state": "AL",
@@ -1354,7 +1354,7 @@
     "source_record_id": "SRC-89450",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "comp_000121",
@@ -1364,8 +1364,8 @@
     "country": "united states",
     "website": "https://www.jones.com/",
     "owner_id": "rep_99",
-    "created_at": "2022-08-15T23:39:00Z",
-    "updated_at": "2024-04-10T23:39:00Z",
+    "created_at": "2022-08-16T00:45:42Z",
+    "updated_at": "2024-04-11T00:45:42Z",
     "street": "773 Deborah Loop Apt. 302",
     "city": "East Crystal",
     "state": "AZ",
@@ -1374,9 +1374,9 @@
     "source_record_id": "SRC-10932",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-29T23:39:00Z",
+    "last_synced_at": "2026-03-30T00:45:42Z",
     "is_deleted": null,
-    "deleted_at": "2025-10-29T15:39:00Z"
+    "deleted_at": "2025-10-29T16:45:42Z"
   },
   {
     "id": "comp_000109",
@@ -1388,7 +1388,7 @@
     "website": "https://rodriguez.biz/",
     "phone": "N/A",
     "owner_id": "manual_queue",
-    "created_at": "2022-03-12T23:39:00Z",
+    "created_at": "2022-03-13T00:45:42Z",
     "street": "0917 Barrett Parkways",
     "city": "South Adam",
     "state": "WA",
@@ -1397,7 +1397,7 @@
     "source_record_id": "SRC-83699",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-21T23:39:00Z"
+    "last_synced_at": "2026-03-22T00:45:42Z"
   },
   {
     "id": "comp_000122",
@@ -1409,8 +1409,8 @@
     "website": "http://costa.com/",
     "phone": "437-497-7236",
     "owner_id": "OWN_002",
-    "created_at": "2023-06-11T23:39:00Z",
-    "updated_at": "11/14/2023 23:39",
+    "created_at": "2023-06-12T00:45:42Z",
+    "updated_at": "11/15/2023 00:45",
     "address": {
       "line1": "57991 Nicholas Curve Apt. 038",
       "city": "Serranoville",
@@ -1421,7 +1421,7 @@
     "source_system": "pipedrive",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "comp_000136",
@@ -1433,8 +1433,8 @@
     "website": "https://www.fisher-floyd.info/",
     "phone": "N/A",
     "owner_id": "own_001",
-    "created_at": "2023.04.19 23:39:00",
-    "updated_at": "2023-10-25T23:39:00Z",
+    "created_at": "2023.04.20 00:45:42",
+    "updated_at": "2023-10-26T00:45:42Z",
     "address": {
       "line1": "0136 Wright Bypass Apt. 718",
       "city": "South Paul",
@@ -1446,9 +1446,9 @@
     "source_record_id": "SRC-35115",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-10T23:39:00Z",
+    "last_synced_at": "2026-04-11T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2022-04-30T01:39:00Z"
+    "deleted_at": "2022-04-30T02:45:42Z"
   },
   {
     "id": "comp_000004",
@@ -1460,8 +1460,8 @@
     "website": "http://www.henderson.info/",
     "phone": "648.401.8451x46270",
     "owner_id": "OWN_002",
-    "created_at": "2022.10.03 23:39:00",
-    "updated_at": "04/20/2024 23:39",
+    "created_at": "2022.10.04 00:45:42",
+    "updated_at": "04/21/2024 00:45",
     "address": {
       "line1": "489 Eric Track",
       "city": "New Stephanie",
@@ -1473,7 +1473,7 @@
     "source_record_id": "SRC-76540",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2024-04-14T23:39:00Z"
+    "last_synced_at": "2024-04-15T00:45:42Z"
   },
   {
     "id": "comp_000051",
@@ -1484,8 +1484,8 @@
     "country": "united states",
     "website": "https://jones-brown.info/",
     "owner_id": "owner_03",
-    "created_at": "2022-11-06T23:39:00Z",
-    "updated_at": "1711748340",
+    "created_at": "2022-11-07T00:45:42Z",
+    "updated_at": "1711752342",
     "street": "1473 Colin Highway",
     "city": "Linchester",
     "state": "IA",
@@ -1494,7 +1494,7 @@
     "source_record_id": "SRC-91689",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "comp_000087",
@@ -1505,8 +1505,8 @@
     "country": "usa",
     "phone": "001-394-710-1372",
     "owner_id": "owner_03",
-    "created_at": "2023-03-07T23:39:00Z",
-    "updated_at": "2024-01-10T23:39:00Z",
+    "created_at": "2023-03-08T00:45:42Z",
+    "updated_at": "2024-01-11T00:45:42Z",
     "street": "70296 Crawford Light",
     "city": "Thompsonborough",
     "state": "PW",
@@ -1515,9 +1515,9 @@
     "source_record_id": "SRC-40508",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-09T23:39:00Z",
+    "last_synced_at": "2026-04-10T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2025-02-24T04:39:00Z"
+    "deleted_at": "2025-02-24T05:45:42Z"
   },
   {
     "id": "comp_000041",
@@ -1529,8 +1529,8 @@
     "website": "https://www.fletcher.com/",
     "phone": "N/A",
     "owner_id": "rep_99",
-    "created_at": "2022-07-04T23:39:00Z",
-    "updated_at": "2024-05-29T23:39:00Z",
+    "created_at": "2022-07-05T00:45:42Z",
+    "updated_at": "2024-05-30T00:45:42Z",
     "street": "3322 Kenneth Turnpike Apt. 888",
     "city": "Lake Matthewberg",
     "state": "PA",
@@ -1539,7 +1539,7 @@
     "source_record_id": "SRC-28140",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "comp_000052",
@@ -1551,8 +1551,8 @@
     "website": "http://www.ferrell-owens.com/",
     "phone": "901.968.7339x5004",
     "owner_id": "sales_17",
-    "created_at": "2022-11-19T23:39:00Z",
-    "updated_at": "2024-02-28T23:39:00Z",
+    "created_at": "2022-11-20T00:45:42Z",
+    "updated_at": "2024-02-29T00:45:42Z",
     "street": "016 Nicole Stream Suite 650",
     "city": "Williamsside",
     "state": "ID",
@@ -1561,9 +1561,9 @@
     "source_record_id": "SRC-58281",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-02-25T23:39:00Z",
+    "last_synced_at": "2024-02-26T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2025-06-03T09:39:00Z"
+    "deleted_at": "2025-06-03T10:45:42Z"
   },
   {
     "id": "comp_000033",
@@ -1574,7 +1574,7 @@
     "country": "egypt",
     "phone": "278-239-0847",
     "owner_id": "OWN_002",
-    "created_at": "08/24/2022 23:39",
+    "created_at": "08/25/2022 00:45",
     "address": {
       "line1": "6177 Rachel Islands Apt. 124",
       "city": "Oscarhaven",
@@ -1586,7 +1586,7 @@
     "source_record_id": "SRC-22219",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "comp_000119",
@@ -1598,13 +1598,13 @@
     "website": "https://www.quinn.net/",
     "phone": "465-980-3928",
     "owner_id": "OWN_002",
-    "created_at": "2023-06-17T23:39:00Z",
-    "updated_at": "2024-04-21T23:39:00Z",
+    "created_at": "2023-06-18T00:45:42Z",
+    "updated_at": "2024-04-22T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-15136",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "comp_000014",
@@ -1616,8 +1616,8 @@
     "website": "http://www.riggs.com/",
     "phone": "569.436.7632x016",
     "owner_id": null,
-    "created_at": "2023.09.18 23:39:00",
-    "updated_at": "2023-11-07T23:39:00Z",
+    "created_at": "2023.09.19 00:45:42",
+    "updated_at": "2023-11-08T00:45:42Z",
     "street": "83172 Contreras Points Suite 798",
     "city": "Rivasside",
     "state": "NV",
@@ -1626,7 +1626,7 @@
     "source_record_id": "SRC-68991",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-03T23:39:00Z"
+    "last_synced_at": "2026-03-04T00:45:42Z"
   },
   {
     "id": "comp_000056",
@@ -1638,8 +1638,8 @@
     "website": "https://rodriguez.org/",
     "phone": "730.983.3016",
     "owner_id": "OWN_002",
-    "created_at": "2021-10-06T23:39:00Z",
-    "updated_at": "2024-01-23T23:39:00Z",
+    "created_at": "2021-10-07T00:45:42Z",
+    "updated_at": "2024-01-24T00:45:42Z",
     "street": "208 Richard Wells",
     "city": "Woodsborough",
     "state": "WV",
@@ -1648,7 +1648,7 @@
     "source_record_id": "SRC-11846",
     "sync_status": "ok",
     "sync_version": "3",
-    "last_synced_at": "2024-01-12T23:39:00Z"
+    "last_synced_at": "2024-01-13T00:45:42Z"
   },
   {
     "id": "comp_000120",
@@ -1659,14 +1659,14 @@
     "website": "https://williams.com/",
     "phone": "884-749-8926",
     "owner_id": "OWN_002",
-    "created_at": "2021-09-01T23:39:00Z",
-    "updated_at": "2023-09-26T23:39:00Z",
+    "created_at": "2021-09-02T00:45:42Z",
+    "updated_at": "2023-09-27T00:45:42Z",
     "address": null,
     "source_system": "salesforce",
     "source_record_id": "SRC-76107",
     "sync_status": "SYNCED",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-11T23:39:00Z"
+    "last_synced_at": "2026-04-12T00:45:42Z"
   },
   {
     "id": "comp_000027",
@@ -1678,8 +1678,8 @@
     "website": "https://higgins.com/",
     "phone": "+1-213-243-1611x724",
     "owner_id": "rep_99",
-    "created_at": "2021.06.01 23:39:00",
-    "updated_at": "2024-03-30T23:39:00Z",
+    "created_at": "2021.06.02 00:45:42",
+    "updated_at": "2024-03-31T00:45:42Z",
     "address": {
       "line1": "45562 Amanda Port Apt. 221",
       "city": "Harveybury",
@@ -1691,7 +1691,7 @@
     "source_record_id": "SRC-49210",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-09T23:39:00Z"
+    "last_synced_at": "2026-03-10T00:45:42Z"
   },
   {
     "id": "comp_000066",
@@ -1703,7 +1703,7 @@
     "website": "https://miller-chung.info/",
     "phone": "001-833-941-0166",
     "owner_id": "own_001",
-    "created_at": "2023.01.17 23:39:00",
+    "created_at": "2023.01.18 00:45:42",
     "updated_at": null,
     "street": "021 Bruce Rue",
     "city": "Arielville",
@@ -1713,7 +1713,7 @@
     "source_record_id": "SRC-62205",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-19T23:39:00Z"
+    "last_synced_at": "2026-03-20T00:45:42Z"
   },
   {
     "id": "comp_000133",
@@ -1725,13 +1725,13 @@
     "website": "http://www.huynh.com/",
     "phone": "622.982.0055x778",
     "owner_id": "own_001",
-    "created_at": "2021-06-14T23:39:00Z",
-    "updated_at": "2024-05-05T23:39:00Z",
+    "created_at": "2021-06-15T00:45:42Z",
+    "updated_at": "2024-05-06T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": null,
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-06T23:39:00Z"
+    "last_synced_at": "2026-03-07T00:45:42Z"
   },
   {
     "id": "comp_000018",
@@ -1742,8 +1742,8 @@
     "website": null,
     "phone": "001-205-886-5185",
     "owner_id": "manual_queue",
-    "created_at": "2023-05-18T23:39:00Z",
-    "updated_at": "2023-10-21T23:39:00Z",
+    "created_at": "2023-05-19T00:45:42Z",
+    "updated_at": "2023-10-22T00:45:42Z",
     "address": {
       "line1": "65726 Jessica Run Suite 987",
       "city": "Grahamshire",
@@ -1755,7 +1755,7 @@
     "source_record_id": "SRC-56507",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-09T23:39:00Z",
+    "last_synced_at": "2026-03-10T00:45:42Z",
     "Industry": "FinTech"
   },
   {
@@ -1767,7 +1767,7 @@
     "website": "http://www.ford-ball.biz/",
     "phone": "+1-363-237-5243",
     "owner_id": "own_001",
-    "created_at": "2021-07-02T23:39:00Z",
+    "created_at": "2021-07-03T00:45:42Z",
     "updated_at": null,
     "street": "033 Craig Bypass Suite 903",
     "city": "South Scottside",
@@ -1777,7 +1777,7 @@
     "source_record_id": "SRC-78742",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-14T23:39:00Z"
+    "last_synced_at": "2026-03-15T00:45:42Z"
   },
   {
     "id": "comp_000140",
@@ -1788,13 +1788,13 @@
     "country": "uae",
     "phone": "+1-305-586-5094x8014",
     "owner_id": "OWN_002",
-    "created_at": "2021-10-27T23:39:00Z",
-    "updated_at": "2024-07-11T23:39:00Z",
+    "created_at": "2021-10-28T00:45:42Z",
+    "updated_at": "2024-07-12T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-88005",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-03T23:39:00Z"
+    "last_synced_at": "2026-04-04T00:45:42Z"
   },
   {
     "id": "comp_000031",
@@ -1805,15 +1805,15 @@
     "country": "us",
     "phone": "(275)786-9261x7964",
     "owner_id": "rep_99",
-    "created_at": "2023.05.11 23:39:00",
-    "updated_at": "2024-01-24T23:39:00Z",
+    "created_at": "2023.05.12 00:45:42",
+    "updated_at": "2024-01-25T00:45:42Z",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-40539",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2024-01-11T23:39:00Z",
+    "last_synced_at": "2024-01-12T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "1712245140"
+    "deleted_at": "1712249142"
   },
   {
     "id": "comp_000130",
@@ -1825,8 +1825,8 @@
     "website": "https://cooper.biz/",
     "phone": "++2012",
     "owner_id": "manual_queue",
-    "created_at": "2023-05-13T23:39:00Z",
-    "updated_at": "2023-12-23T23:39:00Z",
+    "created_at": "2023-05-14T00:45:42Z",
+    "updated_at": "2023-12-24T00:45:42Z",
     "address": {
       "line1": "3227 Gregory Parks Apt. 885",
       "city": "Evansside",
@@ -1838,7 +1838,7 @@
     "source_record_id": "SRC-56771",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-04T23:39:00Z"
+    "last_synced_at": "2026-04-05T00:45:42Z"
   },
   {
     "id": "comp_000101",
@@ -1850,8 +1850,8 @@
     "website": "http://delacruz.org/",
     "phone": "+1-417-538-1684x602",
     "owner_id": "own_001",
-    "created_at": "2023.05.10 23:39:00",
-    "updated_at": "2024-07-15T23:39:00Z",
+    "created_at": "2023.05.11 00:45:42",
+    "updated_at": "2024-07-16T00:45:42Z",
     "address": {
       "line1": "9725 Kimberly Oval Suite 250",
       "city": "South Joshuaburgh",
@@ -1863,7 +1863,7 @@
     "source_record_id": "SRC-78195",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-26T23:39:00Z"
+    "last_synced_at": "2026-03-27T00:45:42Z"
   },
   {
     "id": "comp_000128",
@@ -1875,8 +1875,8 @@
     "website": "https://www.collier.com/",
     "phone": "482-575-5394",
     "owner_id": "sales_17",
-    "created_at": "2022.11.01 23:39:00",
-    "updated_at": "1720643940",
+    "created_at": "2022.11.02 00:45:42",
+    "updated_at": "1720647942",
     "street": "333 Clark Flats Apt. 952",
     "city": "North Samanthafort",
     "state": "RI",
@@ -1884,7 +1884,7 @@
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-01T23:39:00Z"
+    "last_synced_at": "2026-04-02T00:45:42Z"
   },
   {
     "id": "comp_000126",
@@ -1896,8 +1896,8 @@
     "website": "http://smith-jefferson.net/",
     "phone": "phone missing",
     "owner_id": "rep_99",
-    "created_at": "2022-06-29T23:39:00Z",
-    "updated_at": "2024-03-10T23:39:00Z",
+    "created_at": "2022-06-30T00:45:42Z",
+    "updated_at": "2024-03-11T00:45:42Z",
     "street": "5669 April Street Apt. 184",
     "city": "Michaelview",
     "state": "IN",
@@ -1906,7 +1906,7 @@
     "source_record_id": "SRC-80879",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "comp_000097",
@@ -1917,8 +1917,8 @@
     "country": "uae",
     "phone": "001-485-508-2148x62890",
     "owner_id": "OWN_002",
-    "created_at": "2023-03-15T23:39:00Z",
-    "updated_at": "2024-03-20T23:39:00Z",
+    "created_at": "2023-03-16T00:45:42Z",
+    "updated_at": "2024-03-21T00:45:42Z",
     "street": "30705 Joshua View",
     "city": "Wagnerville",
     "state": "TX",
@@ -1927,7 +1927,7 @@
     "source_record_id": "SRC-50037",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-01T23:39:00Z"
+    "last_synced_at": "2026-03-02T00:45:42Z"
   },
   {
     "id": "comp_000083",
@@ -1937,8 +1937,8 @@
     "country": "gb",
     "website": "https://brown.com/",
     "owner_id": "OWN_002",
-    "created_at": "2023-07-12T23:39:00Z",
-    "updated_at": "2023-11-28T23:39:00Z",
+    "created_at": "2023-07-13T00:45:42Z",
+    "updated_at": "2023-11-29T00:45:42Z",
     "address": {
       "line1": "03075 Mora Fall",
       "city": "New Lindachester",

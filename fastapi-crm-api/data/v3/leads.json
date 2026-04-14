@@ -14,13 +14,13 @@
     "score": 71,
     "campaign": "referral",
     "owner_id": "manual_queue",
-    "created_at": "2022.12.17 08:39:00",
-    "updated_at": "2023-06-25T12:39:00Z",
+    "created_at": "2022.12.17 09:45:42",
+    "updated_at": "2023-06-25T13:45:42Z",
     "source_system": "Pipedrive",
     "source_record_id": "SRC-24754",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-05-20T12:39:00Z"
+    "last_synced_at": "2023-05-20T13:45:42Z"
   },
   {
     "id": "lead_000002",
@@ -37,13 +37,13 @@
     "score": 92,
     "campaign": "referral",
     "owner_id": "own_001",
-    "created_at": "2023-11-23T15:39:00Z",
-    "updated_at": "2025-02-15T02:39:00Z",
+    "created_at": "2023-11-23T16:45:42Z",
+    "updated_at": "2025-02-15T03:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-21578",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-01-21T02:39:00Z"
+    "last_synced_at": "2025-01-21T03:45:42Z"
   },
   {
     "id": "lead_000003",
@@ -60,13 +60,13 @@
     "score": 10,
     "campaign": "webinar",
     "owner_id": null,
-    "created_at": "2025-10-25T21:39:00Z",
-    "updated_at": "2026-04-01T23:39:00Z",
+    "created_at": "2025-10-25T22:45:42Z",
+    "updated_at": "2026-04-02T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-12901",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-11T23:39:00Z"
+    "last_synced_at": "2026-03-12T00:45:42Z"
   },
   {
     "id": "lead_000004",
@@ -83,13 +83,13 @@
     "score": 4,
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "2022-08-28T02:39:00Z",
-    "updated_at": "2023-07-16T10:39:00Z",
+    "created_at": "2022-08-28T03:45:42Z",
+    "updated_at": "2023-07-16T11:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-22152",
     "sync_status": "failed",
     "sync_version": "v2",
-    "last_synced_at": "2023-06-05T10:39:00Z"
+    "last_synced_at": "2023-06-05T11:45:42Z"
   },
   {
     "id": "lead_000005",
@@ -105,13 +105,13 @@
     "lead_status": "converted",
     "score": 78,
     "owner_id": "own_001",
-    "created_at": "2025-11-21T05:39:00Z",
-    "updated_at": "2026-03-30T23:39:00Z",
+    "created_at": "2025-11-21T06:45:42Z",
+    "updated_at": "2026-03-31T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-57279",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-26T23:39:00Z"
+    "last_synced_at": "2026-03-27T00:45:42Z"
   },
   {
     "id": "lead_000006",
@@ -128,15 +128,15 @@
     "score": 79,
     "campaign": "event",
     "owner_id": "sales_17",
-    "created_at": "2022-06-30T05:39:00Z",
-    "updated_at": "2023-06-09T03:39:00Z",
+    "created_at": "2022-06-30T06:45:42Z",
+    "updated_at": "2023-06-09T04:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-21081",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-05-13T03:39:00Z",
+    "last_synced_at": "2023-05-13T04:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2023-06-18T03:39:00Z"
+    "deleted_at": "2023-06-18T04:45:42Z"
   },
   {
     "id": "lead_000007",
@@ -153,13 +153,13 @@
     "score": 57,
     "campaign": "webinar",
     "owner_id": "sales_17",
-    "created_at": "2024-08-21T00:39:00Z",
-    "updated_at": "2026-01-29T19:39:00Z",
+    "created_at": "2024-08-21T01:45:42Z",
+    "updated_at": "2026-01-29T20:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-26442",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2025-12-20T19:39:00Z"
+    "last_synced_at": "2025-12-20T20:45:42Z"
   },
   {
     "id": "lead_000008",
@@ -175,13 +175,13 @@
     "lead_status": "qualified",
     "score": 52,
     "owner_id": "rep_99",
-    "created_at": "2025-05-12T06:39:00Z",
-    "updated_at": "2025-12-05T02:39:00Z",
+    "created_at": "2025-05-12T07:45:42Z",
+    "updated_at": "2025-12-05T03:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-37278",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2025-11-09T02:39:00Z"
+    "last_synced_at": "2025-11-09T03:45:42Z"
   },
   {
     "id": "lead_000009",
@@ -198,13 +198,13 @@
     "score": 49,
     "campaign": "webinar",
     "owner_id": "own_001",
-    "created_at": "2026-03-10T08:39:00Z",
-    "updated_at": "2026-04-10T23:39:00Z",
+    "created_at": "2026-03-10T09:45:42Z",
+    "updated_at": "2026-04-11T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-41603",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "lead_000010",
@@ -221,13 +221,13 @@
     "score": 13,
     "campaign": "adwords",
     "owner_id": "own_001",
-    "created_at": "2023-06-04T09:39:00Z",
-    "updated_at": "2023-06-08T10:39:00Z",
+    "created_at": "2023-06-04T10:45:42Z",
+    "updated_at": "2023-06-08T11:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-82735",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-05-29T10:39:00Z"
+    "last_synced_at": "2023-05-29T11:45:42Z"
   },
   {
     "id": "lead_000011",
@@ -244,13 +244,13 @@
     "score": 32,
     "campaign": "event",
     "owner_id": "rep_99",
-    "created_at": "2025-08-04T01:39:00Z",
-    "updated_at": "2025-08-05T01:39:00Z",
+    "created_at": "2025-08-04T02:45:42Z",
+    "updated_at": "2025-08-05T02:45:42Z",
     "source_system": "SF",
     "source_record_id": "SRC-77124",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2025-06-29T01:39:00Z"
+    "last_synced_at": "2025-06-29T02:45:42Z"
   },
   {
     "id": "lead_000012",
@@ -267,13 +267,13 @@
     "score": "47",
     "campaign": "referral",
     "owner_id": "own_001",
-    "created_at": "2025-11-13T08:39:00Z",
-    "updated_at": "2026-04-05T23:39:00Z",
+    "created_at": "2025-11-13T09:45:42Z",
+    "updated_at": "2026-04-06T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-75817",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-02-27T23:39:00Z"
+    "last_synced_at": "2026-02-28T00:45:42Z"
   },
   {
     "id": "lead_000013",
@@ -289,13 +289,13 @@
     "score": 100,
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2025-03-28T12:39:00Z",
-    "updated_at": "2026-04-06T23:39:00Z",
+    "created_at": "2025-03-28T13:45:42Z",
+    "updated_at": "2026-04-07T00:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-66712",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-28T23:39:00Z"
+    "last_synced_at": "2026-03-29T00:45:42Z"
   },
   {
     "id": "lead_000014",
@@ -311,13 +311,13 @@
     "lead_status": "junk",
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2025-06-09T08:39:00Z",
+    "created_at": "2025-06-09T09:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-38719",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-27T23:39:00Z",
-    "last_modified": "2026-04-07T23:39:00Z"
+    "last_synced_at": "2026-03-28T00:45:42Z",
+    "last_modified": "2026-04-08T00:45:42Z"
   },
   {
     "id": "lead_000015",
@@ -334,13 +334,13 @@
     "score": 99,
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "2025-02-05T02:39:00Z",
-    "updated_at": "2025-06-11T22:39:00Z",
+    "created_at": "2025-02-05T03:45:42Z",
+    "updated_at": "2025-06-11T23:45:42Z",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-81752",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2025-05-25T22:39:00Z"
+    "last_synced_at": "2025-05-25T23:45:42Z"
   },
   {
     "id": "lead_000016",
@@ -357,13 +357,13 @@
     "score": 21,
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2022.04.29 19:39:00",
-    "updated_at": "2022-08-06T06:39:00Z",
+    "created_at": "2022.04.29 20:45:42",
+    "updated_at": "2022-08-06T07:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-92475",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2022-06-26T06:39:00Z"
+    "last_synced_at": "2022-06-26T07:45:42Z"
   },
   {
     "id": "lead_000017",
@@ -380,13 +380,13 @@
     "score": 54,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2025-10-01T01:39:00Z",
-    "updated_at": "2026-04-06T23:39:00Z",
+    "created_at": "2025-10-01T02:45:42Z",
+    "updated_at": "2026-04-07T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-13912",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-06T23:39:00Z"
+    "last_synced_at": "2026-04-07T00:45:42Z"
   },
   {
     "id": "lead_000018",
@@ -403,8 +403,8 @@
     "score": 14,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2022-02-07T23:39:00Z",
-    "updated_at": "2022-10-02T15:39:00Z",
+    "created_at": "2022-02-08T00:45:42Z",
+    "updated_at": "2022-10-02T16:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-98736",
     "sync_status": "synced",
@@ -424,13 +424,13 @@
     "contact_id": "cont_000195",
     "lead_status": "converted",
     "owner_id": "manual_queue",
-    "created_at": "2022-01-22T21:39:00Z",
-    "updated_at": "02/08/2022 18:39",
+    "created_at": "2022-01-22T22:45:42Z",
+    "updated_at": "02/08/2022 19:45",
     "source_system": "salesforce",
     "source_record_id": "SRC-61186",
     "sync_status": "failed",
     "sync_version": "v3",
-    "last_synced_at": "2022-01-26T18:39:00Z"
+    "last_synced_at": "2022-01-26T19:45:42Z"
   },
   {
     "id": "lead_000020",
@@ -446,13 +446,13 @@
     "lead_status": "junk",
     "score": 74,
     "owner_id": "manual_queue",
-    "created_at": "2022-01-03T09:39:00Z",
-    "updated_at": "2022-08-04T08:39:00Z",
+    "created_at": "2022-01-03T10:45:42Z",
+    "updated_at": "2022-08-04T09:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-57587",
     "sync_status": "failed",
     "sync_version": "3",
-    "last_synced_at": "2022-07-30T08:39:00Z"
+    "last_synced_at": "2022-07-30T09:45:42Z"
   },
   {
     "id": "lead_000021",
@@ -469,13 +469,13 @@
     "score": "99",
     "campaign": "cold_list",
     "owner_id": "own_001",
-    "created_at": "2023-10-05T05:39:00Z",
-    "updated_at": "2024-08-07T13:39:00Z",
+    "created_at": "2023-10-05T06:45:42Z",
+    "updated_at": "2024-08-07T14:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-52674",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-06-26T13:39:00Z",
+    "last_synced_at": "2024-06-26T14:45:42Z",
     "status": "converted"
   },
   {
@@ -493,13 +493,13 @@
     "score": 87,
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2025-12-21T11:39:00Z",
-    "updated_at": "2026-04-03T23:39:00Z",
+    "created_at": "2025-12-21T12:45:42Z",
+    "updated_at": "2026-04-04T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-93857",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-20T23:39:00Z"
+    "last_synced_at": "2026-03-21T00:45:42Z"
   },
   {
     "id": "lead_000023",
@@ -516,13 +516,13 @@
     "score": 95,
     "campaign": "webinar",
     "owner_id": "sales_17",
-    "created_at": "2026-03-13T14:39:00Z",
-    "updated_at": "2026-03-29T23:39:00Z",
+    "created_at": "2026-03-13T15:45:42Z",
+    "updated_at": "2026-03-30T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-54306",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-02-21T23:39:00Z"
+    "last_synced_at": "2026-02-22T00:45:42Z"
   },
   {
     "id": "lead_000024",
@@ -539,15 +539,15 @@
     "score": 22,
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2022-03-11T02:39:00Z",
-    "updated_at": "2023-04-25T02:39:00Z",
+    "created_at": "2022-03-11T03:45:42Z",
+    "updated_at": "2023-04-25T03:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-77981",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-04-24T02:39:00Z",
+    "last_synced_at": "2023-04-24T03:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2023-07-04T02:39:00Z"
+    "deleted_at": "2023-07-04T03:45:42Z"
   },
   {
     "id": "lead_000025",
@@ -564,13 +564,13 @@
     "score": 57,
     "campaign": "webinar",
     "owner_id": "rep_99",
-    "created_at": "2025-07-10T05:39:00Z",
-    "updated_at": "2025-10-16T02:39:00Z",
+    "created_at": "2025-07-10T06:45:42Z",
+    "updated_at": "2025-10-16T03:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-20066",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-09-12T02:39:00Z"
+    "last_synced_at": "2025-09-12T03:45:42Z"
   },
   {
     "id": "lead_000026",
@@ -587,15 +587,15 @@
     "score": 6,
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "2025-01-13T19:39:00Z",
-    "updated_at": "2025-03-31T01:39:00Z",
+    "created_at": "2025-01-13T20:45:42Z",
+    "updated_at": "2025-03-31T02:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-71759",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2025-02-26T01:39:00Z",
+    "last_synced_at": "2025-02-26T02:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2025.05.22 01:39:00"
+    "deleted_at": "2025.05.22 02:45:42"
   },
   {
     "id": "lead_000027",
@@ -612,13 +612,13 @@
     "score": 17,
     "campaign": "adwords",
     "owner_id": "manual_queue",
-    "created_at": "2025-08-01T20:39:00Z",
-    "updated_at": "2026-04-12T23:39:00Z",
+    "created_at": "2025-08-01T21:45:42Z",
+    "updated_at": "2026-04-13T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-39052",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-01T23:39:00Z"
+    "last_synced_at": "2026-04-02T00:45:42Z"
   },
   {
     "id": "lead_000028",
@@ -634,13 +634,13 @@
     "lead_status": "new",
     "score": 12,
     "owner_id": "OWN_002",
-    "created_at": "2022-08-26T20:39:00Z",
-    "updated_at": "2024-04-02T08:39:00Z",
+    "created_at": "2022-08-26T21:45:42Z",
+    "updated_at": "2024-04-02T09:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-65337",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-03-08T08:39:00Z"
+    "last_synced_at": "2024-03-08T09:45:42Z"
   },
   {
     "id": "lead_000029",
@@ -656,13 +656,13 @@
     "score": 5,
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2024-09-21T15:39:00Z",
-    "updated_at": "2026-04-13T23:39:00Z",
+    "created_at": "2024-09-21T16:45:42Z",
+    "updated_at": "2026-04-14T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-54627",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-06T23:39:00Z"
+    "last_synced_at": "2026-03-07T00:45:42Z"
   },
   {
     "id": "lead_000030",
@@ -679,12 +679,12 @@
     "score": 13,
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2025-02-17T02:39:00Z",
+    "created_at": "2025-02-17T03:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-92577",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-02-28T23:39:00Z",
+    "last_synced_at": "2026-03-01T00:45:42Z",
     "is_deleted": false,
     "deleted_at": null
   },
@@ -702,13 +702,13 @@
     "score": 96,
     "campaign": "event",
     "owner_id": "manual_queue",
-    "created_at": "2023-12-16T06:39:00Z",
-    "updated_at": "2025-02-10T21:39:00Z",
+    "created_at": "2023-12-16T07:45:42Z",
+    "updated_at": "2025-02-10T22:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-57700",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2025-01-28T21:39:00Z",
+    "last_synced_at": "2025-01-28T22:45:42Z",
     "firstName": "Carlos"
   },
   {
@@ -726,15 +726,15 @@
     "score": 48,
     "campaign": "event",
     "owner_id": "own_001",
-    "created_at": "2026-02-26T03:39:00Z",
-    "updated_at": "2026-04-06T23:39:00Z",
+    "created_at": "2026-02-26T04:45:42Z",
+    "updated_at": "2026-04-07T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-91746",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-02-23T23:39:00Z",
+    "last_synced_at": "2026-02-24T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-04-17T23:39:00Z"
+    "deleted_at": "2026-04-18T00:45:42Z"
   },
   {
     "id": "lead_000033",
@@ -751,13 +751,13 @@
     "score": 76,
     "campaign": "cold_list",
     "owner_id": "OWN_002",
-    "created_at": "2023-05-01T16:39:00Z",
-    "updated_at": "2024-01-28T14:39:00Z",
+    "created_at": "2023-05-01T17:45:42Z",
+    "updated_at": "2024-01-28T15:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-29475",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-01-01T14:39:00Z"
+    "last_synced_at": "2024-01-01T15:45:42Z"
   },
   {
     "id": "lead_000034",
@@ -774,15 +774,15 @@
     "score": 17,
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2021-12-20T10:39:00Z",
-    "updated_at": "2022.07.31 07:39:00",
+    "created_at": "2021-12-20T11:45:42Z",
+    "updated_at": "2022.07.31 08:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-79885",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2022-06-30T07:39:00Z",
+    "last_synced_at": "2022-06-30T08:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2022.09.11 07:39:00"
+    "deleted_at": "2022.09.11 08:45:42"
   },
   {
     "id": "lead_000035",
@@ -798,13 +798,13 @@
     "lead_status": "junk",
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2026-02-28T15:39:00Z",
-    "updated_at": "2026-03-29T23:39:00Z",
+    "created_at": "2026-02-28T16:45:42Z",
+    "updated_at": "2026-03-30T00:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-75608",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-02-15T23:39:00Z",
+    "last_synced_at": "2026-02-16T00:45:42Z",
     "status": "converted"
   },
   {
@@ -822,13 +822,13 @@
     "score": 91,
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2022.08.21 20:39:00",
-    "updated_at": "2022.09.06 08:39:00",
+    "created_at": "2022.08.21 21:45:42",
+    "updated_at": "2022.09.06 09:45:42",
     "source_system": "SalesForce",
     "source_record_id": "SRC-90259",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2022-08-30T08:39:00Z"
+    "last_synced_at": "2022-08-30T09:45:42Z"
   },
   {
     "id": "lead_000037",
@@ -845,13 +845,13 @@
     "score": 66,
     "campaign": "event",
     "owner_id": "own_001",
-    "created_at": "2023-02-27T01:39:00Z",
-    "updated_at": "2024-02-26T18:39:00Z",
+    "created_at": "2023-02-27T02:45:42Z",
+    "updated_at": "2024-02-26T19:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-27148",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-01-21T18:39:00Z"
+    "last_synced_at": "2024-01-21T19:45:42Z"
   },
   {
     "id": "lead_000038",
@@ -868,13 +868,13 @@
     "score": 72,
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2024-07-29T09:39:00Z",
-    "updated_at": "2025-02-26T06:39:00Z",
+    "created_at": "2024-07-29T10:45:42Z",
+    "updated_at": "2025-02-26T07:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-75060",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-01-28T06:39:00Z"
+    "last_synced_at": "2025-01-28T07:45:42Z"
   },
   {
     "id": "lead_000039",
@@ -891,15 +891,15 @@
     "score": "77",
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2023-05-18T10:39:00Z",
-    "updated_at": "2024-11-18T15:39:00Z",
+    "created_at": "2023-05-18T11:45:42Z",
+    "updated_at": "2024-11-18T16:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-57205",
     "sync_status": "SYNCED",
     "sync_version": "v2",
-    "last_synced_at": "2024-10-13T15:39:00Z",
+    "last_synced_at": "2024-10-13T16:45:42Z",
     "is_deleted": null,
-    "deleted_at": "2024-11-13T15:39:00Z"
+    "deleted_at": "2024-11-13T16:45:42Z"
   },
   {
     "id": "lead_000040",
@@ -916,13 +916,13 @@
     "score": 60,
     "campaign": "cold_list",
     "owner_id": "manual_queue",
-    "created_at": "10/10/2023 12:39",
-    "updated_at": "01/18/2024 16:39",
+    "created_at": "10/10/2023 13:45",
+    "updated_at": "01/18/2024 17:45",
     "source_system": "manual_entry",
     "source_record_id": "SRC-39559",
     "sync_status": null,
     "sync_version": "3",
-    "last_synced_at": "2023-12-09T16:39:00Z"
+    "last_synced_at": "2023-12-09T17:45:42Z"
   },
   {
     "id": "lead_000041",
@@ -939,15 +939,15 @@
     "score": 47,
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "1713929940",
-    "updated_at": "2025-09-14T10:39:00Z",
+    "created_at": "1713933942",
+    "updated_at": "2025-09-14T11:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-21704",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-08-07T10:39:00Z",
+    "last_synced_at": "2025-08-07T11:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2025-11-24T10:39:00Z"
+    "deleted_at": "2025-11-24T11:45:42Z"
   },
   {
     "id": "lead_000042",
@@ -964,13 +964,13 @@
     "score": "21",
     "campaign": "webinar",
     "owner_id": "owner_03",
-    "created_at": "2025-08-09T13:39:00Z",
-    "updated_at": "2026-04-13T23:39:00Z",
+    "created_at": "2025-08-09T14:45:42Z",
+    "updated_at": "2026-04-14T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-21407",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-07T23:39:00Z"
+    "last_synced_at": "2026-04-08T00:45:42Z"
   },
   {
     "id": "lead_000043",
@@ -986,13 +986,13 @@
     "score": 87,
     "campaign": null,
     "owner_id": "own_001",
-    "created_at": "2025-12-30T05:39:00Z",
-    "updated_at": "2026-04-12T23:39:00Z",
+    "created_at": "2025-12-30T06:45:42Z",
+    "updated_at": "2026-04-13T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-84398",
     "sync_status": "pending",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "lead_000044",
@@ -1009,13 +1009,13 @@
     "score": 88,
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "2025-03-05T00:39:00Z",
-    "updated_at": "2026-03-31T23:39:00Z",
+    "created_at": "2025-03-05T01:45:42Z",
+    "updated_at": "2026-04-01T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-78648",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-19T23:39:00Z"
+    "last_synced_at": "2026-03-20T00:45:42Z"
   },
   {
     "id": "lead_000045",
@@ -1031,13 +1031,13 @@
     "score": 82,
     "campaign": null,
     "owner_id": "sales_17",
-    "created_at": "2021-11-28T12:39:00Z",
-    "updated_at": "2023-01-05T20:39:00Z",
+    "created_at": "2021-11-28T13:45:42Z",
+    "updated_at": "2023-01-05T21:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-92360",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2022-12-19T20:39:00Z"
+    "last_synced_at": "2022-12-19T21:45:42Z"
   },
   {
     "id": "lead_000046",
@@ -1053,16 +1053,16 @@
     "lead_status": "converted",
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2024-03-29T15:39:00Z",
-    "updated_at": "2025-10-17T16:39:00Z",
+    "created_at": "2024-03-29T16:45:42Z",
+    "updated_at": "2025-10-17T17:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-89582",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2025-09-21T16:39:00Z",
+    "last_synced_at": "2025-09-21T17:45:42Z",
     "status": "lost",
     "is_deleted": false,
-    "deleted_at": "2025-10-13T16:39:00Z"
+    "deleted_at": "2025-10-13T17:45:42Z"
   },
   {
     "id": "lead_000047",
@@ -1079,8 +1079,8 @@
     "score": 55,
     "campaign": "referral",
     "owner_id": "manual_queue",
-    "created_at": "2023-09-01T03:39:00Z",
-    "updated_at": "2025-04-18T16:39:00Z",
+    "created_at": "2023-09-01T04:45:42Z",
+    "updated_at": "2025-04-18T17:45:42Z",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-61654",
     "sync_status": "synced",
@@ -1102,13 +1102,13 @@
     "score": 61,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2023.03.18 20:39:00",
-    "updated_at": "2024-02-16T23:39:00Z",
+    "created_at": "2023.03.18 21:45:42",
+    "updated_at": "2024-02-17T00:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-12847",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-01-31T23:39:00Z"
+    "last_synced_at": "2024-02-01T00:45:42Z"
   },
   {
     "id": "lead_000049",
@@ -1124,13 +1124,13 @@
     "lead_status": "new",
     "campaign": "cold_list",
     "owner_id": "OWN_002",
-    "created_at": "07/25/2023 13:39",
-    "updated_at": "2024-10-11T04:39:00Z",
+    "created_at": "07/25/2023 14:45",
+    "updated_at": "2024-10-11T05:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-22432",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-10-03T04:39:00Z"
+    "last_synced_at": "2024-10-03T05:45:42Z"
   },
   {
     "id": "lead_000050",
@@ -1146,13 +1146,13 @@
     "score": 59,
     "campaign": "cold_list",
     "owner_id": "OWN_002",
-    "created_at": "2025-12-13T03:39:00Z",
-    "updated_at": "2026-04-02T23:39:00Z",
+    "created_at": "2025-12-13T04:45:42Z",
+    "updated_at": "2026-04-03T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-49503",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-01T23:39:00Z"
+    "last_synced_at": "2026-03-02T00:45:42Z"
   },
   {
     "id": "lead_000051",
@@ -1169,13 +1169,13 @@
     "score": 80,
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2023-05-13T16:39:00Z",
-    "updated_at": "2024-06-16T00:39:00Z",
+    "created_at": "2023-05-13T17:45:42Z",
+    "updated_at": "2024-06-16T01:45:42Z",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-15458",
     "sync_status": "pending",
     "sync_version": "4",
-    "last_synced_at": "2024-05-10T00:39:00Z"
+    "last_synced_at": "2024-05-10T01:45:42Z"
   },
   {
     "id": "lead_000052",
@@ -1191,13 +1191,13 @@
     "lead_status": "qualified",
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2022-09-17T11:39:00Z",
-    "updated_at": "2023-10-12T17:39:00Z",
+    "created_at": "2022-09-17T12:45:42Z",
+    "updated_at": "2023-10-12T18:45:42Z",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-13847",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-09-20T17:39:00Z"
+    "last_synced_at": "2023-09-20T18:45:42Z"
   },
   {
     "id": "lead_000053",
@@ -1214,13 +1214,13 @@
     "score": 8,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2022-04-26T11:39:00Z",
-    "updated_at": "2023-10-07T15:39:00Z",
+    "created_at": "2022-04-26T12:45:42Z",
+    "updated_at": "2023-10-07T16:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-38510",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-09-09T15:39:00Z"
+    "last_synced_at": "2023-09-09T16:45:42Z"
   },
   {
     "id": "lead_000054",
@@ -1236,13 +1236,13 @@
     "lead_status": "qualified",
     "score": 47,
     "owner_id": "manual_queue",
-    "created_at": "2023-10-02T15:39:00Z",
-    "updated_at": "2024-02-14T09:39:00Z",
+    "created_at": "2023-10-02T16:45:42Z",
+    "updated_at": "2024-02-14T10:45:42Z",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-78937",
     "sync_status": "FAILED",
     "sync_version": 2,
-    "last_synced_at": "2024-01-24T09:39:00Z"
+    "last_synced_at": "2024-01-24T10:45:42Z"
   },
   {
     "id": "lead_000055",
@@ -1259,13 +1259,13 @@
     "score": 6,
     "campaign": "adwords",
     "owner_id": "owner_03",
-    "created_at": "1753137540",
-    "updated_at": "2026-04-13T23:39:00Z",
+    "created_at": "1753141542",
+    "updated_at": "2026-04-14T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-57331",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-06T23:39:00Z"
+    "last_synced_at": "2026-03-07T00:45:42Z"
   },
   {
     "id": "lead_000056",
@@ -1282,13 +1282,13 @@
     "score": "61",
     "campaign": "cold_list",
     "owner_id": "own_001",
-    "created_at": "2025.07.17 19:39:00",
-    "updated_at": "2026-02-25T11:39:00Z",
+    "created_at": "2025.07.17 20:45:42",
+    "updated_at": "2026-02-25T12:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-53376",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-01-21T11:39:00Z"
+    "last_synced_at": "2026-01-21T12:45:42Z"
   },
   {
     "id": "lead_000057",
@@ -1305,16 +1305,16 @@
     "score": "100",
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2023.09.04 10:39:00",
-    "updated_at": "2024-12-04T18:39:00Z",
+    "created_at": "2023.09.04 11:45:42",
+    "updated_at": "2024-12-04T19:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-35866",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2024-11-11T18:39:00Z",
+    "last_synced_at": "2024-11-11T19:45:42Z",
     "status": "new",
     "is_deleted": false,
-    "deleted_at": "2024-11-29T18:39:00Z"
+    "deleted_at": "2024-11-29T19:45:42Z"
   },
   {
     "id": "lead_000058",
@@ -1331,13 +1331,13 @@
     "score": 39,
     "campaign": "cold_list",
     "owner_id": "own_001",
-    "created_at": "2022.07.06 08:39:00",
-    "updated_at": "2023-09-03T21:39:00Z",
+    "created_at": "2022.07.06 09:45:42",
+    "updated_at": "2023-09-03T22:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-16660",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2023-08-29T21:39:00Z"
+    "last_synced_at": "2023-08-29T22:45:42Z"
   },
   {
     "id": "lead_000059",
@@ -1354,12 +1354,12 @@
     "score": 26,
     "campaign": "cold_list",
     "owner_id": "own_001",
-    "created_at": "2023.04.19 07:39:00",
-    "updated_at": "2024-10-29T18:39:00Z",
+    "created_at": "2023.04.19 08:45:42",
+    "updated_at": "2024-10-29T19:45:42Z",
     "source_system": "pipedrive",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2024-10-04T18:39:00Z"
+    "last_synced_at": "2024-10-04T19:45:42Z"
   },
   {
     "id": "lead_000060",
@@ -1375,13 +1375,13 @@
     "score": 99,
     "campaign": "event",
     "owner_id": "sales_17",
-    "created_at": "2023-03-20T04:39:00Z",
-    "updated_at": "2023-10-22T20:39:00Z",
+    "created_at": "2023-03-20T05:45:42Z",
+    "updated_at": "2023-10-22T21:45:42Z",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-45778",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2023-09-18T20:39:00Z"
+    "last_synced_at": "2023-09-18T21:45:42Z"
   },
   {
     "id": "lead_000061",
@@ -1398,13 +1398,13 @@
     "score": 73,
     "campaign": "adwords",
     "owner_id": "owner_03",
-    "created_at": "2024-11-09T09:39:00Z",
-    "updated_at": "2025-10-11T01:39:00Z",
+    "created_at": "2024-11-09T10:45:42Z",
+    "updated_at": "2025-10-11T02:45:42Z",
     "source_system": "salesforce",
     "source_record_id": null,
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-09-17T01:39:00Z"
+    "last_synced_at": "2025-09-17T02:45:42Z"
   },
   {
     "id": "lead_000062",
@@ -1421,13 +1421,13 @@
     "score": 74,
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2024-01-09T11:39:00Z",
-    "updated_at": "2025-03-13T08:39:00Z",
+    "created_at": "2024-01-09T12:45:42Z",
+    "updated_at": "2025-03-13T09:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-94620",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-02-17T08:39:00Z"
+    "last_synced_at": "2025-02-17T09:45:42Z"
   },
   {
     "id": "lead_000063",
@@ -1443,13 +1443,13 @@
     "score": "84",
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2024-09-17T13:39:00Z",
-    "updated_at": "2025-08-19T07:39:00Z",
+    "created_at": "2024-09-17T14:45:42Z",
+    "updated_at": "2025-08-19T08:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-10279",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2025-07-29T07:39:00Z"
+    "last_synced_at": "2025-07-29T08:45:42Z"
   },
   {
     "id": "lead_000064",
@@ -1466,14 +1466,14 @@
     "score": 48,
     "campaign": "adwords",
     "owner_id": "own_001",
-    "created_at": "2025-11-09T14:39:00Z",
-    "updated_at": "2026-04-12T16:39:00Z",
+    "created_at": "2025-11-09T15:45:42Z",
+    "updated_at": "2026-04-12T17:45:42Z",
     "source_system": "manual_entry",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-01T16:39:00Z",
+    "last_synced_at": "2026-03-01T17:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-05-11T16:39:00Z"
+    "deleted_at": "2026-05-11T17:45:42Z"
   },
   {
     "id": "lead_000065",
@@ -1489,13 +1489,13 @@
     "score": 65,
     "campaign": "cold_list",
     "owner_id": "own_001",
-    "created_at": "2023-06-15T02:39:00Z",
-    "updated_at": "2023-08-02T10:39:00Z",
+    "created_at": "2023-06-15T03:45:42Z",
+    "updated_at": "2023-08-02T11:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-15001",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-07-25T10:39:00Z"
+    "last_synced_at": "2023-07-25T11:45:42Z"
   },
   {
     "id": "lead_000066",
@@ -1512,13 +1512,13 @@
     "score": "6",
     "campaign": "event",
     "owner_id": "own_001",
-    "created_at": "2023.05.18 17:39:00",
-    "updated_at": "2023-07-03T02:39:00Z",
+    "created_at": "2023.05.18 18:45:42",
+    "updated_at": "2023-07-03T03:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-28341",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2023-05-29T02:39:00Z"
+    "last_synced_at": "2023-05-29T03:45:42Z"
   },
   {
     "id": "lead_000067",
@@ -1534,15 +1534,15 @@
     "score": 43,
     "campaign": "referral",
     "owner_id": "OWN_002",
-    "created_at": "2025-01-26T11:39:00Z",
-    "updated_at": "2025-04-25T00:39:00Z",
+    "created_at": "2025-01-26T12:45:42Z",
+    "updated_at": "2025-04-25T01:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-17096",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2025-03-31T00:39:00Z",
+    "last_synced_at": "2025-03-31T01:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2025-04-10T00:39:00Z"
+    "deleted_at": "2025-04-10T01:45:42Z"
   },
   {
     "id": "lead_000068",
@@ -1559,13 +1559,13 @@
     "score": "30",
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2024-01-20T09:39:00Z",
-    "updated_at": "2024-08-14T14:39:00Z",
+    "created_at": "2024-01-20T10:45:42Z",
+    "updated_at": "2024-08-14T15:45:42Z",
     "source_system": "MANUAL_ENTRY",
     "source_record_id": "SRC-46946",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2024-08-09T14:39:00Z",
+    "last_synced_at": "2024-08-09T15:45:42Z",
     "status": "lost"
   },
   {
@@ -1583,12 +1583,12 @@
     "score": 29,
     "campaign": "adwords",
     "owner_id": "owner_03",
-    "created_at": "2022-07-17T21:39:00Z",
-    "updated_at": "2023-06-13T19:39:00Z",
+    "created_at": "2022-07-17T22:45:42Z",
+    "updated_at": "2023-06-13T20:45:42Z",
     "source_system": "hubspot",
     "sync_status": null,
     "sync_version": "v2",
-    "last_synced_at": "2023-06-01T19:39:00Z"
+    "last_synced_at": "2023-06-01T20:45:42Z"
   },
   {
     "id": "lead_000070",
@@ -1604,13 +1604,13 @@
     "score": 29,
     "campaign": "adwords",
     "owner_id": "manual_queue",
-    "created_at": "2022-01-05T15:39:00Z",
-    "updated_at": "2023-04-01T16:39:00Z",
+    "created_at": "2022-01-05T16:45:42Z",
+    "updated_at": "2023-04-01T17:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-22128",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-03-08T16:39:00Z"
+    "last_synced_at": "2023-03-08T17:45:42Z"
   },
   {
     "id": "lead_000071",
@@ -1626,13 +1626,13 @@
     "score": 64,
     "campaign": "webinar",
     "owner_id": "rep_99",
-    "created_at": "2023-02-16T17:39:00Z",
-    "updated_at": "2023-10-28T15:39:00Z",
+    "created_at": "2023-02-16T18:45:42Z",
+    "updated_at": "2023-10-28T16:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-49318",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2023-10-06T15:39:00Z"
+    "last_synced_at": "2023-10-06T16:45:42Z"
   },
   {
     "id": "lead_000072",
@@ -1649,15 +1649,15 @@
     "score": 53,
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "2022-07-26T13:39:00Z",
+    "created_at": "2022-07-26T14:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-96199",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-09-27T17:39:00Z",
+    "last_synced_at": "2023-09-27T18:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2023-12-21T17:39:00Z",
-    "created_date": "2022-07-26T13:39:00Z"
+    "deleted_at": "2023-12-21T18:45:42Z",
+    "created_date": "2022-07-26T14:45:42Z"
   },
   {
     "id": "lead_000073",
@@ -1673,13 +1673,13 @@
     "score": "50",
     "campaign": "cold_list",
     "owner_id": "OWN_002",
-    "created_at": "2023-04-07T09:39:00Z",
-    "updated_at": "07/27/2024 00:39",
+    "created_at": "2023-04-07T10:45:42Z",
+    "updated_at": "07/27/2024 01:45",
     "source_system": "manual_entry",
     "source_record_id": "SRC-54020",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-07-08T00:39:00Z"
+    "last_synced_at": "2024-07-08T01:45:42Z"
   },
   {
     "id": "lead_000074",
@@ -1696,13 +1696,13 @@
     "score": null,
     "campaign": "event",
     "owner_id": "sales_17",
-    "created_at": "2023-01-04T00:39:00Z",
-    "updated_at": "2024-04-18T09:39:00Z",
+    "created_at": "2023-01-04T01:45:42Z",
+    "updated_at": "2024-04-18T10:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-78805",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2024-04-06T09:39:00Z",
+    "last_synced_at": "2024-04-06T10:45:42Z",
     "status": "new"
   },
   {
@@ -1720,13 +1720,13 @@
     "score": "49",
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2021-12-26T20:39:00Z",
-    "updated_at": "2022.06.26 07:39:00",
+    "created_at": "2021-12-26T21:45:42Z",
+    "updated_at": "2022.06.26 08:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-74343",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2022-05-21T07:39:00Z"
+    "last_synced_at": "2022-05-21T08:45:42Z"
   },
   {
     "id": "lead_000076",
@@ -1742,15 +1742,15 @@
     "score": 24,
     "campaign": "cold_list",
     "owner_id": "OWN_002",
-    "created_at": "2025-03-28T22:39:00Z",
-    "updated_at": "2025-08-15T17:39:00Z",
+    "created_at": "2025-03-28T23:45:42Z",
+    "updated_at": "2025-08-15T18:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-87232",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-07-23T17:39:00Z",
+    "last_synced_at": "2025-07-23T18:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2025-09-13T17:39:00Z",
+    "deleted_at": "2025-09-13T18:45:42Z",
     "phone_number": "696-702-6676x5272"
   },
   {
@@ -1768,13 +1768,13 @@
     "score": 17,
     "campaign": "referral",
     "owner_id": "OWN_002",
-    "created_at": "2022.04.26 02:39:00",
-    "updated_at": "2023.09.15 01:39:00",
+    "created_at": "2022.04.26 03:45:42",
+    "updated_at": "2023.09.15 02:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-75916",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-08-02T01:39:00Z"
+    "last_synced_at": "2023-08-02T02:45:42Z"
   },
   {
     "id": "lead_000078",
@@ -1791,13 +1791,13 @@
     "score": 83,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2023-03-13T11:39:00Z",
-    "updated_at": "2024-06-26 11:39:00",
+    "created_at": "2023-03-13T12:45:42Z",
+    "updated_at": "2024-06-26 12:45:42",
     "source_system": "internal_crm",
     "source_record_id": "SRC-18841",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2024-06-17T11:39:00Z"
+    "last_synced_at": "2024-06-17T12:45:42Z"
   },
   {
     "id": "lead_000079",
@@ -1813,13 +1813,13 @@
     "lead_status": "junk",
     "campaign": "webinar",
     "owner_id": "own_001",
-    "created_at": "12/04/2021 03:39",
-    "updated_at": "2023-07-27T10:39:00Z",
+    "created_at": "12/04/2021 04:45",
+    "updated_at": "2023-07-27T11:45:42Z",
     "source_system": "HubSpot",
     "source_record_id": null,
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2023-07-04T10:39:00Z"
+    "last_synced_at": "2023-07-04T11:45:42Z"
   },
   {
     "id": "lead_000080",
@@ -1836,13 +1836,13 @@
     "score": 32,
     "campaign": "referral",
     "owner_id": "OWN_002",
-    "created_at": "2022.03.23 01:39:00",
-    "updated_at": "2022-09-12T05:39:00Z",
+    "created_at": "2022.03.23 02:45:42",
+    "updated_at": "2022-09-12T06:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-91818",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2022-08-13T05:39:00Z",
+    "last_synced_at": "2022-08-13T06:45:42Z",
     "status": "converted"
   },
   {
@@ -1860,15 +1860,15 @@
     "score": 43,
     "campaign": "referral",
     "owner_id": "own_001",
-    "created_at": "2023-12-18T21:39:00Z",
-    "updated_at": "2025-01-14T13:39:00Z",
+    "created_at": "2023-12-18T22:45:42Z",
+    "updated_at": "2025-01-14T14:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-66983",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2025-01-14T13:39:00Z",
+    "last_synced_at": "2025-01-14T14:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2025-03-11T13:39:00Z"
+    "deleted_at": "2025-03-11T14:45:42Z"
   },
   {
     "id": "lead_000082",
@@ -1884,13 +1884,13 @@
     "score": 38,
     "campaign": "webinar",
     "owner_id": "owner_03",
-    "created_at": "2022.12.03 20:39:00",
-    "updated_at": "2023.03.19 16:39:00",
+    "created_at": "2022.12.03 21:45:42",
+    "updated_at": "2023.03.19 17:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-57424",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2023-02-10T16:39:00Z",
+    "last_synced_at": "2023-02-10T17:45:42Z",
     "email_address": "elizabethromero@example.com"
   },
   {
@@ -1908,13 +1908,13 @@
     "score": 42,
     "campaign": "cold_list",
     "owner_id": "own_001",
-    "created_at": "2025-10-14T01:39:00Z",
-    "updated_at": "2026-03-30T23:39:00Z",
+    "created_at": "2025-10-14T02:45:42Z",
+    "updated_at": "2026-03-31T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-45797",
     "sync_status": "failed",
     "sync_version": 2,
-    "last_synced_at": "2026-03-10T23:39:00Z"
+    "last_synced_at": "2026-03-11T00:45:42Z"
   },
   {
     "id": "lead_000084",
@@ -1931,15 +1931,15 @@
     "score": 2,
     "campaign": "adwords",
     "owner_id": "owner_03",
-    "created_at": "2025-05-16T00:39:00Z",
-    "updated_at": "2026-01-28T12:39:00Z",
+    "created_at": "2025-05-16T01:45:42Z",
+    "updated_at": "2026-01-28T13:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-43179",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2025-12-25T12:39:00Z",
+    "last_synced_at": "2025-12-25T13:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2026-02-15T12:39:00Z"
+    "deleted_at": "2026-02-15T13:45:42Z"
   },
   {
     "id": "lead_000085",
@@ -1956,13 +1956,13 @@
     "score": "7",
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "2023-05-27T08:39:00Z",
-    "updated_at": "2023-10-11T10:39:00Z",
+    "created_at": "2023-05-27T09:45:42Z",
+    "updated_at": "2023-10-11T11:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-58545",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2023-08-28T10:39:00Z"
+    "last_synced_at": "2023-08-28T11:45:42Z"
   },
   {
     "id": "lead_000086",
@@ -1979,15 +1979,15 @@
     "score": 22,
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2023.10.07 00:39:00",
-    "updated_at": "2024-06-02T18:39:00Z",
+    "created_at": "2023.10.07 01:45:42",
+    "updated_at": "2024-06-02T19:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-97899",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2024-05-04T18:39:00Z",
+    "last_synced_at": "2024-05-04T19:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2024-05-30T18:39:00Z"
+    "deleted_at": "2024-05-30T19:45:42Z"
   },
   {
     "id": "lead_000087",
@@ -2003,13 +2003,13 @@
     "score": "84",
     "campaign": "webinar",
     "owner_id": "orphan_458695",
-    "created_at": "2022-07-21T17:39:00Z",
-    "updated_at": "2023.06.13 00:39:00",
+    "created_at": "2022-07-21T18:45:42Z",
+    "updated_at": "2023.06.13 01:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-82296",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2023-05-02T00:39:00Z"
+    "last_synced_at": "2023-05-02T01:45:42Z"
   },
   {
     "id": "lead_000088",
@@ -2026,12 +2026,12 @@
     "score": null,
     "campaign": "referral",
     "owner_id": "rep_99",
-    "created_at": "2022.01.02 18:39:00",
+    "created_at": "2022.01.02 19:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-37285",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2022-06-11T05:39:00Z",
+    "last_synced_at": "2022-06-11T06:45:42Z",
     "status": "lost"
   },
   {
@@ -2049,13 +2049,13 @@
     "score": 87,
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2024-11-14T15:39:00Z",
-    "updated_at": "2025-04-01T04:39:00Z",
+    "created_at": "2024-11-14T16:45:42Z",
+    "updated_at": "2025-04-01T05:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-28340",
     "sync_status": "pending",
     "sync_version": 2,
-    "last_synced_at": "2025-03-04T04:39:00Z"
+    "last_synced_at": "2025-03-04T05:45:42Z"
   },
   {
     "id": "lead_000090",
@@ -2072,14 +2072,14 @@
     "score": "69",
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "2021.12.14 08:39:00",
-    "updated_at": "2022.07.24 10:39:00",
+    "created_at": "2021.12.14 09:45:42",
+    "updated_at": "2022.07.24 11:45:42",
     "source_system": "salesforce",
     "sync_status": "pending",
     "sync_version": "3",
-    "last_synced_at": "2022-06-11T10:39:00Z",
+    "last_synced_at": "2022-06-11T11:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2022-07-12T10:39:00Z"
+    "deleted_at": "2022-07-12T11:45:42Z"
   },
   {
     "id": "lead_000091",
@@ -2093,13 +2093,13 @@
     "lead_status": "new",
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2023-10-31T21:39:00Z",
-    "updated_at": "2025-01-08T17:39:00Z",
+    "created_at": "2023-10-31T22:45:42Z",
+    "updated_at": "2025-01-08T18:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-11408",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2025-01-07T17:39:00Z"
+    "last_synced_at": "2025-01-07T18:45:42Z"
   },
   {
     "id": "lead_000092",
@@ -2116,13 +2116,13 @@
     "score": 17,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2023-08-25T05:39:00Z",
-    "updated_at": "2024-06-30T09:39:00Z",
+    "created_at": "2023-08-25T06:45:42Z",
+    "updated_at": "2024-06-30T10:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-70850",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-05-30T09:39:00Z"
+    "last_synced_at": "2024-05-30T10:45:42Z"
   },
   {
     "id": "lead_000093",
@@ -2139,8 +2139,8 @@
     "score": "5",
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2025-01-02T04:39:00Z",
-    "updated_at": "2026-04-06T23:39:00Z",
+    "created_at": "2025-01-02T05:45:42Z",
+    "updated_at": "2026-04-07T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-54771",
     "sync_status": "pending",
@@ -2161,15 +2161,15 @@
     "score": "36",
     "campaign": "referral",
     "owner_id": "rep_99",
-    "created_at": "2022.09.22 17:39:00",
-    "updated_at": "2024-04-26T20:39:00Z",
+    "created_at": "2022.09.22 18:45:42",
+    "updated_at": "2024-04-26T21:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-68727",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-04-10T20:39:00Z",
+    "last_synced_at": "2024-04-10T21:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2024-04-25T20:39:00Z"
+    "deleted_at": "2024-04-25T21:45:42Z"
   },
   {
     "id": "lead_000095",
@@ -2185,15 +2185,15 @@
     "lead_status": "junk",
     "score": 69,
     "owner_id": "OWN_002",
-    "created_at": "2021-12-10T22:39:00Z",
-    "updated_at": "2023-03-16T14:39:00Z",
+    "created_at": "2021-12-10T23:45:42Z",
+    "updated_at": "2023-03-16T15:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-27750",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2023-03-14T14:39:00Z",
+    "last_synced_at": "2023-03-14T15:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2023-06-04T14:39:00Z"
+    "deleted_at": "2023-06-04T15:45:42Z"
   },
   {
     "id": "lead_000096",
@@ -2210,15 +2210,15 @@
     "score": 99,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2023-02-08T10:39:00Z",
-    "updated_at": "2024-04-02T01:39:00Z",
+    "created_at": "2023-02-08T11:45:42Z",
+    "updated_at": "2024-04-02T02:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-17771",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-03-03T01:39:00Z",
+    "last_synced_at": "2024-03-03T02:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2024.03.29 01:39:00"
+    "deleted_at": "2024.03.29 02:45:42"
   },
   {
     "id": "lead_000097",
@@ -2235,16 +2235,16 @@
     "score": "57",
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2024-10-05T04:39:00Z",
-    "updated_at": "2024-12-05T10:39:00Z",
+    "created_at": "2024-10-05T05:45:42Z",
+    "updated_at": "2024-12-05T11:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-87317",
     "sync_status": "failed",
     "sync_version": 3,
-    "last_synced_at": "2024-11-19T10:39:00Z",
+    "last_synced_at": "2024-11-19T11:45:42Z",
     "status": "new",
     "is_deleted": true,
-    "deleted_at": "12/30/2024 10:39"
+    "deleted_at": "12/30/2024 11:45"
   },
   {
     "id": "lead_000098",
@@ -2259,15 +2259,15 @@
     "score": 61,
     "campaign": "referral",
     "owner_id": "own_001",
-    "created_at": "2026-01-29T16:39:00Z",
-    "updated_at": "2026-03-30T23:39:00Z",
+    "created_at": "2026-01-29T17:45:42Z",
+    "updated_at": "2026-03-31T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-53332",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-22T23:39:00Z",
+    "last_synced_at": "2026-03-23T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-05-13T23:39:00Z"
+    "deleted_at": "2026-05-14T00:45:42Z"
   },
   {
     "id": "lead_000099",
@@ -2284,13 +2284,13 @@
     "score": 26,
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2025-10-11T02:39:00Z",
-    "updated_at": "2026-04-08T23:39:00Z",
+    "created_at": "2025-10-11T03:45:42Z",
+    "updated_at": "2026-04-09T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-65629",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-13T23:39:00Z"
+    "last_synced_at": "2026-03-14T00:45:42Z"
   },
   {
     "id": "lead_000100",
@@ -2307,13 +2307,13 @@
     "score": 25,
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2022-08-09T04:39:00Z",
-    "updated_at": "2023-08-21T05:39:00Z",
+    "created_at": "2022-08-09T05:45:42Z",
+    "updated_at": "2023-08-21T06:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-40145",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2023-07-08T05:39:00Z"
+    "last_synced_at": "2023-07-08T06:45:42Z"
   },
   {
     "id": "lead_000101",
@@ -2330,13 +2330,13 @@
     "score": 100,
     "campaign": "referral",
     "owner_id": "rep_99",
-    "created_at": "2024-07-19T19:39:00Z",
-    "updated_at": "2025-07-21T00:39:00Z",
+    "created_at": "2024-07-19T20:45:42Z",
+    "updated_at": "2025-07-21T01:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-42149",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-06-24T00:39:00Z"
+    "last_synced_at": "2025-06-24T01:45:42Z"
   },
   {
     "id": "lead_000102",
@@ -2353,13 +2353,13 @@
     "score": 21,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2022-07-19T14:39:00Z",
-    "updated_at": "2023-08-11T14:39:00Z",
+    "created_at": "2022-07-19T15:45:42Z",
+    "updated_at": "2023-08-11T15:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": null,
     "sync_status": "failed",
     "sync_version": "v2",
-    "last_synced_at": "2023-08-09T14:39:00Z"
+    "last_synced_at": "2023-08-09T15:45:42Z"
   },
   {
     "id": "lead_000103",
@@ -2376,13 +2376,13 @@
     "score": 35,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2024-02-12T22:39:00Z",
-    "updated_at": "2024-10-06T21:39:00Z",
+    "created_at": "2024-02-12T23:45:42Z",
+    "updated_at": "2024-10-06T22:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-99873",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-10-01T21:39:00Z"
+    "last_synced_at": "2024-10-01T22:45:42Z"
   },
   {
     "id": "lead_000104",
@@ -2397,16 +2397,16 @@
     "contact_id": "cont_000013",
     "lead_status": "new",
     "owner_id": "OWN_002",
-    "created_at": "2022-05-20T00:39:00Z",
-    "updated_at": "2022-10-14T14:39:00Z",
+    "created_at": "2022-05-20T01:45:42Z",
+    "updated_at": "2022-10-14T15:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-26953",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2022-10-08T14:39:00Z",
+    "last_synced_at": "2022-10-08T15:45:42Z",
     "status": "new",
     "is_deleted": false,
-    "deleted_at": "2022-10-02T14:39:00Z"
+    "deleted_at": "2022-10-02T15:45:42Z"
   },
   {
     "id": "lead_000105",
@@ -2423,13 +2423,13 @@
     "score": 57,
     "campaign": "event",
     "owner_id": "sales_17",
-    "created_at": "2023-07-12T03:39:00Z",
-    "updated_at": "2024-05-06T00:39:00Z",
+    "created_at": "2023-07-12T04:45:42Z",
+    "updated_at": "2024-05-06T01:45:42Z",
     "source_system": "PIPEDRIVE",
     "source_record_id": null,
     "sync_status": "failed",
     "sync_version": 4,
-    "last_synced_at": "2024-04-16T00:39:00Z"
+    "last_synced_at": "2024-04-16T01:45:42Z"
   },
   {
     "id": "lead_000106",
@@ -2446,12 +2446,12 @@
     "score": 44,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2025-10-27T15:39:00Z",
-    "updated_at": "2026-04-05T23:39:00Z",
+    "created_at": "2025-10-27T16:45:42Z",
+    "updated_at": "2026-04-06T00:45:42Z",
     "source_system": "manual_entry",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-04T23:39:00Z"
+    "last_synced_at": "2026-04-05T00:45:42Z"
   },
   {
     "id": "lead_000107",
@@ -2468,11 +2468,11 @@
     "score": 78,
     "campaign": "webinar",
     "owner_id": "rep_99",
-    "created_at": "08/28/2024 21:39",
+    "created_at": "08/28/2024 22:45",
     "source_system": "HUBSPOT",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2025-06-13T13:39:00Z"
+    "last_synced_at": "2025-06-13T14:45:42Z"
   },
   {
     "id": "lead_000108",
@@ -2489,13 +2489,13 @@
     "score": "4",
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2022.09.20 04:39:00",
-    "updated_at": "2024-03-02T03:39:00Z",
+    "created_at": "2022.09.20 05:45:42",
+    "updated_at": "2024-03-02T04:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-17430",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-01-24T03:39:00Z"
+    "last_synced_at": "2024-01-24T04:45:42Z"
   },
   {
     "id": "lead_000109",
@@ -2512,13 +2512,13 @@
     "score": 53,
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2022-12-23T20:39:00Z",
-    "updated_at": "2023.10.30 06:39:00",
+    "created_at": "2022-12-23T21:45:42Z",
+    "updated_at": "2023.10.30 07:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-75759",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-10-24T06:39:00Z"
+    "last_synced_at": "2023-10-24T07:45:42Z"
   },
   {
     "id": "lead_000110",
@@ -2535,15 +2535,15 @@
     "score": "5",
     "campaign": "event",
     "owner_id": "rep_99",
-    "created_at": "2025-01-26T05:39:00Z",
-    "updated_at": "2025-11-15T08:39:00Z",
+    "created_at": "2025-01-26T06:45:42Z",
+    "updated_at": "2025-11-15T09:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-64980",
     "sync_status": "failed",
     "sync_version": "4",
-    "last_synced_at": "2025-10-12T08:39:00Z",
+    "last_synced_at": "2025-10-12T09:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-01-10T08:39:00Z"
+    "deleted_at": "2026-01-10T09:45:42Z"
   },
   {
     "id": "lead_000111",
@@ -2560,13 +2560,13 @@
     "score": "35",
     "campaign": "event",
     "owner_id": "own_001",
-    "created_at": "2025-08-02T10:39:00Z",
-    "updated_at": "2026-04-09T23:39:00Z",
+    "created_at": "2025-08-02T11:45:42Z",
+    "updated_at": "2026-04-10T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-87225",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "lead_000112",
@@ -2583,15 +2583,15 @@
     "score": 71,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2025-07-16T19:39:00Z",
-    "updated_at": "2026-03-29T23:39:00Z",
+    "created_at": "2025-07-16T20:45:42Z",
+    "updated_at": "2026-03-30T00:45:42Z",
     "source_system": "MANUAL_ENTRY",
     "source_record_id": "SRC-55734",
     "sync_status": "failed",
     "sync_version": 2,
-    "last_synced_at": "2026-03-06T23:39:00Z",
+    "last_synced_at": "2026-03-07T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2026-03-20T23:39:00Z"
+    "deleted_at": "2026-03-21T00:45:42Z"
   },
   {
     "id": "lead_000113",
@@ -2608,13 +2608,13 @@
     "score": 87,
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "2024-10-27T03:39:00Z",
-    "updated_at": "2025-12-16T13:39:00Z",
+    "created_at": "2024-10-27T04:45:42Z",
+    "updated_at": "2025-12-16T14:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-13619",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-11-19T13:39:00Z",
+    "last_synced_at": "2025-11-19T14:45:42Z",
     "status": "lost"
   },
   {
@@ -2632,15 +2632,15 @@
     "score": "39",
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2024-01-23T16:39:00Z",
-    "updated_at": "2025-06-22T14:39:00Z",
+    "created_at": "2024-01-23T17:45:42Z",
+    "updated_at": "2025-06-22T15:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-75744",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2025-06-15T14:39:00Z",
+    "last_synced_at": "2025-06-15T15:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2025-07-14T14:39:00Z"
+    "deleted_at": "2025-07-14T15:45:42Z"
   },
   {
     "id": "lead_000115",
@@ -2657,13 +2657,13 @@
     "score": 28,
     "campaign": "adwords",
     "owner_id": "manual_queue",
-    "created_at": "2022-12-20T05:39:00Z",
-    "updated_at": "2024-06-08T10:39:00Z",
+    "created_at": "2022-12-20T06:45:42Z",
+    "updated_at": "2024-06-08T11:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-45796",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2024-05-17T10:39:00Z"
+    "last_synced_at": "2024-05-17T11:45:42Z"
   },
   {
     "id": "lead_000116",
@@ -2680,13 +2680,13 @@
     "score": "93",
     "campaign": "event",
     "owner_id": "sales_17",
-    "created_at": "2022-07-16T11:39:00Z",
-    "updated_at": "2023.12.02 08:39:00",
+    "created_at": "2022-07-16T12:45:42Z",
+    "updated_at": "2023.12.02 09:45:42",
     "source_system": "manual_entry",
     "source_record_id": "SRC-16143",
     "sync_status": "pending",
     "sync_version": "4",
-    "last_synced_at": "2023-11-24 08:39:00"
+    "last_synced_at": "2023-11-24 09:45:42"
   },
   {
     "id": "lead_000117",
@@ -2703,13 +2703,13 @@
     "score": 22,
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2024-08-27T19:39:00Z",
-    "updated_at": "2025-02-13T19:39:00Z",
+    "created_at": "2024-08-27T20:45:42Z",
+    "updated_at": "2025-02-13T20:45:42Z",
     "source_system": "ZOHO",
     "source_record_id": "SRC-94587",
     "sync_status": "pending",
     "sync_version": "v2",
-    "last_synced_at": "2025-01-01T19:39:00Z"
+    "last_synced_at": "2025-01-01T20:45:42Z"
   },
   {
     "id": "lead_000118",
@@ -2726,13 +2726,13 @@
     "score": 41,
     "campaign": "referral",
     "owner_id": "OWN_002",
-    "created_at": "2025-07-28T07:39:00Z",
-    "updated_at": "2026-04-13T23:39:00Z",
+    "created_at": "2025-07-28T08:45:42Z",
+    "updated_at": "2026-04-14T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-84647",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-23T23:39:00Z"
+    "last_synced_at": "2026-03-24T00:45:42Z"
   },
   {
     "id": "lead_000119",
@@ -2749,12 +2749,12 @@
     "score": "96",
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "2022-09-27T10:39:00Z",
-    "updated_at": "06/08/2023 07:39",
+    "created_at": "2022-09-27T11:45:42Z",
+    "updated_at": "06/08/2023 08:45",
     "source_system": "manual_entry",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-04-26T07:39:00Z"
+    "last_synced_at": "2023-04-26T08:45:42Z"
   },
   {
     "id": "lead_000120",
@@ -2771,13 +2771,13 @@
     "score": 78,
     "campaign": "webinar",
     "owner_id": "own_001",
-    "created_at": "2025-06-06T10:39:00Z",
-    "updated_at": "2026-04-10 23:39:00",
+    "created_at": "2025-06-06T11:45:42Z",
+    "updated_at": "2026-04-11 00:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-74808",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-02-26T23:39:00Z"
+    "last_synced_at": "2026-02-27T00:45:42Z"
   },
   {
     "id": "lead_000121",
@@ -2794,15 +2794,15 @@
     "score": 31,
     "campaign": "cold_list",
     "owner_id": "OWN_002",
-    "created_at": "2024-06-28T00:39:00Z",
-    "updated_at": "2025-04-01T13:39:00Z",
+    "created_at": "2024-06-28T01:45:42Z",
+    "updated_at": "2025-04-01T14:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-78409",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-03-20T13:39:00Z",
+    "last_synced_at": "2025-03-20T14:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2025-05-07T13:39:00Z"
+    "deleted_at": "2025-05-07T14:45:42Z"
   },
   {
     "id": "lead_000122",
@@ -2819,16 +2819,16 @@
     "score": 7,
     "campaign": "cold_list",
     "owner_id": "manual_queue",
-    "created_at": "2025-12-04T08:39:00Z",
-    "updated_at": "2026-04-13T23:39:00Z",
+    "created_at": "2025-12-04T09:45:42Z",
+    "updated_at": "2026-04-14T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-71031",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-28T23:39:00Z",
+    "last_synced_at": "2026-03-29T00:45:42Z",
     "status": "new",
     "is_deleted": true,
-    "deleted_at": "2026-06-14T23:39:00Z"
+    "deleted_at": "2026-06-15T00:45:42Z"
   },
   {
     "id": "lead_000123",
@@ -2845,15 +2845,15 @@
     "score": 50,
     "campaign": "event",
     "owner_id": null,
-    "created_at": "2024-03-13 08:39:00",
-    "updated_at": "2024-10-29T18:39:00Z",
+    "created_at": "2024-03-13 09:45:42",
+    "updated_at": "2024-10-29T19:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-38463",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2024-09-21T18:39:00Z",
+    "last_synced_at": "2024-09-21T19:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2024.11.06 18:39:00"
+    "deleted_at": "2024.11.06 19:45:42"
   },
   {
     "id": "lead_000124",
@@ -2870,16 +2870,16 @@
     "score": 15,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2024-12-29T01:39:00Z",
-    "updated_at": "2026-04-09T23:39:00Z",
+    "created_at": "2024-12-29T02:45:42Z",
+    "updated_at": "2026-04-10T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-57530",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-02-26T23:39:00Z",
+    "last_synced_at": "2026-02-27T00:45:42Z",
     "status": "new",
     "is_deleted": true,
-    "deleted_at": "2026-05-03T23:39:00Z"
+    "deleted_at": "2026-05-04T00:45:42Z"
   },
   {
     "id": "lead_000125",
@@ -2895,13 +2895,13 @@
     "lead_status": null,
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2022-01-01T05:39:00Z",
-    "updated_at": "2023-03-05T23:39:00Z",
+    "created_at": "2022-01-01T06:45:42Z",
+    "updated_at": "2023-03-06T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-62163",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2023-02-13T23:39:00Z"
+    "last_synced_at": "2023-02-14T00:45:42Z"
   },
   {
     "id": "lead_000126",
@@ -2918,13 +2918,13 @@
     "score": 53,
     "campaign": "webinar",
     "owner_id": "sales_17",
-    "created_at": "2025-05-31T13:39:00Z",
-    "updated_at": "2026-03-31T23:39:00Z",
+    "created_at": "2025-05-31T14:45:42Z",
+    "updated_at": "2026-04-01T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-70623",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-03-16T23:39:00Z"
+    "last_synced_at": "2026-03-17T00:45:42Z"
   },
   {
     "id": "lead_000127",
@@ -2941,13 +2941,13 @@
     "score": "87",
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2025-01-21T13:39:00Z",
-    "updated_at": "2025-04-01T05:39:00Z",
+    "created_at": "2025-01-21T14:45:42Z",
+    "updated_at": "2025-04-01T06:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-86010",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2025-03-06T05:39:00Z"
+    "last_synced_at": "2025-03-06T06:45:42Z"
   },
   {
     "id": "lead_000128",
@@ -2964,13 +2964,13 @@
     "score": 51,
     "campaign": "event",
     "owner_id": null,
-    "created_at": "2024-04-20T12:39:00Z",
-    "updated_at": "2025-08-25T06:39:00Z",
+    "created_at": "2024-04-20T13:45:42Z",
+    "updated_at": "2025-08-25T07:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-66314",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2025-08-22T06:39:00Z",
+    "last_synced_at": "2025-08-22T07:45:42Z",
     "status": "lost"
   },
   {
@@ -2988,13 +2988,13 @@
     "score": 85,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2026-01-21T09:39:00Z",
-    "updated_at": "2026-04-03T23:39:00Z",
+    "created_at": "2026-01-21T10:45:42Z",
+    "updated_at": "2026-04-04T00:45:42Z",
     "source_system": "Hubspot",
     "source_record_id": "SRC-13151",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "lead_000130",
@@ -3011,13 +3011,13 @@
     "score": 42,
     "campaign": "event",
     "owner_id": "manual_queue",
-    "created_at": "2025-03-09T13:39:00Z",
-    "updated_at": "2026-03-29T23:39:00Z",
+    "created_at": "2025-03-09T14:45:42Z",
+    "updated_at": "2026-03-30T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-92838",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-02-23T23:39:00Z"
+    "last_synced_at": "2026-02-24T00:45:42Z"
   },
   {
     "id": "lead_000131",
@@ -3034,13 +3034,13 @@
     "score": 96,
     "campaign": "cold_list",
     "owner_id": "manual_queue",
-    "created_at": "2025-09-17T06:39:00Z",
-    "updated_at": "2025-11-05T18:39:00Z",
+    "created_at": "2025-09-17T07:45:42Z",
+    "updated_at": "2025-11-05T19:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-90750",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-10-20T18:39:00Z"
+    "last_synced_at": "2025-10-20T19:45:42Z"
   },
   {
     "id": "lead_000132",
@@ -3056,15 +3056,15 @@
     "score": 54,
     "campaign": "cold_list",
     "owner_id": "own_001",
-    "created_at": "2022-07-10T16:39:00Z",
-    "updated_at": "2022-10-22T09:39:00Z",
+    "created_at": "2022-07-10T17:45:42Z",
+    "updated_at": "2022-10-22T10:45:42Z",
     "source_system": "hubspot",
     "source_record_id": null,
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2022-09-14T09:39:00Z",
+    "last_synced_at": "2022-09-14T10:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2022-11-12T09:39:00Z"
+    "deleted_at": "2022-11-12T10:45:42Z"
   },
   {
     "id": "lead_000133",
@@ -3079,12 +3079,12 @@
     "score": 16,
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2022-05-24T21:39:00Z",
-    "updated_at": "2023-03-18T21:39:00Z",
+    "created_at": "2022-05-24T22:45:42Z",
+    "updated_at": "2023-03-18T22:45:42Z",
     "source_system": "pipedrive",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-02-07T21:39:00Z"
+    "last_synced_at": "2023-02-07T22:45:42Z"
   },
   {
     "id": "lead_000134",
@@ -3101,15 +3101,15 @@
     "score": "10",
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2025-01-03T18:39:00Z",
-    "updated_at": "2025-11-01T03:39:00Z",
+    "created_at": "2025-01-03T19:45:42Z",
+    "updated_at": "2025-11-01T04:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-91108",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2025-10-03T03:39:00Z",
+    "last_synced_at": "2025-10-03T04:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-01-02T03:39:00Z"
+    "deleted_at": "2026-01-02T04:45:42Z"
   },
   {
     "id": "lead_000135",
@@ -3126,15 +3126,15 @@
     "score": "90",
     "campaign": "webinar",
     "owner_id": "rep_99",
-    "created_at": "2025-03-13T17:39:00Z",
-    "updated_at": "2025-08-31T20:39:00Z",
+    "created_at": "2025-03-13T18:45:42Z",
+    "updated_at": "2025-08-31T21:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-55914",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2025-08-07T20:39:00Z",
+    "last_synced_at": "2025-08-07T21:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2025-09-15T20:39:00Z"
+    "deleted_at": "2025-09-15T21:45:42Z"
   },
   {
     "id": "lead_000136",
@@ -3151,12 +3151,12 @@
     "score": 51,
     "campaign": "referral",
     "owner_id": "OWN_002",
-    "created_at": "2023-10-10T09:39:00Z",
+    "created_at": "2023-10-10T10:45:42Z",
     "source_system": "InternalCRM",
     "source_record_id": "SRC-12063",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2025-04-09T22:39:00Z"
+    "last_synced_at": "2025-04-09T23:45:42Z"
   },
   {
     "id": "lead_000137",
@@ -3173,13 +3173,13 @@
     "score": "65",
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2023-05-22T13:39:00Z",
-    "updated_at": "2023-11-06T06:39:00Z",
+    "created_at": "2023-05-22T14:45:42Z",
+    "updated_at": "2023-11-06T07:45:42Z",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-10909",
     "sync_status": "pending",
     "sync_version": 4,
-    "last_synced_at": "2023-11-05T06:39:00Z"
+    "last_synced_at": "2023-11-05T07:45:42Z"
   },
   {
     "id": "lead_000138",
@@ -3196,16 +3196,16 @@
     "score": 33,
     "campaign": "webinar",
     "owner_id": "sales_17",
-    "created_at": "2022-05-02T06:39:00Z",
-    "updated_at": "2022-12-29T10:39:00Z",
+    "created_at": "2022-05-02T07:45:42Z",
+    "updated_at": "2022-12-29T11:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-80013",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2022-11-20T10:39:00Z",
+    "last_synced_at": "2022-11-20T11:45:42Z",
     "status": "lost",
     "is_deleted": 1,
-    "deleted_at": "2023-02-28T10:39:00Z"
+    "deleted_at": "2023-02-28T11:45:42Z"
   },
   {
     "id": "lead_000139",
@@ -3222,12 +3222,12 @@
     "score": 11,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2022-07-07T21:39:00Z",
+    "created_at": "2022-07-07T22:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-85700",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2022-12-16T05:39:00Z"
+    "last_synced_at": "2022-12-16T06:45:42Z"
   },
   {
     "id": "lead_000140",
@@ -3244,13 +3244,13 @@
     "score": 30,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2025-10-12T08:39:00Z",
-    "updated_at": "2026-04-09T23:39:00Z",
+    "created_at": "2025-10-12T09:45:42Z",
+    "updated_at": "2026-04-10T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-70351",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2026-03-20T23:39:00Z"
+    "last_synced_at": "2026-03-21T00:45:42Z"
   },
   {
     "id": "lead_000141",
@@ -3267,13 +3267,13 @@
     "score": 32,
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2024-04-18T01:39:00Z",
-    "updated_at": "2025-08-14T22:39:00Z",
+    "created_at": "2024-04-18T02:45:42Z",
+    "updated_at": "2025-08-14T23:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-89485",
     "sync_status": "pending",
     "sync_version": "3",
-    "last_synced_at": "2025-07-21T22:39:00Z"
+    "last_synced_at": "2025-07-21T23:45:42Z"
   },
   {
     "id": "lead_000142",
@@ -3289,13 +3289,13 @@
     "score": "35",
     "campaign": "webinar",
     "owner_id": "own_001",
-    "created_at": "2024-12-07T16:39:00Z",
-    "updated_at": "2025-10-22T16:39:00Z",
+    "created_at": "2024-12-07T17:45:42Z",
+    "updated_at": "2025-10-22T17:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-22041",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2025-09-08T16:39:00Z"
+    "last_synced_at": "2025-09-08T17:45:42Z"
   },
   {
     "id": "lead_000143",
@@ -3312,13 +3312,13 @@
     "score": 73,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2024-09-06T14:39:00Z",
-    "updated_at": "2025-02-03T16:39:00Z",
+    "created_at": "2024-09-06T15:45:42Z",
+    "updated_at": "2025-02-03T17:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-20623",
     "sync_status": "failed",
     "sync_version": "3",
-    "last_synced_at": "2025-01-23T16:39:00Z"
+    "last_synced_at": "2025-01-23T17:45:42Z"
   },
   {
     "id": "lead_000144",
@@ -3334,13 +3334,13 @@
     "lead_status": "converted",
     "campaign": "webinar",
     "owner_id": "owner_03",
-    "created_at": "2023.09.23 00:39:00",
-    "updated_at": "2024.04.19 10:39:00",
+    "created_at": "2023.09.23 01:45:42",
+    "updated_at": "2024.04.19 11:45:42",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-25627",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-03-09T10:39:00Z"
+    "last_synced_at": "2024-03-09T11:45:42Z"
   },
   {
     "id": "lead_000145",
@@ -3356,13 +3356,13 @@
     "lead_status": "converted",
     "score": 10,
     "owner_id": "manual_queue",
-    "created_at": "2022-01-13T08:39:00Z",
-    "updated_at": "2023-07-15T04:39:00Z",
+    "created_at": "2022-01-13T09:45:42Z",
+    "updated_at": "2023-07-15T05:45:42Z",
     "source_system": "INTERNAL_CRM",
     "source_record_id": "SRC-87376",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-07-14T04:39:00Z"
+    "last_synced_at": "2023-07-14T05:45:42Z"
   },
   {
     "id": "lead_000146",
@@ -3379,13 +3379,13 @@
     "score": 33,
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "2026-02-24T20:39:00Z",
-    "updated_at": "2026-04-03T23:39:00Z",
+    "created_at": "2026-02-24T21:45:42Z",
+    "updated_at": "2026-04-04T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-83127",
     "sync_status": "pending",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "lead_000147",
@@ -3402,13 +3402,13 @@
     "score": 61,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2026-01-07T22:39:00Z",
-    "updated_at": "2026-03-18T07:39:00Z",
+    "created_at": "2026-01-07T23:45:42Z",
+    "updated_at": "2026-03-18T08:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-79895",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-02-01T07:39:00Z"
+    "last_synced_at": "2026-02-01T08:45:42Z"
   },
   {
     "id": "lead_000148",
@@ -3425,13 +3425,13 @@
     "score": 56,
     "campaign": "webinar",
     "owner_id": "sales_17",
-    "created_at": "2023-05-28T08:39:00Z",
-    "updated_at": "2025-01-05T23:39:00Z",
+    "created_at": "2023-05-28T09:45:42Z",
+    "updated_at": "2025-01-06T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-15290",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2024-11-28T23:39:00Z",
+    "last_synced_at": "2024-11-29T00:45:42Z",
     "status": "LOst"
   },
   {
@@ -3449,13 +3449,13 @@
     "score": 49,
     "campaign": "referral",
     "owner_id": "manual_queue",
-    "created_at": "2024-05-15T21:39:00Z",
-    "updated_at": "2024.11.06 23:39:00",
+    "created_at": "2024-05-15T22:45:42Z",
+    "updated_at": "2024.11.07 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-27125",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-09-30T23:39:00Z"
+    "last_synced_at": "2024-10-01T00:45:42Z"
   },
   {
     "id": "lead_000150",
@@ -3472,13 +3472,13 @@
     "score": 20,
     "campaign": "referral",
     "owner_id": "own_001",
-    "created_at": "2024.05.23 09:39:00",
-    "updated_at": "2025-01-07T00:39:00Z",
+    "created_at": "2024.05.23 10:45:42",
+    "updated_at": "2025-01-07T01:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": null,
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-12-09T00:39:00Z"
+    "last_synced_at": "2024-12-09T01:45:42Z"
   },
   {
     "id": "lead_000151",
@@ -3495,13 +3495,13 @@
     "score": 1,
     "campaign": "webinar",
     "owner_id": "rep_99",
-    "created_at": "2022.12.03 05:39:00",
-    "updated_at": "2023-01-26T09:39:00Z",
+    "created_at": "2022.12.03 06:45:42",
+    "updated_at": "2023-01-26T10:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-20767",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2023-01-17T09:39:00Z"
+    "last_synced_at": "2023-01-17T10:45:42Z"
   },
   {
     "id": "lead_000152",
@@ -3518,13 +3518,13 @@
     "score": 68,
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2024-03-19T19:39:00Z",
-    "updated_at": "2024-04-11T07:39:00Z",
+    "created_at": "2024-03-19T20:45:42Z",
+    "updated_at": "2024-04-11T08:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-95289",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-03-04T07:39:00Z"
+    "last_synced_at": "2024-03-04T08:45:42Z"
   },
   {
     "id": "lead_000153",
@@ -3541,12 +3541,12 @@
     "score": 81,
     "campaign": "cold_list",
     "owner_id": "OWN_002",
-    "created_at": "2022.07.22 14:39:00",
-    "updated_at": "2023-04-04T03:39:00Z",
+    "created_at": "2022.07.22 15:45:42",
+    "updated_at": "2023-04-04T04:45:42Z",
     "source_system": "PipeDrive",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-02-20T03:39:00Z"
+    "last_synced_at": "2023-02-20T04:45:42Z"
   },
   {
     "id": "lead_000154",
@@ -3560,8 +3560,8 @@
     "lead_status": "new",
     "campaign": "event",
     "owner_id": "rep_99",
-    "created_at": "2023.05.17 20:39:00",
-    "updated_at": "2024-04-20T18:39:00Z",
+    "created_at": "2023.05.17 21:45:42",
+    "updated_at": "2024-04-20T19:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-40807",
     "sync_status": "synced",
@@ -3584,13 +3584,13 @@
     "score": 32,
     "campaign": "referral",
     "owner_id": "manual_queue",
-    "created_at": "2025-07-05T00:39:00Z",
-    "updated_at": "2026-03-29T23:39:00Z",
+    "created_at": "2025-07-05T01:45:42Z",
+    "updated_at": "2026-03-30T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-85877",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-26T23:39:00Z"
+    "last_synced_at": "2026-03-27T00:45:42Z"
   },
   {
     "id": "lead_000156",
@@ -3607,16 +3607,16 @@
     "score": 9,
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2022.10.27 21:39:00",
-    "updated_at": "2023-08-31T16:39:00Z",
+    "created_at": "2022.10.27 22:45:42",
+    "updated_at": "2023-08-31T17:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-48431",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2023-08-15T16:39:00Z",
+    "last_synced_at": "2023-08-15T17:45:42Z",
     "status": "lost",
     "is_deleted": true,
-    "deleted_at": "2023-10-18T16:39:00Z"
+    "deleted_at": "2023-10-18T17:45:42Z"
   },
   {
     "id": "lead_000157",
@@ -3632,13 +3632,13 @@
     "score": "19",
     "campaign": "referral",
     "owner_id": "own_001",
-    "created_at": "2025-07-02T02:39:00Z",
-    "updated_at": "2026-03-30T23:39:00Z",
+    "created_at": "2025-07-02T03:45:42Z",
+    "updated_at": "2026-03-31T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-13651",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-02-16T23:39:00Z"
+    "last_synced_at": "2026-02-17T00:45:42Z"
   },
   {
     "id": "lead_000158",
@@ -3655,15 +3655,15 @@
     "score": 98,
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "2025-03-16T08:39:00Z",
-    "updated_at": "2026-03-04T17:39:00Z",
+    "created_at": "2025-03-16T09:45:42Z",
+    "updated_at": "2026-03-04T18:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-54361",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-01-20T17:39:00Z",
+    "last_synced_at": "2026-01-20T18:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2026-04-19T17:39:00Z"
+    "deleted_at": "2026-04-19T18:45:42Z"
   },
   {
     "id": "lead_000159",
@@ -3680,15 +3680,15 @@
     "score": 29,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2023-12-01T03:39:00Z",
-    "updated_at": "2023-12-15T13:39:00Z",
+    "created_at": "2023-12-01T04:45:42Z",
+    "updated_at": "2023-12-15T14:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-34558",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2023-11-22T13:39:00Z",
+    "last_synced_at": "2023-11-22T14:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2024-01-01T13:39:00Z"
+    "deleted_at": "2024-01-01T14:45:42Z"
   },
   {
     "id": "lead_000160",
@@ -3705,16 +3705,16 @@
     "score": 64,
     "campaign": "webinar",
     "owner_id": "owner_03",
-    "created_at": "2022-09-06T04:39:00Z",
-    "updated_at": "2023-10-30T03:39:00Z",
+    "created_at": "2022-09-06T05:45:42Z",
+    "updated_at": "2023-10-30T04:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-34012",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-09-24T03:39:00Z",
+    "last_synced_at": "2023-09-24T04:45:42Z",
     "status": "converted",
     "is_deleted": "true",
-    "deleted_at": "2023-12-06T03:39:00Z"
+    "deleted_at": "2023-12-06T04:45:42Z"
   },
   {
     "id": "lead_000161",
@@ -3731,13 +3731,13 @@
     "score": 83,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2024-01-09T23:39:00Z",
-    "updated_at": "2025-03-15T03:39:00Z",
+    "created_at": "2024-01-10T00:45:42Z",
+    "updated_at": "2025-03-15T04:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-47923",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "1741657140"
+    "last_synced_at": "1741661142"
   },
   {
     "id": "lead_000162",
@@ -3754,13 +3754,13 @@
     "score": "55",
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2023-11-19T21:39:00Z",
-    "updated_at": "2024-03-17T14:39:00Z",
+    "created_at": "2023-11-19T22:45:42Z",
+    "updated_at": "2024-03-17T15:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-28184",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2024-02-11T14:39:00Z"
+    "last_synced_at": "2024-02-11T15:45:42Z"
   },
   {
     "id": "lead_000163",
@@ -3777,13 +3777,13 @@
     "score": 44,
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "2025-03-21T07:39:00Z",
-    "updated_at": "2025-06-05T03:39:00Z",
+    "created_at": "2025-03-21T08:45:42Z",
+    "updated_at": "2025-06-05T04:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-90099",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2025-04-24T03:39:00Z"
+    "last_synced_at": "2025-04-24T04:45:42Z"
   },
   {
     "id": "lead_000164",
@@ -3800,13 +3800,13 @@
     "score": "17",
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "1712954340",
-    "updated_at": "2024-12-23T23:39:00Z",
+    "created_at": "1712958342",
+    "updated_at": "2024-12-24T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-48287",
     "sync_status": "pending",
     "sync_version": 2,
-    "last_synced_at": "2024-11-21T23:39:00Z"
+    "last_synced_at": "2024-11-22T00:45:42Z"
   },
   {
     "id": "lead_000165",
@@ -3823,13 +3823,13 @@
     "score": 85,
     "campaign": "referral",
     "owner_id": "manual_queue",
-    "created_at": "2024-04-04T19:39:00Z",
-    "updated_at": "2025-09-07T00:39:00Z",
+    "created_at": "2024-04-04T20:45:42Z",
+    "updated_at": "2025-09-07T01:45:42Z",
     "source_system": "MANUAL_ENTRY",
     "source_record_id": "SRC-13106",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-08-03T00:39:00Z"
+    "last_synced_at": "2025-08-03T01:45:42Z"
   },
   {
     "id": "lead_000166",
@@ -3845,13 +3845,13 @@
     "score": "73",
     "campaign": "referral",
     "owner_id": "rep_99",
-    "created_at": "2022-12-07T21:39:00Z",
-    "updated_at": "2023-12-19T16:39:00Z",
+    "created_at": "2022-12-07T22:45:42Z",
+    "updated_at": "2023-12-19T17:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-12000",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2023-12-14T16:39:00Z",
+    "last_synced_at": "2023-12-14T17:45:42Z",
     "status": "lost"
   },
   {
@@ -3868,13 +3868,13 @@
     "score": 83,
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2022.12.17 04:39:00",
-    "updated_at": "2024-02-27T16:39:00Z",
+    "created_at": "2022.12.17 05:45:42",
+    "updated_at": "2024-02-27T17:45:42Z",
     "source_system": "Manual_Entry",
     "source_record_id": "SRC-59195",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-01-28 16:39:00",
+    "last_synced_at": "2024-01-28 17:45:42",
     "status": "lost"
   },
   {
@@ -3892,13 +3892,13 @@
     "score": 69,
     "campaign": "webinar",
     "owner_id": "own_001",
-    "created_at": "2023-10-25T06:39:00Z",
-    "updated_at": "2025-04-22T21:39:00Z",
+    "created_at": "2023-10-25T07:45:42Z",
+    "updated_at": "2025-04-22T22:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-22388",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2025-03-26T21:39:00Z"
+    "last_synced_at": "2025-03-26T22:45:42Z"
   },
   {
     "id": "lead_000169",
@@ -3915,13 +3915,13 @@
     "score": "30",
     "campaign": "referral",
     "owner_id": "manual_queue",
-    "created_at": "2022-12-13T02:39:00Z",
-    "updated_at": "2023.02.07 03:39:00",
+    "created_at": "2022-12-13T03:45:42Z",
+    "updated_at": "2023.02.07 04:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-85032",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2023-01-03T03:39:00Z",
+    "last_synced_at": "2023-01-03T04:45:42Z",
     "firstName": "Jason"
   },
   {
@@ -3939,13 +3939,13 @@
     "score": 41,
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "2024-03-21T04:39:00Z",
-    "updated_at": "2025-01-23T03:39:00Z",
+    "created_at": "2024-03-21T05:45:42Z",
+    "updated_at": "2025-01-23T04:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-87283",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2025-01-15T03:39:00Z"
+    "last_synced_at": "2025-01-15T04:45:42Z"
   },
   {
     "id": "lead_000171",
@@ -3962,15 +3962,15 @@
     "score": "26",
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2023.07.25 06:39:00",
-    "updated_at": "2024-03-04T23:39:00Z",
+    "created_at": "2023.07.25 07:45:42",
+    "updated_at": "2024-03-05T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-93052",
     "sync_status": "failed",
     "sync_version": "v3",
-    "last_synced_at": "1705700340",
+    "last_synced_at": "1705704342",
     "is_deleted": "true",
-    "deleted_at": "2024-03-20T23:39:00Z"
+    "deleted_at": "2024-03-21T00:45:42Z"
   },
   {
     "id": "lead_000172",
@@ -3987,13 +3987,13 @@
     "score": 41,
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "06/08/2025 01:39",
-    "updated_at": "2026-04-09T23:39:00Z",
+    "created_at": "06/08/2025 02:45",
+    "updated_at": "2026-04-10T00:45:42Z",
     "source_system": "InternalCRM",
     "source_record_id": "SRC-34340",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-27T23:39:00Z"
+    "last_synced_at": "2026-03-28T00:45:42Z"
   },
   {
     "id": "lead_000173",
@@ -4010,15 +4010,15 @@
     "score": "87",
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2025-09-01T01:39:00Z",
-    "updated_at": "2026-04-06T23:39:00Z",
+    "created_at": "2025-09-01T02:45:42Z",
+    "updated_at": "2026-04-07T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-28284",
     "sync_status": null,
     "sync_version": 1,
-    "last_synced_at": "2026-02-20T23:39:00Z",
+    "last_synced_at": "2026-02-21T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-04-21T23:39:00Z"
+    "deleted_at": "2026-04-22T00:45:42Z"
   },
   {
     "id": "lead_000174",
@@ -4034,13 +4034,13 @@
     "lead_status": "qualified",
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "2023-03-21T23:39:00Z",
-    "updated_at": "2024-09-29T05:39:00Z",
+    "created_at": "2023-03-22T00:45:42Z",
+    "updated_at": "2024-09-29T06:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-66141",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2024-08-20T05:39:00Z"
+    "last_synced_at": "2024-08-20T06:45:42Z"
   },
   {
     "id": "lead_000175",
@@ -4057,13 +4057,13 @@
     "score": "95",
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2022.08.16 19:39:00",
-    "updated_at": "2023-10-03T01:39:00Z",
+    "created_at": "2022.08.16 20:45:42",
+    "updated_at": "2023-10-03T02:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-98043",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-08-19T01:39:00Z"
+    "last_synced_at": "2023-08-19T02:45:42Z"
   },
   {
     "id": "lead_000176",
@@ -4080,12 +4080,12 @@
     "score": 23,
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2025-02-28T10:39:00Z",
+    "created_at": "2025-02-28T11:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-61348",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-23T23:39:00Z"
+    "last_synced_at": "2026-03-24T00:45:42Z"
   },
   {
     "id": "lead_000177",
@@ -4102,15 +4102,15 @@
     "score": 75,
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "2025-01-23T18:39:00Z",
-    "updated_at": "2026-03-31T23:39:00Z",
+    "created_at": "2025-01-23T19:45:42Z",
+    "updated_at": "2026-04-01T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-76026",
     "sync_status": "failed",
     "sync_version": "v2",
-    "last_synced_at": "2026-02-18T23:39:00Z",
+    "last_synced_at": "2026-02-19T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-05-24T23:39:00Z"
+    "deleted_at": "2026-05-25T00:45:42Z"
   },
   {
     "id": "lead_000178",
@@ -4127,13 +4127,13 @@
     "score": 28,
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2023.02.24 09:39:00",
-    "updated_at": "2023.08.25 01:39:00",
+    "created_at": "2023.02.24 10:45:42",
+    "updated_at": "2023.08.25 02:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-48471",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2023-08-19T01:39:00Z"
+    "last_synced_at": "2023-08-19T02:45:42Z"
   },
   {
     "id": "lead_000179",
@@ -4150,12 +4150,12 @@
     "score": 31,
     "campaign": "event",
     "owner_id": "sales_17",
-    "created_at": "2022.07.18 01:39:00",
-    "updated_at": "2023-03-02T22:39:00Z",
+    "created_at": "2022.07.18 02:45:42",
+    "updated_at": "2023-03-02T23:45:42Z",
     "source_system": "SalesForce",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2023-02-26T22:39:00Z"
+    "last_synced_at": "2023-02-26T23:45:42Z"
   },
   {
     "id": "lead_000180",
@@ -4171,13 +4171,13 @@
     "lead_status": "qualified",
     "campaign": "referral",
     "owner_id": "OWN_002",
-    "created_at": "2022-07-02T22:39:00Z",
-    "updated_at": "2023-01-06T10:39:00Z",
+    "created_at": "2022-07-02T23:45:42Z",
+    "updated_at": "2023-01-06T11:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-23887",
     "sync_status": "SYNCED",
     "sync_version": "v2",
-    "last_synced_at": "2022-12-29T10:39:00Z"
+    "last_synced_at": "2022-12-29T11:45:42Z"
   },
   {
     "id": "lead_000181",
@@ -4194,13 +4194,13 @@
     "score": "79",
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2024.04.04 15:39:00",
-    "updated_at": "2024-12-20T15:39:00Z",
+    "created_at": "2024.04.04 16:45:42",
+    "updated_at": "2024-12-20T16:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-13346",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-11-23T15:39:00Z"
+    "last_synced_at": "2024-11-23T16:45:42Z"
   },
   {
     "id": "lead_000182",
@@ -4217,13 +4217,13 @@
     "score": 24,
     "campaign": "webinar",
     "owner_id": "rep_99",
-    "created_at": "2025-03-15T18:39:00Z",
-    "updated_at": "2025-03-20T23:39:00Z",
+    "created_at": "2025-03-15T19:45:42Z",
+    "updated_at": "2025-03-21T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-56427",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2025-02-20T23:39:00Z"
+    "last_synced_at": "2025-02-21T00:45:42Z"
   },
   {
     "id": "lead_000183",
@@ -4240,15 +4240,15 @@
     "score": 72,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2022-05-05T18:39:00Z",
-    "updated_at": "2023-05-14T19:39:00Z",
+    "created_at": "2022-05-05T19:45:42Z",
+    "updated_at": "2023-05-14T20:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-99020",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2023-04-03T19:39:00Z",
+    "last_synced_at": "2023-04-03T20:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2023-07-25T19:39:00Z"
+    "deleted_at": "2023-07-25T20:45:42Z"
   },
   {
     "id": "lead_000184",
@@ -4265,13 +4265,13 @@
     "score": "60",
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2025-11-17T15:39:00Z",
-    "updated_at": "2026-04-10T23:39:00Z",
+    "created_at": "2025-11-17T16:45:42Z",
+    "updated_at": "2026-04-11T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-73347",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-25T23:39:00Z"
+    "last_synced_at": "2026-03-26T00:45:42Z"
   },
   {
     "id": "lead_000185",
@@ -4287,13 +4287,13 @@
     "lead_status": "converted",
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2023.07.08 14:39:00",
-    "updated_at": "2024.04.18 09:39:00",
+    "created_at": "2023.07.08 15:45:42",
+    "updated_at": "2024.04.18 10:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-81202",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2024-03-22T09:39:00Z"
+    "last_synced_at": "2024-03-22T10:45:42Z"
   },
   {
     "id": "lead_000186",
@@ -4310,13 +4310,13 @@
     "score": "52",
     "campaign": "event",
     "owner_id": "rep_99",
-    "created_at": "2022.05.02 10:39:00",
-    "updated_at": "07/05/2023 03:39",
+    "created_at": "2022.05.02 11:45:42",
+    "updated_at": "07/05/2023 04:45",
     "source_system": "hubspot",
     "source_record_id": "SRC-82545",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2023-06-14T03:39:00Z"
+    "last_synced_at": "2023-06-14T04:45:42Z"
   },
   {
     "id": "lead_000187",
@@ -4333,12 +4333,12 @@
     "score": 63,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2025-03-09T04:39:00Z",
+    "created_at": "2025-03-09T05:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-74152",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-08T23:39:00Z",
+    "last_synced_at": "2026-03-09T00:45:42Z",
     "status": "lost"
   },
   {
@@ -4356,13 +4356,13 @@
     "score": 64,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2023-12-13T06:39:00Z",
-    "updated_at": "2025-07-29T09:39:00Z",
+    "created_at": "2023-12-13T07:45:42Z",
+    "updated_at": "2025-07-29T10:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-38125",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2025-06-14T09:39:00Z"
+    "last_synced_at": "2025-06-14T10:45:42Z"
   },
   {
     "id": "lead_000189",
@@ -4379,13 +4379,13 @@
     "score": 89,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2023-09-26T06:39:00Z",
-    "updated_at": "2024-11-28T20:39:00Z",
+    "created_at": "2023-09-26T07:45:42Z",
+    "updated_at": "2024-11-28T21:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-28818",
     "sync_status": "failed",
     "sync_version": 2,
-    "last_synced_at": "2024-11-18T20:39:00Z"
+    "last_synced_at": "2024-11-18T21:45:42Z"
   },
   {
     "id": "lead_000190",
@@ -4400,15 +4400,15 @@
     "lead_status": "qualified",
     "campaign": "event",
     "owner_id": "sales_17",
-    "created_at": "2022.03.15 16:39:00",
-    "updated_at": "2022-05-18T14:39:00Z",
+    "created_at": "2022.03.15 17:45:42",
+    "updated_at": "2022-05-18T15:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-91560",
     "sync_status": "synced",
     "sync_version": null,
-    "last_synced_at": "2022-04-13T14:39:00Z",
+    "last_synced_at": "2022-04-13T15:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2022-06-22T14:39:00Z"
+    "deleted_at": "2022-06-22T15:45:42Z"
   },
   {
     "id": "lead_000191",
@@ -4425,13 +4425,13 @@
     "score": "35",
     "campaign": "referral",
     "owner_id": "rep_99",
-    "created_at": "2022-02-02T06:39:00Z",
-    "updated_at": "2023-07-03T03:39:00Z",
+    "created_at": "2022-02-02T07:45:42Z",
+    "updated_at": "2023-07-03T04:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-88539",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-06-26T03:39:00Z"
+    "last_synced_at": "2023-06-26T04:45:42Z"
   },
   {
     "id": "lead_000192",
@@ -4448,13 +4448,13 @@
     "score": 59,
     "campaign": "webinar",
     "owner_id": "rep_99",
-    "created_at": "2025-10-28T22:39:00Z",
-    "updated_at": "2026-04-09T23:39:00Z",
+    "created_at": "2025-10-28T23:45:42Z",
+    "updated_at": "2026-04-10T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-10265",
     "sync_status": "FAILED",
     "sync_version": 2,
-    "last_synced_at": "2026-03-10T23:39:00Z",
+    "last_synced_at": "2026-03-11T00:45:42Z",
     "status": "converted"
   },
   {
@@ -4472,13 +4472,13 @@
     "score": "23",
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2022-05-04T09:39:00Z",
-    "updated_at": "2022-08-17T23:39:00Z",
+    "created_at": "2022-05-04T10:45:42Z",
+    "updated_at": "2022-08-18T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-13082",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2022-07-16T23:39:00Z"
+    "last_synced_at": "2022-07-17T00:45:42Z"
   },
   {
     "id": "lead_000194",
@@ -4495,15 +4495,15 @@
     "score": 6,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2023-06-30T19:39:00Z",
-    "updated_at": "2024-06-08T08:39:00Z",
+    "created_at": "2023-06-30T20:45:42Z",
+    "updated_at": "2024-06-08T09:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-24090",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-06-06T08:39:00Z",
+    "last_synced_at": "2024-06-06T09:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2024-08-27T08:39:00Z"
+    "deleted_at": "2024-08-27T09:45:42Z"
   },
   {
     "id": "lead_000195",
@@ -4520,13 +4520,13 @@
     "score": 56,
     "campaign": "webinar",
     "owner_id": "sales_17",
-    "created_at": "2025-04-27T03:39:00Z",
-    "updated_at": "2025-08-22 01:39:00",
+    "created_at": "2025-04-27T04:45:42Z",
+    "updated_at": "2025-08-22 02:45:42",
     "source_system": "MANUAL_ENTRY",
     "source_record_id": "SRC-18884",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-08-01T01:39:00Z"
+    "last_synced_at": "2025-08-01T02:45:42Z"
   },
   {
     "id": "lead_000196",
@@ -4543,13 +4543,13 @@
     "score": "17",
     "campaign": "adwords",
     "owner_id": "owner_03",
-    "created_at": "2024-02-28T18:39:00Z",
-    "updated_at": "2025-03-16T19:39:00Z",
+    "created_at": "2024-02-28T19:45:42Z",
+    "updated_at": "2025-03-16T20:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-81586",
     "sync_status": "failed",
     "sync_version": "v2",
-    "last_synced_at": "2025-02-03T19:39:00Z"
+    "last_synced_at": "2025-02-03T20:45:42Z"
   },
   {
     "id": "lead_000197",
@@ -4566,13 +4566,13 @@
     "score": 35,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2023-07-16T07:39:00Z",
-    "updated_at": "2024.03.29 01:39:00",
+    "created_at": "2023-07-16T08:45:42Z",
+    "updated_at": "2024.03.29 02:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-91842",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-02-14T01:39:00Z"
+    "last_synced_at": "2024-02-14T02:45:42Z"
   },
   {
     "id": "lead_000198",
@@ -4588,13 +4588,13 @@
     "lead_status": "qualified",
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2025-09-01T23:39:00Z",
-    "updated_at": "2025-12-20T07:39:00Z",
+    "created_at": "2025-09-02T00:45:42Z",
+    "updated_at": "2025-12-20T08:45:42Z",
     "source_system": "PIPEdRive",
     "source_record_id": "SRC-42277",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2025-11-15T07:39:00Z"
+    "last_synced_at": "2025-11-15T08:45:42Z"
   },
   {
     "id": "lead_000199",
@@ -4611,13 +4611,13 @@
     "score": 76,
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2025-12-06T13:39:00Z",
-    "updated_at": "2026-04-06T23:39:00Z",
+    "created_at": "2025-12-06T14:45:42Z",
+    "updated_at": "2026-04-07T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-40921",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-11T23:39:00Z"
+    "last_synced_at": "2026-03-12T00:45:42Z"
   },
   {
     "id": "lead_000200",
@@ -4633,13 +4633,13 @@
     "score": 75,
     "campaign": "adwords",
     "owner_id": "own_001",
-    "created_at": "2025-04-23T22:39:00Z",
-    "updated_at": "2026-04-05T23:39:00Z",
+    "created_at": "2025-04-23T23:45:42Z",
+    "updated_at": "2026-04-06T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-44041",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-10T23:39:00Z"
+    "last_synced_at": "2026-03-11T00:45:42Z"
   },
   {
     "id": "lead_000201",
@@ -4656,13 +4656,13 @@
     "score": 99,
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2025-08-21T11:39:00Z",
-    "updated_at": "2026-04-12T23:39:00Z",
+    "created_at": "2025-08-21T12:45:42Z",
+    "updated_at": "2026-04-13T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-45548",
     "sync_status": "pending",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-19T23:39:00Z"
+    "last_synced_at": "2026-03-20T00:45:42Z"
   },
   {
     "id": "lead_000202",
@@ -4679,13 +4679,13 @@
     "score": "73",
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2024-12-20T12:39:00Z",
-    "updated_at": "2025-09-24T08:39:00Z",
+    "created_at": "2024-12-20T13:45:42Z",
+    "updated_at": "2025-09-24T09:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-66802",
     "sync_status": "pending",
     "sync_version": "v2",
-    "last_synced_at": "2025-09-01T08:39:00Z"
+    "last_synced_at": "2025-09-01T09:45:42Z"
   },
   {
     "id": "lead_000203",
@@ -4702,13 +4702,13 @@
     "score": 12,
     "campaign": "event",
     "owner_id": "sales_17",
-    "created_at": "2024.04.08 13:39:00",
-    "updated_at": "2025-08-03T06:39:00Z",
+    "created_at": "2024.04.08 14:45:42",
+    "updated_at": "2025-08-03T07:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-83928",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2025-08-02T06:39:00Z"
+    "last_synced_at": "2025-08-02T07:45:42Z"
   },
   {
     "id": "lead_000204",
@@ -4725,12 +4725,12 @@
     "score": 96,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2022-06-26T00:39:00Z",
-    "updated_at": "2023-09-06T14:39:00Z",
+    "created_at": "2022-06-26T01:45:42Z",
+    "updated_at": "2023-09-06T15:45:42Z",
     "source_system": "manual_entry",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "03/29/2022 00:39"
+    "last_synced_at": "03/29/2022 01:45"
   },
   {
     "id": "lead_000205",
@@ -4747,13 +4747,13 @@
     "score": "59",
     "campaign": "event",
     "owner_id": null,
-    "created_at": "2022-09-30T19:39:00Z",
-    "updated_at": "2023-02-15T03:39:00Z",
+    "created_at": "2022-09-30T20:45:42Z",
+    "updated_at": "2023-02-15T04:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-16278",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-01-04T03:39:00Z",
+    "last_synced_at": "2023-01-04T04:45:42Z",
     "status": "lost"
   },
   {
@@ -4771,13 +4771,13 @@
     "score": 74,
     "campaign": "adwords",
     "owner_id": "manual_queue",
-    "created_at": "2022-11-27T06:39:00Z",
-    "updated_at": "2023-08-06T17:39:00Z",
+    "created_at": "2022-11-27T07:45:42Z",
+    "updated_at": "2023-08-06T18:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-41633",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2023-07-28T17:39:00Z",
+    "last_synced_at": "2023-07-28T18:45:42Z",
     "status": "lost"
   },
   {
@@ -4795,13 +4795,13 @@
     "score": 15,
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2024-12-09T05:39:00Z",
-    "updated_at": "2025-11-08T00:39:00Z",
+    "created_at": "2024-12-09T06:45:42Z",
+    "updated_at": "2025-11-08T01:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-92910",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-11-03T00:39:00Z"
+    "last_synced_at": "2025-11-03T01:45:42Z"
   },
   {
     "id": "lead_000208",
@@ -4816,13 +4816,13 @@
     "lead_status": "qualified",
     "campaign": "cold_list",
     "owner_id": "sales_17",
-    "created_at": "2025-06-11T23:39:00Z",
-    "updated_at": "2025-07-27T16:39:00Z",
+    "created_at": "2025-06-12T00:45:42Z",
+    "updated_at": "2025-07-27T17:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-61788",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2025-07-22T16:39:00Z"
+    "last_synced_at": "2025-07-22T17:45:42Z"
   },
   {
     "id": "lead_000209",
@@ -4839,13 +4839,13 @@
     "score": 91,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2025-04-28T02:39:00Z",
-    "updated_at": "2025-10-23T17:39:00Z",
+    "created_at": "2025-04-28T03:45:42Z",
+    "updated_at": "2025-10-23T18:45:42Z",
     "source_system": "manual",
     "source_record_id": "SRC-15881",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2025-09-24T17:39:00Z",
+    "last_synced_at": "2025-09-24T18:45:42Z",
     "status": "new"
   },
   {
@@ -4863,13 +4863,13 @@
     "score": 33,
     "campaign": "webinar",
     "owner_id": "sales_17",
-    "created_at": "2023-03-21T08:39:00Z",
-    "updated_at": "2024-02-14 09:39:00",
+    "created_at": "2023-03-21T09:45:42Z",
+    "updated_at": "2024-02-14 10:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-92280",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-01-19T09:39:00Z",
+    "last_synced_at": "2024-01-19T10:45:42Z",
     "status": "lost"
   },
   {
@@ -4887,13 +4887,13 @@
     "score": 48,
     "campaign": "adwords",
     "owner_id": "owner_03",
-    "created_at": "2023-05-25T02:39:00Z",
-    "updated_at": "2024-01-31T01:39:00Z",
+    "created_at": "2023-05-25T03:45:42Z",
+    "updated_at": "2024-01-31T02:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-59775",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2024-01-11T01:39:00Z",
+    "last_synced_at": "2024-01-11T02:45:42Z",
     "status": "converted"
   },
   {
@@ -4911,15 +4911,15 @@
     "score": "90",
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2025-01-19T02:39:00Z",
-    "updated_at": "2026-03-09T23:39:00Z",
+    "created_at": "2025-01-19T03:45:42Z",
+    "updated_at": "2026-03-10T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-15013",
     "sync_status": "failed",
     "sync_version": "4",
-    "last_synced_at": "2026-03-05T23:39:00Z",
+    "last_synced_at": "2026-03-06T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2026-02-26T23:39:00Z"
+    "deleted_at": "2026-02-27T00:45:42Z"
   },
   {
     "id": "lead_000213",
@@ -4935,13 +4935,13 @@
     "lead_status": "converted",
     "score": 94,
     "owner_id": "manual_queue",
-    "created_at": "2024-07-07T07:39:00Z",
+    "created_at": "2024-07-07T08:45:42Z",
     "updated_at": null,
     "source_system": "hubspot",
     "source_record_id": "SRC-42288",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2024-10-02T09:39:00Z"
+    "last_synced_at": "2024-10-02T10:45:42Z"
   },
   {
     "id": "lead_000214",
@@ -4958,13 +4958,13 @@
     "score": 85,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "11/28/2021 04:39",
-    "updated_at": "2022-03-06T14:39:00Z",
+    "created_at": "11/28/2021 05:45",
+    "updated_at": "2022-03-06T15:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-37806",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2022-02-02T14:39:00Z",
+    "last_synced_at": "2022-02-02T15:45:42Z",
     "status": "converted"
   },
   {
@@ -4982,13 +4982,13 @@
     "score": 89,
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2025-09-21T08:39:00Z",
-    "updated_at": "2026-04-02T23:39:00Z",
+    "created_at": "2025-09-21T09:45:42Z",
+    "updated_at": "2026-04-03T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-67301",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-02-19T23:39:00Z"
+    "last_synced_at": "2026-02-20T00:45:42Z"
   },
   {
     "id": "lead_000216",
@@ -5003,13 +5003,13 @@
     "contact_id": "cont_000351",
     "lead_status": "new",
     "owner_id": "own_001",
-    "created_at": "2023-04-02T02:39:00Z",
-    "updated_at": "2024-02-14T01:39:00Z",
+    "created_at": "2023-04-02T03:45:42Z",
+    "updated_at": "2024-02-14T02:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-26109",
     "sync_status": "pending",
     "sync_version": "4",
-    "last_synced_at": "2024-01-02T01:39:00Z"
+    "last_synced_at": "2024-01-02T02:45:42Z"
   },
   {
     "id": "lead_000217",
@@ -5025,13 +5025,13 @@
     "lead_status": "contacted",
     "score": 25,
     "owner_id": "manual_queue",
-    "created_at": "2022.11.13 08:39:00",
-    "updated_at": "2023.08.06 16:39:00",
+    "created_at": "2022.11.13 09:45:42",
+    "updated_at": "2023.08.06 17:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-40666",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2023-07-09T16:39:00Z"
+    "last_synced_at": "2023-07-09T17:45:42Z"
   },
   {
     "id": "lead_000218",
@@ -5048,13 +5048,13 @@
     "score": 1,
     "campaign": "referral",
     "owner_id": "sales_17",
-    "created_at": "2024.10.29 14:39:00",
-    "updated_at": "2025-09-14T15:39:00Z",
+    "created_at": "2024.10.29 15:45:42",
+    "updated_at": "2025-09-14T16:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-72678",
     "sync_status": "FAILED",
     "sync_version": "v2",
-    "last_synced_at": "2025-09-04T15:39:00Z"
+    "last_synced_at": "2025-09-04T16:45:42Z"
   },
   {
     "id": "lead_000219",
@@ -5071,13 +5071,13 @@
     "score": "58",
     "campaign": "webinar",
     "owner_id": "OWN_002",
-    "created_at": "07/31/2022 07:39",
-    "updated_at": "2024-01-21T18:39:00Z",
+    "created_at": "07/31/2022 08:45",
+    "updated_at": "2024-01-21T19:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-43182",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2023-12-14T18:39:00Z"
+    "last_synced_at": "2023-12-14T19:45:42Z"
   },
   {
     "id": "lead_000220",
@@ -5094,13 +5094,13 @@
     "score": null,
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2025-09-29T06:39:00Z",
-    "updated_at": "2026-03-29T23:39:00Z",
+    "created_at": "2025-09-29T07:45:42Z",
+    "updated_at": "2026-03-30T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-17829",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-09T23:39:00Z"
+    "last_synced_at": "2026-03-10T00:45:42Z"
   },
   {
     "id": "lead_000221",
@@ -5117,13 +5117,13 @@
     "score": 41,
     "campaign": "cold_list",
     "owner_id": "manual_queue",
-    "created_at": "2025-11-21T10:39:00Z",
-    "updated_at": "2026-04-07T23:39:00Z",
+    "created_at": "2025-11-21T11:45:42Z",
+    "updated_at": "2026-04-08T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-30503",
     "sync_status": "SYNCED",
     "sync_version": 3,
-    "last_synced_at": "2025-07-22 10:39:00"
+    "last_synced_at": "2025-07-22 11:45:42"
   },
   {
     "id": "lead_000222",
@@ -5140,13 +5140,13 @@
     "score": 88,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2024-01-16T10:39:00Z",
-    "updated_at": "2024-02-13T04:39:00Z",
+    "created_at": "2024-01-16T11:45:42Z",
+    "updated_at": "2024-02-13T05:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-68155",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-02-03T04:39:00Z"
+    "last_synced_at": "2024-02-03T05:45:42Z"
   },
   {
     "id": "lead_000223",
@@ -5163,13 +5163,13 @@
     "score": 57,
     "campaign": "adwords",
     "owner_id": "owner_03",
-    "created_at": "2024-03-25T10:39:00Z",
-    "updated_at": "2025-08-18T13:39:00Z",
+    "created_at": "2024-03-25T11:45:42Z",
+    "updated_at": "2025-08-18T14:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-21869",
     "sync_status": "pending",
     "sync_version": null,
-    "last_synced_at": "2025-07-07T13:39:00Z",
+    "last_synced_at": "2025-07-07T14:45:42Z",
     "status": "lost"
   },
   {
@@ -5186,13 +5186,13 @@
     "lead_status": "contacted",
     "score": "71",
     "owner_id": "rep_99",
-    "created_at": "2025-02-19T22:39:00Z",
-    "updated_at": "2026-03-31T23:39:00Z",
+    "created_at": "2025-02-19T23:45:42Z",
+    "updated_at": "2026-04-01T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-34007",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-17T23:39:00Z"
+    "last_synced_at": "2026-03-18T00:45:42Z"
   },
   {
     "id": "lead_000225",
@@ -5209,13 +5209,13 @@
     "score": "21",
     "campaign": "adwords",
     "owner_id": "rep_99",
-    "created_at": "2024-09-26T02:39:00Z",
+    "created_at": "2024-09-26T03:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-64232",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-01-22T08:39:00Z",
-    "last_modified": "2026-02-21T08:39:00Z"
+    "last_synced_at": "2026-01-22T09:45:42Z",
+    "last_modified": "2026-02-21T09:45:42Z"
   },
   {
     "id": "lead_000226",
@@ -5231,16 +5231,16 @@
     "score": "20",
     "campaign": "adwords",
     "owner_id": "owner_03",
-    "created_at": "2022-01-01T06:39:00Z",
-    "updated_at": "2023-05-30T23:39:00Z",
+    "created_at": "2022-01-01T07:45:42Z",
+    "updated_at": "2023-05-31T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-57158",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-05-28T23:39:00Z",
+    "last_synced_at": "2023-05-29T00:45:42Z",
     "status": "lost",
     "is_deleted": "true",
-    "deleted_at": "2023-06-07T23:39:00Z"
+    "deleted_at": "2023-06-08T00:45:42Z"
   },
   {
     "id": "lead_000227",
@@ -5257,13 +5257,13 @@
     "score": 39,
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2024-08-09T23:39:00Z",
-    "updated_at": "2025-05-19T13:39:00Z",
+    "created_at": "2024-08-10T00:45:42Z",
+    "updated_at": "2025-05-19T14:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-92076",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-04-24T13:39:00Z"
+    "last_synced_at": "2025-04-24T14:45:42Z"
   },
   {
     "id": "lead_000228",
@@ -5279,13 +5279,13 @@
     "lead_status": "new",
     "score": 68,
     "owner_id": "OWN_002",
-    "created_at": "2024-07-23T08:39:00Z",
-    "updated_at": "2024-12-13T13:39:00Z",
+    "created_at": "2024-07-23T09:45:42Z",
+    "updated_at": "2024-12-13T14:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-48900",
     "sync_status": "FAILED",
     "sync_version": 3,
-    "last_synced_at": "2024-11-27T13:39:00Z"
+    "last_synced_at": "2024-11-27T14:45:42Z"
   },
   {
     "id": "lead_000229",
@@ -5302,12 +5302,12 @@
     "score": "49",
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2023-02-25T00:39:00Z",
-    "updated_at": "2024-04-27T15:39:00Z",
+    "created_at": "2023-02-25T01:45:42Z",
+    "updated_at": "2024-04-27T16:45:42Z",
     "source_system": "pipedrive",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2024-04-23T15:39:00Z"
+    "last_synced_at": "2024-04-23T16:45:42Z"
   },
   {
     "id": "lead_000230",
@@ -5324,13 +5324,13 @@
     "score": 14,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2024-09-26T10:39:00Z",
-    "updated_at": "2025-10-25T14:39:00Z",
+    "created_at": "2024-09-26T11:45:42Z",
+    "updated_at": "2025-10-25T15:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-61729",
     "sync_status": null,
     "sync_version": 3,
-    "last_synced_at": "2025-09-18T14:39:00Z"
+    "last_synced_at": "2025-09-18T15:45:42Z"
   },
   {
     "id": "lead_000231",
@@ -5347,13 +5347,13 @@
     "score": 48,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2024-01-21T21:39:00Z",
-    "updated_at": "2024-10-19T05:39:00Z",
+    "created_at": "2024-01-21T22:45:42Z",
+    "updated_at": "2024-10-19T06:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-99415",
     "sync_status": "SYNCED",
     "sync_version": 3,
-    "last_synced_at": "2024-09-11T05:39:00Z"
+    "last_synced_at": "2024-09-11T06:45:42Z"
   },
   {
     "id": "lead_000232",
@@ -5370,13 +5370,13 @@
     "score": 86,
     "campaign": "event",
     "owner_id": "own_001",
-    "created_at": "2025-02-14T09:39:00Z",
-    "updated_at": "2025-10-25T04:39:00Z",
+    "created_at": "2025-02-14T10:45:42Z",
+    "updated_at": "2025-10-25T05:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-96493",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2025-10-06T04:39:00Z",
+    "last_synced_at": "2025-10-06T05:45:42Z",
     "status": "converted"
   },
   {
@@ -5394,15 +5394,15 @@
     "score": "62",
     "campaign": "referral",
     "owner_id": "own_001",
-    "created_at": "2025-10-17T23:39:00Z",
-    "updated_at": "2026-04-02T23:39:00Z",
+    "created_at": "2025-10-18T00:45:42Z",
+    "updated_at": "2026-04-03T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-75970",
     "sync_status": "FAILED",
     "sync_version": 1,
-    "last_synced_at": "2026-03-01T23:39:00Z",
+    "last_synced_at": "2026-03-02T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-04-23T23:39:00Z"
+    "deleted_at": "2026-04-24T00:45:42Z"
   },
   {
     "id": "lead_000234",
@@ -5419,13 +5419,13 @@
     "score": 16,
     "campaign": "cold_list",
     "owner_id": "manual_queue",
-    "created_at": "2023-11-27T19:39:00Z",
-    "updated_at": "2025-03-01T09:39:00Z",
+    "created_at": "2023-11-27T20:45:42Z",
+    "updated_at": "2025-03-01T10:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-80441",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2025-02-11T09:39:00Z"
+    "last_synced_at": "2025-02-11T10:45:42Z"
   },
   {
     "id": "lead_000235",
@@ -5441,13 +5441,13 @@
     "score": null,
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2024-05-07T16:39:00Z",
-    "updated_at": "2025-06-26T12:39:00Z",
+    "created_at": "2024-05-07T17:45:42Z",
+    "updated_at": "2025-06-26T13:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-24064",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2025-05-19T12:39:00Z"
+    "last_synced_at": "2025-05-19T13:45:42Z"
   },
   {
     "id": "lead_000236",
@@ -5463,13 +5463,13 @@
     "lead_status": "new",
     "score": "15",
     "owner_id": "owner_03",
-    "created_at": "2025-07-13T04:39:00Z",
-    "updated_at": "2026-02-25T20:39:00Z",
+    "created_at": "2025-07-13T05:45:42Z",
+    "updated_at": "2026-02-25T21:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-41584",
     "sync_status": "failed",
     "sync_version": "v3",
-    "last_synced_at": "2026-01-22T20:39:00Z"
+    "last_synced_at": "2026-01-22T21:45:42Z"
   },
   {
     "id": "lead_000237",
@@ -5486,13 +5486,13 @@
     "score": 71,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2024-06-16T08:39:00Z",
-    "updated_at": "2026-01-03T04:39:00Z",
+    "created_at": "2024-06-16T09:45:42Z",
+    "updated_at": "2026-01-03T05:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-42075",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-12-08T04:39:00Z",
+    "last_synced_at": "2025-12-08T05:45:42Z",
     "status": "lost"
   },
   {
@@ -5510,15 +5510,15 @@
     "score": 6,
     "campaign": "event",
     "owner_id": "OWN_002",
-    "created_at": "2023-03-18T17:39:00Z",
-    "updated_at": "2024-05-20T10:39:00Z",
+    "created_at": "2023-03-18T18:45:42Z",
+    "updated_at": "2024-05-20T11:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-78872",
     "sync_status": "failed",
     "sync_version": "v3",
-    "last_synced_at": "2024-05-15T10:39:00Z",
+    "last_synced_at": "2024-05-15T11:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2024-06-09T10:39:00Z"
+    "deleted_at": "2024-06-09T11:45:42Z"
   },
   {
     "id": "lead_000239",
@@ -5535,13 +5535,13 @@
     "score": 43,
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2022-09-14T07:39:00Z",
-    "updated_at": "2024-03-14T23:39:00Z",
+    "created_at": "2022-09-14T08:45:42Z",
+    "updated_at": "2024-03-15T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-32665",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2024-02-01T23:39:00Z",
+    "last_synced_at": "2024-02-02T00:45:42Z",
     "status": "lost"
   },
   {
@@ -5559,15 +5559,15 @@
     "score": "31",
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2022-09-03T05:39:00Z",
-    "updated_at": "2023-02-28T04:39:00Z",
+    "created_at": "2022-09-03T06:45:42Z",
+    "updated_at": "2023-02-28T05:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-57907",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2023-02-11T04:39:00Z",
+    "last_synced_at": "2023-02-11T05:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2023-05-03T04:39:00Z"
+    "deleted_at": "2023-05-03T05:45:42Z"
   },
   {
     "id": "lead_000241",
@@ -5584,15 +5584,15 @@
     "score": 6,
     "campaign": "adwords",
     "owner_id": "sales_17",
-    "created_at": "2023-06-30T19:39:00Z",
-    "updated_at": "2026-01-16T23:39:00Z",
+    "created_at": "2023-06-30T20:45:42Z",
+    "updated_at": "2026-01-17T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-24090",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-06-06T08:39:00Z",
+    "last_synced_at": "2024-06-06T09:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2024-08-27T08:39:00Z",
+    "deleted_at": "2024-08-27T09:45:42Z",
     "duplicate_of": "lead_000194"
   },
   {
@@ -5610,15 +5610,15 @@
     "score": 99,
     "campaign": "referral",
     "owner_id": "owner_03",
-    "created_at": "2023-02-08T10:39:00Z",
-    "updated_at": "2026-03-02T23:39:00Z",
+    "created_at": "2023-02-08T11:45:42Z",
+    "updated_at": "2026-03-03T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-17771",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-03-03T01:39:00Z",
+    "last_synced_at": "2024-03-03T02:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2024.03.29 01:39:00",
+    "deleted_at": "2024.03.29 02:45:42",
     "duplicate_of": "lead_000096"
   },
   {
@@ -5636,15 +5636,15 @@
     "score": "87",
     "campaign": "cold_list",
     "owner_id": "rep_99",
-    "created_at": "2025-09-01T01:39:00Z",
-    "updated_at": "2026-03-22T23:39:00Z",
+    "created_at": "2025-09-01T02:45:42Z",
+    "updated_at": "2026-03-23T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-28284",
     "sync_status": null,
     "sync_version": 1,
-    "last_synced_at": "2026-02-20T23:39:00Z",
+    "last_synced_at": "2026-02-21T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-04-21T23:39:00Z",
+    "deleted_at": "2026-04-22T00:45:42Z",
     "duplicate_of": "lead_000173"
   },
   {
@@ -5662,13 +5662,13 @@
     "score": "4",
     "campaign": "adwords",
     "owner_id": "OWN_002",
-    "created_at": "2022.09.20 04:39:00",
-    "updated_at": "2026-04-06T23:39:00Z",
+    "created_at": "2022.09.20 05:45:42",
+    "updated_at": "2026-04-07T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-17430",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-01-24T03:39:00Z",
+    "last_synced_at": "2024-01-24T04:45:42Z",
     "duplicate_of": "lead_000108"
   },
   {
@@ -5686,13 +5686,13 @@
     "score": 49,
     "campaign": "referral",
     "owner_id": "manual_queue",
-    "created_at": "2024-05-15T21:39:00Z",
-    "updated_at": "2026-04-03T23:39:00Z",
+    "created_at": "2024-05-15T22:45:42Z",
+    "updated_at": "2026-04-04T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-27125",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-09-30T23:39:00Z",
+    "last_synced_at": "2024-10-01T00:45:42Z",
     "duplicate_of": "lead_000149"
   },
   {
@@ -5710,13 +5710,13 @@
     "score": "30",
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2024-01-20T09:39:00Z",
-    "updated_at": "2026-03-27T23:39:00Z",
+    "created_at": "2024-01-20T10:45:42Z",
+    "updated_at": "2026-03-28T00:45:42Z",
     "source_system": "MANUAL_ENTRY",
     "source_record_id": "SRC-46946",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2024-08-09T14:39:00Z",
+    "last_synced_at": "2024-08-09T15:45:42Z",
     "status": "lost",
     "duplicate_of": "lead_000068"
   },
@@ -5734,13 +5734,13 @@
     "lead_status": "converted",
     "score": 78,
     "owner_id": "own_001",
-    "created_at": "2025-11-21T05:39:00Z",
-    "updated_at": "2026-03-14T23:39:00Z",
+    "created_at": "2025-11-21T06:45:42Z",
+    "updated_at": "2026-03-15T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-57279",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-26T23:39:00Z",
+    "last_synced_at": "2026-03-27T00:45:42Z",
     "duplicate_of": "lead_000005"
   },
   {
@@ -5758,12 +5758,12 @@
     "score": 13,
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2025-02-17T02:39:00Z",
+    "created_at": "2025-02-17T03:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-92577",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-02-28T23:39:00Z",
+    "last_synced_at": "2026-03-01T00:45:42Z",
     "is_deleted": false,
     "deleted_at": null,
     "duplicate_of": "lead_000030"
@@ -5782,13 +5782,13 @@
     "score": 100,
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2025-03-28T12:39:00Z",
-    "updated_at": "2026-03-06T23:39:00Z",
+    "created_at": "2025-03-28T13:45:42Z",
+    "updated_at": "2026-03-07T00:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-66712",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-28T23:39:00Z",
+    "last_synced_at": "2026-03-29T00:45:42Z",
     "duplicate_of": "lead_000013"
   },
   {
@@ -5806,13 +5806,13 @@
     "score": 87,
     "campaign": "event",
     "owner_id": "owner_03",
-    "created_at": "2025-12-21T11:39:00Z",
-    "updated_at": "2026-03-24T23:39:00Z",
+    "created_at": "2025-12-21T12:45:42Z",
+    "updated_at": "2026-03-25T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-93857",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-20T23:39:00Z",
+    "last_synced_at": "2026-03-21T00:45:42Z",
     "duplicate_of": "lead_000022"
   },
   {
@@ -5830,13 +5830,13 @@
     "score": 32,
     "campaign": "referral",
     "owner_id": "OWN_002",
-    "created_at": "2022.03.23 01:39:00",
-    "updated_at": "2026-04-04T23:39:00Z",
+    "created_at": "2022.03.23 02:45:42",
+    "updated_at": "2026-04-05T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-91818",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2022-08-13T05:39:00Z",
+    "last_synced_at": "2022-08-13T06:45:42Z",
     "status": "converted",
     "duplicate_of": "lead_000080"
   },
@@ -5853,16 +5853,16 @@
     "contact_id": "cont_000013",
     "lead_status": "new",
     "owner_id": "OWN_002",
-    "created_at": "2022-05-20T00:39:00Z",
-    "updated_at": "2026-02-14T23:39:00Z",
+    "created_at": "2022-05-20T01:45:42Z",
+    "updated_at": "2026-02-15T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-26953",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2022-10-08T14:39:00Z",
+    "last_synced_at": "2022-10-08T15:45:42Z",
     "status": "new",
     "is_deleted": false,
-    "deleted_at": "2022-10-02T14:39:00Z",
+    "deleted_at": "2022-10-02T15:45:42Z",
     "duplicate_of": "lead_000104"
   },
   {
@@ -5879,13 +5879,13 @@
     "lead_status": "qualified",
     "score": 52,
     "owner_id": "rep_99",
-    "created_at": "2025-05-12T06:39:00Z",
-    "updated_at": "2026-03-06T23:39:00Z",
+    "created_at": "2025-05-12T07:45:42Z",
+    "updated_at": "2026-03-07T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-37278",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2025-11-09T02:39:00Z",
+    "last_synced_at": "2025-11-09T03:45:42Z",
     "duplicate_of": "lead_000008"
   },
   {
@@ -5903,15 +5903,15 @@
     "score": 22,
     "campaign": "cold_list",
     "owner_id": "owner_03",
-    "created_at": "2022-03-11T02:39:00Z",
-    "updated_at": "2026-04-07T23:39:00Z",
+    "created_at": "2022-03-11T03:45:42Z",
+    "updated_at": "2026-04-08T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-77981",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-04-24T02:39:00Z",
+    "last_synced_at": "2023-04-24T03:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2023-07-04T02:39:00Z",
+    "deleted_at": "2023-07-04T03:45:42Z",
     "duplicate_of": "lead_000024"
   },
   {
@@ -5929,13 +5929,13 @@
     "score": 39,
     "campaign": "webinar",
     "owner_id": "manual_queue",
-    "created_at": "2024-08-09T23:39:00Z",
-    "updated_at": "2026-01-25T23:39:00Z",
+    "created_at": "2024-08-10T00:45:42Z",
+    "updated_at": "2026-01-26T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-92076",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2025-04-24T13:39:00Z",
+    "last_synced_at": "2025-04-24T14:45:42Z",
     "duplicate_of": "lead_000227"
   }
 ]

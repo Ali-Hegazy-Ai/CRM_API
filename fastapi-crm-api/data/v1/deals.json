@@ -13,14 +13,14 @@
     "lead_id": "lead_000018",
     "company_id": "comp_000003",
     "owner_id": "sales_17",
-    "created_at": "2022-05-19T23:39:00Z",
-    "updated_at": "1704490740",
-    "expected_close_date": "2023-07-10T23:39:00Z",
+    "created_at": "2022-05-20T00:45:42Z",
+    "updated_at": "1704494742",
+    "expected_close_date": "2023-07-11T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-92975",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-12T23:39:00Z",
+    "last_synced_at": "2026-04-13T00:45:42Z",
     "duplicate_of": "deal_000141"
   },
   {
@@ -37,14 +37,14 @@
     "lead_id": "lead_000147",
     "company_id": "comp_000115",
     "owner_id": "owner_03",
-    "created_at": "2022-03-02T23:39:00Z",
-    "updated_at": "2023.12.01 23:39:00",
-    "expected_close_date": "2023.04.18 09:39:00",
+    "created_at": "2022-03-03T00:45:42Z",
+    "updated_at": "2023.12.02 00:45:42",
+    "expected_close_date": "2023.04.18 10:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-56439",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-11T23:39:00Z"
+    "last_synced_at": "2026-04-12T00:45:42Z"
   },
   {
     "id": "deal_000083",
@@ -58,8 +58,8 @@
     "contact_id": "cont_000145",
     "company_id": "comp_000103",
     "owner_id": "manual_queue",
-    "created_at": "2023-01-02T23:39:00Z",
-    "expected_close_date": "2023.10.24 12:39:00",
+    "created_at": "2023-01-03T00:45:42Z",
+    "expected_close_date": "2023.10.24 13:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-81448",
     "sync_status": "SYNCED",
@@ -79,16 +79,16 @@
     "lead_id": "lead_000107",
     "company_id": "comp_000056",
     "owner_id": "own_001",
-    "created_at": "10/07/2022 23:39",
-    "updated_at": "2024-05-27T23:39:00Z",
-    "expected_close_date": "2025-09-29T18:39:00Z",
+    "created_at": "10/08/2022 00:45",
+    "updated_at": "2024-05-28T00:45:42Z",
+    "expected_close_date": "2025-09-29T19:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-21721",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2025-08-20T18:39:00Z"
+    "deleted_at": "2025-08-20T19:45:42Z"
   },
   {
     "id": "deal_000073",
@@ -104,13 +104,13 @@
     "lead_id": "lead_000139",
     "company_id": "comp_000080",
     "owner_id": null,
-    "created_at": "2021.11.25 23:39:00",
-    "updated_at": "2024-06-29T23:39:00Z",
+    "created_at": "2021.11.26 00:45:42",
+    "updated_at": "2024-06-30T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-83854",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-06T23:39:00Z"
+    "last_synced_at": "2026-03-07T00:45:42Z"
   },
   {
     "id": "deal_000127",
@@ -125,14 +125,14 @@
     "lead_id": "lead_000175",
     "company_id": "comp_000037",
     "owner_id": "manual_queue",
-    "created_at": "2021.06.16 23:39:00",
-    "updated_at": "2024-04-14T23:39:00Z",
-    "expected_close_date": "2026-04-07T00:39:00Z",
+    "created_at": "2021.06.17 00:45:42",
+    "updated_at": "2024-04-15T00:45:42Z",
+    "expected_close_date": "2026-04-07T01:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-51884",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2024-04-06T23:39:00Z"
+    "last_synced_at": "2024-04-07T00:45:42Z"
   },
   {
     "id": "deal_000004",
@@ -146,8 +146,8 @@
     "contact_id": "cont_000364",
     "company_id": "comp_000113",
     "owner_id": "rep_99",
-    "created_at": "2022-10-23T23:39:00Z",
-    "updated_at": "2024-04-02T23:39:00Z",
+    "created_at": "2022-10-24T00:45:42Z",
+    "updated_at": "2024-04-03T00:45:42Z",
     "contact": {
       "id": "cont_000364",
       "name": "Anthony Pearson",
@@ -157,7 +157,7 @@
     "source_record_id": "SRC-32613",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-02-29T23:39:00Z"
+    "last_synced_at": "2024-03-01T00:45:42Z"
   },
   {
     "id": "deal_000077",
@@ -171,15 +171,15 @@
     "lead_id": "lead_000202",
     "company_id": "comp_000054",
     "owner_id": "rep_99",
-    "created_at": "2021-05-19T23:39:00Z",
-    "updated_at": "2023-09-24T23:39:00Z",
-    "expected_close_date": "2024-04-22T04:39:00Z",
+    "created_at": "2021-05-20T00:45:42Z",
+    "updated_at": "2023-09-25T00:45:42Z",
+    "expected_close_date": "2024-04-22T05:45:42Z",
     "Stage": "negotiation",
     "source_system": "hubspot",
     "source_record_id": "SRC-60904",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2023-08-22T23:39:00Z"
+    "last_synced_at": "2023-08-23T00:45:42Z"
   },
   {
     "id": "deal_000195",
@@ -194,14 +194,14 @@
     "lead_id": "lead_000097",
     "company_id": "comp_000121",
     "owner_id": "OWN_002",
-    "created_at": "2021-10-07T23:39:00Z",
-    "updated_at": "2024-06-09T23:39:00Z",
+    "created_at": "2021-10-08T00:45:42Z",
+    "updated_at": "2024-06-10T00:45:42Z",
     "Stage": "prospecting",
     "source_system": "salesforce",
     "source_record_id": "SRC-90798",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-11-12T23:39:00Z",
+    "last_synced_at": "2023-11-13T00:45:42Z",
     "duplicate_of": "deal_000009"
   },
   {
@@ -218,14 +218,14 @@
     "lead_id": "lead_000233",
     "company_id": "comp_000066",
     "owner_id": "OWN_002",
-    "created_at": "2022-09-27T23:39:00Z",
-    "updated_at": "12/04/2023 23:39",
-    "expected_close_date": "2025-12-02T14:39:00Z",
+    "created_at": "2022-09-28T00:45:42Z",
+    "updated_at": "12/05/2023 00:45",
+    "expected_close_date": "2025-12-02T15:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-66499",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2026-03-26T23:39:00Z"
+    "last_synced_at": "2026-03-27T00:45:42Z"
   },
   {
     "id": "deal_000080",
@@ -240,13 +240,13 @@
     "lead_id": "lead_000021",
     "company_id": "comp_000027",
     "owner_id": "owner_03",
-    "created_at": "2022.08.06 23:39:00",
-    "updated_at": "2024-01-28T23:39:00Z",
-    "expected_close_date": "2025-11-24T02:39:00Z",
+    "created_at": "2022.08.07 00:45:42",
+    "updated_at": "2024-01-29T00:45:42Z",
+    "expected_close_date": "2025-11-24T03:45:42Z",
     "source_system": "pipedrive",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2024-01-13T23:39:00Z"
+    "last_synced_at": "2024-01-14T00:45:42Z"
   },
   {
     "id": "deal_000162",
@@ -260,13 +260,13 @@
     "lead_id": "lead_000174",
     "company_id": "comp_000144",
     "owner_id": "rep_99",
-    "created_at": "2022-05-03T23:39:00Z",
-    "updated_at": "2024-04-04T23:39:00Z",
+    "created_at": "2022-05-04T00:45:42Z",
+    "updated_at": "2024-04-05T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-49378",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-19T23:39:00Z"
+    "last_synced_at": "2026-03-20T00:45:42Z"
   },
   {
     "id": "deal_000076",
@@ -280,12 +280,12 @@
     "lead_id": "lead_000114",
     "company_id": "comp_000016",
     "owner_id": "owner_03",
-    "created_at": "2022-04-24T23:39:00Z",
+    "created_at": "2022-04-25T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-28218",
     "sync_status": "pending",
     "sync_version": "3",
-    "last_synced_at": "2026-03-29T23:39:00Z"
+    "last_synced_at": "2026-03-30T00:45:42Z"
   },
   {
     "id": "deal_000095",
@@ -300,14 +300,14 @@
     "lead_id": "lead_000028",
     "company_id": "comp_000035",
     "owner_id": "rep_99",
-    "created_at": "2022-06-24T23:39:00Z",
-    "updated_at": "2024-02-03T23:39:00Z",
-    "expected_close_date": "2024-07-05T04:39:00Z",
+    "created_at": "2022-06-25T00:45:42Z",
+    "updated_at": "2024-02-04T00:45:42Z",
+    "expected_close_date": "2024-07-05T05:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-61601",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-01T23:39:00Z"
+    "last_synced_at": "2026-04-02T00:45:42Z"
   },
   {
     "id": "deal_000099",
@@ -322,12 +322,12 @@
     "lead_id": "lead_000054",
     "company_id": "comp_000086",
     "owner_id": "OWN_002",
-    "created_at": "2023.05.20 23:39:00",
+    "created_at": "2023.05.21 00:45:42",
     "source_system": "SalesForce",
     "source_record_id": "SRC-66331",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "deal_000124",
@@ -343,16 +343,16 @@
     "lead_id": "lead_000115",
     "company_id": "comp_000135",
     "owner_id": "orphan_135538",
-    "created_at": "2022.07.03 23:39:00",
-    "updated_at": "2024-03-13T23:39:00Z",
-    "expected_close_date": "2024-08-01T06:39:00Z",
+    "created_at": "2022.07.04 00:45:42",
+    "updated_at": "2024-03-14T00:45:42Z",
+    "expected_close_date": "2024-08-01T07:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-68592",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2024-03-10T23:39:00Z",
+    "last_synced_at": "2024-03-11T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2024-07-02T06:39:00Z"
+    "deleted_at": "2024-07-02T07:45:42Z"
   },
   {
     "id": "deal_000039",
@@ -367,14 +367,14 @@
     "lead_id": "lead_000077",
     "company_id": "comp_000054",
     "owner_id": "sales_17",
-    "created_at": "2022-06-20T23:39:00Z",
-    "updated_at": "2024.03.05 23:39:00",
-    "expected_close_date": "2026-04-19T23:39:00Z",
+    "created_at": "2022-06-21T00:45:42Z",
+    "updated_at": "2024.03.06 00:45:42",
+    "expected_close_date": "2026-04-20T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-88142",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2026-03-24T23:39:00Z"
+    "last_synced_at": "2026-03-25T00:45:42Z"
   },
   {
     "id": "deal_000091",
@@ -390,13 +390,13 @@
     "lead_id": "lead_000181",
     "company_id": "comp_000112",
     "owner_id": "rep_99",
-    "created_at": "2023-02-22T23:39:00Z",
-    "updated_at": "2023-09-18T23:39:00Z",
-    "expected_close_date": "2025-04-11T16:39:00Z",
+    "created_at": "2023-02-23T00:45:42Z",
+    "updated_at": "2023-09-19T00:45:42Z",
+    "expected_close_date": "2025-04-11T17:45:42Z",
     "source_system": "hubspot",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-07T23:39:00Z"
+    "last_synced_at": "2026-04-08T00:45:42Z"
   },
   {
     "id": "deal_000009",
@@ -411,14 +411,14 @@
     "lead_id": "lead_000114",
     "company_id": "comp_000077",
     "owner_id": "OWN_002",
-    "created_at": "2023.05.09 23:39:00",
-    "updated_at": "2024-02-27T23:39:00Z",
+    "created_at": "2023.05.10 00:45:42",
+    "updated_at": "2024-02-28T00:45:42Z",
     "Stage": "prospecting",
     "source_system": "salesforce",
     "source_record_id": "SRC-90798",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-01T23:39:00Z"
+    "last_synced_at": "2026-03-02T00:45:42Z"
   },
   {
     "id": "deal_000161",
@@ -434,14 +434,14 @@
     "lead_id": "lead_000002",
     "company_id": "comp_000095",
     "owner_id": "rep_99",
-    "created_at": "2023-09-21T23:39:00Z",
-    "updated_at": "2023.11.06 23:39:00",
-    "expected_close_date": "2026-07-26T23:39:00Z",
+    "created_at": "2023-09-22T00:45:42Z",
+    "updated_at": "2023.11.07 00:45:42",
+    "expected_close_date": "2026-07-27T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-19768",
     "sync_status": "SYNCED",
     "sync_version": 1,
-    "last_synced_at": "2023-10-14T23:39:00Z"
+    "last_synced_at": "2023-10-15T00:45:42Z"
   },
   {
     "id": "deal_000088",
@@ -457,8 +457,8 @@
     "lead_id": "lead_000084",
     "company_id": "comp_000130",
     "owner_id": "OWN_002",
-    "created_at": "2022-08-06T23:39:00Z",
-    "updated_at": "2023-11-20T23:39:00Z",
+    "created_at": "2022-08-07T00:45:42Z",
+    "updated_at": "2023-11-21T00:45:42Z",
     "contact": {
       "id": "cont_000137",
       "name": "Christopher Hodges",
@@ -467,7 +467,7 @@
     "source_system": "pipedrive",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-04T23:39:00Z"
+    "last_synced_at": "2026-04-05T00:45:42Z"
   },
   {
     "id": "deal_000066",
@@ -481,14 +481,14 @@
     "contact_id": "cont_000210",
     "company_id": "comp_000130",
     "owner_id": "owner_03",
-    "created_at": "2021-07-11T23:39:00Z",
-    "updated_at": "2024-04-19T23:39:00Z",
-    "expected_close_date": "2024-01-19T21:39:00Z",
+    "created_at": "2021-07-12T00:45:42Z",
+    "updated_at": "2024-04-20T00:45:42Z",
+    "expected_close_date": "2024-01-19T22:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-13205",
     "sync_status": "ok",
     "sync_version": "3",
-    "last_synced_at": "2024-04-18T23:39:00Z"
+    "last_synced_at": "2024-04-19T00:45:42Z"
   },
   {
     "id": "deal_000159",
@@ -504,14 +504,14 @@
     "lead_id": "lead_000115",
     "company_id": "comp_000068",
     "owner_id": "OWN_002",
-    "created_at": "2021-09-07T23:39:00Z",
-    "updated_at": "2024.04.01 23:39:00",
-    "expected_close_date": "04/12/2024 09:39",
+    "created_at": "2021-09-08T00:45:42Z",
+    "updated_at": "2024.04.02 00:45:42",
+    "expected_close_date": "04/12/2024 10:45",
     "source_system": "SF",
     "source_record_id": "SRC-32214",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "deal_000148",
@@ -526,16 +526,16 @@
     "lead_id": "lead_000134",
     "company_id": "comp_000080",
     "owner_id": "OWN_002",
-    "created_at": "2022.09.07 23:39:00",
-    "updated_at": "2024-02-02T23:39:00Z",
-    "expected_close_date": "2024-02-03T16:39:00Z",
+    "created_at": "2022.09.08 00:45:42",
+    "updated_at": "2024-02-03T00:45:42Z",
+    "expected_close_date": "2024-02-03T17:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-53207",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-04-06T23:39:00Z",
+    "last_synced_at": "2026-04-07T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2024-01-13T16:39:00Z"
+    "deleted_at": "2024-01-13T17:45:42Z"
   },
   {
     "id": "deal_000035",
@@ -551,13 +551,13 @@
     "lead_id": "lead_000084",
     "company_id": "comp_000115",
     "owner_id": "owner_03",
-    "created_at": "2022-07-17T23:39:00Z",
-    "updated_at": "2024-06-17T23:39:00Z",
+    "created_at": "2022-07-18T00:45:42Z",
+    "updated_at": "2024-06-18T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-83288",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2026-04-11T23:39:00Z"
+    "last_synced_at": "2026-04-12T00:45:42Z"
   },
   {
     "id": "deal_000042",
@@ -573,16 +573,16 @@
     "lead_id": "lead_000035",
     "company_id": "comp_000041",
     "owner_id": "manual_queue",
-    "created_at": "2022.04.17 23:39:00",
-    "updated_at": "2023.09.21 23:39:00",
-    "expected_close_date": "2025-02-19T11:39:00Z",
+    "created_at": "2022.04.18 00:45:42",
+    "updated_at": "2023.09.22 00:45:42",
+    "expected_close_date": "2025-02-19T12:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-38435",
     "sync_status": "SYNCED",
     "sync_version": 1,
-    "last_synced_at": "2026-03-25T23:39:00Z",
+    "last_synced_at": "2026-03-26T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2025-02-06T11:39:00Z"
+    "deleted_at": "2025-02-06T12:45:42Z"
   },
   {
     "id": "deal_000199",
@@ -598,14 +598,14 @@
     "lead_id": "lead_000051",
     "company_id": "comp_000103",
     "owner_id": "rep_99",
-    "created_at": "2023-06-03T23:39:00Z",
-    "updated_at": "2024-03-05T23:39:00Z",
-    "expected_close_date": "2025-08-26T05:39:00Z",
+    "created_at": "2023-06-04T00:45:42Z",
+    "updated_at": "2024-03-06T00:45:42Z",
+    "expected_close_date": "2025-08-26T06:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-87577",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2024-03-02T23:39:00Z",
+    "last_synced_at": "2024-03-03T00:45:42Z",
     "duplicate_of": "deal_000100"
   },
   {
@@ -622,14 +622,14 @@
     "lead_id": "lead_000207",
     "company_id": "comp_000026",
     "owner_id": "sales_17",
-    "created_at": "2021.10.12 23:39:00",
-    "updated_at": "2024-06-01T23:39:00Z",
-    "expected_close_date": "2024-02-03 16:39:00",
+    "created_at": "2021.10.13 00:45:42",
+    "updated_at": "2024-06-02T00:45:42Z",
+    "expected_close_date": "2024-02-03 17:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-27550",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-30T23:39:00Z"
+    "last_synced_at": "2026-03-31T00:45:42Z"
   },
   {
     "id": "deal_000001",
@@ -644,14 +644,14 @@
     "contact_id": "cont_000081",
     "company_id": "comp_000146",
     "owner_id": "OWN_002",
-    "created_at": "2022.07.03 23:39:00",
-    "updated_at": "2024-04-14T23:39:00Z",
-    "expected_close_date": "2023-04-02T05:39:00Z",
+    "created_at": "2022.07.04 00:45:42",
+    "updated_at": "2024-04-15T00:45:42Z",
+    "expected_close_date": "2023-04-02T06:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-24342",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-04-04T23:39:00Z"
+    "last_synced_at": "2026-04-05T00:45:42Z"
   },
   {
     "id": "deal_000067",
@@ -666,14 +666,14 @@
     "lead_id": "lead_000212",
     "company_id": "comp_000085",
     "owner_id": "sales_17",
-    "created_at": "2023-08-25T23:39:00Z",
-    "updated_at": "2024-05-06T23:39:00Z",
-    "expected_close_date": "2023-02-09T05:39:00Z",
+    "created_at": "2023-08-26T00:45:42Z",
+    "updated_at": "2024-05-07T00:45:42Z",
+    "expected_close_date": "2023-02-09T06:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-45367",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-03T23:39:00Z"
+    "last_synced_at": "2026-03-04T00:45:42Z"
   },
   {
     "id": "deal_000002",
@@ -688,14 +688,14 @@
     "lead_id": "lead_000136",
     "company_id": "comp_000032",
     "owner_id": "owner_03",
-    "created_at": "2023-09-12T23:39:00Z",
-    "updated_at": "2024.05.06 23:39:00",
-    "expected_close_date": "2024-07-28T23:39:00Z",
+    "created_at": "2023-09-13T00:45:42Z",
+    "updated_at": "2024.05.07 00:45:42",
+    "expected_close_date": "2024-07-29T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-87958",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-13T23:39:00Z"
+    "last_synced_at": "2026-03-14T00:45:42Z"
   },
   {
     "id": "deal_000117",
@@ -709,16 +709,16 @@
     "lead_id": "lead_000252",
     "company_id": "comp_000040",
     "owner_id": "manual_queue",
-    "created_at": "2022.06.05 23:39:00",
-    "updated_at": "2023-12-19T23:39:00Z",
-    "expected_close_date": "2024-03-13T14:39:00Z",
+    "created_at": "2022.06.06 00:45:42",
+    "updated_at": "2023-12-20T00:45:42Z",
+    "expected_close_date": "2024-03-13T15:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-61176",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-04T23:39:00Z",
+    "last_synced_at": "2026-04-05T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2024-02-18T14:39:00Z"
+    "deleted_at": "2024-02-18T15:45:42Z"
   },
   {
     "id": "deal_000011",
@@ -734,13 +734,13 @@
     "lead_id": "lead_000004",
     "company_id": "comp_000135",
     "owner_id": "owner_03",
-    "created_at": "2022-01-13T23:39:00Z",
-    "updated_at": "2024-04-17T23:39:00Z",
+    "created_at": "2022-01-14T00:45:42Z",
+    "updated_at": "2024-04-18T00:45:42Z",
     "source_system": "PIPEDRIVE",
     "source_record_id": "SRC-24628",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-03T23:39:00Z"
+    "last_synced_at": "2026-04-04T00:45:42Z"
   },
   {
     "id": "deal_000144",
@@ -755,16 +755,16 @@
     "lead_id": "lead_000104",
     "company_id": "comp_000127",
     "owner_id": "owner_03",
-    "created_at": "2021-09-05T23:39:00Z",
-    "expected_close_date": "2026-08-05T23:39:00Z",
+    "created_at": "2021-09-06T00:45:42Z",
+    "expected_close_date": "2026-08-06T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": null,
     "sync_status": "SYNCED",
     "sync_version": 3,
-    "last_synced_at": "2026-03-26T23:39:00Z",
+    "last_synced_at": "2026-03-27T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2026-04-07T23:39:00Z",
-    "last_modified": "2024-03-10T23:39:00Z"
+    "deleted_at": "2026-04-08T00:45:42Z",
+    "last_modified": "2024-03-11T00:45:42Z"
   },
   {
     "id": "deal_000113",
@@ -779,14 +779,14 @@
     "lead_id": "lead_000179",
     "company_id": "comp_000084",
     "owner_id": "own_001",
-    "created_at": "2022-10-23T23:39:00Z",
-    "updated_at": "2024-01-06T23:39:00Z",
-    "expected_close_date": "2025-09-27T00:39:00Z",
+    "created_at": "2022-10-24T00:45:42Z",
+    "updated_at": "2024-01-07T00:45:42Z",
+    "expected_close_date": "2025-09-27T01:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-15707",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-25T23:39:00Z"
+    "last_synced_at": "2026-03-26T00:45:42Z"
   },
   {
     "id": "deal_000018",
@@ -801,9 +801,9 @@
     "contact_id": "cont_000398",
     "company_id": "comp_000041",
     "owner_id": "manual_queue",
-    "created_at": "2021-11-06T23:39:00Z",
-    "updated_at": "2024-05-18T23:39:00Z",
-    "expected_close_date": "2026-05-31T23:39:00Z",
+    "created_at": "2021-11-07T00:45:42Z",
+    "updated_at": "2024-05-19T00:45:42Z",
+    "expected_close_date": "2026-06-01T00:45:42Z",
     "contact": {
       "id": "cont_000398",
       "name": "Melissa Nguyen DVM",
@@ -813,7 +813,7 @@
     "source_record_id": "SRC-59250",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2023-09-06T23:39:00Z"
+    "last_synced_at": "2023-09-07T00:45:42Z"
   },
   {
     "id": "deal_000092",
@@ -828,13 +828,13 @@
     "lead_id": "lead_000255",
     "company_id": "comp_000083",
     "owner_id": "owner_03",
-    "created_at": "10/07/2022 23:39",
-    "updated_at": "2023-10-23T23:39:00Z",
+    "created_at": "10/08/2022 00:45",
+    "updated_at": "2023-10-24T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-60772",
     "sync_status": "pending",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-30T23:39:00Z"
+    "last_synced_at": "2026-03-31T00:45:42Z"
   },
   {
     "id": "deal_000054",
@@ -848,15 +848,15 @@
     "lead_id": "lead_000169",
     "company_id": "comp_000085",
     "owner_id": "sales_17",
-    "created_at": "2023-04-12T23:39:00Z",
-    "expected_close_date": "2023-05-21T19:39:00Z",
+    "created_at": "2023-04-13T00:45:42Z",
+    "expected_close_date": "2023-05-21T20:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-92634",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-14T23:39:00Z",
+    "last_synced_at": "2026-03-15T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2023-05-30T19:39:00Z"
+    "deleted_at": "2023-05-30T20:45:42Z"
   },
   {
     "id": "deal_000089",
@@ -869,15 +869,15 @@
     "lead_id": "lead_000251",
     "company_id": "comp_000129",
     "owner_id": "OWN_002",
-    "created_at": "2022.12.23 23:39:00",
-    "updated_at": "2024-06-27T23:39:00Z",
-    "expected_close_date": "2026-04-16T23:39:00Z",
+    "created_at": "2022.12.24 00:45:42",
+    "updated_at": "2024-06-28T00:45:42Z",
+    "expected_close_date": "2026-04-17T00:45:42Z",
     "Stage": "Lost",
     "source_system": "hubspot",
     "source_record_id": "SRC-98637",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-04-12T23:39:00Z"
+    "last_synced_at": "2024-04-13T00:45:42Z"
   },
   {
     "id": "deal_000036",
@@ -893,14 +893,14 @@
     "lead_id": "lead_000153",
     "company_id": "comp_000033",
     "owner_id": "manual_queue",
-    "created_at": "2022.04.20 23:39:00",
-    "updated_at": "2024-02-24T23:39:00Z",
-    "expected_close_date": "2023-02-16T16:39:00Z",
+    "created_at": "2022.04.21 00:45:42",
+    "updated_at": "2024-02-25T00:45:42Z",
+    "expected_close_date": "2023-02-16T17:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-16676",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-15T23:39:00Z"
+    "last_synced_at": "2026-03-16T00:45:42Z"
   },
   {
     "id": "deal_000181",
@@ -916,13 +916,13 @@
     "lead_id": "lead_000013",
     "company_id": "comp_000128",
     "owner_id": "sales_17",
-    "created_at": "2022-12-17T23:39:00Z",
-    "updated_at": "2024.04.24 23:39:00",
-    "expected_close_date": "2025-11-23T22:39:00Z",
+    "created_at": "2022-12-18T00:45:42Z",
+    "updated_at": "2024.04.25 00:45:42",
+    "expected_close_date": "2025-11-23T23:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-22T23:39:00Z"
+    "last_synced_at": "2026-03-23T00:45:42Z"
   },
   {
     "id": "deal_000084",
@@ -937,13 +937,13 @@
     "lead_id": "lead_000026",
     "company_id": "comp_000113",
     "owner_id": "orphan_232595",
-    "created_at": "2022.11.10 23:39:00",
-    "expected_close_date": "2026-04-28T23:39:00Z",
+    "created_at": "2022.11.11 00:45:42",
+    "expected_close_date": "2026-04-29T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-32925",
     "sync_status": "synced",
     "sync_version": null,
-    "last_synced_at": "2026-03-29T23:39:00Z"
+    "last_synced_at": "2026-03-30T00:45:42Z"
   },
   {
     "id": "deal_000093",
@@ -959,12 +959,12 @@
     "lead_id": "lead_000084",
     "company_id": "comp_000085",
     "owner_id": "sales_17",
-    "created_at": "2021-05-14T23:39:00Z",
-    "expected_close_date": "2024-10-06T04:39:00Z",
+    "created_at": "2021-05-15T00:45:42Z",
+    "expected_close_date": "2024-10-06T05:45:42Z",
     "source_system": "SalesForce",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-22T23:39:00Z"
+    "last_synced_at": "2026-03-23T00:45:42Z"
   },
   {
     "id": "deal_000061",
@@ -978,17 +978,17 @@
     "lead_id": "lead_000226",
     "company_id": "comp_000068",
     "owner_id": "owner_03",
-    "created_at": "2021-12-01T23:39:00Z",
-    "updated_at": "2024-01-13T23:39:00Z",
-    "expected_close_date": "2023-01-22T00:39:00Z",
+    "created_at": "2021-12-02T00:45:42Z",
+    "updated_at": "2024-01-14T00:45:42Z",
+    "expected_close_date": "2023-01-22T01:45:42Z",
     "Stage": "lost",
     "source_system": "internal_crm",
     "source_record_id": "SRC-67684",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-24T23:39:00Z",
+    "last_synced_at": "2026-03-25T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2023-01-14T00:39:00Z"
+    "deleted_at": "2023-01-14T01:45:42Z"
   },
   {
     "id": "deal_000186",
@@ -1004,8 +1004,8 @@
     "lead_id": "lead_000028",
     "company_id": "comp_000133",
     "owner_id": "sales_17",
-    "created_at": "2022.12.30 23:39:00",
-    "expected_close_date": "2024-11-14T03:39:00Z",
+    "created_at": "2022.12.31 00:45:42",
+    "expected_close_date": "2024-11-14T04:45:42Z",
     "contact": {
       "id": "cont_000155",
       "name": "Donald Robinson",
@@ -1015,7 +1015,7 @@
     "source_record_id": null,
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2023-10-18T23:39:00Z"
+    "last_synced_at": "2023-10-19T00:45:42Z"
   },
   {
     "id": "deal_000139",
@@ -1030,14 +1030,14 @@
     "lead_id": "lead_000132",
     "company_id": "comp_000083",
     "owner_id": "manual_queue",
-    "created_at": "2023-09-29T23:39:00Z",
-    "updated_at": "2024-06-28T23:39:00Z",
-    "expected_close_date": "2022-12-09T18:39:00Z",
+    "created_at": "2023-09-30T00:45:42Z",
+    "updated_at": "2024-06-29T00:45:42Z",
+    "expected_close_date": "2022-12-09T19:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-12621",
     "sync_status": "SYNCED",
     "sync_version": "v2",
-    "last_synced_at": "03/17/2026 23:39"
+    "last_synced_at": "03/18/2026 00:45"
   },
   {
     "id": "deal_000170",
@@ -1053,16 +1053,16 @@
     "lead_id": "lead_000115",
     "company_id": "comp_000007",
     "owner_id": "sales_17",
-    "created_at": "2022-02-10T23:39:00Z",
-    "updated_at": "2023-10-12T23:39:00Z",
-    "expected_close_date": "2026-06-08T23:39:00Z",
+    "created_at": "2022-02-11T00:45:42Z",
+    "updated_at": "2023-10-13T00:45:42Z",
+    "expected_close_date": "2026-06-09T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-97093",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2026-04-04T23:39:00Z",
+    "last_synced_at": "2026-04-05T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-04-24T23:39:00Z"
+    "deleted_at": "2026-04-25T00:45:42Z"
   },
   {
     "id": "deal_000016",
@@ -1076,8 +1076,8 @@
     "contact_id": "cont_000019",
     "company_id": "comp_000007",
     "owner_id": "own_001",
-    "created_at": "2022.11.30 23:39:00",
-    "expected_close_date": "2023-09-08T04:39:00Z",
+    "created_at": "2022.12.01 00:45:42",
+    "expected_close_date": "2023-09-08T05:45:42Z",
     "contact": {
       "id": "cont_000019",
       "name": "James Page",
@@ -1086,7 +1086,7 @@
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "deal_000055",
@@ -1101,13 +1101,13 @@
     "lead_id": "lead_000143",
     "company_id": "comp_000120",
     "owner_id": "manual_queue",
-    "created_at": "07/11/2021 23:39",
-    "expected_close_date": "2023-10-20T04:39:00Z",
+    "created_at": "07/12/2021 00:45",
+    "expected_close_date": "2023-10-20T05:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-98542",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-01T23:39:00Z"
+    "last_synced_at": "2026-03-02T00:45:42Z"
   },
   {
     "id": "deal_000160",
@@ -1123,8 +1123,8 @@
     "lead_id": "lead_000222",
     "company_id": "comp_000083",
     "owner_id": "manual_queue",
-    "created_at": "2022-05-08T23:39:00Z",
-    "updated_at": "2024-07-25T23:39:00Z",
+    "created_at": "2022-05-09T00:45:42Z",
+    "updated_at": "2024-07-26T00:45:42Z",
     "contact": {
       "id": "cont_000004",
       "name": "Angela Baker",
@@ -1133,7 +1133,7 @@
     "source_system": "manual_entry",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "deal_000133",
@@ -1147,8 +1147,8 @@
     "lead_id": "lead_000248",
     "company_id": "comp_000051",
     "owner_id": "OWN_002",
-    "created_at": "2023.09.27 23:39:00",
-    "expected_close_date": "2024-02-25T01:39:00Z",
+    "created_at": "2023.09.28 00:45:42",
+    "expected_close_date": "2024-02-25T02:45:42Z",
     "contact": {
       "id": "cont_000356",
       "name": "James Young",
@@ -1158,10 +1158,10 @@
     "source_record_id": "SRC-40708",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-05T23:39:00Z",
+    "last_synced_at": "2026-03-06T00:45:42Z",
     "is_deleted": null,
-    "deleted_at": "2024-04-25T01:39:00Z",
-    "created_date": "2023.09.27 23:39:00"
+    "deleted_at": "2024-04-25T02:45:42Z",
+    "created_date": "2023.09.28 00:45:42"
   },
   {
     "id": "deal_000063",
@@ -1177,16 +1177,16 @@
     "lead_id": "lead_000040",
     "company_id": "comp_000080",
     "owner_id": "rep_99",
-    "created_at": "2022-06-05T23:39:00Z",
-    "updated_at": "2024-06-03T23:39:00Z",
-    "expected_close_date": "2026-05-03T22:39:00Z",
+    "created_at": "2022-06-06T00:45:42Z",
+    "updated_at": "2024-06-04T00:45:42Z",
+    "expected_close_date": "2026-05-03T23:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-87305",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-15T23:39:00Z",
+    "last_synced_at": "2026-03-16T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-03-24T22:39:00Z"
+    "deleted_at": "2026-03-24T23:45:42Z"
   },
   {
     "id": "deal_000085",
@@ -1202,8 +1202,8 @@
     "lead_id": "lead_000232",
     "company_id": "comp_000146",
     "owner_id": "OWN_002",
-    "created_at": "2021-11-06T23:39:00Z",
-    "expected_close_date": "2024-09-02T08:39:00Z",
+    "created_at": "2021-11-07T00:45:42Z",
+    "expected_close_date": "2024-09-02T09:45:42Z",
     "contact": {
       "id": "cont_000169",
       "name": "Emily Johnson",
@@ -1213,7 +1213,7 @@
     "source_record_id": "SRC-34095",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-28T23:39:00Z"
+    "last_synced_at": "2026-03-29T00:45:42Z"
   },
   {
     "id": "deal_000129",
@@ -1228,14 +1228,14 @@
     "lead_id": "lead_000011",
     "company_id": "comp_000050",
     "owner_id": "OWN_002",
-    "created_at": "2022-10-26T23:39:00Z",
-    "updated_at": "2024-07-20T23:39:00Z",
+    "created_at": "2022-10-27T00:45:42Z",
+    "updated_at": "2024-07-21T00:45:42Z",
     "expected_close_date": null,
     "source_system": "pipedrive",
     "source_record_id": "SRC-71516",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2024-06-26T23:39:00Z"
+    "last_synced_at": "2024-06-27T00:45:42Z"
   },
   {
     "id": "deal_000060",
@@ -1251,16 +1251,16 @@
     "lead_id": "lead_000115",
     "company_id": "comp_000102",
     "owner_id": "own_001",
-    "created_at": "2021.07.17 23:39:00",
+    "created_at": "2021.07.18 00:45:42",
     "updated_at": null,
-    "expected_close_date": "2025-05-24T20:39:00Z",
+    "expected_close_date": "2025-05-24T21:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-96228",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2025-02-09T20:39:00Z"
+    "deleted_at": "2025-02-09T21:45:42Z"
   },
   {
     "id": "deal_000069",
@@ -1276,13 +1276,13 @@
     "lead_id": "lead_000118",
     "company_id": "comp_000083",
     "owner_id": "owner_03",
-    "created_at": "2023.07.02 23:39:00",
-    "updated_at": "2023-12-14T23:39:00Z",
+    "created_at": "2023.07.03 00:45:42",
+    "updated_at": "2023-12-15T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-77022",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2026-03-31T23:39:00Z"
+    "last_synced_at": "2026-04-01T00:45:42Z"
   },
   {
     "id": "deal_000121",
@@ -1298,9 +1298,9 @@
     "lead_id": "lead_000040",
     "company_id": "comp_000041",
     "owner_id": "OWN_002",
-    "created_at": "2022-02-12T23:39:00Z",
-    "updated_at": "2023.10.16 23:39:00",
-    "expected_close_date": "2023-06-28T08:39:00Z",
+    "created_at": "2022-02-13T00:45:42Z",
+    "updated_at": "2023.10.17 00:45:42",
+    "expected_close_date": "2023-06-28T09:45:42Z",
     "contact": {
       "id": "cont_000348",
       "name": "Jessica Webb",
@@ -1310,7 +1310,7 @@
     "source_record_id": "SRC-66717",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-14T23:39:00Z"
+    "last_synced_at": "2026-03-15T00:45:42Z"
   },
   {
     "id": "deal_000153",
@@ -1326,14 +1326,14 @@
     "lead_id": "lead_000009",
     "company_id": "comp_000085",
     "owner_id": "owner_03",
-    "created_at": "2022-08-13T23:39:00Z",
-    "updated_at": "2024-04-08T23:39:00Z",
-    "expected_close_date": "2024-05-26T03:39:00Z",
+    "created_at": "2022-08-14T00:45:42Z",
+    "updated_at": "2024-04-09T00:45:42Z",
+    "expected_close_date": "2024-05-26T04:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-89997",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-09T23:39:00Z"
+    "last_synced_at": "2026-03-10T00:45:42Z"
   },
   {
     "id": "deal_000079",
@@ -1349,16 +1349,16 @@
     "lead_id": "lead_000108",
     "company_id": "comp_000032",
     "owner_id": "rep_99",
-    "created_at": "2022.03.25 23:39:00",
-    "updated_at": "2024-04-22T23:39:00Z",
-    "expected_close_date": "2023-12-13T12:39:00Z",
+    "created_at": "2022.03.26 00:45:42",
+    "updated_at": "2024-04-23T00:45:42Z",
+    "expected_close_date": "2023-12-13T13:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-89263",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2024-03-27T23:39:00Z",
+    "last_synced_at": "2024-03-28T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2023-11-09T12:39:00Z"
+    "deleted_at": "2023-11-09T13:45:42Z"
   },
   {
     "id": "deal_000122",
@@ -1373,14 +1373,14 @@
     "lead_id": "lead_000074",
     "company_id": "comp_000114",
     "owner_id": "rep_99",
-    "created_at": "2022.08.24 23:39:00",
-    "updated_at": "2024-03-27T23:39:00Z",
-    "expected_close_date": "2025-11-22T10:39:00Z",
+    "created_at": "2022.08.25 00:45:42",
+    "updated_at": "2024-03-28T00:45:42Z",
+    "expected_close_date": "2025-11-22T11:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-69653",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2026-04-05T23:39:00Z"
+    "last_synced_at": "2026-04-06T00:45:42Z"
   },
   {
     "id": "deal_000110",
@@ -1394,15 +1394,15 @@
     "lead_id": "lead_000026",
     "company_id": "comp_000057",
     "owner_id": "OWN_002",
-    "created_at": "2022.07.02 23:39:00",
-    "updated_at": "2024-02-11T23:39:00Z",
-    "expected_close_date": "2022-07-09T19:39:00Z",
+    "created_at": "2022.07.03 00:45:42",
+    "updated_at": "2024-02-12T00:45:42Z",
+    "expected_close_date": "2022-07-09T20:45:42Z",
     "Stage": "contract_sent",
     "source_system": "hubspot",
     "source_record_id": "SRC-21988",
     "sync_status": "synced",
     "sync_version": null,
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "deal_000103",
@@ -1415,14 +1415,14 @@
     "lead_id": "lead_000252",
     "company_id": "comp_000074",
     "owner_id": "OWN_002",
-    "created_at": "2023-03-28T23:39:00Z",
-    "updated_at": "2024.06.24 23:39:00",
-    "expected_close_date": "2024-02-13T07:39:00Z",
+    "created_at": "2023-03-29T00:45:42Z",
+    "updated_at": "2024.06.25 00:45:42",
+    "expected_close_date": "2024-02-13T08:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-74871",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "deal_000065",
@@ -1437,13 +1437,13 @@
     "lead_id": "lead_000096",
     "company_id": "comp_000005",
     "owner_id": "own_001",
-    "created_at": "2022.07.04 23:39:00",
-    "updated_at": "2024-06-01T23:39:00Z",
-    "expected_close_date": "2026-04-16T04:39:00Z",
+    "created_at": "2022.07.05 00:45:42",
+    "updated_at": "2024-06-02T00:45:42Z",
+    "expected_close_date": "2026-04-16T05:45:42Z",
     "source_system": "zoho",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "deal_000030",
@@ -1457,14 +1457,14 @@
     "contact_id": "cont_000254",
     "company_id": "comp_000032",
     "owner_id": "OWN_002",
-    "created_at": "2023.08.09 23:39:00",
-    "updated_at": "2024-02-11T23:39:00Z",
-    "expected_close_date": "2023.08.06 03:39:00",
+    "created_at": "2023.08.10 00:45:42",
+    "updated_at": "2024-02-12T00:45:42Z",
+    "expected_close_date": "2023.08.06 04:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-75566",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "deal_000196",
@@ -1480,14 +1480,14 @@
     "lead_id": "lead_000044",
     "company_id": "comp_000027",
     "owner_id": "rep_99",
-    "created_at": "2021.07.31 23:39:00",
-    "updated_at": "2024-02-08T23:39:00Z",
-    "expected_close_date": "2026-06-17T23:39:00Z",
+    "created_at": "2021.08.01 00:45:42",
+    "updated_at": "2024-02-09T00:45:42Z",
+    "expected_close_date": "2026-06-18T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-19922",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-01T23:39:00Z",
+    "last_synced_at": "2026-03-02T00:45:42Z",
     "duplicate_of": "deal_000149"
   },
   {
@@ -1504,14 +1504,14 @@
     "lead_id": "lead_000012",
     "company_id": "comp_000133",
     "owner_id": "OWN_002",
-    "created_at": "2021-09-24T23:39:00Z",
-    "updated_at": "2023-12-12T23:39:00Z",
-    "expected_close_date": "2026-07-27T23:39:00Z",
+    "created_at": "2021-09-25T00:45:42Z",
+    "updated_at": "2023-12-13T00:45:42Z",
+    "expected_close_date": "2026-07-28T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-49132",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-04-03T23:39:00Z"
+    "last_synced_at": "2026-04-04T00:45:42Z"
   },
   {
     "id": "deal_000143",
@@ -1527,14 +1527,14 @@
     "lead_id": "lead_000198",
     "company_id": "comp_000130",
     "owner_id": "rep_99",
-    "created_at": "2021-06-29T23:39:00Z",
-    "updated_at": "2023-12-30T23:39:00Z",
-    "expected_close_date": "2024-06-25T15:39:00Z",
+    "created_at": "2021-06-30T00:45:42Z",
+    "updated_at": "2023-12-31T00:45:42Z",
+    "expected_close_date": "2024-06-25T16:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-61437",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-09T23:39:00Z"
+    "last_synced_at": "2026-03-10T00:45:42Z"
   },
   {
     "id": "deal_000180",
@@ -1549,13 +1549,13 @@
     "contact_id": "cont_000262",
     "company_id": "comp_000101",
     "owner_id": "manual_queue",
-    "created_at": "2021-10-18T23:39:00Z",
-    "expected_close_date": "2024-04-02T20:39:00Z",
+    "created_at": "2021-10-19T00:45:42Z",
+    "expected_close_date": "2024-04-02T21:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-77851",
     "sync_status": "SYNCED",
     "sync_version": 1,
-    "last_synced_at": "2026-04-08 23:39:00",
+    "last_synced_at": "2026-04-09 00:45:42",
     "is_deleted": true,
     "deleted_at": null
   },
@@ -1572,14 +1572,14 @@
     "contact_id": "cont_000349",
     "company_id": "comp_000034",
     "owner_id": "owner_03",
-    "created_at": "2022.12.01 23:39:00",
-    "updated_at": "2024-05-28T23:39:00Z",
-    "expected_close_date": "2023-04-11T14:39:00Z",
+    "created_at": "2022.12.02 00:45:42",
+    "updated_at": "2024-05-29T00:45:42Z",
+    "expected_close_date": "2023-04-11T15:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-73133",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-04-01T23:39:00Z"
+    "last_synced_at": "2026-04-02T00:45:42Z"
   },
   {
     "id": "deal_000163",
@@ -1595,14 +1595,14 @@
     "lead_id": "lead_000176",
     "company_id": "comp_000007",
     "owner_id": "rep_99",
-    "created_at": "2022.10.05 23:39:00",
-    "expected_close_date": "2023.04.01 16:39:00",
+    "created_at": "2022.10.06 00:45:42",
+    "expected_close_date": "2023.04.01 17:45:42",
     "source_system": "hubspot",
     "sync_status": "SYNCED",
     "sync_version": 1,
-    "last_synced_at": "2024-05-17 23:39:00",
+    "last_synced_at": "2024-05-18 00:45:42",
     "is_deleted": false,
-    "deleted_at": "2023-02-23T16:39:00Z"
+    "deleted_at": "2023-02-23T17:45:42Z"
   },
   {
     "id": "deal_000136",
@@ -1617,14 +1617,14 @@
     "contact_id": "cont_000373",
     "company_id": "comp_000132",
     "owner_id": "manual_queue",
-    "created_at": "2021-07-05T23:39:00Z",
-    "updated_at": "02/06/2024 23:39",
-    "expected_close_date": "2025-03-07T18:39:00Z",
+    "created_at": "2021-07-06T00:45:42Z",
+    "updated_at": "02/07/2024 00:45",
+    "expected_close_date": "2025-03-07T19:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-86868",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "03/21/2026 23:39"
+    "last_synced_at": "03/22/2026 00:45"
   },
   {
     "id": "deal_000112",
@@ -1640,14 +1640,14 @@
     "lead_id": "lead_000113",
     "company_id": "comp_000144",
     "owner_id": "orphan_703953",
-    "created_at": "2022.03.19 23:39:00",
-    "updated_at": "2024-01-18T23:39:00Z",
-    "expected_close_date": "2023.04.08 02:39:00",
+    "created_at": "2022.03.20 00:45:42",
+    "updated_at": "2024-01-19T00:45:42Z",
+    "expected_close_date": "2023.04.08 03:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-62746",
     "sync_status": "ok",
     "sync_version": "3",
-    "last_synced_at": "2026-04-13T23:39:00Z"
+    "last_synced_at": "2026-04-14T00:45:42Z"
   },
   {
     "id": "deal_000078",
@@ -1663,13 +1663,13 @@
     "lead_id": "orphan_421413",
     "company_id": "comp_000119",
     "owner_id": "rep_99",
-    "created_at": "2023-02-25T23:39:00Z",
-    "updated_at": "2024-03-27T23:39:00Z",
+    "created_at": "2023-02-26T00:45:42Z",
+    "updated_at": "2024-03-28T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-17598",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-21T23:39:00Z"
+    "last_synced_at": "2026-03-22T00:45:42Z"
   },
   {
     "id": "deal_000114",
@@ -1683,14 +1683,14 @@
     "lead_id": "orphan_364192",
     "company_id": "comp_000019",
     "owner_id": "owner_03",
-    "created_at": "2023-04-08T23:39:00Z",
-    "expected_close_date": "2023.07.04 09:39:00",
+    "created_at": "2023-04-09T00:45:42Z",
+    "expected_close_date": "2023.07.04 10:45:42",
     "Stage": null,
     "source_system": "zoho",
     "source_record_id": "SRC-23083",
     "sync_status": "SYNCED",
     "sync_version": null,
-    "last_synced_at": "2026-04-07T23:39:00Z"
+    "last_synced_at": "2026-04-08T00:45:42Z"
   },
   {
     "id": "deal_000172",
@@ -1706,13 +1706,13 @@
     "lead_id": "lead_000115",
     "company_id": "comp_000119",
     "owner_id": "owner_03",
-    "created_at": "2023-07-04T23:39:00Z",
-    "expected_close_date": "2024-08-28T14:39:00Z",
+    "created_at": "2023-07-05T00:45:42Z",
+    "expected_close_date": "2024-08-28T15:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-40809",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-16T23:39:00Z"
+    "last_synced_at": "2026-03-17T00:45:42Z"
   },
   {
     "id": "deal_000158",
@@ -1725,9 +1725,9 @@
     "contact_id": "cont_000310",
     "company_id": "comp_000121",
     "owner_id": "OWN_002",
-    "created_at": "2023-04-06T23:39:00Z",
-    "updated_at": "2024-03-28T23:39:00Z",
-    "expected_close_date": "2024-09-13T02:39:00Z",
+    "created_at": "2023-04-07T00:45:42Z",
+    "updated_at": "2024-03-29T00:45:42Z",
+    "expected_close_date": "2024-09-13T03:45:42Z",
     "contact": {
       "id": "cont_000022",
       "name": "Robert Bauer",
@@ -1737,7 +1737,7 @@
     "source_record_id": "SRC-71712",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-14T23:39:00Z"
+    "last_synced_at": "2026-03-15T00:45:42Z"
   },
   {
     "id": "deal_000053",
@@ -1753,14 +1753,14 @@
     "lead_id": "lead_000145",
     "company_id": "comp_000028",
     "owner_id": "rep_99",
-    "expected_close_date": "2024-03-24T21:39:00Z",
+    "expected_close_date": "2024-03-24T22:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-39429",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-20T23:39:00Z",
-    "created_date": "2023-07-03T07:39:00Z",
-    "last_modified": "2023-11-12T23:39:00Z"
+    "last_synced_at": "2026-03-21T00:45:42Z",
+    "created_date": "2023-07-03T08:45:42Z",
+    "last_modified": "2023-11-13T00:45:42Z"
   },
   {
     "id": "deal_000043",
@@ -1775,15 +1775,15 @@
     "lead_id": "lead_000015",
     "company_id": "comp_000082",
     "owner_id": "manual_queue",
-    "created_at": "2022-04-05T23:39:00Z",
-    "updated_at": "2024-01-29T23:39:00Z",
-    "expected_close_date": "2022-12-07T21:39:00Z",
+    "created_at": "2022-04-06T00:45:42Z",
+    "updated_at": "2024-01-30T00:45:42Z",
+    "expected_close_date": "2022-12-07T22:45:42Z",
     "Stage": "contract_sent",
     "source_system": "salesforce",
     "source_record_id": "SRC-75365",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "04/03/2026 23:39"
+    "last_synced_at": "04/04/2026 00:45"
   },
   {
     "id": "deal_000102",
@@ -1799,14 +1799,14 @@
     "lead_id": "lead_000051",
     "company_id": "comp_000004",
     "owner_id": "manual_queue",
-    "created_at": "2022-04-08T23:39:00Z",
-    "updated_at": "2024-05-14T23:39:00Z",
-    "expected_close_date": "2024-06-19T23:39:00Z",
+    "created_at": "2022-04-09T00:45:42Z",
+    "updated_at": "2024-05-15T00:45:42Z",
+    "expected_close_date": "2024-06-20T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-99183",
     "sync_status": "pending",
     "sync_version": "3",
-    "last_synced_at": "2026-03-08T23:39:00Z"
+    "last_synced_at": "2026-03-09T00:45:42Z"
   },
   {
     "id": "deal_000045",
@@ -1821,14 +1821,14 @@
     "lead_id": "lead_000043",
     "company_id": "comp_000073",
     "owner_id": null,
-    "created_at": "2022-12-18T23:39:00Z",
-    "updated_at": "2023.11.13 23:39:00",
+    "created_at": "2022-12-19T00:45:42Z",
+    "updated_at": "2023.11.14 00:45:42",
     "Stage": "won",
     "source_system": "pipedrive",
     "source_record_id": "SRC-51213",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-24T23:39:00Z"
+    "last_synced_at": "2026-03-25T00:45:42Z"
   },
   {
     "id": "deal_000140",
@@ -1844,13 +1844,13 @@
     "lead_id": "lead_000115",
     "company_id": "comp_000009",
     "owner_id": "manual_queue",
-    "created_at": "2022-01-19T23:39:00Z",
-    "expected_close_date": "2026-08-01T23:39:00Z",
+    "created_at": "2022-01-20T00:45:42Z",
+    "expected_close_date": "2026-08-02T00:45:42Z",
     "source_system": "InternalCRM",
     "source_record_id": "SRC-44693",
     "sync_status": "failed",
     "sync_version": 4,
-    "last_synced_at": "2026-03-14T23:39:00Z"
+    "last_synced_at": "2026-03-15T00:45:42Z"
   },
   {
     "id": "deal_000104",
@@ -1866,9 +1866,9 @@
     "lead_id": "lead_000108",
     "company_id": "comp_000068",
     "owner_id": "sales_17",
-    "created_at": "2022-04-06T23:39:00Z",
-    "updated_at": "2024-01-25T23:39:00Z",
-    "expected_close_date": "2025-08-10T03:39:00Z",
+    "created_at": "2022-04-07T00:45:42Z",
+    "updated_at": "2024-01-26T00:45:42Z",
+    "expected_close_date": "2025-08-10T04:45:42Z",
     "contact": {
       "id": "cont_000340",
       "name": "Cheyenne Miller",
@@ -1878,7 +1878,7 @@
     "source_record_id": "SRC-58060",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-06T23:39:00Z"
+    "last_synced_at": "2026-04-07T00:45:42Z"
   },
   {
     "id": "deal_000046",
@@ -1894,14 +1894,14 @@
     "lead_id": "lead_000238",
     "company_id": "comp_000146",
     "owner_id": "manual_queue",
-    "created_at": "2023.07.10 23:39:00",
-    "updated_at": "12/05/2023 23:39",
-    "expected_close_date": "2026-05-06T23:39:00Z",
+    "created_at": "2023.07.11 00:45:42",
+    "updated_at": "12/06/2023 00:45",
+    "expected_close_date": "2026-05-07T00:45:42Z",
     "source_system": null,
     "source_record_id": "SRC-10533",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2023-11-05T23:39:00Z"
+    "last_synced_at": "2023-11-06T00:45:42Z"
   },
   {
     "id": "deal_000086",
@@ -1917,14 +1917,14 @@
     "lead_id": "lead_000252",
     "company_id": "comp_000034",
     "owner_id": "OWN_002",
-    "created_at": "2021-09-16T23:39:00Z",
-    "updated_at": "2024-04-13T23:39:00Z",
-    "expected_close_date": "2022.09.23 19:39:00",
+    "created_at": "2021-09-17T00:45:42Z",
+    "updated_at": "2024-04-14T00:45:42Z",
+    "expected_close_date": "2022.09.23 20:45:42",
     "source_system": "internal_crm",
     "source_record_id": "SRC-30769",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "deal_000185",
@@ -1940,14 +1940,14 @@
     "lead_id": "lead_000188",
     "company_id": "comp_000086",
     "owner_id": "own_001",
-    "created_at": "2023-08-10T23:39:00Z",
-    "updated_at": "2024-07-20T23:39:00Z",
-    "expected_close_date": "2025-11-28T01:39:00Z",
+    "created_at": "2023-08-11T00:45:42Z",
+    "updated_at": "2024-07-21T00:45:42Z",
+    "expected_close_date": "2025-11-28T02:45:42Z",
     "source_system": "INTERNAL_CRM",
     "source_record_id": "SRC-76337",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-16T23:39:00Z"
+    "last_synced_at": "2026-03-17T00:45:42Z"
   },
   {
     "id": "deal_000203",
@@ -1962,14 +1962,14 @@
     "lead_id": "lead_000084",
     "company_id": "comp_000085",
     "owner_id": "sales_17",
-    "created_at": "2022-12-25T23:39:00Z",
-    "updated_at": "2024-05-12T23:39:00Z",
-    "expected_close_date": "2024-10-06T04:39:00Z",
+    "created_at": "2022-12-26T00:45:42Z",
+    "updated_at": "2024-05-13T00:45:42Z",
+    "expected_close_date": "2024-10-06T05:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-13134",
     "sync_status": "ok",
     "sync_version": "3",
-    "last_synced_at": "2026-03-12T23:39:00Z",
+    "last_synced_at": "2026-03-13T00:45:42Z",
     "duplicate_of": "deal_000093"
   },
   {
@@ -1985,14 +1985,14 @@
     "lead_id": "lead_000224",
     "company_id": "comp_000080",
     "owner_id": "sales_17",
-    "created_at": "2023-04-09T23:39:00Z",
-    "updated_at": "2024-05-18T23:39:00Z",
-    "expected_close_date": "2026-06-26T23:39:00Z",
+    "created_at": "2023-04-10T00:45:42Z",
+    "updated_at": "2024-05-19T00:45:42Z",
+    "expected_close_date": "2026-06-27T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-51616",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "04/24/2024 23:39"
+    "last_synced_at": "04/25/2024 00:45"
   },
   {
     "id": "deal_000150",
@@ -2007,9 +2007,9 @@
     "lead_id": "lead_000052",
     "company_id": "comp_000028",
     "owner_id": "sales_17",
-    "created_at": "2022.08.24 23:39:00",
-    "updated_at": "2023.12.09 23:39:00",
-    "expected_close_date": "2024-08-14T05:39:00Z",
+    "created_at": "2022.08.25 00:45:42",
+    "updated_at": "2023.12.10 00:45:42",
+    "expected_close_date": "2024-08-14T06:45:42Z",
     "contact": {
       "id": "cont_000333",
       "name": "Cynthia Cunningham",
@@ -2019,7 +2019,7 @@
     "source_record_id": "SRC-34918",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-11-30T23:39:00Z"
+    "last_synced_at": "2023-12-01T00:45:42Z"
   },
   {
     "id": "deal_000125",
@@ -2034,14 +2034,14 @@
     "contact_id": "cont_000356",
     "company_id": "comp_000086",
     "owner_id": "owner_03",
-    "created_at": "2022.10.12 23:39:00",
-    "updated_at": "2023-11-24T23:39:00Z",
-    "expected_close_date": "2024-06-09T01:39:00Z",
+    "created_at": "2022.10.13 00:45:42",
+    "updated_at": "2023-11-25T00:45:42Z",
+    "expected_close_date": "2024-06-09T02:45:42Z",
     "source_system": "Salesforce",
     "source_record_id": "SRC-52963",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-30T23:39:00Z"
+    "last_synced_at": "2026-03-31T00:45:42Z"
   },
   {
     "id": "deal_000023",
@@ -2055,14 +2055,14 @@
     "contact_id": "cont_000029",
     "company_id": "comp_000132",
     "owner_id": "rep_99",
-    "created_at": "2023.02.13 23:39:00",
-    "updated_at": "2024-05-20T23:39:00Z",
-    "expected_close_date": "2026-06-03T23:39:00Z",
+    "created_at": "2023.02.14 00:45:42",
+    "updated_at": "2024-05-21T00:45:42Z",
+    "expected_close_date": "2026-06-04T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-71215",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2026-04-01T23:39:00Z"
+    "last_synced_at": "2026-04-02T00:45:42Z"
   },
   {
     "id": "deal_000137",
@@ -2077,14 +2077,14 @@
     "lead_id": "lead_000074",
     "company_id": "comp_000014",
     "owner_id": "own_001",
-    "created_at": "2021-11-03T23:39:00Z",
-    "updated_at": "2024-04-23T23:39:00Z",
-    "expected_close_date": "2024-11-19T18:39:00Z",
+    "created_at": "2021-11-04T00:45:42Z",
+    "updated_at": "2024-04-24T00:45:42Z",
+    "expected_close_date": "2024-11-19T19:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-19356",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2024-04-09T23:39:00Z"
+    "last_synced_at": "2024-04-10T00:45:42Z"
   },
   {
     "id": "deal_000028",
@@ -2100,8 +2100,8 @@
     "lead_id": "lead_000008",
     "company_id": "comp_000068",
     "owner_id": "own_001",
-    "created_at": "2023-05-18T23:39:00Z",
-    "expected_close_date": "2025-07-26T12:39:00Z",
+    "created_at": "2023-05-19T00:45:42Z",
+    "expected_close_date": "2025-07-26T13:45:42Z",
     "contact": {
       "id": "cont_000231",
       "name": "Jessica Moore",
@@ -2111,8 +2111,8 @@
     "source_record_id": "SRC-68366",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2024-01-08T23:39:00Z",
-    "last_modified": "2025-07-21T12:39:00Z"
+    "last_synced_at": "2024-01-09T00:45:42Z",
+    "last_modified": "2025-07-21T13:45:42Z"
   },
   {
     "id": "deal_000057",
@@ -2127,14 +2127,14 @@
     "lead_id": "lead_000206",
     "company_id": "comp_000014",
     "owner_id": "manual_queue",
-    "created_at": "2021-09-07T23:39:00Z",
-    "updated_at": "2023.10.07 23:39:00",
-    "expected_close_date": "2023.06.27 01:39:00",
+    "created_at": "2021-09-08T00:45:42Z",
+    "updated_at": "2023.10.08 00:45:42",
+    "expected_close_date": "2023.06.27 02:45:42",
     "source_system": null,
     "source_record_id": "SRC-69454",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-04-10T23:39:00Z"
+    "last_synced_at": "2026-04-11T00:45:42Z"
   },
   {
     "id": "deal_000134",
@@ -2150,14 +2150,14 @@
     "lead_id": "lead_000040",
     "company_id": "comp_000073",
     "owner_id": "OWN_002",
-    "created_at": "2021-11-26T23:39:00Z",
-    "updated_at": "2023-12-21T23:39:00Z",
-    "expected_close_date": "2026-05-22T01:39:00Z",
+    "created_at": "2021-11-27T00:45:42Z",
+    "updated_at": "2023-12-22T00:45:42Z",
+    "expected_close_date": "2026-05-22T02:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-57586",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-25T23:39:00Z"
+    "last_synced_at": "2026-03-26T00:45:42Z"
   },
   {
     "id": "deal_000090",
@@ -2173,14 +2173,14 @@
     "lead_id": "lead_000126",
     "company_id": "comp_000109",
     "owner_id": "own_001",
-    "created_at": "2022-02-03T23:39:00Z",
-    "updated_at": "2024-07-21T23:39:00Z",
-    "expected_close_date": "2025-03-09T08:39:00Z",
+    "created_at": "2022-02-04T00:45:42Z",
+    "updated_at": "2024-07-22T00:45:42Z",
+    "expected_close_date": "2025-03-09T09:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-20392",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2024-07-20T23:39:00Z"
+    "last_synced_at": "2024-07-21T00:45:42Z"
   },
   {
     "id": "deal_000138",
@@ -2195,9 +2195,9 @@
     "lead_id": "lead_000089",
     "company_id": "comp_000019",
     "owner_id": "owner_03",
-    "created_at": "07/16/2023 23:39",
-    "updated_at": "2023.12.19 23:39:00",
-    "expected_close_date": "2024-08-02T07:39:00Z",
+    "created_at": "07/17/2023 00:45",
+    "updated_at": "2023.12.20 00:45:42",
+    "expected_close_date": "2024-08-02T08:45:42Z",
     "contact": {
       "id": "cont_000117",
       "name": "Jeff Wagner",
@@ -2207,9 +2207,9 @@
     "source_record_id": "SRC-16783",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-04-06T23:39:00Z",
+    "last_synced_at": "2023-04-07T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2024-08-25 07:39:00"
+    "deleted_at": "2024-08-25 08:45:42"
   },
   {
     "id": "deal_000097",
@@ -2225,14 +2225,14 @@
     "lead_id": "lead_000110",
     "company_id": "comp_000108",
     "owner_id": "rep_99",
-    "created_at": "2023-07-20T23:39:00Z",
-    "updated_at": "2024-02-07T23:39:00Z",
-    "expected_close_date": "2023.08.09 20:39:00",
+    "created_at": "2023-07-21T00:45:42Z",
+    "updated_at": "2024-02-08T00:45:42Z",
+    "expected_close_date": "2023.08.09 21:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-49382",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-13T23:39:00Z"
+    "last_synced_at": "2026-03-14T00:45:42Z"
   },
   {
     "id": "deal_000041",
@@ -2247,14 +2247,14 @@
     "lead_id": "lead_000176",
     "company_id": "comp_000120",
     "owner_id": "owner_03",
-    "created_at": "2021-12-22T23:39:00Z",
-    "updated_at": "2023.11.27 23:39:00",
-    "expected_close_date": "2023.11.18 01:39:00",
+    "created_at": "2021-12-23T00:45:42Z",
+    "updated_at": "2023.11.28 00:45:42",
+    "expected_close_date": "2023.11.18 02:45:42",
     "source_system": "manual_entry",
     "source_record_id": "SRC-96001",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-03T23:39:00Z"
+    "last_synced_at": "2026-03-04T00:45:42Z"
   },
   {
     "id": "deal_000021",
@@ -2270,14 +2270,14 @@
     "lead_id": "lead_000115",
     "company_id": "comp_000083",
     "owner_id": null,
-    "created_at": "2023-09-28T23:39:00Z",
-    "updated_at": "2024-01-02T23:39:00Z",
-    "expected_close_date": "2026-05-09T23:39:00Z",
+    "created_at": "2023-09-29T00:45:42Z",
+    "updated_at": "2024-01-03T00:45:42Z",
+    "expected_close_date": "2026-05-10T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-71350",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-25T23:39:00Z"
+    "last_synced_at": "2026-03-26T00:45:42Z"
   },
   {
     "id": "deal_000029",
@@ -2291,15 +2291,15 @@
     "contact_id": "cont_000438",
     "company_id": "comp_000115",
     "owner_id": "OWN_002",
-    "created_at": "2023-08-24T23:39:00Z",
+    "created_at": "2023-08-25T00:45:42Z",
     "updated_at": null,
-    "expected_close_date": "2025-01-16T12:39:00Z",
+    "expected_close_date": "2025-01-16T13:45:42Z",
     "Stage": "prospecting",
     "source_system": "salesforce",
     "source_record_id": "SRC-83021",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-31T23:39:00Z"
+    "last_synced_at": "2026-04-01T00:45:42Z"
   },
   {
     "id": "deal_000151",
@@ -2315,14 +2315,14 @@
     "lead_id": "lead_000140",
     "company_id": "comp_000073",
     "owner_id": "own_001",
-    "created_at": "2021-08-26T23:39:00Z",
-    "updated_at": "2024-03-06T23:39:00Z",
-    "expected_close_date": "2026-01-01T08:39:00Z",
+    "created_at": "2021-08-27T00:45:42Z",
+    "updated_at": "2024-03-07T00:45:42Z",
+    "expected_close_date": "2026-01-01T09:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-17887",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2026-03-31T23:39:00Z"
+    "last_synced_at": "2026-04-01T00:45:42Z"
   },
   {
     "id": "deal_000123",
@@ -2337,16 +2337,16 @@
     "lead_id": "lead_000158",
     "company_id": "comp_000006",
     "owner_id": "sales_17",
-    "created_at": "2022.09.20 23:39:00",
-    "updated_at": "2024-04-13T23:39:00Z",
-    "expected_close_date": "2023-12-21 06:39:00",
+    "created_at": "2022.09.21 00:45:42",
+    "updated_at": "2024-04-14T00:45:42Z",
+    "expected_close_date": "2023-12-21 07:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-70395",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-02T23:39:00Z",
+    "last_synced_at": "2026-04-03T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2023-11-12T06:39:00Z"
+    "deleted_at": "2023-11-12T07:45:42Z"
   },
   {
     "id": "deal_000105",
@@ -2360,8 +2360,8 @@
     "lead_id": "lead_000034",
     "company_id": "comp_000077",
     "owner_id": "sales_17",
-    "created_at": "2023-06-17T23:39:00Z",
-    "expected_close_date": "2024-11-29T17:39:00Z",
+    "created_at": "2023-06-18T00:45:42Z",
+    "expected_close_date": "2024-11-29T18:45:42Z",
     "contact": {
       "id": "cont_000109",
       "name": "Andrew Delgado",
@@ -2372,7 +2372,7 @@
     "source_record_id": "SRC-61570",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "deal_000107",
@@ -2387,14 +2387,14 @@
     "lead_id": "lead_000115",
     "company_id": "comp_000019",
     "owner_id": "OWN_002",
-    "created_at": "2023.02.22 23:39:00",
-    "updated_at": "2023-11-20T23:39:00Z",
+    "created_at": "2023.02.23 00:45:42",
+    "updated_at": "2023-11-21T00:45:42Z",
     "Stage": "won",
     "source_system": "internal_crm",
     "source_record_id": "SRC-65625",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-08T23:39:00Z"
+    "last_synced_at": "2026-03-09T00:45:42Z"
   },
   {
     "id": "deal_000022",
@@ -2409,13 +2409,13 @@
     "contact_id": "cont_000095",
     "company_id": "comp_000086",
     "owner_id": null,
-    "created_at": "04/13/2023 23:39",
-    "updated_at": "2023-12-26T23:39:00Z",
-    "expected_close_date": "2022-11-09T17:39:00Z",
+    "created_at": "04/14/2023 00:45",
+    "updated_at": "2023-12-27T00:45:42Z",
+    "expected_close_date": "2022-11-09T18:45:42Z",
     "source_system": "hubspot",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-12-05T23:39:00Z"
+    "last_synced_at": "2023-12-06T00:45:42Z"
   },
   {
     "id": "deal_000024",
@@ -2431,14 +2431,14 @@
     "lead_id": "lead_000054",
     "company_id": "comp_000133",
     "owner_id": "owner_03",
-    "created_at": "2023.05.02 23:39:00",
-    "updated_at": "2023-09-16T23:39:00Z",
-    "expected_close_date": "1720161540",
+    "created_at": "2023.05.03 00:45:42",
+    "updated_at": "2023-09-17T00:45:42Z",
+    "expected_close_date": "1720165542",
     "source_system": "zoho",
     "source_record_id": "SRC-82378",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2023-09-04T23:39:00Z"
+    "last_synced_at": "2023-09-05T00:45:42Z"
   },
   {
     "id": "deal_000019",
@@ -2453,9 +2453,9 @@
     "lead_id": "lead_000060",
     "company_id": "comp_000082",
     "owner_id": "owner_03",
-    "created_at": "2022-03-27T23:39:00Z",
-    "updated_at": "1719002340",
-    "expected_close_date": "2024-04-12T11:39:00Z",
+    "created_at": "2022-03-28T00:45:42Z",
+    "updated_at": "1719006342",
+    "expected_close_date": "2024-04-12T12:45:42Z",
     "contact": {
       "id": "cont_000295",
       "name": "Jason Waters",
@@ -2466,7 +2466,7 @@
     "source_record_id": "SRC-96579",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "deal_000062",
@@ -2480,9 +2480,9 @@
     "contact_id": "cont_000437",
     "company_id": "comp_000031",
     "owner_id": "sales_17",
-    "created_at": "2021-08-26T23:39:00Z",
-    "updated_at": "2023-12-17 23:39:00",
-    "expected_close_date": "2023-08-14T04:39:00Z",
+    "created_at": "2021-08-27T00:45:42Z",
+    "updated_at": "2023-12-18 00:45:42",
+    "expected_close_date": "2023-08-14T05:45:42Z",
     "contact": {
       "id": "cont_000158",
       "name": "Michael Escobar",
@@ -2492,9 +2492,9 @@
     "source_record_id": "SRC-99762",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2026-03-07T23:39:00Z",
+    "last_synced_at": "2026-03-08T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2023-05-13T04:39:00Z"
+    "deleted_at": "2023-05-13T05:45:42Z"
   },
   {
     "id": "deal_000200",
@@ -2509,14 +2509,14 @@
     "contact_id": "cont_000178",
     "company_id": "comp_000096",
     "owner_id": null,
-    "created_at": "2023.04.25 23:39:00",
-    "updated_at": "2024-02-22T23:39:00Z",
-    "expected_close_date": "2026-01-31T18:39:00Z",
+    "created_at": "2023.04.26 00:45:42",
+    "updated_at": "2024-02-23T00:45:42Z",
+    "expected_close_date": "2026-01-31T19:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-63368",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-17T23:39:00Z",
+    "last_synced_at": "2026-03-18T00:45:42Z",
     "duplicate_of": "deal_000038"
   },
   {
@@ -2532,14 +2532,14 @@
     "lead_id": "lead_000115",
     "company_id": "orphan_737530",
     "owner_id": "owner_03",
-    "created_at": "2023-05-15T23:39:00Z",
-    "updated_at": "2023-11-07T23:39:00Z",
-    "expected_close_date": "2023.07.29 10:39:00",
+    "created_at": "2023-05-16T00:45:42Z",
+    "updated_at": "2023-11-08T00:45:42Z",
+    "expected_close_date": "2023.07.29 11:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-65615",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2023-10-21T23:39:00Z"
+    "last_synced_at": "2023-10-22T00:45:42Z"
   },
   {
     "id": "deal_000169",
@@ -2554,15 +2554,15 @@
     "lead_id": "lead_000227",
     "company_id": "comp_000040",
     "owner_id": "manual_queue",
-    "updated_at": "2024-04-26T23:39:00Z",
-    "expected_close_date": "2024.10.18 16:39:00",
+    "updated_at": "2024-04-27T00:45:42Z",
+    "expected_close_date": "2024.10.18 17:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-91019",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-10T23:39:00Z",
+    "last_synced_at": "2026-03-11T00:45:42Z",
     "Status": "WON",
-    "created_date": "2022-11-22T23:39:00Z"
+    "created_date": "2022-11-23T00:45:42Z"
   },
   {
     "id": "deal_000008",
@@ -2576,9 +2576,9 @@
     "contact_id": "cont_000323",
     "company_id": "comp_000136",
     "owner_id": "manual_queue",
-    "created_at": "2021-07-25T23:39:00Z",
-    "updated_at": "2024-02-27 23:39:00",
-    "expected_close_date": "2023-08-13T05:39:00Z",
+    "created_at": "2021-07-26T00:45:42Z",
+    "updated_at": "2024-02-28 00:45:42",
+    "expected_close_date": "2023-08-13T06:45:42Z",
     "contact": {
       "id": "cont_000391",
       "name": "Lori Day PhD",
@@ -2587,7 +2587,7 @@
     "source_system": "internal_crm",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2026-03-08T23:39:00Z"
+    "last_synced_at": "2026-03-09T00:45:42Z"
   },
   {
     "id": "deal_000074",
@@ -2603,8 +2603,8 @@
     "lead_id": "lead_000184",
     "company_id": "comp_000075",
     "owner_id": "sales_17",
-    "updated_at": "2024-03-08 23:39:00",
-    "expected_close_date": "04/04/2025 11:39",
+    "updated_at": "2024-03-09 00:45:42",
+    "expected_close_date": "04/04/2025 12:45",
     "contact": {
       "id": "cont_000262",
       "name": "John Richmond",
@@ -2614,10 +2614,10 @@
     "source_record_id": "SRC-88355",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-11T23:39:00Z",
+    "last_synced_at": "2026-03-12T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2025-05-16T11:39:00Z",
-    "created_date": "07/16/2021 23:39"
+    "deleted_at": "2025-05-16T12:45:42Z",
+    "created_date": "07/17/2021 00:45"
   },
   {
     "id": "deal_000010",
@@ -2631,8 +2631,8 @@
     "lead_id": "lead_000236",
     "company_id": "comp_000126",
     "owner_id": "sales_17",
-    "updated_at": "2024-02-21T23:39:00Z",
-    "expected_close_date": "2022.11.27 16:39:00",
+    "updated_at": "2024-02-22T00:45:42Z",
+    "expected_close_date": "2022.11.27 17:45:42",
     "contact": {
       "id": "cont_000370",
       "name": "Mario Snyder",
@@ -2641,8 +2641,8 @@
     "source_system": "hubspot",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2024-02-15T23:39:00Z",
-    "created_date": "2022-03-29T04:39:00Z"
+    "last_synced_at": "2024-02-16T00:45:42Z",
+    "created_date": "2022-03-29T05:45:42Z"
   },
   {
     "id": "deal_000032",
@@ -2656,9 +2656,9 @@
     "lead_id": "lead_000172",
     "company_id": "comp_000058",
     "owner_id": "rep_99",
-    "created_at": "11/11/2022 23:39",
-    "updated_at": "2024-07-27T23:39:00Z",
-    "expected_close_date": "2026-06-05T23:39:00Z",
+    "created_at": "11/12/2022 00:45",
+    "updated_at": "2024-07-28T00:45:42Z",
+    "expected_close_date": "2026-06-06T00:45:42Z",
     "contact": {
       "id": "cont_000079",
       "name": "Abigail Romero",
@@ -2668,9 +2668,9 @@
     "source_system": "zoho",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-24T23:39:00Z",
+    "last_synced_at": "2026-03-25T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-06-09T23:39:00Z"
+    "deleted_at": "2026-06-10T00:45:42Z"
   },
   {
     "id": "deal_000027",
@@ -2686,9 +2686,9 @@
     "lead_id": "lead_000074",
     "company_id": "comp_000006",
     "owner_id": "owner_03",
-    "created_at": "03/07/2023 23:39",
-    "updated_at": "2024.07.08 23:39:00",
-    "expected_close_date": "2026-04-19T23:39:00Z",
+    "created_at": "03/08/2023 00:45",
+    "updated_at": "2024.07.09 00:45:42",
+    "expected_close_date": "2026-04-20T00:45:42Z",
     "contact": {
       "id": "cont_000010",
       "name": "Paul Adams",
@@ -2698,7 +2698,7 @@
     "source_record_id": "SRC-46677",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2026-03-19T23:39:00Z"
+    "last_synced_at": "2026-03-20T00:45:42Z"
   },
   {
     "id": "deal_000116",
@@ -2714,16 +2714,16 @@
     "lead_id": "lead_000174",
     "company_id": "comp_000102",
     "owner_id": "own_001",
-    "created_at": "2023-01-06T23:39:00Z",
-    "updated_at": "2023-12-15T23:39:00Z",
-    "expected_close_date": "2025-02-07T23:39:00Z",
+    "created_at": "2023-01-07T00:45:42Z",
+    "updated_at": "2023-12-16T00:45:42Z",
+    "expected_close_date": "2025-02-08T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-72791",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-12T23:39:00Z",
+    "last_synced_at": "2026-04-13T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "1732484340"
+    "deleted_at": "1732488342"
   },
   {
     "id": "deal_000141",
@@ -2739,13 +2739,13 @@
     "lead_id": "lead_000018",
     "company_id": "comp_000003",
     "owner_id": "sales_17",
-    "created_at": "08/29/2023 23:39",
-    "updated_at": "2024-05-06T23:39:00Z",
+    "created_at": "08/30/2023 00:45",
+    "updated_at": "2024-05-07T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-92975",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-02-28T23:39:00Z"
+    "last_synced_at": "2026-03-01T00:45:42Z"
   },
   {
     "id": "deal_000015",
@@ -2761,13 +2761,13 @@
     "lead_id": "lead_000026",
     "company_id": "comp_000146",
     "owner_id": "rep_99",
-    "created_at": "2023.10.01 23:39:00",
-    "updated_at": "2024-01-14T23:39:00Z",
+    "created_at": "2023.10.02 00:45:42",
+    "updated_at": "2024-01-15T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-44478",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "deal_000132",
@@ -2780,9 +2780,9 @@
     "contact_id": "cont_000023",
     "company_id": "comp_000100",
     "owner_id": "rep_99",
-    "created_at": "2023.05.12 23:39:00",
-    "updated_at": "2024-04-14T23:39:00Z",
-    "expected_close_date": "2025-06-10T16:39:00Z",
+    "created_at": "2023.05.13 00:45:42",
+    "updated_at": "2024-04-15T00:45:42Z",
+    "expected_close_date": "2025-06-10T17:45:42Z",
     "contact": {
       "id": "cont_000096",
       "name": "Stacy Garner",
@@ -2792,9 +2792,9 @@
     "source_record_id": "SRC-52654",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2024-04-04T23:39:00Z",
+    "last_synced_at": "2024-04-05T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2025-02-23T16:39:00Z"
+    "deleted_at": "2025-02-23T17:45:42Z"
   },
   {
     "id": "deal_000191",
@@ -2810,14 +2810,14 @@
     "lead_id": "lead_000255",
     "company_id": "comp_000083",
     "owner_id": "owner_03",
-    "created_at": "2022-02-19T23:39:00Z",
-    "updated_at": "2023-10-07T23:39:00Z",
-    "expected_close_date": "2022.11.04 04:39:00",
+    "created_at": "2022-02-20T00:45:42Z",
+    "updated_at": "2023-10-08T00:45:42Z",
+    "expected_close_date": "2022.11.04 05:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-60772",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-29T23:39:00Z",
+    "last_synced_at": "2026-03-30T00:45:42Z",
     "duplicate_of": "deal_000092"
   }
 ]

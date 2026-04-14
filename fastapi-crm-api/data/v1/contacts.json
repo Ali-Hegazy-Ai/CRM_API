@@ -13,13 +13,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/rachelwilson",
-    "created_at": "2021-10-28T23:39:00Z",
-    "updated_at": "2024-02-06T23:39:00Z",
+    "created_at": "2021-10-29T00:45:42Z",
+    "updated_at": "2024-02-07T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-36361",
     "sync_status": "synced",
     "sync_version": null,
-    "last_synced_at": "2026-03-27T23:39:00Z"
+    "last_synced_at": "2026-03-28T00:45:42Z"
   },
   {
     "id": "cont_000167",
@@ -34,20 +34,20 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/melissa04",
-    "created_at": "2022-11-25T23:39:00Z",
-    "updated_at": "2024-01-09T23:39:00Z",
+    "created_at": "2022-11-26T00:45:42Z",
+    "updated_at": "2024-01-10T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-84532",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "1775165940",
+    "last_synced_at": "1775169942",
     "contact": {
       "first_name": "Christina",
       "last_name": "Davis",
       "email": "brittneyleonard@example.org"
     },
     "is_deleted": "true",
-    "deleted_at": "2024-09-30T04:39:00Z"
+    "deleted_at": "2024-09-30T05:45:42Z"
   },
   {
     "id": "cont_000248",
@@ -61,12 +61,12 @@
     "owner_id": "own_001",
     "status": "ACTIVE",
     "linkedin_url": "https://linkedin.com/in/hdavis",
-    "created_at": "2021-05-23T23:39:00Z",
-    "updated_at": "2024-07-17T23:39:00Z",
+    "created_at": "2021-05-24T00:45:42Z",
+    "updated_at": "2024-07-18T00:45:42Z",
     "source_system": "pipedrive",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2024-06-15T23:39:00Z",
+    "last_synced_at": "2024-06-16T00:45:42Z",
     "lastName": "Williams"
   },
   {
@@ -81,12 +81,12 @@
     "owner_id": "own_001",
     "status": "pending",
     "linkedin_url": "https://linkedin.com/in/clayton86",
-    "created_at": "2021-08-25T23:39:00Z",
+    "created_at": "2021-08-26T00:45:42Z",
     "source_system": "Hubspot",
     "source_record_id": "SRC-42837",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2026-03-21T23:39:00Z",
+    "last_synced_at": "2026-03-22T00:45:42Z",
     "contact": {
       "first_name": "Diane",
       "last_name": "Hoffman",
@@ -107,13 +107,13 @@
     "owner_id": "rep_99",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/vsanchez",
-    "created_at": "2022-05-08T23:39:00Z",
-    "updated_at": "2024-03-03T23:39:00Z",
+    "created_at": "2022-05-09T00:45:42Z",
+    "updated_at": "2024-03-04T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-51085",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "cont_000383",
@@ -128,13 +128,13 @@
     "customer_id": "cust_000276",
     "owner_id": null,
     "status": "active",
-    "created_at": "2023-08-13T23:39:00Z",
-    "updated_at": "2024-03-31T23:39:00Z",
+    "created_at": "2023-08-14T00:45:42Z",
+    "updated_at": "2024-04-01T00:45:42Z",
     "source_system": "manual",
     "source_record_id": "SRC-16246",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2026-04-04T23:39:00Z"
+    "last_synced_at": "2026-04-05T00:45:42Z"
   },
   {
     "id": "cont_000026",
@@ -149,12 +149,12 @@
     "owner_id": "own_001",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/justin14",
-    "created_at": "2021-09-18T23:39:00Z",
-    "updated_at": "2024-02-09T23:39:00Z",
+    "created_at": "2021-09-19T00:45:42Z",
+    "updated_at": "2024-02-10T00:45:42Z",
     "source_system": "zoho",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2024-01-17T23:39:00Z",
+    "last_synced_at": "2024-01-18T00:45:42Z",
     "contact": {
       "first_name": "Shirley",
       "last_name": "Davis",
@@ -174,15 +174,15 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/curryjose",
-    "created_at": "2023-04-05T23:39:00Z",
-    "updated_at": "2024-03-26T23:39:00Z",
+    "created_at": "2023-04-06T00:45:42Z",
+    "updated_at": "2024-03-27T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-90121",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-08T23:39:00Z",
+    "last_synced_at": "2026-03-09T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2024.01.22 20:39:00"
+    "deleted_at": "2024.01.22 21:45:42"
   },
   {
     "id": "cont_000363",
@@ -196,13 +196,13 @@
     "customer_id": "cust_000194",
     "owner_id": "sales_17",
     "status": "Active",
-    "created_at": "2022-06-16T23:39:00Z",
-    "updated_at": "2023.11.30 23:39:00",
+    "created_at": "2022-06-17T00:45:42Z",
+    "updated_at": "2023.12.01 00:45:42",
     "source_system": "internal_crm",
     "source_record_id": "SRC-64484",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2026-04-09T23:39:00Z",
+    "last_synced_at": "2026-04-10T00:45:42Z",
     "contact": {
       "first_name": "Gina",
       "last_name": "Newton",
@@ -220,13 +220,13 @@
     "customer_id": "cust_000054",
     "owner_id": "sales_17",
     "status": "inactive",
-    "created_at": "2022-01-28T23:39:00Z",
-    "updated_at": "2023-11-15T23:39:00Z",
+    "created_at": "2022-01-29T00:45:42Z",
+    "updated_at": "2023-11-16T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-33624",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-14T23:39:00Z",
+    "last_synced_at": "2026-03-15T00:45:42Z",
     "firstName": "Luke"
   },
   {
@@ -240,13 +240,13 @@
     "owner_id": "sales_17",
     "status": null,
     "linkedin_url": "https://linkedin.com/in/murphyhannah",
-    "created_at": "2021-05-24T23:39:00Z",
-    "updated_at": "2024-07-17T23:39:00Z",
+    "created_at": "2021-05-25T00:45:42Z",
+    "updated_at": "2024-07-18T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-20144",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "1772228340"
+    "last_synced_at": "1772232342"
   },
   {
     "id": "cont_000415",
@@ -260,13 +260,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/crystal52",
-    "created_at": "2022-04-07T23:39:00Z",
-    "updated_at": "2024-02-04T23:39:00Z",
+    "created_at": "2022-04-08T00:45:42Z",
+    "updated_at": "2024-02-05T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-25331",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-05T23:39:00Z",
+    "last_synced_at": "2026-04-06T00:45:42Z",
     "lastName": "Golden"
   },
   {
@@ -281,13 +281,13 @@
     "owner_id": "OWN_002",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/bwilliams",
-    "created_at": "2022-07-09T23:39:00Z",
-    "updated_at": "2024-04-02T23:39:00Z",
+    "created_at": "2022-07-10T00:45:42Z",
+    "updated_at": "2024-04-03T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-76441",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2024-03-11T23:39:00Z"
+    "last_synced_at": "2024-03-12T00:45:42Z"
   },
   {
     "id": "cont_000270",
@@ -302,13 +302,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/mmartin",
-    "created_at": "2022.01.12 23:39:00",
-    "updated_at": "2024-07-03T23:39:00Z",
+    "created_at": "2022.01.13 00:45:42",
+    "updated_at": "2024-07-04T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-57823",
     "sync_status": "SYNCED",
     "sync_version": 3,
-    "last_synced_at": "2026-03-20T23:39:00Z"
+    "last_synced_at": "2026-03-21T00:45:42Z"
   },
   {
     "id": "cont_000249",
@@ -324,13 +324,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/jpowell",
-    "created_at": "2023.04.05 23:39:00",
-    "updated_at": "2023-10-23T23:39:00Z",
+    "created_at": "2023.04.06 00:45:42",
+    "updated_at": "2023-10-24T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-25126",
     "sync_status": "SYNCED",
     "sync_version": 3,
-    "last_synced_at": "2023-10-21T23:39:00Z"
+    "last_synced_at": "2023-10-22T00:45:42Z"
   },
   {
     "id": "cont_000388",
@@ -343,13 +343,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/chapmanpaul",
-    "created_at": "2022.09.25 23:39:00",
-    "updated_at": "2023-12-25T23:39:00Z",
+    "created_at": "2022.09.26 00:45:42",
+    "updated_at": "2023-12-26T00:45:42Z",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-78378",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2023-11-30T23:39:00Z",
+    "last_synced_at": "2023-12-01T00:45:42Z",
     "lastName": "Davis",
     "firstName": "Nicole"
   },
@@ -365,13 +365,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/galvanjeanette",
-    "created_at": "2022.07.19 23:39:00",
-    "updated_at": "2024-02-05T23:39:00Z",
+    "created_at": "2022.07.20 00:45:42",
+    "updated_at": "2024-02-06T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-45597",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-01T23:39:00Z",
+    "last_synced_at": "2026-03-02T00:45:42Z",
     "lastName": "Williams",
     "email_address": "daniel32@example.com"
   },
@@ -387,13 +387,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/jhickman",
-    "created_at": "2022-10-09T23:39:00Z",
-    "updated_at": "2024-05-05T23:39:00Z",
+    "created_at": "2022-10-10T00:45:42Z",
+    "updated_at": "2024-05-06T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": null,
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-07T23:39:00Z",
+    "last_synced_at": "2026-03-08T00:45:42Z",
     "firstName": "Timothy"
   },
   {
@@ -409,13 +409,13 @@
     "owner_id": "OWN_002",
     "status": "UNKNOWN",
     "linkedin_url": "https://linkedin.com/in/nancy06",
-    "created_at": "2021-05-22T23:39:00Z",
-    "updated_at": "2024-02-21T23:39:00Z",
+    "created_at": "2021-05-23T00:45:42Z",
+    "updated_at": "2024-02-22T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": null,
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2024-01-31T23:39:00Z"
+    "last_synced_at": "2024-02-01T00:45:42Z"
   },
   {
     "id": "cont_000062",
@@ -431,12 +431,12 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/thomastiffany",
-    "created_at": "2023-03-30T23:39:00Z",
+    "created_at": "2023-03-31T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-13786",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-11T23:39:00Z"
+    "last_synced_at": "2026-03-12T00:45:42Z"
   },
   {
     "id": "cont_000405",
@@ -452,12 +452,12 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/rthompson",
-    "created_at": "2021-11-27T23:39:00Z",
-    "updated_at": "2024-03-01T23:39:00Z",
+    "created_at": "2021-11-28T00:45:42Z",
+    "updated_at": "2024-03-02T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "cont_000088",
@@ -471,15 +471,15 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": null,
-    "created_at": "09/27/2022 23:39",
-    "updated_at": "2023-11-27T23:39:00Z",
+    "created_at": "09/28/2022 00:45",
+    "updated_at": "2023-11-28T00:45:42Z",
     "source_system": "salesforce",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2023-11-27T23:39:00Z",
+    "last_synced_at": "2023-11-28T00:45:42Z",
     "lastName": "Smith",
     "is_deleted": "true",
-    "deleted_at": "03/15/2022 07:39"
+    "deleted_at": "03/15/2022 08:45"
   },
   {
     "id": "cont_000451",
@@ -495,13 +495,13 @@
     "owner_id": "own_001",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/malexander",
-    "created_at": "2022-04-08T23:39:00Z",
-    "updated_at": "2024-03-28T23:39:00Z",
+    "created_at": "2022-04-09T00:45:42Z",
+    "updated_at": "2024-03-29T00:45:42Z",
     "source_system": "SALESFORCE",
     "source_record_id": "SRC-10322",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-04T23:39:00Z",
+    "last_synced_at": "2026-04-05T00:45:42Z",
     "duplicate_of": "cont_000254"
   },
   {
@@ -518,11 +518,11 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/nwilliams",
-    "created_at": "2023-07-23T23:39:00Z",
+    "created_at": "2023-07-24T00:45:42Z",
     "source_system": "zoho",
     "sync_status": "SYNCED",
     "sync_version": null,
-    "last_synced_at": "2026-03-12T23:39:00Z"
+    "last_synced_at": "2026-03-13T00:45:42Z"
   },
   {
     "id": "cont_000119",
@@ -536,13 +536,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/fbennett",
-    "created_at": "2021.10.11 23:39:00",
-    "updated_at": "2024-07-30T23:39:00Z",
+    "created_at": "2021.10.12 00:45:42",
+    "updated_at": "2024-07-31T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-82030",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-05T23:39:00Z",
+    "last_synced_at": "2026-04-06T00:45:42Z",
     "contact": {
       "first_name": "Jasmine",
       "last_name": "Combs",
@@ -563,12 +563,12 @@
     "owner_id": "sales_17",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/lindarodriguez",
-    "created_at": "2021-08-28T23:39:00Z",
+    "created_at": "2021-08-29T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-56801",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-02-28T23:39:00Z"
+    "last_synced_at": "2026-03-01T00:45:42Z"
   },
   {
     "id": "cont_000227",
@@ -584,14 +584,14 @@
     "owner_id": "rep_99",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/stephaniecoleman",
-    "created_at": "2022.08.20 23:39:00",
-    "updated_at": "2024-05-09T23:39:00Z",
+    "created_at": "2022.08.21 00:45:42",
+    "updated_at": "2024-05-10T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2026-01-21T02:39:00Z"
+    "deleted_at": "2026-01-21T03:45:42Z"
   },
   {
     "id": "cont_000217",
@@ -604,12 +604,12 @@
     "customer_id": "cust_000192",
     "owner_id": "owner_03",
     "status": "active",
-    "created_at": "2021.08.02 23:39:00",
-    "updated_at": "2023-11-09T23:39:00Z",
+    "created_at": "2021.08.03 00:45:42",
+    "updated_at": "2023-11-10T00:45:42Z",
     "source_system": "hubspot",
     "sync_status": "ok",
     "sync_version": "3",
-    "last_synced_at": "2023-05-23T23:39:00Z"
+    "last_synced_at": "2023-05-24T00:45:42Z"
   },
   {
     "id": "cont_000028",
@@ -623,16 +623,16 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/jessicamurphy",
-    "created_at": "2023-01-07T23:39:00Z",
-    "updated_at": "2024-01-22T23:39:00Z",
+    "created_at": "2023-01-08T00:45:42Z",
+    "updated_at": "2024-01-23T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-81458",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2024-01-08T23:39:00Z",
+    "last_synced_at": "2024-01-09T00:45:42Z",
     "lastName": "Simmons",
     "is_deleted": false,
-    "deleted_at": "2025.03.27 13:39:00"
+    "deleted_at": "2025.03.27 14:45:42"
   },
   {
     "id": "cont_000302",
@@ -647,15 +647,15 @@
     "owner_id": "sales_17",
     "status": "Inactive",
     "linkedin_url": "https://linkedin.com/in/randalldonna",
-    "created_at": "2022.08.15 23:39:00",
-    "updated_at": "2024-02-17T23:39:00Z",
+    "created_at": "2022.08.16 00:45:42",
+    "updated_at": "2024-02-18T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-83665",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-18T23:39:00Z",
+    "last_synced_at": "2026-03-19T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2023-12-18T11:39:00Z"
+    "deleted_at": "2023-12-18T12:45:42Z"
   },
   {
     "id": "cont_000178",
@@ -669,15 +669,15 @@
     "owner_id": "OWN_002",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/qharris",
-    "created_at": "2021-11-03T23:39:00Z",
-    "updated_at": "2024-07-27T23:39:00Z",
+    "created_at": "2021-11-04T00:45:42Z",
+    "updated_at": "2024-07-28T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-21813",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-30T23:39:00Z",
+    "last_synced_at": "2026-03-31T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-06-25T17:39:00Z",
+    "deleted_at": "2026-06-25T18:45:42Z",
     "Status": "churned"
   },
   {
@@ -693,16 +693,16 @@
     "owner_id": "owner_03",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/zchapman",
-    "created_at": "2022-05-17T23:39:00Z",
-    "updated_at": "2024-06-10T23:39:00Z",
+    "created_at": "2022-05-18T00:45:42Z",
+    "updated_at": "2024-06-11T00:45:42Z",
     "source_system": null,
     "source_record_id": "SRC-14854",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-29T23:39:00Z",
+    "last_synced_at": "2026-03-30T00:45:42Z",
     "lastName": "Martin",
     "is_deleted": "true",
-    "deleted_at": "2025-09-17T19:39:00Z"
+    "deleted_at": "2025-09-17T20:45:42Z"
   },
   {
     "id": "cont_000333",
@@ -718,13 +718,13 @@
     "owner_id": "sales_17",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/eharrington",
-    "created_at": "2023-06-11T23:39:00Z",
-    "updated_at": "2023-10-21T23:39:00Z",
+    "created_at": "2023-06-12T00:45:42Z",
+    "updated_at": "2023-10-22T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-98129",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-15T23:39:00Z"
+    "last_synced_at": "2026-03-16T00:45:42Z"
   },
   {
     "id": "cont_000433",
@@ -738,16 +738,16 @@
     "owner_id": "owner_03",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/stevensjennifer",
-    "created_at": "2022.09.26 23:39:00",
-    "updated_at": "2024-05-18T23:39:00Z",
+    "created_at": "2022.09.27 00:45:42",
+    "updated_at": "2024-05-19T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-47823",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2026-03-14T23:39:00Z",
+    "last_synced_at": "2026-03-15T00:45:42Z",
     "firstName": "John",
     "is_deleted": false,
-    "deleted_at": "2024.11.27 12:39:00",
+    "deleted_at": "2024.11.27 13:45:42",
     "duplicate_of": "cont_000128"
   },
   {
@@ -763,13 +763,13 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/collinschad",
-    "created_at": "2022-12-23T23:39:00Z",
-    "updated_at": "2024-07-16T23:39:00Z",
+    "created_at": "2022-12-24T00:45:42Z",
+    "updated_at": "2024-07-17T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-53139",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-23T23:39:00Z"
+    "last_synced_at": "2026-03-24T00:45:42Z"
   },
   {
     "id": "cont_000172",
@@ -783,13 +783,13 @@
     "owner_id": "sales_17",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/qjohnson",
-    "created_at": "2022.07.01 23:39:00",
-    "updated_at": "1714423140",
+    "created_at": "2022.07.02 00:45:42",
+    "updated_at": "1714427142",
     "source_system": "salesforce",
     "source_record_id": "SRC-30978",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-03-10T23:39:00Z",
+    "last_synced_at": "2026-03-11T00:45:42Z",
     "firstName": "William"
   },
   {
@@ -806,13 +806,13 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/vburch",
-    "created_at": "2021-07-15T23:39:00Z",
-    "updated_at": "2024-02-29T23:39:00Z",
+    "created_at": "2021-07-16T00:45:42Z",
+    "updated_at": "2024-03-01T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-16276",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2026-04-10T23:39:00Z"
+    "last_synced_at": "2026-04-11T00:45:42Z"
   },
   {
     "id": "cont_000397",
@@ -828,13 +828,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/mckenziebrown",
-    "created_at": "2023.07.27 23:39:00",
-    "updated_at": "06/20/2024 23:39",
+    "created_at": "2023.07.28 00:45:42",
+    "updated_at": "06/21/2024 00:45",
     "source_system": "zoho",
     "source_record_id": "SRC-52487",
     "sync_status": "pending",
     "sync_version": "v3",
-    "last_synced_at": "2024-06-01T23:39:00Z"
+    "last_synced_at": "2024-06-02T00:45:42Z"
   },
   {
     "id": "cont_000106",
@@ -850,13 +850,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/kimberly27",
-    "created_at": "2023-06-21T23:39:00Z",
-    "updated_at": "2023-11-29T23:39:00Z",
+    "created_at": "2023-06-22T00:45:42Z",
+    "updated_at": "2023-11-30T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-43879",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-13T23:39:00Z"
+    "last_synced_at": "2026-03-14T00:45:42Z"
   },
   {
     "id": "cont_000435",
@@ -871,13 +871,13 @@
     "customer_id": "cust_000200",
     "owner_id": "rep_99",
     "status": "inactive",
-    "created_at": "2023.08.31 23:39:00",
-    "updated_at": "2024-05-28T23:39:00Z",
+    "created_at": "2023.09.01 00:45:42",
+    "updated_at": "2024-05-29T00:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-79810",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-11T23:39:00Z",
+    "last_synced_at": "2026-04-12T00:45:42Z",
     "duplicate_of": "cont_000410"
   },
   {
@@ -894,12 +894,12 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/steven78",
-    "created_at": "2021-06-02T23:39:00Z",
-    "updated_at": "2024-01-07T23:39:00Z",
+    "created_at": "2021-06-03T00:45:42Z",
+    "updated_at": "2024-01-08T00:45:42Z",
     "source_system": "pipedrive",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-16T23:39:00Z"
+    "last_synced_at": "2026-03-17T00:45:42Z"
   },
   {
     "id": "cont_000331",
@@ -911,12 +911,12 @@
     "owner_id": "own_001",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/thendricks",
-    "created_at": "2021.10.10 23:39:00",
+    "created_at": "2021.10.11 00:45:42",
     "source_system": "internal_crm",
     "source_record_id": "SRC-15470",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-16T23:39:00Z",
+    "last_synced_at": "2026-03-17T00:45:42Z",
     "firstName": "Sabrina",
     "email_address": "@@badmail"
   },
@@ -931,13 +931,13 @@
     "customer_id": "cust_000249",
     "owner_id": "manual_queue",
     "status": "active",
-    "created_at": "2021-12-09T23:39:00Z",
-    "updated_at": "2024-01-07T23:39:00Z",
+    "created_at": "2021-12-10T00:45:42Z",
+    "updated_at": "2024-01-08T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-34378",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-09T23:39:00Z",
+    "last_synced_at": "2026-04-10T00:45:42Z",
     "contact": {
       "first_name": "Monica",
       "last_name": "Miller",
@@ -955,13 +955,13 @@
     "company_id": "comp_000137",
     "owner_id": "sales_17",
     "status": null,
-    "created_at": "2023-06-06T23:39:00Z",
-    "updated_at": "2023-09-23T23:39:00Z",
+    "created_at": "2023-06-07T00:45:42Z",
+    "updated_at": "2023-09-24T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-61509",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-18T23:39:00Z",
+    "last_synced_at": "2026-03-19T00:45:42Z",
     "contact": {
       "first_name": "Erica",
       "last_name": "Camacho",
@@ -981,12 +981,12 @@
     "owner_id": "sales_17",
     "status": "ACTIVE",
     "linkedin_url": "https://linkedin.com/in/murphyhannah",
-    "created_at": "2021.12.18 23:39:00",
+    "created_at": "2021.12.19 00:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-20144",
     "sync_status": "SYNCED",
     "sync_version": 1,
-    "last_synced_at": "2026-03-17T23:39:00Z",
+    "last_synced_at": "2026-03-18T00:45:42Z",
     "duplicate_of": "cont_000221"
   },
   {
@@ -1003,12 +1003,12 @@
     "owner_id": "own_001",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/anthony05",
-    "created_at": "2022-02-05T23:39:00Z",
+    "created_at": "2022-02-06T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-20364",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2026-03-06T23:39:00Z"
+    "last_synced_at": "2026-03-07T00:45:42Z"
   },
   {
     "id": "cont_000105",
@@ -1024,13 +1024,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/ashleyjohnson",
-    "created_at": "2023-05-24T23:39:00Z",
-    "updated_at": "2023.10.16 23:39:00",
+    "created_at": "2023-05-25T00:45:42Z",
+    "updated_at": "2023.10.17 00:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-24433",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-15T23:39:00Z"
+    "last_synced_at": "2026-03-16T00:45:42Z"
   },
   {
     "id": "cont_000157",
@@ -1046,12 +1046,12 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/turnerjose",
-    "created_at": "2022-10-02T23:39:00Z",
-    "updated_at": "2024-01-17T23:39:00Z",
+    "created_at": "2022-10-03T00:45:42Z",
+    "updated_at": "2024-01-18T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-11T23:39:00Z"
+    "last_synced_at": "2026-04-12T00:45:42Z"
   },
   {
     "id": "cont_000431",
@@ -1064,13 +1064,13 @@
     "customer_id": "cust_000266",
     "owner_id": "OWN_002",
     "status": "churned",
-    "created_at": "2023.07.01 23:39:00",
-    "updated_at": "2023-12-14T23:39:00Z",
+    "created_at": "2023.07.02 00:45:42",
+    "updated_at": "2023-12-15T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-20506",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2024-06-14 23:39:00",
+    "last_synced_at": "2024-06-15 00:45:42",
     "firstName": "David",
     "lastName": "White",
     "contact": {
@@ -1079,7 +1079,7 @@
       "email": "edwardscarrie@example.org"
     },
     "is_deleted": true,
-    "deleted_at": "2026-04-11T23:39:00Z",
+    "deleted_at": "2026-04-12T00:45:42Z",
     "duplicate_of": "cont_000012"
   },
   {
@@ -1094,13 +1094,13 @@
     "owner_id": "manual_queue",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/stephanieallen",
-    "created_at": "2022-05-24T23:39:00Z",
-    "updated_at": "2024-05-23T23:39:00Z",
+    "created_at": "2022-05-25T00:45:42Z",
+    "updated_at": "2024-05-24T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-74079",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-15T23:39:00Z",
+    "last_synced_at": "2026-03-16T00:45:42Z",
     "contact": {
       "first_name": "Laura",
       "last_name": "Jensen",
@@ -1120,11 +1120,11 @@
     "owner_id": "rep_99",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/ghoward",
-    "created_at": "2023.09.01 23:39:00",
+    "created_at": "2023.09.02 00:45:42",
     "source_system": "InternalCRM",
     "sync_status": "SYNCED",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-30T23:39:00Z"
+    "last_synced_at": "2026-03-31T00:45:42Z"
   },
   {
     "id": "cont_000052",
@@ -1139,13 +1139,13 @@
     "customer_id": "cust_000162",
     "owner_id": "OWN_002",
     "status": "active",
-    "created_at": "2023-03-18T23:39:00Z",
-    "updated_at": "2023-10-14T23:39:00Z",
+    "created_at": "2023-03-19T00:45:42Z",
+    "updated_at": "2023-10-15T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-90027",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-10T23:39:00Z"
+    "last_synced_at": "2026-03-11T00:45:42Z"
   },
   {
     "id": "cont_000149",
@@ -1160,12 +1160,12 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/lmitchell",
-    "created_at": "2022.06.07 23:39:00",
+    "created_at": "2022.06.08 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-42023",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "cont_000171",
@@ -1179,13 +1179,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/thomasdavid",
-    "created_at": "2022-08-17T23:39:00Z",
-    "updated_at": "2023-10-22T23:39:00Z",
+    "created_at": "2022-08-18T00:45:42Z",
+    "updated_at": "2023-10-23T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-42191",
     "sync_status": "synced",
     "sync_version": null,
-    "last_synced_at": "2023-08-04T23:39:00Z",
+    "last_synced_at": "2023-08-05T00:45:42Z",
     "lastName": "Watson",
     "phone_number": "404.825.3733x77731"
   },
@@ -1203,13 +1203,13 @@
     "owner_id": "sales_17",
     "status": "Active",
     "linkedin_url": "https://linkedin.com/in/sherry01",
-    "created_at": "2021-07-13T23:39:00Z",
-    "updated_at": "2023-11-04T23:39:00Z",
+    "created_at": "2021-07-14T00:45:42Z",
+    "updated_at": "2023-11-05T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-28555",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-01T23:39:00Z"
+    "last_synced_at": "2026-03-02T00:45:42Z"
   },
   {
     "id": "cont_000430",
@@ -1223,13 +1223,13 @@
     "customer_id": "cust_000117",
     "owner_id": "sales_17",
     "status": "active",
-    "created_at": "01/26/2022 23:39",
-    "updated_at": "2024-04-09T23:39:00Z",
+    "created_at": "01/27/2022 00:45",
+    "updated_at": "2024-04-10T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-84631",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-05T23:39:00Z",
+    "last_synced_at": "2026-04-06T00:45:42Z",
     "contact": {
       "first_name": "Robert",
       "last_name": "Gill",
@@ -1251,15 +1251,15 @@
     "owner_id": "rep_99",
     "status": "inactive",
     "linkedin_url": null,
-    "created_at": "2022-09-07T23:39:00Z",
-    "updated_at": "2023-11-19T23:39:00Z",
+    "created_at": "2022-09-08T00:45:42Z",
+    "updated_at": "2023-11-20T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-70422",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-24T23:39:00Z",
+    "last_synced_at": "2026-03-25T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2024-05-21T00:39:00Z"
+    "deleted_at": "2024-05-21T01:45:42Z"
   },
   {
     "id": "cont_000365",
@@ -1272,13 +1272,13 @@
     "owner_id": "owner_03",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/klopez",
-    "created_at": "08/27/2022 23:39",
-    "updated_at": "2023-10-29T23:39:00Z",
+    "created_at": "08/28/2022 00:45",
+    "updated_at": "2023-10-30T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-14896",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-08T23:39:00Z",
+    "last_synced_at": "2026-03-09T00:45:42Z",
     "contact": {
       "first_name": "Kimberly",
       "last_name": "Logan",
@@ -1298,13 +1298,13 @@
     "owner_id": "sales_17",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/sross",
-    "created_at": "2023-04-08T23:39:00Z",
-    "updated_at": "2023.09.30 23:39:00",
+    "created_at": "2023-04-09T00:45:42Z",
+    "updated_at": "2023.10.01 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-82449",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "cont_000401",
@@ -1319,15 +1319,15 @@
     "customer_id": "cust_000078",
     "owner_id": "manual_queue",
     "status": "inactive",
-    "created_at": "2021-12-28T23:39:00Z",
-    "updated_at": "2023-10-22T23:39:00Z",
+    "created_at": "2021-12-29T00:45:42Z",
+    "updated_at": "2023-10-23T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-52929",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-21T23:39:00Z",
+    "last_synced_at": "2026-03-22T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2025-04-03T05:39:00Z"
+    "deleted_at": "2025-04-03T06:45:42Z"
   },
   {
     "id": "cont_000317",
@@ -1342,12 +1342,12 @@
     "customer_id": "cust_000037",
     "owner_id": "OWN_002",
     "status": "churned",
-    "created_at": "2022-07-21T23:39:00Z",
-    "updated_at": "2024-07-27T23:39:00Z",
+    "created_at": "2022-07-22T00:45:42Z",
+    "updated_at": "2024-07-28T00:45:42Z",
     "source_system": "pipedrive",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-06-27T23:39:00Z"
+    "last_synced_at": "2024-06-28T00:45:42Z"
   },
   {
     "id": "cont_000271",
@@ -1362,15 +1362,15 @@
     "customer_id": "cust_000206",
     "owner_id": "manual_queue",
     "status": "active",
-    "created_at": "2023-01-27T23:39:00Z",
-    "updated_at": "2024-04-24T23:39:00Z",
+    "created_at": "2023-01-28T00:45:42Z",
+    "updated_at": "2024-04-25T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-35971",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-01T23:39:00Z",
+    "last_synced_at": "2026-03-02T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2024-06-27T09:39:00Z"
+    "deleted_at": "2024-06-27T10:45:42Z"
   },
   {
     "id": "cont_000324",
@@ -1386,15 +1386,15 @@
     "owner_id": "rep_99",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/ibrown",
-    "created_at": "2022-06-28T23:39:00Z",
-    "updated_at": "1721767140",
+    "created_at": "2022-06-29T00:45:42Z",
+    "updated_at": "1721771142",
     "source_system": "salesforce",
     "source_record_id": "SRC-41140",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-07-07T23:39:00Z",
+    "last_synced_at": "2024-07-08T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2023-09-22T20:39:00Z"
+    "deleted_at": "2023-09-22T21:45:42Z"
   },
   {
     "id": "cont_000319",
@@ -1409,12 +1409,12 @@
     "owner_id": "owner_03",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/daniellecoleman",
-    "created_at": "2023-04-24T23:39:00Z",
-    "updated_at": "2023-09-22T23:39:00Z",
+    "created_at": "2023-04-25T00:45:42Z",
+    "updated_at": "2023-09-23T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-14T23:39:00Z"
+    "last_synced_at": "2026-03-15T00:45:42Z"
   },
   {
     "id": "cont_000035",
@@ -1428,13 +1428,13 @@
     "customer_id": "cust_000135",
     "owner_id": "sales_17",
     "status": "inactive",
-    "created_at": "2023-08-10T23:39:00Z",
-    "updated_at": "2024-07-15T23:39:00Z",
+    "created_at": "2023-08-11T00:45:42Z",
+    "updated_at": "2024-07-16T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-73932",
     "sync_status": "ok",
     "sync_version": null,
-    "last_synced_at": "2024-06-10T23:39:00Z"
+    "last_synced_at": "2024-06-11T00:45:42Z"
   },
   {
     "id": "cont_000443",
@@ -1448,12 +1448,12 @@
     "customer_id": "cust_000132",
     "owner_id": "sales_17",
     "status": "churned",
-    "created_at": "2021.08.08 23:39:00",
-    "updated_at": "2023-11-01T23:39:00Z",
+    "created_at": "2021.08.09 00:45:42",
+    "updated_at": "2023-11-02T00:45:42Z",
     "source_system": "manual_entry",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2023-05-05T23:39:00Z",
+    "last_synced_at": "2023-05-06T00:45:42Z",
     "contact": {
       "first_name": "David",
       "last_name": "Velazquez",
@@ -1475,13 +1475,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/hannahpatrick",
-    "created_at": "2021-09-30T23:39:00Z",
-    "updated_at": "2023-11-03T23:39:00Z",
+    "created_at": "2021-10-01T00:45:42Z",
+    "updated_at": "2023-11-04T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-98307",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-05T23:39:00Z"
+    "last_synced_at": "2026-04-06T00:45:42Z"
   },
   {
     "id": "cont_000019",
@@ -1496,13 +1496,13 @@
     "owner_id": "own_001",
     "status": "lost",
     "linkedin_url": "https://linkedin.com/in/jliu",
-    "created_at": "2021-10-25T23:39:00Z",
-    "updated_at": "2023-12-18T23:39:00Z",
+    "created_at": "2021-10-26T00:45:42Z",
+    "updated_at": "2023-12-19T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-55323",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "cont_000166",
@@ -1518,13 +1518,13 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/angela73",
-    "created_at": "2021-06-04T23:39:00Z",
-    "updated_at": "2024-06-14T23:39:00Z",
+    "created_at": "2021-06-05T00:45:42Z",
+    "updated_at": "2024-06-15T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-27070",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-24T23:39:00Z"
+    "last_synced_at": "2026-03-25T00:45:42Z"
   },
   {
     "id": "cont_000085",
@@ -1540,13 +1540,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/taylordawn",
-    "created_at": "2023-07-19T23:39:00Z",
-    "updated_at": "2024-06-23T23:39:00Z",
+    "created_at": "2023-07-20T00:45:42Z",
+    "updated_at": "2024-06-24T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-43532",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-03T23:39:00Z"
+    "last_synced_at": "2026-04-04T00:45:42Z"
   },
   {
     "id": "cont_000091",
@@ -1560,13 +1560,13 @@
     "owner_id": "owner_03",
     "status": "pending",
     "linkedin_url": "https://linkedin.com/in/yvonnemiller",
-    "created_at": "2023-04-11T23:39:00Z",
-    "updated_at": "2023-12-16T23:39:00Z",
+    "created_at": "2023-04-12T00:45:42Z",
+    "updated_at": "2023-12-17T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-93392",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-11T23:39:00Z"
+    "last_synced_at": "2026-03-12T00:45:42Z"
   },
   {
     "id": "cont_000007",
@@ -1582,13 +1582,13 @@
     "owner_id": "manual_queue",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/craig73",
-    "created_at": "2022-08-27T23:39:00Z",
-    "updated_at": "2024-06-03T23:39:00Z",
+    "created_at": "2022-08-28T00:45:42Z",
+    "updated_at": "2024-06-04T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-97796",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2026-03-26T23:39:00Z"
+    "last_synced_at": "2026-03-27T00:45:42Z"
   },
   {
     "id": "cont_000381",
@@ -1604,15 +1604,15 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/elizabeth39",
-    "created_at": "2022-06-23T23:39:00Z",
-    "updated_at": "2024-03-10T23:39:00Z",
+    "created_at": "2022-06-24T00:45:42Z",
+    "updated_at": "2024-03-11T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-56549",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-12T23:39:00Z",
+    "last_synced_at": "2026-03-13T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2026-01-16T08:39:00Z",
+    "deleted_at": "2026-01-16T09:45:42Z",
     "Status": "active"
   },
   {
@@ -1627,11 +1627,11 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/ychambers",
-    "created_at": "2022-09-17T23:39:00Z",
+    "created_at": "2022-09-18T00:45:42Z",
     "source_system": "SalesForce",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-12T23:39:00Z",
+    "last_synced_at": "2026-03-13T00:45:42Z",
     "lastName": "Vazquez"
   },
   {
@@ -1646,13 +1646,13 @@
     "owner_id": "owner_03",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/bellandrew",
-    "created_at": "05/14/2022 23:39",
-    "updated_at": "2024-06-24T23:39:00Z",
+    "created_at": "05/15/2022 00:45",
+    "updated_at": "2024-06-25T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-33799",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-06T23:39:00Z",
+    "last_synced_at": "2026-03-07T00:45:42Z",
     "firstName": "Sharon"
   },
   {
@@ -1669,13 +1669,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/ohiggins",
-    "created_at": "2023.05.02 23:39:00",
-    "updated_at": "2024-02-09T23:39:00Z",
+    "created_at": "2023.05.03 00:45:42",
+    "updated_at": "2024-02-10T00:45:42Z",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-51442",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2024-01-15T23:39:00Z"
+    "last_synced_at": "2024-01-16T00:45:42Z"
   },
   {
     "id": "cont_000114",
@@ -1691,14 +1691,14 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/codykelly",
-    "created_at": "2023.07.02 23:39:00",
+    "created_at": "2023.07.03 00:45:42",
     "source_system": "sALEsfOrCe",
     "source_record_id": "SRC-24338",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-08T23:39:00Z",
+    "last_synced_at": "2026-03-09T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2022.11.27 17:39:00"
+    "deleted_at": "2022.11.27 18:45:42"
   },
   {
     "id": "cont_000056",
@@ -1712,13 +1712,13 @@
     "company_id": "orphan_608658",
     "owner_id": "rep_99",
     "status": "churned",
-    "created_at": "01/13/2022 23:39",
-    "updated_at": "2024-04-17T23:39:00Z",
+    "created_at": "01/14/2022 00:45",
+    "updated_at": "2024-04-18T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-94191",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2024-03-20T23:39:00Z"
+    "last_synced_at": "2024-03-21T00:45:42Z"
   },
   {
     "id": "cont_000318",
@@ -1730,13 +1730,13 @@
     "company_id": "comp_000013",
     "owner_id": "orphan_489385",
     "status": "active",
-    "created_at": "2021-09-02T23:39:00Z",
-    "updated_at": "2024-03-30T23:39:00Z",
+    "created_at": "2021-09-03T00:45:42Z",
+    "updated_at": "2024-03-31T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-45039",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2024-03-04T23:39:00Z",
+    "last_synced_at": "2024-03-05T00:45:42Z",
     "contact": {
       "first_name": "Lance",
       "last_name": "Taylor",
@@ -1756,15 +1756,15 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/gregory29",
-    "created_at": "2021.06.13 23:39:00",
-    "updated_at": "2024-05-13T23:39:00Z",
+    "created_at": "2021.06.14 00:45:42",
+    "updated_at": "2024-05-14T00:45:42Z",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-78449",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2026-03-01T23:39:00Z",
+    "last_synced_at": "2026-03-02T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2024-08-20T10:39:00Z"
+    "deleted_at": "2024-08-20T11:45:42Z"
   },
   {
     "id": "cont_000057",
@@ -1780,13 +1780,13 @@
     "owner_id": "owner_03",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/icarlson",
-    "created_at": "2022.10.06 23:39:00",
-    "updated_at": "2024-03-26T23:39:00Z",
+    "created_at": "2022.10.07 00:45:42",
+    "updated_at": "2024-03-27T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-23396",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-26T23:39:00Z"
+    "last_synced_at": "2026-03-27T00:45:42Z"
   },
   {
     "id": "cont_000080",
@@ -1801,13 +1801,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/katiefloyd",
-    "created_at": "2023-06-08T23:39:00Z",
-    "updated_at": "03/16/2024 23:39",
+    "created_at": "2023-06-09T00:45:42Z",
+    "updated_at": "03/17/2024 00:45",
     "source_system": "manual_entry",
     "source_record_id": "SRC-16655",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-05T23:39:00Z"
+    "last_synced_at": "2026-03-06T00:45:42Z"
   },
   {
     "id": "cont_000373",
@@ -1823,13 +1823,13 @@
     "owner_id": "manual_queue",
     "status": null,
     "linkedin_url": "https://linkedin.com/in/kchavez",
-    "created_at": "2021-09-23T23:39:00Z",
-    "updated_at": "2024-01-23 23:39:00",
+    "created_at": "2021-09-24T00:45:42Z",
+    "updated_at": "2024-01-24 00:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-23600",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2024-01-10T23:39:00Z"
+    "last_synced_at": "2024-01-11T00:45:42Z"
   },
   {
     "id": "cont_000224",
@@ -1844,13 +1844,13 @@
     "owner_id": "owner_03",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/amber07",
-    "created_at": "2023-02-27T23:39:00Z",
-    "updated_at": "2024-03-19T23:39:00Z",
+    "created_at": "2023-02-28T00:45:42Z",
+    "updated_at": "2024-03-20T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-76728",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-02T23:39:00Z",
+    "last_synced_at": "2026-04-03T00:45:42Z",
     "lastName": "Robinson"
   },
   {
@@ -1866,13 +1866,13 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/carolyn76",
-    "created_at": "2022-06-30T23:39:00Z",
-    "updated_at": "02/25/2024 23:39",
+    "created_at": "2022-07-01T00:45:42Z",
+    "updated_at": "02/26/2024 00:45",
     "source_system": "internal_crm",
     "source_record_id": "SRC-84915",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "firstName": "Alan"
   },
   {
@@ -1888,13 +1888,13 @@
     "customer_id": "cust_000117",
     "owner_id": "sales_17",
     "status": "pending",
-    "created_at": "2022.07.03 23:39:00",
-    "updated_at": "2023.12.27 23:39:00",
+    "created_at": "2022.07.04 00:45:42",
+    "updated_at": "2023.12.28 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-14302",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-20T23:39:00Z"
+    "last_synced_at": "2026-03-21T00:45:42Z"
   },
   {
     "id": "cont_000074",
@@ -1909,13 +1909,13 @@
     "customer_id": "cust_000187",
     "owner_id": "owner_03",
     "status": "active",
-    "created_at": "2023-02-09T23:39:00Z",
-    "updated_at": "2023-12-18T23:39:00Z",
+    "created_at": "2023-02-10T00:45:42Z",
+    "updated_at": "2023-12-19T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-48489",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-20T23:39:00Z"
+    "last_synced_at": "2026-03-21T00:45:42Z"
   },
   {
     "id": "cont_000426",
@@ -1929,12 +1929,12 @@
     "customer_id": "cust_000209",
     "owner_id": "owner_03",
     "status": "Active",
-    "created_at": "2022-11-03T23:39:00Z",
+    "created_at": "2022-11-04T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-92349",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-08T23:39:00Z",
+    "last_synced_at": "2026-04-09T00:45:42Z",
     "duplicate_of": "cont_000123"
   },
   {
@@ -1950,13 +1950,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/laurenwilliamson",
-    "created_at": "2022-11-05T23:39:00Z",
-    "updated_at": "2023-10-08T23:39:00Z",
+    "created_at": "2022-11-06T00:45:42Z",
+    "updated_at": "2023-10-09T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-84631",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "10/07/2023 23:39",
+    "last_synced_at": "10/08/2023 00:45",
     "contact": {
       "first_name": "Robert",
       "last_name": "Gill",
@@ -1976,13 +1976,13 @@
     "owner_id": "sales_17",
     "status": "ACTIVE",
     "linkedin_url": "https://linkedin.com/in/doughertynicholas",
-    "created_at": "2023.03.06 23:39:00",
-    "updated_at": "2023-10-23T23:39:00Z",
+    "created_at": "2023.03.07 00:45:42",
+    "updated_at": "2023-10-24T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-14327",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-11T23:39:00Z",
+    "last_synced_at": "2026-03-12T00:45:42Z",
     "contact": {
       "first_name": "Melissa",
       "last_name": "Wall",
@@ -2003,13 +2003,13 @@
     "owner_id": "owner_03",
     "status": "UNKNOWN",
     "linkedin_url": "https://linkedin.com/in/guerrerostanley",
-    "created_at": "2022-07-29T23:39:00Z",
-    "updated_at": "2023-11-30T23:39:00Z",
+    "created_at": "2022-07-30T00:45:42Z",
+    "updated_at": "2023-12-01T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-41469",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-08T23:39:00Z",
+    "last_synced_at": "2026-03-09T00:45:42Z",
     "contact": {
       "first_name": "Robin",
       "last_name": "Williams",
@@ -2030,14 +2030,14 @@
     "customer_id": "cust_000072",
     "owner_id": "OWN_002",
     "status": "active",
-    "created_at": "2021.08.20 23:39:00",
-    "updated_at": "2023-09-19T23:39:00Z",
+    "created_at": "2021.08.21 00:45:42",
+    "updated_at": "2023-09-20T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-01T23:39:00Z",
+    "last_synced_at": "2026-04-02T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2023-01-05T19:39:00Z",
+    "deleted_at": "2023-01-05T20:45:42Z",
     "duplicate_of": "cont_000370"
   },
   {
@@ -2054,12 +2054,12 @@
     "owner_id": "OWN_002",
     "status": "pending",
     "linkedin_url": "https://linkedin.com/in/davidbrown",
-    "created_at": "12/22/2022 23:39",
+    "created_at": "12/23/2022 00:45",
     "source_system": "zoho",
     "source_record_id": "SRC-28328",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "cont_000025",
@@ -2073,13 +2073,13 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/williamchapman",
-    "created_at": "08/14/2023 23:39",
-    "updated_at": "10/17/2023 23:39",
+    "created_at": "08/15/2023 00:45",
+    "updated_at": "10/18/2023 00:45",
     "source_system": "INtERnal_Crm",
     "source_record_id": "SRC-22878",
     "sync_status": "SYNCED",
     "sync_version": 3,
-    "last_synced_at": "2026-03-13T23:39:00Z"
+    "last_synced_at": "2026-03-14T00:45:42Z"
   },
   {
     "id": "cont_000279",
@@ -2095,13 +2095,13 @@
     "owner_id": "sales_17",
     "status": "pending",
     "linkedin_url": "https://linkedin.com/in/dixonkimberly",
-    "created_at": "2022-11-10T23:39:00Z",
-    "updated_at": "2023.12.24 23:39:00",
+    "created_at": "2022-11-11T00:45:42Z",
+    "updated_at": "2023.12.25 00:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-13840",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-05T23:39:00Z",
+    "last_synced_at": "2026-04-06T00:45:42Z",
     "contact": {
       "first_name": "Richard",
       "last_name": "Mccarthy",
@@ -2121,14 +2121,14 @@
     "owner_id": "own_001",
     "status": "Active",
     "linkedin_url": "https://linkedin.com/in/hendersonbrenda",
-    "created_at": "2022-01-15T23:39:00Z",
+    "created_at": "2022-01-16T00:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-44040",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2026-04-12T23:39:00Z",
+    "last_synced_at": "2026-04-13T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2026-02-08T18:39:00Z",
+    "deleted_at": "2026-02-08T19:45:42Z",
     "phone_number": "(999)879-9070x75504"
   },
   {
@@ -2144,13 +2144,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/twatkins",
-    "created_at": "06/27/2022 23:39",
-    "updated_at": "2024.03.17 23:39:00",
+    "created_at": "06/28/2022 00:45",
+    "updated_at": "2024.03.18 00:45:42",
     "source_system": "manual_entry",
     "source_record_id": "SRC-83863",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-13T23:39:00Z",
+    "last_synced_at": "2026-03-14T00:45:42Z",
     "firstName": "Michael"
   },
   {
@@ -2166,13 +2166,13 @@
     "owner_id": "manual_queue",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/tuckersusan",
-    "created_at": "2022-08-08T23:39:00Z",
-    "updated_at": "2024.06.22 23:39:00",
+    "created_at": "2022-08-09T00:45:42Z",
+    "updated_at": "2024.06.23 00:45:42",
     "source_system": "internal_crm",
     "source_record_id": "SRC-18563",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2024-05-24T23:39:00Z"
+    "last_synced_at": "2024-05-25T00:45:42Z"
   },
   {
     "id": "cont_000140",
@@ -2186,16 +2186,16 @@
     "owner_id": "orphan_265698",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/wking",
-    "created_at": "2022-03-01T23:39:00Z",
-    "updated_at": "2024-07-15T23:39:00Z",
+    "created_at": "2022-03-02T00:45:42Z",
+    "updated_at": "2024-07-16T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-57073",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-23T23:39:00Z",
+    "last_synced_at": "2026-03-24T00:45:42Z",
     "firstName": "Christopher",
     "is_deleted": 1,
-    "deleted_at": "2022-09-25T07:39:00Z"
+    "deleted_at": "2022-09-25T08:45:42Z"
   },
   {
     "id": "cont_000170",
@@ -2211,12 +2211,12 @@
     "owner_id": "own_001",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/kevinfrancis",
-    "created_at": "2023-01-16T23:39:00Z",
+    "created_at": "2023-01-17T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-41220",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-10T23:39:00Z"
+    "last_synced_at": "2026-03-11T00:45:42Z"
   },
   {
     "id": "cont_000396",
@@ -2230,13 +2230,13 @@
     "customer_id": "cust_000159",
     "owner_id": "rep_99",
     "status": "active",
-    "created_at": "2022.03.11 23:39:00",
-    "updated_at": "2024-05-29T23:39:00Z",
+    "created_at": "2022.03.12 00:45:42",
+    "updated_at": "2024-05-30T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-31442",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-11T23:39:00Z"
+    "last_synced_at": "2026-04-12T00:45:42Z"
   },
   {
     "id": "cont_000108",
@@ -2252,13 +2252,13 @@
     "owner_id": "owner_03",
     "status": "ACTIVE",
     "linkedin_url": "https://linkedin.com/in/amanda62",
-    "created_at": "2023-02-21T23:39:00Z",
-    "updated_at": "2023-11-28T23:39:00Z",
+    "created_at": "2023-02-22T00:45:42Z",
+    "updated_at": "2023-11-29T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-92313",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2023-11-19T23:39:00Z"
+    "last_synced_at": "2023-11-20T00:45:42Z"
   },
   {
     "id": "cont_000289",
@@ -2274,14 +2274,14 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/caitlynbennett",
-    "created_at": "2023.01.17 23:39:00",
+    "created_at": "2023.01.18 00:45:42",
     "source_system": "internal_crm",
     "source_record_id": "SRC-42182",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-05T23:39:00Z",
+    "last_synced_at": "2026-04-06T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-04-13T23:39:00Z"
+    "deleted_at": "2026-04-14T00:45:42Z"
   },
   {
     "id": "cont_000047",
@@ -2295,13 +2295,13 @@
     "customer_id": "cust_000188",
     "owner_id": "owner_03",
     "status": "churned",
-    "created_at": "04/22/2021 23:39",
-    "updated_at": "2023-12-17T23:39:00Z",
+    "created_at": "04/23/2021 00:45",
+    "updated_at": "2023-12-18T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-95872",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-31T23:39:00Z",
+    "last_synced_at": "2026-04-01T00:45:42Z",
     "contact": {
       "first_name": "James",
       "last_name": "Ward",
@@ -2320,13 +2320,13 @@
     "owner_id": "own_001",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/carolberry",
-    "created_at": "2022-07-16T23:39:00Z",
-    "updated_at": "2023-12-05T23:39:00Z",
+    "created_at": "2022-07-17T00:45:42Z",
+    "updated_at": "2023-12-06T00:45:42Z",
     "source_system": "HUbSpoT",
     "source_record_id": "SRC-63806",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-03T23:39:00Z"
+    "last_synced_at": "2026-03-04T00:45:42Z"
   },
   {
     "id": "cont_000308",
@@ -2341,12 +2341,12 @@
     "owner_id": "sales_17",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/tracifoster",
-    "created_at": "2021-10-13T23:39:00Z",
+    "created_at": "2021-10-14T00:45:42Z",
     "source_system": "MANUAL_ENTRY",
     "source_record_id": "SRC-59064",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-04-01T23:39:00Z"
+    "last_synced_at": "2026-04-02T00:45:42Z"
   },
   {
     "id": "cont_000241",
@@ -2360,13 +2360,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/cookrobert",
-    "created_at": "2023.06.19 23:39:00",
-    "updated_at": "2024-03-14T23:39:00Z",
+    "created_at": "2023.06.20 00:45:42",
+    "updated_at": "2024-03-15T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-74700",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-04T23:39:00Z",
+    "last_synced_at": "2026-04-05T00:45:42Z",
     "lastName": "Cummings"
   },
   {
@@ -2383,13 +2383,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/fcarlson",
-    "created_at": "2021-08-10T23:39:00Z",
-    "updated_at": "2023-12-27 23:39:00",
+    "created_at": "2021-08-11T00:45:42Z",
+    "updated_at": "2023-12-28 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-58702",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "cont_000147",
@@ -2405,15 +2405,15 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/michael97",
-    "created_at": "2022.05.19 23:39:00",
-    "updated_at": "2024-06-06T23:39:00Z",
+    "created_at": "2022.05.20 00:45:42",
+    "updated_at": "2024-06-07T00:45:42Z",
     "source_system": "Zoho",
     "source_record_id": "SRC-45444",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-03-27T23:39:00Z",
+    "last_synced_at": "2026-03-28T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2026-04-05T23:39:00Z"
+    "deleted_at": "2026-04-06T00:45:42Z"
   },
   {
     "id": "cont_000375",
@@ -2428,13 +2428,13 @@
     "customer_id": "cust_000168",
     "owner_id": "orphan_627881",
     "status": "active",
-    "created_at": "2021-05-04T23:39:00Z",
-    "updated_at": "2024-05-23T23:39:00Z",
+    "created_at": "2021-05-05T00:45:42Z",
+    "updated_at": "2024-05-24T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-41108",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-13T23:39:00Z"
+    "last_synced_at": "2026-03-14T00:45:42Z"
   },
   {
     "id": "cont_000064",
@@ -2450,13 +2450,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/andrewnguyen",
-    "created_at": "2021-06-06T23:39:00Z",
-    "updated_at": "2023.09.25 23:39:00",
+    "created_at": "2021-06-07T00:45:42Z",
+    "updated_at": "2023.09.26 00:45:42",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-44487",
     "sync_status": "SYNCED",
     "sync_version": "v2",
-    "last_synced_at": "2023-09-25T23:39:00Z"
+    "last_synced_at": "2023-09-26T00:45:42Z"
   },
   {
     "id": "cont_000292",
@@ -2472,13 +2472,13 @@
     "owner_id": "manual_queue",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/smithmichael",
-    "created_at": "2022.01.09 23:39:00",
-    "updated_at": "2023-12-02T23:39:00Z",
+    "created_at": "2022.01.10 00:45:42",
+    "updated_at": "2023-12-03T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-42801",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2026-03-01 23:39:00"
+    "last_synced_at": "2026-03-02 00:45:42"
   },
   {
     "id": "cont_000357",
@@ -2493,12 +2493,12 @@
     "owner_id": "sales_17",
     "status": "Active",
     "linkedin_url": "https://linkedin.com/in/xlewis",
-    "created_at": "2021.11.13 23:39:00",
-    "updated_at": "2024-05-26T23:39:00Z",
+    "created_at": "2021.11.14 00:45:42",
+    "updated_at": "2024-05-27T00:45:42Z",
     "source_system": "salesforce",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-05-13T23:39:00Z",
+    "last_synced_at": "2024-05-14T00:45:42Z",
     "firstName": "Adam"
   },
   {
@@ -2513,13 +2513,13 @@
     "owner_id": "orphan_266191",
     "status": null,
     "linkedin_url": "https://linkedin.com/in/pblankenship",
-    "created_at": "2023-02-11T23:39:00Z",
-    "updated_at": "2024-02-07T23:39:00Z",
+    "created_at": "2023-02-12T00:45:42Z",
+    "updated_at": "2024-02-08T00:45:42Z",
     "source_system": "InternalCRM",
     "source_record_id": "SRC-58131",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-06T23:39:00Z",
+    "last_synced_at": "2026-03-07T00:45:42Z",
     "contact": {
       "first_name": "Rebecca",
       "last_name": "King",
@@ -2540,13 +2540,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/wbean",
-    "created_at": "2023.04.06 23:39:00",
-    "updated_at": "2023-10-19T23:39:00Z",
+    "created_at": "2023.04.07 00:45:42",
+    "updated_at": "2023-10-20T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-83060",
     "sync_status": "SYNCED",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "cont_000311",
@@ -2561,17 +2561,17 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/collinmiller",
-    "created_at": "11/16/2021 23:39",
+    "created_at": "11/17/2021 00:45",
     "source_system": "zoho",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-18T23:39:00Z",
+    "last_synced_at": "2026-03-19T00:45:42Z",
     "contact": {
       "first_name": "Roy",
       "last_name": "Santos",
       "email": "heidihill@example.net"
     },
-    "last_modified": "2026-03-30T23:39:00Z"
+    "last_modified": "2026-03-31T00:45:42Z"
   },
   {
     "id": "cont_000042",
@@ -2587,12 +2587,12 @@
     "owner_id": "manual_queue",
     "status": "INACTIVE",
     "linkedin_url": "https://linkedin.com/in/michaelsmith",
-    "created_at": "2023.04.01 23:39:00",
-    "updated_at": "05/07/2024 23:39",
+    "created_at": "2023.04.02 00:45:42",
+    "updated_at": "05/08/2024 00:45",
     "source_system": "hubspot",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-06T23:39:00Z",
+    "last_synced_at": "2026-04-07T00:45:42Z",
     "Status": "inactive"
   },
   {
@@ -2608,13 +2608,13 @@
     "customer_id": "cust_000219",
     "owner_id": "own_001",
     "status": "inactive",
-    "created_at": "2021-10-20T23:39:00Z",
-    "updated_at": "2024-04-11T23:39:00Z",
+    "created_at": "2021-10-21T00:45:42Z",
+    "updated_at": "2024-04-12T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-44667",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "cont_000202",
@@ -2628,13 +2628,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/lisaford",
-    "created_at": "2022-08-02T23:39:00Z",
-    "updated_at": "2024-02-03T23:39:00Z",
+    "created_at": "2022-08-03T00:45:42Z",
+    "updated_at": "2024-02-04T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-26943",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2026-04-11T23:39:00Z"
+    "last_synced_at": "2026-04-12T00:45:42Z"
   },
   {
     "id": "cont_000399",
@@ -2649,13 +2649,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/ethomas",
-    "created_at": "2021-09-14T23:39:00Z",
-    "updated_at": "2024-02-08T23:39:00Z",
+    "created_at": "2021-09-15T00:45:42Z",
+    "updated_at": "2024-02-09T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-43706",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "cont_000179",
@@ -2669,15 +2669,15 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/kathryn26",
-    "created_at": "2022-04-25T23:39:00Z",
-    "updated_at": "2024-05-10T23:39:00Z",
+    "created_at": "2022-04-26T00:45:42Z",
+    "updated_at": "2024-05-11T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-33600",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-03-17T23:39:00Z",
+    "last_synced_at": "2026-03-18T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2024-01-03T22:39:00Z"
+    "deleted_at": "2024-01-03T23:45:42Z"
   },
   {
     "id": "cont_000410",
@@ -2692,13 +2692,13 @@
     "customer_id": "cust_000200",
     "owner_id": "rep_99",
     "status": "inactive",
-    "created_at": "2022-04-16T23:39:00Z",
-    "updated_at": "2024-06-09T23:39:00Z",
+    "created_at": "2022-04-17T00:45:42Z",
+    "updated_at": "2024-06-10T00:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-79810",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "cont_000006",
@@ -2712,13 +2712,13 @@
     "customer_id": "cust_000268",
     "owner_id": "owner_03",
     "status": "active",
-    "created_at": "2023.09.22 23:39:00",
-    "updated_at": "2024-06-07T23:39:00Z",
+    "created_at": "2023.09.23 00:45:42",
+    "updated_at": "2024-06-08T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-50660",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-08T23:39:00Z"
+    "last_synced_at": "2026-03-09T00:45:42Z"
   },
   {
     "id": "cont_000240",
@@ -2733,14 +2733,14 @@
     "owner_id": "own_001",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/yvonne06",
-    "created_at": "2021-09-10T23:39:00Z",
-    "updated_at": "2024-07-01T23:39:00Z",
+    "created_at": "2021-09-11T00:45:42Z",
+    "updated_at": "2024-07-02T00:45:42Z",
     "source_system": "pipedrive",
     "sync_status": "SYNCED",
     "sync_version": null,
-    "last_synced_at": "2026-03-25T23:39:00Z",
+    "last_synced_at": "2026-03-26T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2022-10-06T02:39:00Z"
+    "deleted_at": "2022-10-06T03:45:42Z"
   },
   {
     "id": "cont_000173",
@@ -2754,12 +2754,12 @@
     "customer_id": "cust_000218",
     "owner_id": "own_001",
     "status": "churned",
-    "created_at": "2023-07-26T23:39:00Z",
-    "updated_at": "2023-11-28T23:39:00Z",
+    "created_at": "2023-07-27T00:45:42Z",
+    "updated_at": "2023-11-29T00:45:42Z",
     "source_system": "hubspot",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "03/09/2026 23:39"
+    "last_synced_at": "03/10/2026 00:45"
   },
   {
     "id": "cont_000032",
@@ -2773,13 +2773,13 @@
     "customer_id": "cust_000226",
     "owner_id": "own_001",
     "status": "inactive",
-    "created_at": "2022-12-14T23:39:00Z",
-    "updated_at": "2023-10-17T23:39:00Z",
+    "created_at": "2022-12-15T00:45:42Z",
+    "updated_at": "2023-10-18T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-62645",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-19T23:39:00Z",
+    "last_synced_at": "2026-03-20T00:45:42Z",
     "firstName": "Stephanie"
   },
   {
@@ -2795,13 +2795,13 @@
     "owner_id": "orphan_617617",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/kramirez",
-    "created_at": "2023-01-30T23:39:00Z",
-    "updated_at": "2024-03-25 23:39:00",
+    "created_at": "2023-01-31T00:45:42Z",
+    "updated_at": "2024-03-26 00:45:42",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-47551",
     "sync_status": "SYNCED",
     "sync_version": 3,
-    "last_synced_at": "2026-03-01T23:39:00Z"
+    "last_synced_at": "2026-03-02T00:45:42Z"
   },
   {
     "id": "cont_000374",
@@ -2816,13 +2816,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/johnsonsamantha",
-    "created_at": "03/24/2023 23:39",
-    "updated_at": "2024-07-04T23:39:00Z",
+    "created_at": "03/25/2023 00:45",
+    "updated_at": "2024-07-05T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-73124",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-29T23:39:00Z"
+    "last_synced_at": "2026-03-30T00:45:42Z"
   },
   {
     "id": "cont_000008",
@@ -2837,13 +2837,13 @@
     "owner_id": "own_001",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/aguilarsharon",
-    "created_at": "2022-10-08T23:39:00Z",
-    "updated_at": "2023-12-28T23:39:00Z",
+    "created_at": "2022-10-09T00:45:42Z",
+    "updated_at": "2023-12-29T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-87152",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "cont_000101",
@@ -2857,13 +2857,13 @@
     "owner_id": "own_001",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/barberbrenda",
-    "created_at": "2021-12-13T23:39:00Z",
-    "updated_at": "2024-07-29T23:39:00Z",
+    "created_at": "2021-12-14T00:45:42Z",
+    "updated_at": "2024-07-30T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-92078",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-07-26T23:39:00Z",
+    "last_synced_at": "2024-07-27T00:45:42Z",
     "firstName": "Elizabeth",
     "lastName": "Clark"
   },
@@ -2881,13 +2881,13 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/tbryant",
-    "created_at": "2023-01-11T23:39:00Z",
-    "updated_at": "2023.11.16 23:39:00",
+    "created_at": "2023-01-12T00:45:42Z",
+    "updated_at": "2023.11.17 00:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-47540",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-28T23:39:00Z",
+    "last_synced_at": "2026-03-29T00:45:42Z",
     "lastName": "Hansen"
   },
   {
@@ -2902,15 +2902,15 @@
     "customer_id": "cust_000119",
     "owner_id": "rep_99",
     "status": "active",
-    "created_at": "2022.10.02 23:39:00",
+    "created_at": "2022.10.03 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-42192",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-08T23:39:00Z",
+    "last_synced_at": "2026-04-09T00:45:42Z",
     "lastName": "Stevens",
     "is_deleted": false,
-    "deleted_at": "2024-09-18T15:39:00Z",
+    "deleted_at": "2024-09-18T16:45:42Z",
     "duplicate_of": "cont_000177"
   },
   {
@@ -2926,12 +2926,12 @@
     "customer_id": "orphan_765280",
     "owner_id": "owner_03",
     "status": "active",
-    "created_at": "2023-07-01T23:39:00Z",
+    "created_at": "2023-07-02T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-92349",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-23T23:39:00Z"
+    "last_synced_at": "2026-03-24T00:45:42Z"
   },
   {
     "id": "cont_000261",
@@ -2946,13 +2946,13 @@
     "customer_id": "cust_000199",
     "owner_id": "owner_03",
     "linkedin_url": "https://linkedin.com/in/jeffreybailey",
-    "created_at": "2022-02-10T23:39:00Z",
-    "updated_at": "2024-01-27T23:39:00Z",
+    "created_at": "2022-02-11T00:45:42Z",
+    "updated_at": "2024-01-28T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-65425",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-07T23:39:00Z",
+    "last_synced_at": "2026-03-08T00:45:42Z",
     "Status": "active"
   },
   {
@@ -2969,13 +2969,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/ucervantes",
-    "created_at": "2021-10-09T23:39:00Z",
-    "updated_at": "2024-01-03T23:39:00Z",
+    "created_at": "2021-10-10T00:45:42Z",
+    "updated_at": "2024-01-04T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-65032",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-12-15T23:39:00Z"
+    "last_synced_at": "2023-12-16T00:45:42Z"
   },
   {
     "id": "cont_000315",
@@ -2990,13 +2990,13 @@
     "owner_id": "OWN_002",
     "status": "lost",
     "linkedin_url": "https://linkedin.com/in/tracy75",
-    "created_at": "2022.06.26 23:39:00",
-    "updated_at": "2024-04-23T23:39:00Z",
+    "created_at": "2022.06.27 00:45:42",
+    "updated_at": "2024-04-24T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-35322",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-04-05T23:39:00Z",
+    "last_synced_at": "2026-04-06T00:45:42Z",
     "firstName": null
   },
   {
@@ -3012,8 +3012,8 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/james48",
-    "created_at": "2023-04-23T23:39:00Z",
-    "updated_at": "2023-11-08T23:39:00Z",
+    "created_at": "2023-04-24T00:45:42Z",
+    "updated_at": "2023-11-09T00:45:42Z",
     "source_system": "zoho",
     "sync_status": "ok",
     "sync_version": 1,
@@ -3032,13 +3032,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/stevendecker",
-    "created_at": "2022-11-13T23:39:00Z",
-    "updated_at": "2024-07-09 23:39:00",
+    "created_at": "2022-11-14T00:45:42Z",
+    "updated_at": "2024-07-10 00:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-75548",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-06-16T23:39:00Z",
+    "last_synced_at": "2024-06-17T00:45:42Z",
     "lastName": "Miller",
     "contact": {
       "first_name": "Andrew",
@@ -3058,12 +3058,12 @@
     "owner_id": "orphan_356973",
     "status": "closed",
     "linkedin_url": "https://linkedin.com/in/josejensen",
-    "created_at": "2023-09-26T23:39:00Z",
+    "created_at": "2023-09-27T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-19193",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2023-12-10T23:39:00Z",
+    "last_synced_at": "2023-12-11T00:45:42Z",
     "lastName": "Rodriguez"
   },
   {
@@ -3078,13 +3078,13 @@
     "customer_id": "cust_000247",
     "owner_id": "owner_03",
     "status": "active",
-    "created_at": "2022-08-10T23:39:00Z",
-    "updated_at": "2023.12.30 23:39:00",
+    "created_at": "2022-08-11T00:45:42Z",
+    "updated_at": "2023.12.31 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-45085",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-09T23:39:00Z",
+    "last_synced_at": "2026-04-10T00:45:42Z",
     "contact": {
       "first_name": "Paula",
       "last_name": "Morales",
@@ -3103,13 +3103,13 @@
     "company_id": "comp_000101",
     "owner_id": "own_001",
     "status": "churned",
-    "created_at": "2023-06-01T23:39:00Z",
-    "updated_at": "2023-11-15T23:39:00Z",
+    "created_at": "2023-06-02T00:45:42Z",
+    "updated_at": "2023-11-16T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-74618",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-06T23:39:00Z"
+    "last_synced_at": "2026-04-07T00:45:42Z"
   },
   {
     "id": "cont_000122",
@@ -3125,13 +3125,13 @@
     "owner_id": "orphan_731678",
     "status": "UNKNOWN",
     "linkedin_url": "https://linkedin.com/in/mbennett",
-    "updated_at": "2023-10-10T23:39:00Z",
+    "updated_at": "2023-10-11T00:45:42Z",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-63706",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2023-09-23T23:39:00Z",
-    "created_date": "2024-02-15T05:39:00Z"
+    "last_synced_at": "2023-09-24T00:45:42Z",
+    "created_date": "2024-02-15T06:45:42Z"
   },
   {
     "id": "cont_000368",
@@ -3145,15 +3145,15 @@
     "customer_id": "cust_000113",
     "owner_id": "owner_03",
     "status": "active",
-    "created_at": "2022-07-07T23:39:00Z",
+    "created_at": "2022-07-08T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-77589",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-06T23:39:00Z",
+    "last_synced_at": "2026-03-07T00:45:42Z",
     "lastName": "Lamb",
     "is_deleted": "true",
-    "deleted_at": "2023-04-27T01:39:00Z"
+    "deleted_at": "2023-04-27T02:45:42Z"
   },
   {
     "id": "cont_000175",
@@ -3168,12 +3168,12 @@
     "owner_id": "owner_03",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/msantiago",
-    "created_at": "02/16/2022 23:39",
+    "created_at": "02/17/2022 00:45",
     "source_system": "zoho",
     "source_record_id": "SRC-80973",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2023-09-25T23:39:00Z",
+    "last_synced_at": "2023-09-26T00:45:42Z",
     "lastName": "Jensen"
   },
   {
@@ -3190,12 +3190,12 @@
     "owner_id": "rep_99",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/transtephanie",
-    "created_at": "2022-01-05T23:39:00Z",
+    "created_at": "2022-01-06T00:45:42Z",
     "source_system": "manual",
     "source_record_id": "SRC-77589",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-02-27T23:39:00Z",
+    "last_synced_at": "2026-02-28T00:45:42Z",
     "contact": {
       "first_name": "Nicolas",
       "last_name": "Keller",
@@ -3215,12 +3215,12 @@
     "owner_id": "owner_03",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/vdillon",
-    "created_at": "2022-03-01T23:39:00Z",
-    "updated_at": "2024-05-06T23:39:00Z",
+    "created_at": "2022-03-02T00:45:42Z",
+    "updated_at": "2024-05-07T00:45:42Z",
     "source_system": "ZoHo",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2026-03-15T23:39:00Z"
+    "last_synced_at": "2026-03-16T00:45:42Z"
   },
   {
     "id": "cont_000061",
@@ -3235,14 +3235,14 @@
     "customer_id": "cust_000247",
     "owner_id": "rep_99",
     "status": "inactive",
-    "created_at": "2022-01-12T23:39:00Z",
-    "updated_at": "2024-07-21 23:39:00",
+    "created_at": "2022-01-13T00:45:42Z",
+    "updated_at": "2024-07-22 00:45:42",
     "source_system": "Hubspot",
     "sync_status": "SYNCED",
     "sync_version": 1,
-    "last_synced_at": "2026-03-25T23:39:00Z",
+    "last_synced_at": "2026-03-26T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2024-05-16T18:39:00Z"
+    "deleted_at": "2024-05-16T19:45:42Z"
   },
   {
     "id": "cont_000066",
@@ -3255,12 +3255,12 @@
     "job_title": "Herpetologist",
     "owner_id": "orphan_899393",
     "status": "churned",
-    "created_at": "2023.08.16 23:39:00",
+    "created_at": "2023.08.17 00:45:42",
     "source_system": "pipedrive",
     "source_record_id": "SRC-72224",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-03-05T23:39:00Z"
+    "last_synced_at": "2024-03-06T00:45:42Z"
   },
   {
     "id": "cont_000201",
@@ -3274,13 +3274,13 @@
     "company_id": "comp_000075",
     "owner_id": "manual_queue",
     "linkedin_url": "https://linkedin.com/in/campbellmarvin",
-    "created_at": "2023-05-18T23:39:00Z",
-    "updated_at": "10/24/2023 23:39",
+    "created_at": "2023-05-19T00:45:42Z",
+    "updated_at": "10/25/2023 00:45",
     "source_system": "manual_entry",
     "source_record_id": "SRC-41965",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2023-10-23T23:39:00Z",
+    "last_synced_at": "2023-10-24T00:45:42Z",
     "Status": "active"
   },
   {
@@ -3296,13 +3296,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/lonniesims",
-    "created_at": "2022.08.07 23:39:00",
-    "updated_at": "2024-04-24T23:39:00Z",
+    "created_at": "2022.08.08 00:45:42",
+    "updated_at": "2024-04-25T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-23325",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-03T23:39:00Z"
+    "last_synced_at": "2026-03-04T00:45:42Z"
   },
   {
     "id": "cont_000323",
@@ -3318,15 +3318,15 @@
     "owner_id": "owner_03",
     "status": "UNKNOWN",
     "linkedin_url": "https://linkedin.com/in/melanie40",
-    "created_at": "2023.01.25 23:39:00",
-    "updated_at": "2024.02.23 23:39:00",
+    "created_at": "2023.01.26 00:45:42",
+    "updated_at": "2024.02.24 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-88603",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-02-28T23:39:00Z",
+    "last_synced_at": "2026-03-01T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2025-10-23T15:39:00Z"
+    "deleted_at": "2025-10-23T16:45:42Z"
   },
   {
     "id": "cont_000263",
@@ -3341,13 +3341,13 @@
     "customer_id": "cust_000141",
     "owner_id": "rep_99",
     "status": "active",
-    "created_at": "2022-10-19T23:39:00Z",
-    "updated_at": "2024-02-02T23:39:00Z",
+    "created_at": "2022-10-20T00:45:42Z",
+    "updated_at": "2024-02-03T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-56171",
     "sync_status": "pending",
     "sync_version": 1,
-    "last_synced_at": "2026-03-30T23:39:00Z",
+    "last_synced_at": "2026-03-31T00:45:42Z",
     "lastName": "Wheeler"
   },
   {
@@ -3363,13 +3363,13 @@
     "owner_id": "own_001",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/anthonywood",
-    "created_at": "2021.10.04 23:39:00",
-    "updated_at": "2024-03-06T23:39:00Z",
+    "created_at": "2021.10.05 00:45:42",
+    "updated_at": "2024-03-07T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-13965",
     "sync_status": "ok",
     "sync_version": 4,
-    "last_synced_at": "2026-03-29T23:39:00Z"
+    "last_synced_at": "2026-03-30T00:45:42Z"
   },
   {
     "id": "cont_000385",
@@ -3384,13 +3384,13 @@
     "customer_id": "cust_000177",
     "owner_id": "own_001",
     "status": "active",
-    "created_at": "2021-10-25T23:39:00Z",
-    "updated_at": "2024-02-20T23:39:00Z",
+    "created_at": "2021-10-26T00:45:42Z",
+    "updated_at": "2024-02-21T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-53439",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2024-02-01T23:39:00Z"
+    "last_synced_at": "2024-02-02T00:45:42Z"
   },
   {
     "id": "cont_000334",
@@ -3406,13 +3406,13 @@
     "owner_id": "manual_queue",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/osweeney",
-    "created_at": "2022-12-23T23:39:00Z",
-    "updated_at": "2024-06-27T23:39:00Z",
+    "created_at": "2022-12-24T00:45:42Z",
+    "updated_at": "2024-06-28T00:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-18953",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "cont_000214",
@@ -3428,12 +3428,12 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/richard14",
-    "created_at": "2021-11-24T23:39:00Z",
+    "created_at": "2021-11-25T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-64680",
     "sync_status": "SYNCED",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-06T23:39:00Z"
+    "last_synced_at": "2026-03-07T00:45:42Z"
   },
   {
     "id": "cont_000358",
@@ -3447,13 +3447,13 @@
     "owner_id": "owner_03",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/jfranklin",
-    "created_at": "2022.09.03 23:39:00",
-    "updated_at": "2024.05.03 23:39:00",
+    "created_at": "2022.09.04 00:45:42",
+    "updated_at": "2024.05.04 00:45:42",
     "source_system": "salesforce",
     "source_record_id": "SRC-43282",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-02T23:39:00Z"
+    "last_synced_at": "2026-03-03T00:45:42Z"
   },
   {
     "id": "cont_000155",
@@ -3468,15 +3468,15 @@
     "owner_id": "sales_17",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/collinsjavier",
-    "created_at": "2023-05-17T23:39:00Z",
-    "updated_at": "2024-07-01T23:39:00Z",
+    "created_at": "2023-05-18T00:45:42Z",
+    "updated_at": "2024-07-02T00:45:42Z",
     "source_system": "INTERNAL_CRM",
     "source_record_id": "SRC-21526",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-06-05T23:39:00Z",
+    "last_synced_at": "2024-06-06T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2023-06-28T05:39:00Z"
+    "deleted_at": "2023-06-28T06:45:42Z"
   },
   {
     "id": "cont_000356",
@@ -3491,15 +3491,15 @@
     "owner_id": "owner_03",
     "status": "pending",
     "linkedin_url": "https://linkedin.com/in/jeremiahwalton",
-    "created_at": "2021-05-30T23:39:00Z",
-    "updated_at": "02/05/2024 23:39",
+    "created_at": "2021-05-31T00:45:42Z",
+    "updated_at": "02/06/2024 00:45",
     "source_system": "internal_crm",
     "source_record_id": "SRC-76970",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-02T23:39:00Z",
+    "last_synced_at": "2026-03-03T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-05-08T23:39:00Z"
+    "deleted_at": "2026-05-09T00:45:42Z"
   },
   {
     "id": "cont_000048",
@@ -3515,12 +3515,12 @@
     "owner_id": "owner_03",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/hodgejoshua",
-    "created_at": "2023-04-13T23:39:00Z",
-    "updated_at": "2024-02-25T23:39:00Z",
+    "created_at": "2023-04-14T00:45:42Z",
+    "updated_at": "2024-02-26T00:45:42Z",
     "source_system": "salesforce",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-04-09T23:39:00Z"
+    "last_synced_at": "2026-04-10T00:45:42Z"
   },
   {
     "id": "cont_000143",
@@ -3534,13 +3534,13 @@
     "owner_id": "orphan_839653",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/matthew07",
-    "created_at": "2022-06-20T23:39:00Z",
-    "updated_at": "2024-03-24T23:39:00Z",
+    "created_at": "2022-06-21T00:45:42Z",
+    "updated_at": "2024-03-25T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-13935",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-25T23:39:00Z",
+    "last_synced_at": "2026-03-26T00:45:42Z",
     "lastName": "Cruz"
   },
   {
@@ -3557,13 +3557,13 @@
     "owner_id": "OWN_002",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/david05",
-    "created_at": "2022.12.08 23:39:00",
-    "updated_at": "2024-06-24T23:39:00Z",
+    "created_at": "2022.12.09 00:45:42",
+    "updated_at": "2024-06-25T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-46411",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-24T23:39:00Z"
+    "last_synced_at": "2026-03-25T00:45:42Z"
   },
   {
     "id": "cont_000390",
@@ -3579,13 +3579,13 @@
     "owner_id": "owner_03",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/karen43",
-    "created_at": "2021-12-12T23:39:00Z",
-    "updated_at": "2024-04-03T23:39:00Z",
+    "created_at": "2021-12-13T00:45:42Z",
+    "updated_at": "2024-04-04T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-86222",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2024-02-28T23:39:00Z"
+    "last_synced_at": "2024-02-29T00:45:42Z"
   },
   {
     "id": "cont_000208",
@@ -3600,12 +3600,12 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/edixon",
-    "created_at": "2021-10-14T23:39:00Z",
+    "created_at": "2021-10-15T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-32962",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "firstName": "Robert",
     "contact": {
       "first_name": "Robert",
@@ -3627,13 +3627,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/douglaslester",
-    "created_at": "2021-06-06T23:39:00Z",
-    "updated_at": "2023-12-02T23:39:00Z",
+    "created_at": "2021-06-07T00:45:42Z",
+    "updated_at": "2023-12-03T00:45:42Z",
     "source_system": "Hubspot",
     "source_record_id": "SRC-96759",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2026-04-12T23:39:00Z",
+    "last_synced_at": "2026-04-13T00:45:42Z",
     "duplicate_of": "cont_000189"
   },
   {
@@ -3650,15 +3650,15 @@
     "owner_id": "own_001",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/mcleanmanuel",
-    "created_at": "2022-08-29T23:39:00Z",
-    "updated_at": "2024.01.14 23:39:00",
+    "created_at": "2022-08-30T00:45:42Z",
+    "updated_at": "2024.01.15 00:45:42",
     "source_system": "manual_entry",
     "source_record_id": "SRC-17810",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-02T23:39:00Z",
+    "last_synced_at": "2026-03-03T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-06-14T23:39:00Z"
+    "deleted_at": "2026-06-15T00:45:42Z"
   },
   {
     "id": "cont_000133",
@@ -3672,12 +3672,12 @@
     "customer_id": "cust_000252",
     "owner_id": "owner_03",
     "status": "inactive",
-    "created_at": "2021.12.30 23:39:00",
+    "created_at": "2021.12.31 00:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-77936",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-17T23:39:00Z"
+    "last_synced_at": "2026-03-18T00:45:42Z"
   },
   {
     "id": "cont_000107",
@@ -3692,13 +3692,13 @@
     "customer_id": "cust_000229",
     "owner_id": "OWN_002",
     "status": "active",
-    "created_at": "2023-08-23T23:39:00Z",
+    "created_at": "2023-08-24T00:45:42Z",
     "updated_at": null,
     "source_system": "SalesForce",
     "source_record_id": "SRC-15682",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2024-04-02T23:39:00Z"
+    "last_synced_at": "2024-04-03T00:45:42Z"
   },
   {
     "id": "cont_000100",
@@ -3713,14 +3713,14 @@
     "owner_id": "owner_03",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/aaron48",
-    "created_at": "2023.02.07 23:39:00",
-    "updated_at": "2024-07-12T23:39:00Z",
+    "created_at": "2023.02.08 00:45:42",
+    "updated_at": "2024-07-13T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-07-10T23:39:00Z",
+    "last_synced_at": "2024-07-11T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2022-12-26T08:39:00Z"
+    "deleted_at": "2022-12-26T09:45:42Z"
   },
   {
     "id": "cont_000145",
@@ -3735,13 +3735,13 @@
     "owner_id": "sales_17",
     "status": "ACTIVE",
     "linkedin_url": "https://linkedin.com/in/usanchez",
-    "created_at": "2022-11-08T23:39:00Z",
-    "updated_at": "2023.09.21 23:39:00",
+    "created_at": "2022-11-09T00:45:42Z",
+    "updated_at": "2023.09.22 00:45:42",
     "source_system": null,
     "source_record_id": "SRC-91986",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "Status": "active"
   },
   {
@@ -3756,13 +3756,13 @@
     "owner_id": "owner_03",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/sherylmoore",
-    "created_at": "2022-03-17T23:39:00Z",
-    "updated_at": "2023-10-07T23:39:00Z",
+    "created_at": "2022-03-18T00:45:42Z",
+    "updated_at": "2023-10-08T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-57407",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-04T23:39:00Z",
+    "last_synced_at": "2026-03-05T00:45:42Z",
     "firstName": "Angela"
   },
   {
@@ -3778,13 +3778,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/hsmith",
-    "created_at": "2022-02-14T23:39:00Z",
-    "updated_at": "2024-06-14 23:39:00",
+    "created_at": "2022-02-15T00:45:42Z",
+    "updated_at": "2024-06-15 00:45:42",
     "source_system": "manual_entry",
     "source_record_id": "SRC-75593",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-05T23:39:00Z"
+    "last_synced_at": "2026-04-06T00:45:42Z"
   },
   {
     "id": "cont_000266",
@@ -3799,13 +3799,13 @@
     "owner_id": "own_001",
     "status": "UNKNOWN",
     "linkedin_url": "https://linkedin.com/in/migueldominguez",
-    "created_at": "2023.07.17 23:39:00",
+    "created_at": "2023.07.18 00:45:42",
     "updated_at": null,
     "source_system": "salesforce",
     "source_record_id": "SRC-11045",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "cont_000072",
@@ -3818,13 +3818,13 @@
     "owner_id": "rep_99",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/klyons",
-    "created_at": "2022.03.27 23:39:00",
-    "updated_at": "2023-11-06T23:39:00Z",
+    "created_at": "2022.03.28 00:45:42",
+    "updated_at": "2023-11-07T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-80770",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-30T23:39:00Z",
+    "last_synced_at": "2026-03-31T00:45:42Z",
     "lastName": "Boone",
     "contact": {
       "first_name": "Dale",
@@ -3846,12 +3846,12 @@
     "owner_id": "owner_03",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/melissa40",
-    "created_at": "2021-09-19T23:39:00Z",
-    "updated_at": "2024-05-06T23:39:00Z",
+    "created_at": "2021-09-20T00:45:42Z",
+    "updated_at": "2024-05-07T00:45:42Z",
     "source_system": "manual_entry",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "cont_000366",
@@ -3866,13 +3866,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/singhsarah",
-    "created_at": "2021-07-27T23:39:00Z",
-    "updated_at": "2023-10-10T23:39:00Z",
+    "created_at": "2021-07-28T00:45:42Z",
+    "updated_at": "2023-10-11T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-35388",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2026-03-17T23:39:00Z"
+    "last_synced_at": "2026-03-18T00:45:42Z"
   },
   {
     "id": "cont_000169",
@@ -3886,13 +3886,13 @@
     "company_id": "comp_000102",
     "owner_id": "own_001",
     "status": "active",
-    "created_at": "2021.12.20 23:39:00",
+    "created_at": "2021.12.21 00:45:42",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-69318",
     "sync_status": "ok",
     "sync_version": "4",
-    "last_synced_at": "2026-03-09T23:39:00Z",
-    "last_modified": "2024-01-29T03:39:00Z"
+    "last_synced_at": "2026-03-10T00:45:42Z",
+    "last_modified": "2024-01-29T04:45:42Z"
   },
   {
     "id": "cont_000416",
@@ -3907,13 +3907,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/dmartin",
-    "created_at": "2021.12.20 23:39:00",
-    "updated_at": "2024-01-18 23:39:00",
+    "created_at": "2021.12.21 00:45:42",
+    "updated_at": "2024-01-19 00:45:42",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-83812",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-18T23:39:00Z",
+    "last_synced_at": "2026-03-19T00:45:42Z",
     "contact": {
       "first_name": "Joseph",
       "last_name": "Mercado",
@@ -3931,12 +3931,12 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/sarahcowan",
-    "created_at": "2023-02-01T23:39:00Z",
-    "updated_at": "2024-07-19T23:39:00Z",
+    "created_at": "2023-02-02T00:45:42Z",
+    "updated_at": "2024-07-20T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "04/04/2026 23:39",
+    "last_synced_at": "04/05/2026 00:45",
     "firstName": "Martha"
   },
   {
@@ -3951,12 +3951,12 @@
     "customer_id": "cust_000063",
     "owner_id": "owner_03",
     "status": "churned",
-    "created_at": "2022-12-01T23:39:00Z",
-    "updated_at": "2024-01-11T23:39:00Z",
+    "created_at": "2022-12-02T00:45:42Z",
+    "updated_at": "2024-01-12T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "1702589940"
+    "last_synced_at": "1702593942"
   },
   {
     "id": "cont_000384",
@@ -3970,17 +3970,17 @@
     "owner_id": "orphan_174269",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/ksullivan",
-    "created_at": "2022.01.19 23:39:00",
-    "updated_at": "2024-04-10T23:39:00Z",
+    "created_at": "2022.01.20 00:45:42",
+    "updated_at": "2024-04-11T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-42601",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-04-11T23:39:00Z",
+    "last_synced_at": "2026-04-12T00:45:42Z",
     "firstName": "Alexis",
     "lastName": "Dean",
     "is_deleted": false,
-    "deleted_at": "2023-05-06T12:39:00Z"
+    "deleted_at": "2023-05-06T13:45:42Z"
   },
   {
     "id": "cont_000281",
@@ -3995,13 +3995,13 @@
     "owner_id": "owner_03",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/lukecase",
-    "created_at": "2022-04-26T23:39:00Z",
-    "updated_at": "2024-05-23T23:39:00Z",
+    "created_at": "2022-04-27T00:45:42Z",
+    "updated_at": "2024-05-24T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-28254",
     "sync_status": "SYNCED",
     "sync_version": "3",
-    "last_synced_at": "2026-04-13T23:39:00Z"
+    "last_synced_at": "2026-04-14T00:45:42Z"
   },
   {
     "id": "cont_000144",
@@ -4015,13 +4015,13 @@
     "owner_id": "own_001",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/alara",
-    "created_at": "2022.01.07 23:39:00",
-    "updated_at": "2024.03.11 23:39:00",
+    "created_at": "2022.01.08 00:45:42",
+    "updated_at": "2024.03.12 00:45:42",
     "source_system": "internal_crm",
     "source_record_id": "SRC-18965",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-28T23:39:00Z"
+    "last_synced_at": "2026-03-29T00:45:42Z"
   },
   {
     "id": "cont_000148",
@@ -4037,12 +4037,12 @@
     "owner_id": "own_001",
     "status": "UNKNOWN",
     "linkedin_url": "https://linkedin.com/in/ahaynes",
-    "created_at": "2023-02-13T23:39:00Z",
+    "created_at": "2023-02-14T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-22103",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-09T23:39:00Z"
+    "last_synced_at": "2026-04-10T00:45:42Z"
   },
   {
     "id": "cont_000139",
@@ -4058,12 +4058,12 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/ramoswilliam",
-    "created_at": "2023-05-05T23:39:00Z",
+    "created_at": "2023-05-06T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-45339",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2023-10-28T23:39:00Z"
+    "last_synced_at": "2023-10-29T00:45:42Z"
   },
   {
     "id": "cont_000212",
@@ -4077,12 +4077,12 @@
     "company_id": "comp_000137",
     "owner_id": "manual_queue",
     "status": "active",
-    "created_at": "12/10/2021 23:39",
+    "created_at": "12/11/2021 00:45",
     "source_system": "internal_crm",
     "source_record_id": "SRC-54490",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "03/13/2026 23:39"
+    "last_synced_at": "03/14/2026 00:45"
   },
   {
     "id": "cont_000394",
@@ -4096,14 +4096,14 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/courtney70",
-    "updated_at": "2024-01-16T23:39:00Z",
+    "updated_at": "2024-01-17T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-57799",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-21T23:39:00Z",
+    "last_synced_at": "2026-03-22T00:45:42Z",
     "firstName": "Jennifer",
-    "created_date": "2021-06-12T23:39:00Z"
+    "created_date": "2021-06-13T00:45:42Z"
   },
   {
     "id": "cont_000364",
@@ -4118,13 +4118,13 @@
     "owner_id": "OWN_002",
     "status": "closed",
     "linkedin_url": "https://linkedin.com/in/bruce94",
-    "created_at": "2023-07-01T23:39:00Z",
-    "updated_at": "2023-12-04T23:39:00Z",
+    "created_at": "2023-07-02T00:45:42Z",
+    "updated_at": "2023-12-05T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-38804",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2026-03-12T23:39:00Z"
+    "last_synced_at": "2026-03-13T00:45:42Z"
   },
   {
     "id": "cont_000307",
@@ -4139,13 +4139,13 @@
     "owner_id": "owner_03",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/edward70",
-    "created_at": "2022.08.14 23:39:00",
-    "updated_at": "2023-12-22T23:39:00Z",
+    "created_at": "2022.08.15 00:45:42",
+    "updated_at": "2023-12-23T00:45:42Z",
     "source_system": "SalesForce",
     "source_record_id": "SRC-62817",
     "sync_status": "synced",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-29T23:39:00Z"
+    "last_synced_at": "2026-03-30T00:45:42Z"
   },
   {
     "id": "cont_000041",
@@ -4160,13 +4160,13 @@
     "owner_id": "rep_99",
     "status": "ACTIVE",
     "linkedin_url": "https://linkedin.com/in/alicecalderon",
-    "created_at": "2022-12-24T23:39:00Z",
-    "updated_at": "2024-03-26T23:39:00Z",
+    "created_at": "2022-12-25T00:45:42Z",
+    "updated_at": "2024-03-27T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-94596",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-06T23:39:00Z"
+    "last_synced_at": "2026-04-07T00:45:42Z"
   },
   {
     "id": "cont_000099",
@@ -4180,13 +4180,13 @@
     "owner_id": "orphan_791727",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/heatherosborn",
-    "created_at": "2022.02.05 23:39:00",
-    "updated_at": "2024.07.20 23:39:00",
+    "created_at": "2022.02.06 00:45:42",
+    "updated_at": "2024.07.21 00:45:42",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-62761",
     "sync_status": "SYNCED",
     "sync_version": 4,
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "email_address": "raymondpugh@example.net"
   },
   {
@@ -4202,12 +4202,12 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/mmassey",
-    "created_at": "2022.05.26 23:39:00",
+    "created_at": "2022.05.27 00:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-49940",
     "sync_status": "ok",
     "sync_version": "v2",
-    "last_synced_at": "2026-03-14T23:39:00Z"
+    "last_synced_at": "2026-03-15T00:45:42Z"
   },
   {
     "id": "cont_000228",
@@ -4223,13 +4223,13 @@
     "owner_id": "sales_17",
     "status": "Inactive",
     "linkedin_url": "https://linkedin.com/in/brianwhite",
-    "created_at": "2023.04.10 23:39:00",
-    "updated_at": "2024-01-10T23:39:00Z",
+    "created_at": "2023.04.11 00:45:42",
+    "updated_at": "2024-01-11T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-36382",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-21T23:39:00Z"
+    "last_synced_at": "2026-03-22T00:45:42Z"
   },
   {
     "id": "cont_000033",
@@ -4244,12 +4244,12 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/clementsandrew",
-    "created_at": "2022.10.22 23:39:00",
+    "created_at": "2022.10.23 00:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-91946",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-03-04T23:39:00Z"
+    "last_synced_at": "2026-03-05T00:45:42Z"
   },
   {
     "id": "cont_000168",
@@ -4265,13 +4265,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/martindavid",
-    "created_at": "2021-11-11T23:39:00Z",
-    "updated_at": "2023-12-25T23:39:00Z",
+    "created_at": "2021-11-12T00:45:42Z",
+    "updated_at": "2023-12-26T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-66784",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-07T23:39:00Z",
+    "last_synced_at": "2026-03-08T00:45:42Z",
     "contact": {
       "first_name": "Carolyn",
       "last_name": "Simmons",
@@ -4291,14 +4291,14 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/bmoyer",
-    "created_at": "2022-12-12T23:39:00Z",
+    "created_at": "2022-12-13T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-28876",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-31T23:39:00Z",
+    "last_synced_at": "2026-04-01T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2025-11-25T04:39:00Z",
+    "deleted_at": "2025-11-25T05:45:42Z",
     "email_address": "bhall@example.org"
   },
   {
@@ -4315,12 +4315,12 @@
     "owner_id": "manual_queue",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/kellygarrison",
-    "created_at": "06/06/2023 23:39",
+    "created_at": "06/07/2023 00:45",
     "source_system": "salesforce",
     "source_record_id": "SRC-81442",
     "sync_status": "ok",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "cont_000003",
@@ -4335,13 +4335,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/diana95",
-    "created_at": "2023.07.29 23:39:00",
-    "updated_at": "09/19/2023 23:39",
+    "created_at": "2023.07.30 00:45:42",
+    "updated_at": "09/20/2023 00:45",
     "source_system": "hubspot",
     "source_record_id": "SRC-85588",
     "sync_status": "SYNCED",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-31T23:39:00Z"
+    "last_synced_at": "2026-04-01T00:45:42Z"
   },
   {
     "id": "cont_000192",
@@ -4356,12 +4356,12 @@
     "customer_id": "cust_000238",
     "owner_id": "manual_queue",
     "status": "churned",
-    "created_at": "2021-12-06T23:39:00Z",
+    "created_at": "2021-12-07T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-11619",
     "sync_status": "SYNCED",
     "sync_version": 2,
-    "last_synced_at": "2026-03-05T23:39:00Z"
+    "last_synced_at": "2026-03-06T00:45:42Z"
   },
   {
     "id": "cont_000092",
@@ -4376,13 +4376,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/michelleguerrero",
-    "created_at": "2023.08.25 23:39:00",
-    "updated_at": "1703021940",
+    "created_at": "2023.08.26 00:45:42",
+    "updated_at": "1703025942",
     "source_system": "pipedrive",
     "source_record_id": "SRC-97616",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-13T23:39:00Z"
+    "last_synced_at": "2026-03-14T00:45:42Z"
   },
   {
     "id": "cont_000115",
@@ -4397,12 +4397,12 @@
     "customer_id": "cust_000260",
     "owner_id": null,
     "status": "ACTIVE",
-    "created_at": "2022-08-18T23:39:00Z",
+    "created_at": "2022-08-19T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-34833",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2024-04-17T23:39:00Z",
+    "last_synced_at": "2024-04-18T00:45:42Z",
     "contact": {
       "first_name": "Jasmine",
       "last_name": "Koch",
@@ -4422,15 +4422,15 @@
     "owner_id": "owner_03",
     "status": "UNKNOWN",
     "linkedin_url": "https://linkedin.com/in/qobrien",
-    "created_at": "2021.08.10 23:39:00",
-    "updated_at": "2024-02-11T23:39:00Z",
+    "created_at": "2021.08.11 00:45:42",
+    "updated_at": "2024-02-12T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-68697",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2024-01-29T23:39:00Z",
+    "last_synced_at": "2024-01-30T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2025.02.07 14:39:00"
+    "deleted_at": "2025.02.07 15:45:42"
   },
   {
     "id": "cont_000441",
@@ -4445,13 +4445,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/doughertynicholas",
-    "created_at": "2023.06.08 23:39:00",
-    "updated_at": "2024-04-25T23:39:00Z",
+    "created_at": "2023.06.09 00:45:42",
+    "updated_at": "2024-04-26T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-14327",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "contact": {
       "first_name": "Melissa",
       "last_name": "Wall",
@@ -4472,15 +4472,15 @@
     "owner_id": null,
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/danamontgomery",
-    "created_at": "2023-05-05T23:39:00Z",
-    "updated_at": "2024.02.18 23:39:00",
+    "created_at": "2023-05-06T00:45:42Z",
+    "updated_at": "2024.02.19 00:45:42",
     "source_system": "PipeDrive",
     "source_record_id": "SRC-65782",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-03-21T23:39:00Z",
+    "last_synced_at": "2026-03-22T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2023.02.04 08:39:00"
+    "deleted_at": "2023.02.04 09:45:42"
   },
   {
     "id": "cont_000372",
@@ -4494,12 +4494,12 @@
     "owner_id": "own_001",
     "status": "INACTIVE",
     "linkedin_url": "https://linkedin.com/in/jdavis",
-    "created_at": "2022-06-11T23:39:00Z",
+    "created_at": "2022-06-12T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-56749",
     "sync_status": "synced",
     "sync_version": null,
-    "last_synced_at": "2026-03-10T23:39:00Z"
+    "last_synced_at": "2026-03-11T00:45:42Z"
   },
   {
     "id": "cont_000243",
@@ -4513,12 +4513,12 @@
     "customer_id": "cust_000061",
     "owner_id": "sales_17",
     "status": "active",
-    "created_at": "2022-11-28T23:39:00Z",
+    "created_at": "2022-11-29T00:45:42Z",
     "source_system": "InternalCRM",
     "source_record_id": "SRC-82829",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-14T23:39:00Z",
+    "last_synced_at": "2026-03-15T00:45:42Z",
     "contact": {
       "first_name": "David",
       "last_name": "Fox",
@@ -4537,12 +4537,12 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/brittany91",
-    "created_at": "2021.09.02 23:39:00",
+    "created_at": "2021.09.03 00:45:42",
     "source_system": "hubspot",
     "source_record_id": "SRC-57422",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-10T23:39:00Z"
+    "last_synced_at": "2026-04-11T00:45:42Z"
   },
   {
     "id": "cont_000095",
@@ -4558,13 +4558,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/ncampbell",
-    "created_at": "2022-05-20T23:39:00Z",
-    "updated_at": "1712612340",
+    "created_at": "2022-05-21T00:45:42Z",
+    "updated_at": "1712616342",
     "source_system": "manual_entry",
     "source_record_id": "SRC-46616",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2026-04-08T23:39:00Z"
+    "last_synced_at": "2026-04-09T00:45:42Z"
   },
   {
     "id": "cont_000218",
@@ -4578,15 +4578,15 @@
     "owner_id": "OWN_002",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/rburns",
-    "created_at": "2021-12-02T23:39:00Z",
-    "updated_at": "2024-06-24T23:39:00Z",
+    "created_at": "2021-12-03T00:45:42Z",
+    "updated_at": "2024-06-25T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-83861",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-02-28T23:39:00Z",
+    "last_synced_at": "2026-03-01T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2026-06-03T23:39:00Z"
+    "deleted_at": "2026-06-04T00:45:42Z"
   },
   {
     "id": "cont_000189",
@@ -4602,12 +4602,12 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/douglaslester",
-    "created_at": "2023-08-01T23:39:00Z",
+    "created_at": "2023-08-02T00:45:42Z",
     "source_system": "Hubspot",
     "source_record_id": "SRC-96759",
     "sync_status": "FAILED",
     "sync_version": 3,
-    "last_synced_at": "2023-12-25T23:39:00Z"
+    "last_synced_at": "2023-12-26T00:45:42Z"
   },
   {
     "id": "cont_000150",
@@ -4623,13 +4623,13 @@
     "owner_id": "sales_17",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/warebrian",
-    "created_at": "2023-01-08T23:39:00Z",
-    "updated_at": "2024-06-03T23:39:00Z",
+    "created_at": "2023-01-09T00:45:42Z",
+    "updated_at": "2024-06-04T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-28081",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-15T23:39:00Z"
+    "last_synced_at": "2026-03-16T00:45:42Z"
   },
   {
     "id": "cont_000350",
@@ -4645,13 +4645,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/paul00",
-    "created_at": "09/25/2022 23:39",
-    "updated_at": "2024-02-23T23:39:00Z",
+    "created_at": "09/26/2022 00:45",
+    "updated_at": "2024-02-24T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-26558",
     "sync_status": "synced",
     "sync_version": null,
-    "last_synced_at": "2026-03-16T23:39:00Z"
+    "last_synced_at": "2026-03-17T00:45:42Z"
   },
   {
     "id": "cont_000420",
@@ -4665,13 +4665,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/wferguson",
-    "created_at": "2023-09-15T23:39:00Z",
-    "updated_at": "2024-07-10T23:39:00Z",
+    "created_at": "2023-09-16T00:45:42Z",
+    "updated_at": "2024-07-11T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-61452",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-04-07T23:39:00Z"
+    "last_synced_at": "2026-04-08T00:45:42Z"
   },
   {
     "id": "cont_000246",
@@ -4686,13 +4686,13 @@
     "owner_id": "sales_17",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/kelly01",
-    "created_at": "2022.06.29 23:39:00",
-    "updated_at": "2024-01-14T23:39:00Z",
+    "created_at": "2022.06.30 00:45:42",
+    "updated_at": "2024-01-15T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-77102",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-26T23:39:00Z",
+    "last_synced_at": "2026-03-27T00:45:42Z",
     "lastName": "Lewis",
     "firstName": "Shelby"
   },
@@ -4710,13 +4710,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/castropeter",
-    "created_at": "2023-10-04T23:39:00Z",
-    "updated_at": "09/20/2023 23:39",
+    "created_at": "2023-10-05T00:45:42Z",
+    "updated_at": "09/21/2023 00:45",
     "source_system": "salesforce",
     "source_record_id": "SRC-37385",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-02-27T23:39:00Z"
+    "last_synced_at": "2026-02-28T00:45:42Z"
   },
   {
     "id": "cont_000404",
@@ -4731,13 +4731,13 @@
     "customer_id": "cust_000224",
     "owner_id": "OWN_002",
     "status": "active",
-    "created_at": "2021-07-28T23:39:00Z",
-    "updated_at": "2024-02-01T23:39:00Z",
+    "created_at": "2021-07-29T00:45:42Z",
+    "updated_at": "2024-02-02T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-67851",
     "sync_status": "SYNCED",
     "sync_version": null,
-    "last_synced_at": "2026-03-27T23:39:00Z"
+    "last_synced_at": "2026-03-28T00:45:42Z"
   },
   {
     "id": "cont_000141",
@@ -4752,15 +4752,15 @@
     "owner_id": "own_001",
     "status": "inactive",
     "linkedin_url": "https://linkedin.com/in/helen91",
-    "created_at": "2021-07-05T23:39:00Z",
-    "updated_at": "2023-09-17T23:39:00Z",
+    "created_at": "2021-07-06T00:45:42Z",
+    "updated_at": "2023-09-18T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-74847",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-23T23:39:00Z",
+    "last_synced_at": "2026-03-24T00:45:42Z",
     "is_deleted": 1,
-    "deleted_at": "2025-05-19T04:39:00Z"
+    "deleted_at": "2025-05-19T05:45:42Z"
   },
   {
     "id": "cont_000027",
@@ -4776,12 +4776,12 @@
     "owner_id": "own_001",
     "status": "CHURNED",
     "linkedin_url": "https://linkedin.com/in/woodjuan",
-    "created_at": "04/22/2021 23:39",
+    "created_at": "04/23/2021 00:45",
     "source_system": "MANUAL_ENTRY",
     "source_record_id": "SRC-44445",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2023-12-10T23:39:00Z"
+    "last_synced_at": "2023-12-11T00:45:42Z"
   },
   {
     "id": "cont_000432",
@@ -4797,13 +4797,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/foxerica",
-    "created_at": "2023-09-13T23:39:00Z",
-    "updated_at": "2023-10-23T23:39:00Z",
+    "created_at": "2023-09-14T00:45:42Z",
+    "updated_at": "2023-10-24T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-64609",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-04-07T23:39:00Z",
+    "last_synced_at": "2026-04-08T00:45:42Z",
     "duplicate_of": "cont_000391"
   },
   {
@@ -4818,12 +4818,12 @@
     "owner_id": "rep_99",
     "status": "pending",
     "linkedin_url": "https://linkedin.com/in/scotthill",
-    "created_at": "2022.04.28 23:39:00",
+    "created_at": "2022.04.29 00:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-32607",
     "sync_status": "synced",
     "sync_version": "3",
-    "last_synced_at": "2026-03-20T23:39:00Z",
+    "last_synced_at": "2026-03-21T00:45:42Z",
     "lastName": "Rios",
     "contact": {
       "first_name": "Melissa",
@@ -4831,7 +4831,7 @@
       "email": "cookemily@example.com"
     },
     "is_deleted": true,
-    "deleted_at": "2025-09-09T04:39:00Z"
+    "deleted_at": "2025-09-09T05:45:42Z"
   },
   {
     "id": "cont_000206",
@@ -4847,13 +4847,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/amandatran",
-    "created_at": "2021-07-14T23:39:00Z",
-    "updated_at": "2024-05-12T23:39:00Z",
+    "created_at": "2021-07-15T00:45:42Z",
+    "updated_at": "2024-05-13T00:45:42Z",
     "source_system": "pipedrive",
     "source_record_id": "SRC-26129",
     "sync_status": "pending",
     "sync_version": 4,
-    "last_synced_at": "2026-03-05T23:39:00Z"
+    "last_synced_at": "2026-03-06T00:45:42Z"
   },
   {
     "id": "cont_000063",
@@ -4868,13 +4868,13 @@
     "owner_id": "sales_17",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/blewis",
-    "created_at": "2022-11-06T23:39:00Z",
-    "updated_at": "2024-03-16T23:39:00Z",
+    "created_at": "2022-11-07T00:45:42Z",
+    "updated_at": "2024-03-17T00:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-61136",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2026-03-27T23:39:00Z"
+    "last_synced_at": "2026-03-28T00:45:42Z"
   },
   {
     "id": "cont_000349",
@@ -4889,12 +4889,12 @@
     "owner_id": "rep_99",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/david03",
-    "created_at": "2022-05-18T23:39:00Z",
-    "updated_at": "2024-01-29T23:39:00Z",
+    "created_at": "2022-05-19T00:45:42Z",
+    "updated_at": "2024-01-30T00:45:42Z",
     "source_system": "PipeDrive",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2023-12-30T23:39:00Z"
+    "last_synced_at": "2023-12-31T00:45:42Z"
   },
   {
     "id": "cont_000020",
@@ -4910,15 +4910,15 @@
     "owner_id": "OWN_002",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/crivas",
-    "created_at": "2022-08-04T23:39:00Z",
-    "updated_at": "2023-11-29T23:39:00Z",
+    "created_at": "2022-08-05T00:45:42Z",
+    "updated_at": "2023-11-30T00:45:42Z",
     "source_system": "hubspot",
     "source_record_id": "SRC-58081",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-10T23:39:00Z",
+    "last_synced_at": "2026-03-11T00:45:42Z",
     "is_deleted": "true",
-    "deleted_at": "2026-04-20T23:39:00Z"
+    "deleted_at": "2026-04-21T00:45:42Z"
   },
   {
     "id": "cont_000437",
@@ -4933,20 +4933,20 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/amber67",
-    "created_at": "2022-07-05T23:39:00Z",
-    "updated_at": "2023-11-25T23:39:00Z",
+    "created_at": "2022-07-06T00:45:42Z",
+    "updated_at": "2023-11-26T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-68724",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-11T23:39:00Z",
+    "last_synced_at": "2026-04-12T00:45:42Z",
     "contact": {
       "first_name": "Tara",
       "last_name": "Reilly",
       "email": "kevin22@example.org"
     },
     "is_deleted": false,
-    "deleted_at": "2023-10-23T17:39:00Z",
+    "deleted_at": "2023-10-23T18:45:42Z",
     "duplicate_of": "cont_000304"
   },
   {
@@ -4961,13 +4961,13 @@
     "owner_id": "own_001",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/christopher04",
-    "created_at": "2023-06-26T23:39:00Z",
-    "updated_at": "2024.02.28 23:39:00",
+    "created_at": "2023-06-27T00:45:42Z",
+    "updated_at": "2024.02.29 00:45:42",
     "source_system": "zoho",
     "source_record_id": "SRC-78885",
     "sync_status": "synced",
     "sync_version": null,
-    "last_synced_at": "2026-04-09T23:39:00Z"
+    "last_synced_at": "2026-04-10T00:45:42Z"
   },
   {
     "id": "cont_000160",
@@ -4982,13 +4982,13 @@
     "owner_id": "rep_99",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/malikfowler",
-    "created_at": "2022-08-07T23:39:00Z",
-    "updated_at": "2024-01-19T23:39:00Z",
+    "created_at": "2022-08-08T00:45:42Z",
+    "updated_at": "2024-01-20T00:45:42Z",
     "source_system": "zoho",
     "source_record_id": "SRC-28617",
     "sync_status": "synced",
     "sync_version": "4",
-    "last_synced_at": "2026-04-06T23:39:00Z",
+    "last_synced_at": "2026-04-07T00:45:42Z",
     "contact": {
       "first_name": "Wendy",
       "last_name": "Williams",
@@ -5008,13 +5008,13 @@
     "owner_id": "own_001",
     "status": "lost",
     "linkedin_url": "https://linkedin.com/in/welliott",
-    "created_at": "2023-08-01T23:39:00Z",
-    "updated_at": "2023-09-19T23:39:00Z",
+    "created_at": "2023-08-02T00:45:42Z",
+    "updated_at": "2023-09-20T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-38341",
     "sync_status": "ok",
     "sync_version": 1,
-    "last_synced_at": "2023-09-11T23:39:00Z"
+    "last_synced_at": "2023-09-12T00:45:42Z"
   },
   {
     "id": "cont_000428",
@@ -5030,13 +5030,13 @@
     "owner_id": "rep_99",
     "status": "Active",
     "linkedin_url": "https://linkedin.com/in/kimberly27",
-    "created_at": "2021-08-03T23:39:00Z",
-    "updated_at": "2024-01-28T23:39:00Z",
+    "created_at": "2021-08-04T00:45:42Z",
+    "updated_at": "2024-01-29T00:45:42Z",
     "source_system": "internal_crm",
     "source_record_id": "SRC-43879",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "2026-03-25T23:39:00Z",
+    "last_synced_at": "2026-03-26T00:45:42Z",
     "duplicate_of": "cont_000106"
   },
   {
@@ -5053,13 +5053,13 @@
     "owner_id": "OWN_002",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/holttheresa",
-    "created_at": "03/08/2023 23:39",
-    "updated_at": "2024-01-22T23:39:00Z",
+    "created_at": "03/09/2023 00:45",
+    "updated_at": "2024-01-23T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-40967",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2024-01-16T23:39:00Z"
+    "last_synced_at": "2024-01-17T00:45:42Z"
   },
   {
     "id": "cont_000262",
@@ -5072,13 +5072,13 @@
     "owner_id": "owner_03",
     "status": "Active",
     "linkedin_url": "https://linkedin.com/in/marksanders",
-    "created_at": "2021-11-09T23:39:00Z",
-    "updated_at": "2024-05-25T23:39:00Z",
+    "created_at": "2021-11-10T00:45:42Z",
+    "updated_at": "2024-05-26T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-10119",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2026-03-18T23:39:00Z"
+    "last_synced_at": "2026-03-19T00:45:42Z"
   },
   {
     "id": "cont_000254",
@@ -5094,13 +5094,13 @@
     "owner_id": "own_001",
     "status": "ACTIVE",
     "linkedin_url": "https://linkedin.com/in/malexander",
-    "created_at": "2022-12-23T23:39:00Z",
-    "updated_at": "2024-05-28T23:39:00Z",
+    "created_at": "2022-12-24T00:45:42Z",
+    "updated_at": "2024-05-29T00:45:42Z",
     "source_system": "salesforce",
     "source_record_id": "SRC-10322",
     "sync_status": "ok",
     "sync_version": 3,
-    "last_synced_at": "2026-04-02T23:39:00Z"
+    "last_synced_at": "2026-04-03T00:45:42Z"
   },
   {
     "id": "cont_000450",
@@ -5116,12 +5116,12 @@
     "owner_id": "sales_17",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/joseharris",
-    "created_at": "2023-05-07T23:39:00Z",
-    "updated_at": "2024-03-30T23:39:00Z",
+    "created_at": "2023-05-08T00:45:42Z",
+    "updated_at": "2024-03-31T00:45:42Z",
     "source_system": "manual_entry",
     "sync_status": "synced",
     "sync_version": 4,
-    "last_synced_at": "2026-03-13T23:39:00Z",
+    "last_synced_at": "2026-03-14T00:45:42Z",
     "duplicate_of": "cont_000367"
   },
   {
@@ -5137,13 +5137,13 @@
     "customer_id": "cust_000078",
     "owner_id": "OWN_002",
     "status": "UNKNOWN",
-    "created_at": "2023-05-15T23:39:00Z",
-    "updated_at": "09/16/2023 23:39",
+    "created_at": "2023-05-16T00:45:42Z",
+    "updated_at": "09/17/2023 00:45",
     "source_system": "hubspot",
     "source_record_id": "SRC-59789",
     "sync_status": "SYNCED",
     "sync_version": "4",
-    "last_synced_at": "2026-03-20T23:39:00Z"
+    "last_synced_at": "2026-03-21T00:45:42Z"
   },
   {
     "id": "cont_000156",
@@ -5158,12 +5158,12 @@
     "owner_id": "owner_03",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/vincentstacey",
-    "created_at": "2022.12.20 23:39:00",
-    "updated_at": "2024-05-08T23:39:00Z",
+    "created_at": "2022.12.21 00:45:42",
+    "updated_at": "2024-05-09T00:45:42Z",
     "source_system": "internal_crm",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-04-12T23:39:00Z"
+    "last_synced_at": "2024-04-13T00:45:42Z"
   },
   {
     "id": "cont_000276",
@@ -5177,13 +5177,13 @@
     "company_id": "comp_000056",
     "owner_id": "rep_99",
     "status": "churned",
-    "created_at": "2023-04-11T23:39:00Z",
-    "updated_at": "2023-09-26T23:39:00Z",
+    "created_at": "2023-04-12T00:45:42Z",
+    "updated_at": "2023-09-27T00:45:42Z",
     "source_system": null,
     "source_record_id": "SRC-15713",
     "sync_status": "synced",
     "sync_version": 3,
-    "last_synced_at": "2023-08-31T23:39:00Z"
+    "last_synced_at": "2023-09-01T00:45:42Z"
   },
   {
     "id": "cont_000320",
@@ -5197,13 +5197,13 @@
     "owner_id": "OWN_002",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/kylemartinez",
-    "created_at": "2022.01.09 23:39:00",
-    "updated_at": "2024-02-12T23:39:00Z",
+    "created_at": "2022.01.10 00:45:42",
+    "updated_at": "2024-02-13T00:45:42Z",
     "source_system": "ZoHo",
     "source_record_id": "SRC-26774",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2024-02-01T23:39:00Z",
+    "last_synced_at": "2024-02-02T00:45:42Z",
     "lastName": "Rodriguez"
   },
   {
@@ -5218,15 +5218,15 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/william55",
-    "created_at": "2023-10-02T23:39:00Z",
-    "updated_at": "2023.11.23 23:39:00",
+    "created_at": "2023-10-03T00:45:42Z",
+    "updated_at": "2023.11.24 00:45:42",
     "source_system": "HUBSPOT",
     "source_record_id": "SRC-34207",
     "sync_status": "synced",
     "sync_version": 1,
-    "last_synced_at": "2026-03-20T23:39:00Z",
+    "last_synced_at": "2026-03-21T00:45:42Z",
     "is_deleted": true,
-    "deleted_at": "2026-05-19T23:39:00Z"
+    "deleted_at": "2026-05-20T00:45:42Z"
   },
   {
     "id": "cont_000380",
@@ -5241,13 +5241,13 @@
     "owner_id": "manual_queue",
     "status": "active",
     "linkedin_url": "https://linkedin.com/in/wyattdanny",
-    "created_at": "2021-12-13T23:39:00Z",
-    "updated_at": "2024-01-22T23:39:00Z",
+    "created_at": "2021-12-14T00:45:42Z",
+    "updated_at": "2024-01-23T00:45:42Z",
     "source_system": null,
     "source_record_id": "SRC-76678",
     "sync_status": "synced",
     "sync_version": 2,
-    "last_synced_at": "2024-01-01T23:39:00Z"
+    "last_synced_at": "2024-01-02T00:45:42Z"
   },
   {
     "id": "cont_000344",
@@ -5262,13 +5262,13 @@
     "owner_id": "rep_99",
     "status": "churned",
     "linkedin_url": "https://linkedin.com/in/riverabrian",
-    "created_at": "2023-02-07T23:39:00Z",
-    "updated_at": "2024-03-11T23:39:00Z",
+    "created_at": "2023-02-08T00:45:42Z",
+    "updated_at": "2024-03-12T00:45:42Z",
     "source_system": "manual_entry",
     "source_record_id": "SRC-87235",
     "sync_status": "synced",
     "sync_version": "v3",
-    "last_synced_at": "02/07/2024 23:39",
+    "last_synced_at": "02/08/2024 00:45",
     "contact": {
       "first_name": "Seth",
       "last_name": "Chapman",
@@ -5288,14 +5288,14 @@
     "owner_id": "manual_queue",
     "status": "closed",
     "linkedin_url": "https://linkedin.com/in/bwilliams",
-    "created_at": "2023.03.10 23:39:00",
-    "updated_at": "1703626740",
+    "created_at": "2023.03.11 00:45:42",
+    "updated_at": "1703630742",
     "source_system": "internal_crm",
     "source_record_id": "SRC-37017",
     "sync_status": "ok",
     "sync_version": 2,
-    "last_synced_at": "2023-12-03T23:39:00Z",
+    "last_synced_at": "2023-12-04T00:45:42Z",
     "is_deleted": false,
-    "deleted_at": "2026-03-05T08:39:00Z"
+    "deleted_at": "2026-03-05T09:45:42Z"
   }
 ]
