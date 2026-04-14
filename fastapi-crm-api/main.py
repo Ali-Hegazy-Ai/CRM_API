@@ -10,8 +10,10 @@ from typing import Optional
 from datetime import datetime
 import uvicorn
 
+from cdc_store import cdc_store
 from data_loader import data_loader
 from pagination import (
+    paginate_data,
     paginate_with_wrapper,
     paginate_contacts,
     paginate_leads,
@@ -26,7 +28,14 @@ from stream_engine import (
     refresh_stream_state,
     get_recent_changes,
     get_batch_export,
+    list_entities,
     sse_event_generator,
+)
+from runtime_generator import (
+    start_runtime_generator,
+    stop_runtime_generator,
+    get_runtime_generator_config,
+    get_runtime_generator_metrics,
 )
 
 
@@ -42,13 +51,15 @@ app = FastAPI(
 
 @app.on_event("startup")
 async def on_startup():
-    """Start lightweight background stream tasks for live CRM behavior."""
+    """Initialize CDC/stream state and start runtime generator loops."""
     await start_stream_engine()
+    await start_runtime_generator()
 
 
 @app.on_event("shutdown")
 async def on_shutdown():
-    """Stop stream tasks cleanly when the app instance is shutting down."""
+    """Stop runtime generator and stream tasks cleanly."""
+    await stop_runtime_generator()
     await stop_stream_engine()
 
 
@@ -70,6 +81,7 @@ async def not_found_handler(request, exc):
 @app.get("/")
 async def root():
     """API root - returns basic info"""
+    runtime_generator = get_runtime_generator_config()
     return {
         "name": "Production CRM API",
         "version": "3.0.0",
@@ -91,12 +103,36 @@ async def root():
             "changes": "/changes?since=event_id_or_timestamp",
             "stream_changes": "/stream/changes",
             "stream_events": "/stream/events",
+            "metrics": "/metrics",
             "batch_export": "/batch/export"
         },
         "versioning": "Add ?version=v1, ?version=v2, or ?version=v3",
         "pagination": "Add ?page=1&limit=20",
+        "runtime_generator": {
+            "interval_seconds": runtime_generator.get("interval_seconds"),
+            "max_ops_per_cycle": runtime_generator.get("max_ops_per_cycle"),
+            "incremental_query": "Add ?updated_after=ISO_TIMESTAMP&include_deleted=false to list endpoints",
+        },
         "docs": "/docs"
     }
+
+
+async def _load_entity_list_data(
+    entity: str,
+    version: str,
+    updated_after: Optional[str],
+    include_deleted: bool,
+):
+    try:
+        return await list_entities(
+            entity=entity,
+            version=version,
+            updated_after=updated_after,
+            include_deleted=include_deleted,
+            limit=50000,
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 # ============================================================================
@@ -107,7 +143,9 @@ async def root():
 async def list_customers(
     version: str = Query("v3", description="Data version (v1, v2, v3)"),
     page: int = Query(1, ge=1, description="Page number"),
-    limit: int = Query(20, ge=1, le=100, description="Records per page")
+    limit: int = Query(20, ge=1, le=100, description="Records per page"),
+    updated_after: Optional[str] = Query(None, description="Optional incremental filter by updated_at"),
+    include_deleted: bool = Query(False, description="Include soft-deleted records in incremental reads"),
 ):
     """
     List all customers with pagination
@@ -118,7 +156,9 @@ async def list_customers(
     - Inconsistent formatting
     - Invalid data
     """
-    data = data_loader.get_data("customers", version)
+    data = await _load_entity_list_data("customers", version, updated_after, include_deleted)
+    if updated_after:
+        return paginate_with_wrapper(data, page, limit, wrapper_key="data", add_issues=False)
     return paginate_with_wrapper(data, page, limit, wrapper_key="data")
 
 
@@ -147,7 +187,9 @@ async def get_customer(
 async def list_contacts(
     version: str = Query("v3", description="Data version (v1, v2, v3)"),
     page: int = Query(1, ge=1, description="Page number"),
-    limit: int = Query(20, ge=1, le=100, description="Records per page")
+    limit: int = Query(20, ge=1, le=100, description="Records per page"),
+    updated_after: Optional[str] = Query(None, description="Optional incremental filter by updated_at"),
+    include_deleted: bool = Query(False, description="Include soft-deleted records in incremental reads"),
 ):
     """
     List all contacts with pagination
@@ -158,7 +200,14 @@ async def list_contacts(
     - Invalid emails
     - Missing values
     """
-    data = data_loader.get_data("contacts", version)
+    data = await _load_entity_list_data("contacts", version, updated_after, include_deleted)
+    if updated_after:
+        page_data, metadata = paginate_data(data, page, limit, add_issues=False)
+        return {
+            "contacts": page_data,
+            "count": len(page_data),
+            "page": metadata.page
+        }
     return paginate_contacts(data, page, limit)
 
 
@@ -187,7 +236,9 @@ async def get_contact(
 async def list_leads(
     version: str = Query("v3", description="Data version (v1, v2, v3)"),
     page: int = Query(1, ge=1, description="Page number"),
-    limit: int = Query(20, ge=1, le=100, description="Records per page")
+    limit: int = Query(20, ge=1, le=100, description="Records per page"),
+    updated_after: Optional[str] = Query(None, description="Optional incremental filter by updated_at"),
+    include_deleted: bool = Query(False, description="Include soft-deleted records in incremental reads"),
 ):
     """
     List all leads with pagination
@@ -198,7 +249,15 @@ async def list_leads(
     - Missing scores
     - Invalid emails
     """
-    data = data_loader.get_data("leads", version)
+    data = await _load_entity_list_data("leads", version, updated_after, include_deleted)
+    if updated_after:
+        page_data, metadata = paginate_data(data, page, limit, add_issues=False)
+        return {
+            "results": page_data,
+            "total_count": metadata.total,
+            "page": metadata.page,
+            "next_page": f"/leads?page={metadata.next_page}" if metadata.next_page else None
+        }
     return paginate_leads(data, page, limit)
 
 
@@ -227,7 +286,9 @@ async def get_lead(
 async def list_deals(
     version: str = Query("v3", description="Data version (v1, v2, v3)"),
     page: int = Query(1, ge=1, description="Page number"),
-    limit: int = Query(20, ge=1, le=100, description="Records per page")
+    limit: int = Query(20, ge=1, le=100, description="Records per page"),
+    updated_after: Optional[str] = Query(None, description="Optional incremental filter by updated_at"),
+    include_deleted: bool = Query(False, description="Include soft-deleted records in incremental reads"),
 ):
     """
     List all deals with pagination
@@ -238,7 +299,9 @@ async def list_deals(
     - Type inconsistencies (amount as string vs number)
     - Currency casing variations
     """
-    data = data_loader.get_data("deals", version)
+    data = await _load_entity_list_data("deals", version, updated_after, include_deleted)
+    if updated_after:
+        return paginate_with_wrapper(data, page, limit, wrapper_key="data", add_issues=False)
     return paginate_with_wrapper(data, page, limit, wrapper_key="data")
 
 
@@ -267,7 +330,9 @@ async def get_deal(
 async def list_activities(
     version: str = Query("v3", description="Data version (v1, v2, v3)"),
     page: int = Query(1, ge=1, description="Page number"),
-    limit: int = Query(20, ge=1, le=100, description="Records per page")
+    limit: int = Query(20, ge=1, le=100, description="Records per page"),
+    updated_after: Optional[str] = Query(None, description="Optional incremental filter by updated_at"),
+    include_deleted: bool = Query(False, description="Include soft-deleted records in incremental reads"),
 ):
     """
     List all activities with pagination
@@ -278,7 +343,15 @@ async def list_activities(
     - Missing fields
     - Date format inconsistencies
     """
-    data = data_loader.get_data("activities", version)
+    data = await _load_entity_list_data("activities", version, updated_after, include_deleted)
+    if updated_after:
+        page_data, metadata = paginate_data(data, page, limit, add_issues=False)
+        return {
+            "activities": page_data,
+            "count": len(page_data),
+            "page": metadata.page,
+            "per_page": metadata.limit
+        }
     return paginate_activities(data, page, limit)
 
 
@@ -307,7 +380,9 @@ async def get_activity(
 async def list_notes(
     version: str = Query("v3", description="Data version (v1, v2, v3)"),
     page: int = Query(1, ge=1, description="Page number"),
-    limit: int = Query(20, ge=1, le=100, description="Records per page")
+    limit: int = Query(20, ge=1, le=100, description="Records per page"),
+    updated_after: Optional[str] = Query(None, description="Optional incremental filter by updated_at"),
+    include_deleted: bool = Query(False, description="Include soft-deleted records in incremental reads"),
 ):
     """
     List all notes with pagination
@@ -318,10 +393,16 @@ async def list_notes(
     - Field name variations
     - Missing fields
     """
-    data = data_loader.get_data("notes", version)
+    data = await _load_entity_list_data("notes", version, updated_after, include_deleted)
     
     # Notes use simple wrapper
-    page_data = paginate_with_wrapper(data, page, limit, wrapper_key="data", add_issues=True)
+    page_data = paginate_with_wrapper(
+        data,
+        page,
+        limit,
+        wrapper_key="data",
+        add_issues=False if updated_after else True,
+    )
     
     return {
         "data": page_data.get("data", []),
@@ -337,7 +418,9 @@ async def list_notes(
 async def list_companies(
     version: str = Query("v3", description="Data version (v1, v2, v3)"),
     page: int = Query(1, ge=1, description="Page number"),
-    limit: int = Query(20, ge=1, le=100, description="Records per page")
+    limit: int = Query(20, ge=1, le=100, description="Records per page"),
+    updated_after: Optional[str] = Query(None, description="Optional incremental filter by updated_at"),
+    include_deleted: bool = Query(False, description="Include soft-deleted records in incremental reads"),
 ):
     """
     List all companies with pagination
@@ -348,7 +431,15 @@ async def list_companies(
     - Type inconsistencies (employee_count)
     - Industry casing variations
     """
-    data = data_loader.get_data("companies", version)
+    data = await _load_entity_list_data("companies", version, updated_after, include_deleted)
+    if updated_after:
+        page_data, metadata = paginate_data(data, page, limit, add_issues=False)
+        return {
+            "companies": page_data,
+            "total_count": metadata.total,
+            "page_number": metadata.page,
+            "page_size": metadata.limit
+        }
     return paginate_companies(data, page, limit)
 
 
@@ -587,9 +678,22 @@ async def health_check():
     }
 
 
+@app.get("/metrics")
+async def metrics():
+    """Operational metrics for runtime generation and CDC state."""
+    generator_metrics = get_runtime_generator_metrics()
+    return {
+        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "generator": generator_metrics,
+        "current_state_count": cdc_store.count_current_state(),
+        "last_event_id": cdc_store.get_last_event_id(),
+    }
+
+
 @app.post("/reload")
 async def reload_data():
     """Reload data from disk (useful for development)"""
+    await stop_runtime_generator()
     await stop_stream_engine()
     try:
         data_loader.reload_data()
@@ -601,6 +705,7 @@ async def reload_data():
         }
     finally:
         await start_stream_engine()
+        await start_runtime_generator()
 
 
 # ============================================================================

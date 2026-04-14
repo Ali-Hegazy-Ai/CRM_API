@@ -13,6 +13,8 @@ This API simulates a production CRM system with 3+ years of operational history,
 - Pagination with realistic issues
 - Cross-entity search
 - Change event log
+- Runtime background generator (create/update/delete cycles)
+- SQLite-backed CDC + current state persistence
 - Multiple source systems (Salesforce, HubSpot, Zoho, Pipedrive)
 
 ## Quick Start
@@ -94,6 +96,7 @@ Open your browser to:
 - `GET /metadata` - Get API schema metadata
 - `GET /search?q=` - Search across entities
 - `GET /events` - Get change event log
+- `GET /changes?since=` - Deterministic CDC feed cursor endpoint
 
 ## Query Parameters
 
@@ -111,6 +114,15 @@ List endpoints support:
 
 ### Search
 - `?q=search_term` - Search across entities
+
+### Incremental Entity Reads
+All list entity endpoints support incremental filtering in v3:
+- `?updated_after=2026-04-14T10:30:00Z`
+- `?include_deleted=false` (default)
+
+Examples:
+- `GET /customers?updated_after=2026-04-14T10:30:00Z`
+- `GET /deals?updated_after=2026-04-14T10:30:00Z&include_deleted=true`
 
 ## Data Quality Issues
 
@@ -203,6 +215,23 @@ fastapi-crm-api/
 
 Edit JSON files in `data/` directory. Changes take effect on restart.
 
+### Runtime Generator Configuration
+
+The API starts a separate async runtime generator service on startup.
+
+Environment variables:
+- `GEN_INTERVAL_SECONDS` - generation cycle interval in seconds (default: `5`, min: `1`, max: `300`)
+- `GEN_MAX_OPS_PER_CYCLE` - max operations per cycle (default: `6`, min: `1`, max: `100`)
+- `CRM_ENABLE_LEGACY_STREAM_ENGINE` - optional legacy in-memory loop toggle (`false` by default)
+
+Operation distribution per cycle:
+- 70% updates
+- 20% creates
+- 10% deletes
+
+Backpressure policy:
+- If mutation lock is busy, the generator skips the cycle.
+
 ### Docker Deployment
 
 The repository includes a Dockerfile in `fastapi-crm-api/` and a Render Blueprint at the repository root (`render.yaml`).
@@ -292,10 +321,25 @@ Build dimensional models from messy source data
 ## Notes
 
 - Data is loaded at startup and cached in memory
+- Startup order: stream state init -> runtime generator start
+- Shutdown order: runtime generator stop -> stream engine stop
+- Generated v3 state is persisted in SQLite `current_state` table
+- CDC events are append-only in SQLite `cdc_events` table
 - Pagination boundaries intentionally shift
 - Some records appear in multiple pages
 - Total counts may not match actual records
 - This is all intentional to simulate production issues
+
+## Example Lifecycle
+
+Example for `customers` entity during runtime generation:
+1. `create` mutation writes entity snapshot to `current_state` and appends CDC event `event_id=101`.
+2. `update` mutation modifies business fields (`status`, `last_activity_at`, etc.), updates `current_state`, appends CDC `event_id=102`.
+3. `delete` mutation sets soft-delete fields (`is_deleted=true`, `deleted_at`), persists tombstone in `current_state`, appends CDC `event_id=103`.
+
+Replay is deterministic through:
+- `GET /changes?since=100`
+- `GET /changes?since=2026-04-14T10:30:00Z`
 
 ## License
 

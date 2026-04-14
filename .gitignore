@@ -1,2 +1,9 @@
 scripts/*.csv
 scripts/exports/
+
+# Python build/cache artifacts
+__pycache__/
+*.py[cod]
+
+# Local runtime logs and SQL traces
+logs/

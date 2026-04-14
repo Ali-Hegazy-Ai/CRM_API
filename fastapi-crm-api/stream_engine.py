@@ -31,6 +31,16 @@ MAX_ENTITY_RECORDS = {
     "activities": 7000,
 }
 
+_ALL_RUNTIME_ENTITIES = [
+    "customers",
+    "contacts",
+    "leads",
+    "deals",
+    "activities",
+    "notes",
+    "companies",
+]
+
 # Live data is based on the existing loader cache. We mutate only v3 incrementally.
 DATA_STORE: Dict[str, Dict[str, List[Dict[str, Any]]]] = data_loader.cache
 CHANGE_LOG: List[Dict[str, Any]] = []
@@ -1343,7 +1353,7 @@ def _mutate_deal(record: Dict[str, Any], source: str) -> None:
     _sanitize_record("deals", record)
 
 
-def _run_pipeline_shift_batch(source: Optional[str]) -> int:
+async def _run_pipeline_shift_batch(source: Optional[str]) -> int:
     updates = 0
     batch_size = random.randint(3, 8)
 
@@ -1353,29 +1363,52 @@ def _run_pipeline_shift_batch(source: Optional[str]) -> int:
         if not record:
             continue
 
+        record_id = str(record.get("id") or record.get(_entity_id_field(target_entity)) or "").strip()
+        if not record_id:
+            continue
+
         source_key = _normalize_source(record.get("source_system") or source)
+        update_payload: Dict[str, Any] = {}
 
         if target_entity == "leads":
             field_name = "lead_status" if "lead_status" in record else "leadStatus"
-            record[field_name] = _lead_status_for_source(source_key)
+            status_value = _lead_status_for_source(source_key)
             if random.random() < 0.35:
-                record[field_name] = _random_case(record[field_name])
+                status_value = _random_case(status_value)
+            update_payload[field_name] = status_value
             if random.random() < 0.5:
-                record["score"] = random.choice([random.randint(1, 100), str(random.randint(1, 100))])
-            _apply_dirty_evolution(record, "leads", source_key)
+                update_payload["score"] = random.choice([random.randint(1, 100), str(random.randint(1, 100))])
         else:
-            _apply_pipeline_shift_to_deal(record, source_key, burst_mode=True)
-            _apply_dirty_evolution(record, "deals", source_key)
+            if "stage" in record:
+                stage_field = "stage"
+            elif "Stage" in record:
+                stage_field = "Stage"
+            else:
+                stage_field = "stage"
 
-        _set_update_timestamp(record, source_key)
-        _sanitize_record(target_entity, record)
-        _record_change("update", target_entity, record)
-        updates += 1
+            next_stage = random.choice(_DEAL_STAGES)
+            update_payload[stage_field] = next_stage
+            if next_stage == "won":
+                update_payload["status"] = "won"
+            elif next_stage == "lost":
+                update_payload["status"] = "lost"
+            else:
+                update_payload["status"] = "open"
+            update_payload["probability"] = _stage_to_probability(next_stage)
+
+        updated = await update_entity(
+            entity=target_entity,
+            entity_id=record_id,
+            updates=update_payload,
+            source_override=source_key,
+        )
+        if updated is not None:
+            updates += 1
 
     return updates
 
 
-def _run_sync_batch(source: Optional[str]) -> int:
+async def _run_sync_batch(source: Optional[str]) -> int:
     updates = 0
     batch_size = random.randint(4, 12)
 
@@ -1389,6 +1422,10 @@ def _run_sync_batch(source: Optional[str]) -> int:
         if not record:
             continue
 
+        record_id = str(record.get("id") or record.get(_entity_id_field(target_entity)) or "").strip()
+        if not record_id:
+            continue
+
         source_key = _normalize_source(record.get("source_system") or source)
 
         if source_key == "salesforce":
@@ -1400,18 +1437,23 @@ def _run_sync_batch(source: Optional[str]) -> int:
         else:
             next_sync = _sync_status_for_source(source_key)
 
-        record["sync_status"] = next_sync
+        update_payload: Dict[str, Any] = {
+            "sync_status": next_sync,
+            "sync_version": _sync_version(),
+        }
         if next_sync in {"pending", "failed"}:
-            record["last_synced_at"] = _past_iso(12, 160)
+            update_payload["last_synced_at"] = _past_iso(12, 160)
         else:
-            record["last_synced_at"] = _past_iso(0, 8)
-        record["sync_version"] = _sync_version()
+            update_payload["last_synced_at"] = _past_iso(0, 8)
 
-        _apply_dirty_evolution(record, target_entity, source_key)
-        _set_update_timestamp(record, source_key)
-        _sanitize_record(target_entity, record)
-        _record_change("update", target_entity, record)
-        updates += 1
+        updated = await update_entity(
+            entity=target_entity,
+            entity_id=record_id,
+            updates=update_payload,
+            source_override=source_key,
+        )
+        if updated is not None:
+            updates += 1
 
     return updates
 
@@ -1562,55 +1604,386 @@ def _record_change(event_type: str, entity: str, record: Dict[str, Any]) -> None
     _append_change_event(normalized_event_type, entity, record_id, full_data)
 
 
+def _normalize_entity_name(entity: str) -> str:
+    normalized = str(entity).strip().lower()
+    if not normalized:
+        raise ValueError("entity is required")
+
+    singular_map = {
+        config.get("singular", key.rstrip("s")): key
+        for key, config in _ENTITY_CONFIG.items()
+    }
+
+    if normalized in _ALL_RUNTIME_ENTITIES:
+        return normalized
+    if normalized in singular_map:
+        return singular_map[normalized]
+
+    candidate = normalized if normalized.endswith("s") else f"{normalized}s"
+    if candidate in _ALL_RUNTIME_ENTITIES:
+        return candidate
+
+    raise ValueError(f"Unsupported entity '{entity}'")
+
+
+def _find_record_index(entity: str, records: List[Dict[str, Any]], entity_id: str) -> int:
+    id_field = _entity_id_field(entity)
+    for idx, record in enumerate(records):
+        if not isinstance(record, dict):
+            continue
+        if str(record.get("id", "")) == entity_id:
+            return idx
+        if str(record.get(id_field, "")) == entity_id:
+            return idx
+    return -1
+
+
+def _default_create_record(entity: str, source_override: Optional[str] = None) -> Dict[str, Any]:
+    if entity == "customers":
+        return _create_customer(source_override=source_override)
+    if entity == "leads":
+        return _create_lead(source_override=source_override)
+    if entity == "activities":
+        return _create_activity(source_override=source_override)
+    if entity == "deals":
+        source = _normalize_source(source_override) if source_override else _choose_source()
+        seed = _pick_pattern_filtered_record("deals", source, prefer_old=False)
+        record = copy.deepcopy(seed) if isinstance(seed, dict) else {}
+        deal_id = _next_primary_id("deals")
+        stage_field = _pick_deal_stage_field(record)
+        record["id"] = deal_id
+        record["deal_id"] = deal_id
+        record["status"] = "open"
+        record[stage_field] = random.choice(["prospecting", "qualified", "negotiation"])
+        record["created_at"] = _now_iso()
+        record["updated_at"] = _now_iso()
+        if "amount" not in record:
+            record["amount"] = round(random.uniform(10000.0, 250000.0), 2)
+        if "source_system" not in record:
+            record["source_system"] = _source_label(source, _source_profile(source)["casing"])
+        if "sync_status" not in record:
+            record["sync_status"] = _sync_status_for_source(source)
+        if "sync_version" not in record:
+            record["sync_version"] = _sync_version()
+        if "last_synced_at" not in record:
+            record["last_synced_at"] = _sync_timestamp(_source_profile(source)["stale"])
+        _sanitize_record("deals", record)
+        return record
+
+    raise ValueError(f"Create operation is not supported for entity '{entity}'")
+
+
+def _persist_record_to_current_state(entity: str, record: Dict[str, Any], is_deleted: bool = False) -> None:
+    if not isinstance(record, dict):
+        return
+    record_id = record.get("id")
+    if record_id is None:
+        record_id = record.get(_entity_id_field(entity))
+    if record_id is None:
+        return
+
+    updated_at = record.get("updated_at")
+    if not isinstance(updated_at, str) or not updated_at:
+        updated_at = _now_iso()
+
+    cdc_store.upsert_current_state(
+        entity_type=entity,
+        entity_id=str(record_id),
+        data=copy.deepcopy(record),
+        updated_at=updated_at,
+        is_deleted=is_deleted,
+    )
+
+
+def _seed_current_state_from_memory() -> None:
+    version_bucket = DATA_STORE.get(LIVE_VERSION, {})
+    for entity in _ALL_RUNTIME_ENTITIES:
+        for record in version_bucket.get(entity, []):
+            if not isinstance(record, dict):
+                continue
+            record_id = record.get("id")
+            if record_id is None:
+                record_id = record.get(_entity_id_field(entity))
+            if record_id is None:
+                continue
+            cdc_store.upsert_current_state(
+                entity_type=entity,
+                entity_id=str(record_id),
+                data=copy.deepcopy(record),
+                updated_at=record.get("updated_at") if isinstance(record.get("updated_at"), str) else _now_iso(),
+                is_deleted=bool(record.get("is_deleted") or record.get("deleted_at")),
+            )
+
+
+def _hydrate_memory_from_current_state() -> bool:
+    hydrated = False
+    version_bucket = DATA_STORE.setdefault(LIVE_VERSION, {})
+
+    for entity in _ALL_RUNTIME_ENTITIES:
+        rows = cdc_store.list_current_state(
+            entity_type=entity,
+            include_deleted=False,
+            limit=50000,
+        )
+        if not rows:
+            continue
+
+        records: List[Dict[str, Any]] = []
+        for row in rows:
+            data = row.get("data", {})
+            if isinstance(data, dict):
+                records.append(copy.deepcopy(data))
+
+        if records:
+            version_bucket[entity] = records
+            hydrated = True
+
+    return hydrated
+
+
+def is_mutation_lock_busy() -> bool:
+    return _LOCK.locked()
+
+
+async def create_entity(
+    entity: str,
+    record: Optional[Dict[str, Any]] = None,
+    source_override: Optional[str] = None,
+) -> Dict[str, Any]:
+    normalized_entity = _normalize_entity_name(entity)
+
+    async with _LOCK:
+        version_bucket = DATA_STORE.setdefault(LIVE_VERSION, {})
+        records = version_bucket.setdefault(normalized_entity, [])
+
+        new_record = copy.deepcopy(record) if isinstance(record, dict) else _default_create_record(normalized_entity, source_override)
+
+        id_field = _entity_id_field(normalized_entity)
+        record_id = str(new_record.get("id") or new_record.get(id_field) or "").strip()
+
+        if not record_id:
+            if normalized_entity in _ENTITY_CONFIG:
+                record_id = _next_primary_id(normalized_entity)
+            else:
+                record_id = _random_hex_id(12)
+
+        existing_idx = _find_record_index(normalized_entity, records, record_id)
+        if existing_idx >= 0:
+            return copy.deepcopy(records[existing_idx])
+
+        existing_state = cdc_store.get_entity(normalized_entity, record_id, include_deleted=True)
+        if existing_state and isinstance(existing_state.get("data"), dict):
+            if not existing_state.get("is_deleted"):
+                records.append(copy.deepcopy(existing_state["data"]))
+                return copy.deepcopy(existing_state["data"])
+            while normalized_entity in _ENTITY_CONFIG and record_id in _USED_IDS[normalized_entity]:
+                record_id = _next_primary_id(normalized_entity)
+
+        if normalized_entity in _ENTITY_CONFIG:
+            _USED_IDS[normalized_entity].add(record_id)
+
+        new_record["id"] = record_id
+        if id_field not in new_record:
+            new_record[id_field] = record_id
+
+        if "created_at" not in new_record:
+            new_record["created_at"] = _now_iso()
+        if "updated_at" not in new_record:
+            new_record["updated_at"] = new_record.get("created_at", _now_iso())
+
+        _sanitize_record(normalized_entity, new_record)
+        records.append(new_record)
+        _persist_record_to_current_state(normalized_entity, new_record, is_deleted=False)
+        _record_change("create", normalized_entity, new_record)
+
+        return copy.deepcopy(new_record)
+
+
+async def update_entity(
+    entity: str,
+    entity_id: str,
+    updates: Optional[Dict[str, Any]] = None,
+    source_override: Optional[str] = None,
+) -> Optional[Dict[str, Any]]:
+    normalized_entity = _normalize_entity_name(entity)
+    target_id = str(entity_id).strip()
+    if not target_id:
+        raise ValueError("entity_id is required")
+
+    async with _LOCK:
+        version_bucket = DATA_STORE.setdefault(LIVE_VERSION, {})
+        records = version_bucket.setdefault(normalized_entity, [])
+
+        idx = _find_record_index(normalized_entity, records, target_id)
+        if idx < 0:
+            state = cdc_store.get_entity(normalized_entity, target_id, include_deleted=False)
+            if state and isinstance(state.get("data"), dict):
+                records.append(copy.deepcopy(state["data"]))
+                idx = len(records) - 1
+
+        if idx < 0:
+            return None
+
+        record_ref = records[idx]
+        source = _normalize_source(record_ref.get("source_system") or source_override)
+
+        if isinstance(updates, dict) and updates:
+            for key, value in updates.items():
+                record_ref[key] = copy.deepcopy(value)
+
+            if "updated_at" not in updates:
+                _set_update_timestamp(record_ref, source)
+        else:
+            if normalized_entity == "customers":
+                _mutate_customer(record_ref, source)
+            elif normalized_entity == "leads":
+                _mutate_lead(record_ref, source)
+            elif normalized_entity == "activities":
+                _mutate_activity(record_ref, source)
+            elif normalized_entity == "deals":
+                _mutate_deal(record_ref, source)
+            else:
+                _set_update_timestamp(record_ref, source)
+
+        _sanitize_record(normalized_entity, record_ref)
+        _persist_record_to_current_state(normalized_entity, record_ref, is_deleted=False)
+        _record_change("update", normalized_entity, record_ref)
+
+        return copy.deepcopy(record_ref)
+
+
+async def delete_entity(entity: str, entity_id: str) -> Optional[Dict[str, Any]]:
+    normalized_entity = _normalize_entity_name(entity)
+    target_id = str(entity_id).strip()
+    if not target_id:
+        raise ValueError("entity_id is required")
+
+    async with _LOCK:
+        version_bucket = DATA_STORE.setdefault(LIVE_VERSION, {})
+        records = version_bucket.setdefault(normalized_entity, [])
+
+        idx = _find_record_index(normalized_entity, records, target_id)
+        if idx >= 0:
+            deleted_record = copy.deepcopy(records.pop(idx))
+        else:
+            state = cdc_store.get_entity(normalized_entity, target_id, include_deleted=True)
+            if not state or not isinstance(state.get("data"), dict):
+                return None
+            deleted_record = copy.deepcopy(state["data"])
+
+        deleted_record["is_deleted"] = True
+        deleted_record["deleted_at"] = _now_iso()
+        deleted_record["updated_at"] = deleted_record["deleted_at"]
+
+        cdc_store.soft_delete(
+            entity_type=normalized_entity,
+            entity_id=target_id,
+            data=copy.deepcopy(deleted_record),
+            updated_at=deleted_record["updated_at"],
+        )
+        _record_change("delete", normalized_entity, deleted_record)
+
+        return deleted_record
+
+
+async def list_entities(
+    entity: str,
+    version: str = LIVE_VERSION,
+    updated_after: Optional[str] = None,
+    include_deleted: bool = False,
+    limit: int = 5000,
+) -> List[Dict[str, Any]]:
+    normalized_entity = _normalize_entity_name(entity)
+    safe_limit = max(1, min(limit, 50000))
+
+    if version == LIVE_VERSION:
+        rows = cdc_store.list_current_state(
+            entity_type=normalized_entity,
+            updated_after=updated_after,
+            include_deleted=include_deleted,
+            limit=safe_limit,
+        )
+        if rows:
+            data_rows: List[Dict[str, Any]] = []
+            for row in rows:
+                payload = copy.deepcopy(row.get("data", {}))
+                if not isinstance(payload, dict):
+                    payload = {"value": payload}
+                if "id" not in payload:
+                    payload["id"] = row.get("entity_id")
+                if "updated_at" not in payload and row.get("updated_at"):
+                    payload["updated_at"] = row.get("updated_at")
+                if row.get("is_deleted"):
+                    payload["is_deleted"] = True
+                data_rows.append(payload)
+            return data_rows
+
+    base_data = copy.deepcopy(data_loader.get_data(normalized_entity, version))
+    if updated_after:
+        parsed_updated_after = _parse_datetime(updated_after)
+        if parsed_updated_after is None:
+            raise ValueError("Invalid 'updated_after' timestamp format")
+
+        filtered: List[Dict[str, Any]] = []
+        for record in base_data:
+            record_updated = _parse_datetime(record.get("updated_at") or record.get("last_modified"))
+            if record_updated and record_updated > parsed_updated_after:
+                if include_deleted or not (record.get("is_deleted") or record.get("deleted_at")):
+                    filtered.append(record)
+        base_data = filtered
+
+        base_data.sort(
+            key=lambda rec: _parse_datetime(rec.get("updated_at") or rec.get("last_modified"))
+            or datetime.min.replace(tzinfo=timezone.utc)
+        )
+
+    if not include_deleted:
+        base_data = [
+            record for record in base_data
+            if not (isinstance(record, dict) and (record.get("is_deleted") or record.get("deleted_at")))
+        ]
+
+    return base_data[:safe_limit]
+
+
 async def _creation_loop() -> None:
     try:
         while not _STOP_EVENT.is_set():
             await _sleep_with_stream_dynamics(0.5, 2.0)
 
-            async with _LOCK:
-                weights_map, batch_size, source_hint = _creation_weights_and_batch()
-                if random.random() < _STREAM_DYNAMICS["burst_probability"]:
-                    batch_size = max(
-                        batch_size,
-                        random.randint(int(_STREAM_DYNAMICS["burst_batch_min"]), int(_STREAM_DYNAMICS["burst_batch_max"])),
-                    )
-                available_entities = [
-                    entity for entity in ["customers", "leads", "activities"]
+            weights_map, batch_size, source_hint = _creation_weights_and_batch()
+            if random.random() < _STREAM_DYNAMICS["burst_probability"]:
+                batch_size = max(
+                    batch_size,
+                    random.randint(int(_STREAM_DYNAMICS["burst_batch_min"]), int(_STREAM_DYNAMICS["burst_batch_max"])),
+                )
+
+            available_entities = [
+                entity for entity in ["customers", "leads", "activities"]
+                if _entity_can_grow(entity)
+            ]
+            if not available_entities:
+                _decrement_pattern(_CREATION_PATTERN)
+                continue
+
+            for _ in range(batch_size):
+                current_available = [
+                    entity for entity in available_entities
                     if _entity_can_grow(entity)
                 ]
-                if not available_entities:
-                    _decrement_pattern(_CREATION_PATTERN)
-                    continue
+                if not current_available:
+                    break
 
-                version_bucket = DATA_STORE.setdefault(LIVE_VERSION, {})
+                entity = random.choices(
+                    current_available,
+                    weights=[weights_map.get(item, 0.1) for item in current_available],
+                    k=1,
+                )[0]
 
-                for _ in range(batch_size):
-                    current_available = [
-                        entity for entity in available_entities
-                        if _entity_can_grow(entity)
-                    ]
-                    if not current_available:
-                        break
+                source_override = source_hint if source_hint and random.random() < 0.86 else None
+                await create_entity(entity=entity, source_override=source_override)
 
-                    entity = random.choices(
-                        current_available,
-                        weights=[weights_map.get(item, 0.1) for item in current_available],
-                        k=1,
-                    )[0]
-
-                    source_override = source_hint if source_hint and random.random() < 0.86 else None
-
-                    if entity == "customers":
-                        record = _create_customer(source_override=source_override)
-                    elif entity == "leads":
-                        record = _create_lead(source_override=source_override)
-                    else:
-                        record = _create_activity(source_override=source_override)
-
-                    version_bucket.setdefault(entity, []).append(record)
-                    _record_change("create", entity, record)
-
-                _decrement_pattern(_CREATION_PATTERN)
+            _decrement_pattern(_CREATION_PATTERN)
     except asyncio.CancelledError:
         return
 
@@ -1620,105 +1993,127 @@ async def _mutation_loop() -> None:
         while not _STOP_EVENT.is_set():
             await _sleep_with_stream_dynamics(0.6, 1.9)
 
-            async with _LOCK:
-                mutation_iterations = 1
-                if random.random() < _STREAM_DYNAMICS["burst_probability"]:
-                    mutation_iterations = random.randint(
-                        int(_STREAM_DYNAMICS["burst_batch_min"]),
-                        int(_STREAM_DYNAMICS["burst_batch_max"]),
-                    )
+            mutation_iterations = 1
+            if random.random() < _STREAM_DYNAMICS["burst_probability"]:
+                mutation_iterations = random.randint(
+                    int(_STREAM_DYNAMICS["burst_batch_min"]),
+                    int(_STREAM_DYNAMICS["burst_batch_max"]),
+                )
 
-                for _ in range(mutation_iterations):
-                    _maybe_start_mutation_pattern()
+            for _ in range(mutation_iterations):
+                _maybe_start_mutation_pattern()
 
-                    mode = _MUTATION_PATTERN["name"]
-                    if mode == "pipeline_shift":
-                        _run_pipeline_shift_batch(_MUTATION_PATTERN["source"])
-                        _decrement_pattern(_MUTATION_PATTERN)
+                mode = _MUTATION_PATTERN["name"]
+                if mode == "pipeline_shift":
+                    await _run_pipeline_shift_batch(_MUTATION_PATTERN["source"])
+                    _decrement_pattern(_MUTATION_PATTERN)
+                    continue
+                if mode == "sync_batch":
+                    await _run_sync_batch(_MUTATION_PATTERN["source"])
+                    _decrement_pattern(_MUTATION_PATTERN)
+                    continue
+
+                entity = random.choices(
+                    ["customers", "leads", "activities", "deals"],
+                    weights=[0.12, 0.16, 0.42, 0.30],
+                    k=1,
+                )[0]
+
+                record = _pick_pattern_filtered_record(entity, None, prefer_old=True)
+                if not record:
+                    continue
+
+                record_id = str(record.get("id") or record.get(_entity_id_field(entity)) or "").strip()
+                if not record_id:
+                    continue
+
+                source = _normalize_source(record.get("source_system"))
+
+                if entity == "leads":
+                    conversion_roll = random.random()
+                    if conversion_roll < _STREAM_DYNAMICS["lead_convert_probability"]:
+                        lead_field = "lead_status" if "lead_status" in record else "leadStatus"
+                        await update_entity(
+                            entity=entity,
+                            entity_id=record_id,
+                            updates={
+                                lead_field: "converted",
+                                "converted_at": _now_iso(),
+                            },
+                            source_override=source,
+                        )
                         continue
-                    if mode == "sync_batch":
-                        _run_sync_batch(_MUTATION_PATTERN["source"])
-                        _decrement_pattern(_MUTATION_PATTERN)
+                    if conversion_roll < (
+                        _STREAM_DYNAMICS["lead_convert_probability"] + _STREAM_DYNAMICS["lead_stall_probability"]
+                    ):
+                        lead_field = "lead_status" if "lead_status" in record else "leadStatus"
+                        await update_entity(
+                            entity=entity,
+                            entity_id=record_id,
+                            updates={
+                                lead_field: random.choice(["new", "contacted", "qualified"]),
+                                "last_activity_at": _past_iso(12, 220),
+                            },
+                            source_override=source,
+                        )
                         continue
 
-                    entity = random.choices(
-                        ["customers", "leads", "activities", "deals"],
-                        weights=[0.12, 0.16, 0.42, 0.30],
-                        k=1,
-                    )[0]
+                if entity == "deals":
+                    deal_roll = random.random()
+                    disappear_threshold = _STREAM_DYNAMICS["deal_disappear_probability"]
+                    close_threshold = disappear_threshold + _STREAM_DYNAMICS["deal_close_probability"]
+                    stall_threshold = close_threshold + _STREAM_DYNAMICS["deal_stall_probability"]
 
-                    record = _pick_pattern_filtered_record(entity, None, prefer_old=True)
-                    if not record:
+                    if deal_roll < disappear_threshold:
+                        await delete_entity(entity=entity, entity_id=record_id)
                         continue
 
-                    source = _normalize_source(record.get("source_system"))
-                    event_type = "update"
-
-                    if entity == "leads":
-                        conversion_roll = random.random()
-                        if conversion_roll < _STREAM_DYNAMICS["lead_convert_probability"]:
-                            lead_field = "lead_status" if "lead_status" in record else "leadStatus"
-                            record[lead_field] = "converted"
-                            record["converted_at"] = _now_iso()
-                            event_type = "activity"
-                        elif conversion_roll < (
-                            _STREAM_DYNAMICS["lead_convert_probability"] + _STREAM_DYNAMICS["lead_stall_probability"]
-                        ):
-                            lead_field = "lead_status" if "lead_status" in record else "leadStatus"
-                            record[lead_field] = random.choice(["new", "contacted", "qualified"])
-                            record["last_activity_at"] = _past_iso(12, 220)
-
-                    if entity == "deals":
-                        deal_roll = random.random()
-                        disappear_threshold = _STREAM_DYNAMICS["deal_disappear_probability"]
-                        close_threshold = disappear_threshold + _STREAM_DYNAMICS["deal_close_probability"]
-                        stall_threshold = close_threshold + _STREAM_DYNAMICS["deal_stall_probability"]
-
-                        if deal_roll < disappear_threshold:
-                            record["is_deleted"] = True
-                            record["deleted_at"] = _now_iso()
-                            stage_field = _pick_deal_stage_field(record)
-                            record[stage_field] = "lost"
-                            record["status"] = "lost"
-                            record["deal_state"] = "disappeared"
-                            _set_update_timestamp(record, source)
-                            _sanitize_record(entity, record)
-                            event_type = "delete"
-                            _record_change(event_type, entity, record)
-                            continue
-
-                        if deal_roll < close_threshold:
-                            stage_field = _pick_deal_stage_field(record)
-                            if random.random() < 0.58:
-                                record[stage_field] = "won"
-                                record["status"] = "won"
-                            else:
-                                record[stage_field] = "lost"
-                                record["status"] = "lost"
-                            record["closed_at"] = _now_iso()
-                            event_type = "activity"
-                        elif deal_roll < stall_threshold:
-                            stage_field = _pick_deal_stage_field(record)
-                            record[stage_field] = random.choice(["prospecting", "qualified", "negotiation"])
-                            record["status"] = "open"
-                            record["last_activity_at"] = _past_iso(15, 280)
-
-                    if entity == "customers":
-                        _mutate_customer(record, source)
-                    elif entity == "leads":
-                        _mutate_lead(record, source)
-                    elif entity == "activities":
-                        _mutate_activity(record, source)
+                    if "stage" in record:
+                        stage_field = "stage"
+                    elif "Stage" in record:
+                        stage_field = "Stage"
                     else:
-                        _mutate_deal(record, source)
+                        stage_field = "stage"
 
-                    _record_change(event_type, entity, record)
+                    if deal_roll < close_threshold:
+                        if random.random() < 0.58:
+                            next_stage = "won"
+                            next_status = "won"
+                        else:
+                            next_stage = "lost"
+                            next_status = "lost"
+                        await update_entity(
+                            entity=entity,
+                            entity_id=record_id,
+                            updates={
+                                stage_field: next_stage,
+                                "status": next_status,
+                                "closed_at": _now_iso(),
+                            },
+                            source_override=source,
+                        )
+                        continue
+
+                    if deal_roll < stall_threshold:
+                        await update_entity(
+                            entity=entity,
+                            entity_id=record_id,
+                            updates={
+                                stage_field: random.choice(["prospecting", "qualified", "negotiation"]),
+                                "status": "open",
+                                "last_activity_at": _past_iso(15, 280),
+                            },
+                            source_override=source,
+                        )
+                        continue
+
+                await update_entity(entity=entity, entity_id=record_id, source_override=source)
     except asyncio.CancelledError:
         return
 
 
 async def start_stream_engine() -> None:
-    """Start background generation/mutation tasks (idempotent)."""
+    """Initialize stream state and optionally start legacy in-memory loops."""
     global _TASKS
 
     _load_stream_dynamics_profile()
@@ -1730,12 +2125,17 @@ async def start_stream_engine() -> None:
         return
 
     DATA_STORE.setdefault(LIVE_VERSION, {})
-    for entity in _ENTITY_CONFIG:
+    for entity in _ALL_RUNTIME_ENTITIES:
         DATA_STORE[LIVE_VERSION].setdefault(entity, [])
 
     async with _LOCK:
+        has_persisted_state = cdc_store.count_current_state() > 0
+        if has_persisted_state:
+            _hydrate_memory_from_current_state()
         _sanitize_live_dataset()
         _refresh_id_tracking()
+        if not has_persisted_state:
+            _seed_current_state_from_memory()
         _CREATION_PATTERN["name"] = "normal"
         _CREATION_PATTERN["remaining"] = 0
         _CREATION_PATTERN["source"] = None
@@ -1744,10 +2144,14 @@ async def start_stream_engine() -> None:
         _MUTATION_PATTERN["source"] = None
 
     _STOP_EVENT.clear()
-    _TASKS = [
-        asyncio.create_task(_creation_loop(), name="crm_stream_creation"),
-        asyncio.create_task(_mutation_loop(), name="crm_stream_mutation"),
-    ]
+    legacy_enabled = _normalize_bool_value(os.getenv("CRM_ENABLE_LEGACY_STREAM_ENGINE"))
+    if legacy_enabled:
+        _TASKS = [
+            asyncio.create_task(_creation_loop(), name="crm_stream_creation"),
+            asyncio.create_task(_mutation_loop(), name="crm_stream_mutation"),
+        ]
+    else:
+        _TASKS = []
 
 
 async def stop_stream_engine() -> None:
@@ -1782,6 +2186,16 @@ async def get_recent_changes(
     normalized_limit = max(1, min(limit, 500))
     normalized_entity = entity.lower() if isinstance(entity, str) and entity else None
     normalized_event_type = event_type.lower() if isinstance(event_type, str) and event_type else None
+
+    if normalized_entity:
+        singular_to_plural = {
+            config.get("singular", key.rstrip("s")): key
+            for key, config in _ENTITY_CONFIG.items()
+        }
+        if normalized_entity in singular_to_plural:
+            normalized_entity = singular_to_plural[normalized_entity]
+        elif normalized_entity not in _ENTITY_CONFIG:
+            normalized_entity = normalized_entity.rstrip("s") + "s"
 
     operation_filter = None
     if normalized_event_type:
@@ -1845,7 +2259,7 @@ def _format_sse(event: Dict[str, Any]) -> str:
 
 async def sse_event_generator(limit: int = 100):
     """
-    Yield SSE frames from in-memory change events.
+    Yield SSE frames from persisted CDC events.
 
     Emits periodic keep-alive comments while idle.
     """

@@ -93,6 +93,18 @@ class CdcStore:
                 """
             )
             self._connection.execute(
+                """
+                CREATE TABLE IF NOT EXISTS current_state (
+                    entity_type TEXT NOT NULL,
+                    entity_id TEXT NOT NULL,
+                    data TEXT NOT NULL,
+                    updated_at TEXT NOT NULL,
+                    is_deleted INTEGER NOT NULL DEFAULT 0,
+                    PRIMARY KEY(entity_type, entity_id)
+                )
+                """
+            )
+            self._connection.execute(
                 "CREATE INDEX IF NOT EXISTS idx_cdc_events_timestamp ON cdc_events(timestamp)"
             )
             self._connection.execute(
@@ -100,6 +112,15 @@ class CdcStore:
             )
             self._connection.execute(
                 "CREATE INDEX IF NOT EXISTS idx_cdc_events_operation ON cdc_events(operation)"
+            )
+            self._connection.execute(
+                "CREATE INDEX IF NOT EXISTS idx_current_state_entity_type ON current_state(entity_type)"
+            )
+            self._connection.execute(
+                "CREATE INDEX IF NOT EXISTS idx_current_state_updated_at ON current_state(updated_at)"
+            )
+            self._connection.execute(
+                "CREATE INDEX IF NOT EXISTS idx_current_state_is_deleted ON current_state(is_deleted)"
             )
             self._connection.commit()
 
@@ -115,6 +136,18 @@ class CdcStore:
         if op not in {"create", "update", "delete"}:
             raise ValueError("Invalid operation filter; use create, update, or delete")
         return op
+
+    def _normalize_entity_type(self, entity_type: str) -> str:
+        normalized = str(entity_type).strip().lower()
+        if not normalized:
+            raise ValueError("entity_type is required")
+        return normalized
+
+    def _normalize_entity_id(self, entity_id: Any) -> str:
+        normalized = "" if entity_id is None else str(entity_id).strip()
+        if not normalized:
+            raise ValueError("entity_id is required")
+        return normalized
 
     def _parse_cursor(self, since: Optional[str]) -> Tuple[Optional[int], Optional[str]]:
         if since is None:
@@ -162,6 +195,35 @@ class CdcStore:
             "data": payload,
         }
 
+    def _row_to_current_state(self, row: sqlite3.Row) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {}
+        payload_raw = row["data"]
+        if payload_raw:
+            try:
+                loaded = json.loads(payload_raw)
+                if isinstance(loaded, dict):
+                    payload = loaded
+                else:
+                    payload = {"value": loaded}
+            except json.JSONDecodeError:
+                payload = {}
+
+        entity_type = str(row["entity_type"])
+        entity_id = str(row["entity_id"])
+        updated_at = str(row["updated_at"])
+        is_deleted = bool(int(row["is_deleted"]))
+
+        if "id" not in payload:
+            payload["id"] = entity_id
+
+        return {
+            "entity_type": entity_type,
+            "entity_id": entity_id,
+            "updated_at": updated_at,
+            "is_deleted": is_deleted,
+            "data": payload,
+        }
+
     def append_event(
         self,
         entity_type: str,
@@ -174,8 +236,8 @@ class CdcStore:
 
         operation_value = self._normalize_operation(operation)
         ts = _parse_timestamp(timestamp) or _now_iso()
-        safe_entity_type = str(entity_type).strip().lower()
-        safe_entity_id = "" if entity_id is None else str(entity_id)
+        safe_entity_type = self._normalize_entity_type(entity_type)
+        safe_entity_id = self._normalize_entity_id(entity_id)
 
         payload_value: Dict[str, Any]
         if isinstance(payload, dict):
@@ -214,6 +276,161 @@ class CdcStore:
             "id": safe_entity_id,
             "data": payload_value,
         }
+
+    def count_current_state(self) -> int:
+        conn = self._require_connection()
+        with self._lock:
+            row = conn.execute("SELECT COUNT(*) AS count_value FROM current_state").fetchone()
+        if row is None:
+            return 0
+        return int(row["count_value"])
+
+    def get_last_event_id(self) -> int:
+        conn = self._require_connection()
+        with self._lock:
+            row = conn.execute("SELECT MAX(event_id) AS last_event_id FROM cdc_events").fetchone()
+        if row is None or row["last_event_id"] is None:
+            return 0
+        return int(row["last_event_id"])
+
+    def upsert_current_state(
+        self,
+        entity_type: str,
+        entity_id: Any,
+        data: Dict[str, Any],
+        updated_at: Optional[str] = None,
+        is_deleted: bool = False,
+    ) -> Dict[str, Any]:
+        conn = self._require_connection()
+
+        safe_entity_type = self._normalize_entity_type(entity_type)
+        safe_entity_id = self._normalize_entity_id(entity_id)
+        ts = _parse_timestamp(updated_at) or _now_iso()
+
+        payload_value: Dict[str, Any]
+        if isinstance(data, dict):
+            payload_value = data
+        else:
+            payload_value = {"value": data}
+
+        payload_json = json.dumps(
+            payload_value,
+            ensure_ascii=True,
+            separators=(",", ":"),
+            sort_keys=True,
+        )
+
+        with self._lock:
+            conn.execute(
+                """
+                INSERT INTO current_state(entity_type, entity_id, data, updated_at, is_deleted)
+                VALUES (?, ?, ?, ?, ?)
+                ON CONFLICT(entity_type, entity_id)
+                DO UPDATE SET
+                    data = excluded.data,
+                    updated_at = excluded.updated_at,
+                    is_deleted = excluded.is_deleted
+                """,
+                (safe_entity_type, safe_entity_id, payload_json, ts, 1 if is_deleted else 0),
+            )
+            conn.commit()
+
+        return {
+            "entity_type": safe_entity_type,
+            "entity_id": safe_entity_id,
+            "updated_at": ts,
+            "is_deleted": bool(is_deleted),
+            "data": payload_value,
+        }
+
+    def soft_delete(
+        self,
+        entity_type: str,
+        entity_id: Any,
+        data: Optional[Dict[str, Any]] = None,
+        updated_at: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        existing = self.get_entity(entity_type=entity_type, entity_id=entity_id, include_deleted=True)
+        base_payload: Dict[str, Any] = {}
+        if existing and isinstance(existing.get("data"), dict):
+            base_payload = dict(existing.get("data", {}))
+        if isinstance(data, dict):
+            base_payload.update(data)
+
+        ts = _parse_timestamp(updated_at) or _now_iso()
+        base_payload["is_deleted"] = True
+        base_payload["deleted_at"] = ts
+
+        return self.upsert_current_state(
+            entity_type=entity_type,
+            entity_id=entity_id,
+            data=base_payload,
+            updated_at=ts,
+            is_deleted=True,
+        )
+
+    def get_entity(
+        self,
+        entity_type: str,
+        entity_id: Any,
+        include_deleted: bool = False,
+    ) -> Optional[Dict[str, Any]]:
+        conn = self._require_connection()
+        safe_entity_type = self._normalize_entity_type(entity_type)
+        safe_entity_id = self._normalize_entity_id(entity_id)
+
+        query = "SELECT entity_type, entity_id, data, updated_at, is_deleted FROM current_state WHERE entity_type = ? AND entity_id = ?"
+        params: List[Any] = [safe_entity_type, safe_entity_id]
+        if not include_deleted:
+            query = query + " AND is_deleted = 0"
+
+        with self._lock:
+            row = conn.execute(query, params).fetchone()
+
+        if row is None:
+            return None
+        return self._row_to_current_state(row)
+
+    def list_current_state(
+        self,
+        entity_type: Optional[str] = None,
+        updated_after: Optional[str] = None,
+        include_deleted: bool = False,
+        limit: int = 5000,
+    ) -> List[Dict[str, Any]]:
+        conn = self._require_connection()
+        safe_limit = max(1, min(int(limit), 20000))
+
+        filters = []
+        params: List[Any] = []
+
+        if entity_type:
+            filters.append("entity_type = ?")
+            params.append(self._normalize_entity_type(entity_type))
+
+        parsed_updated_after = _parse_timestamp(updated_after) if updated_after else None
+        if updated_after and parsed_updated_after is None:
+            raise ValueError("Invalid 'updated_after' value; use a valid timestamp")
+        if parsed_updated_after is not None:
+            filters.append("updated_at > ?")
+            params.append(parsed_updated_after)
+
+        if not include_deleted:
+            filters.append("is_deleted = 0")
+
+        query = "SELECT entity_type, entity_id, data, updated_at, is_deleted FROM current_state"
+        if len(filters) > 0:
+            query = query + " WHERE " + " AND ".join(filters)
+        query = query + " ORDER BY updated_at ASC, entity_id ASC LIMIT ?"
+        params.append(safe_limit)
+
+        with self._lock:
+            rows = conn.execute(query, params).fetchall()
+
+        results = []
+        for row in rows:
+            results.append(self._row_to_current_state(row))
+        return results
 
     def list_events(
         self,
