@@ -88,6 +88,7 @@ async def root():
             "metadata": "/metadata",
             "search": "/search?q=query",
             "events": "/events",
+            "changes": "/changes?since=event_id_or_timestamp",
             "stream_changes": "/stream/changes",
             "stream_events": "/stream/events",
             "batch_export": "/batch/export"
@@ -478,6 +479,41 @@ async def list_events(
     }
 
 
+@app.get("/changes")
+async def changes(
+    since: Optional[str] = Query(None, description="Cursor (event_id or timestamp). Returns newer events only"),
+    limit: int = Query(100, ge=1, le=500, description="Maximum number of events to return"),
+    entity_type: Optional[str] = Query(None, description="Optional entity type filter"),
+    operation: Optional[str] = Query(None, description="Optional operation filter: create, update, delete"),
+):
+    """
+    Deterministic CDC change feed.
+
+    Uses an append-only persisted event log and returns events strictly after
+    the provided cursor.
+    """
+    try:
+        events = await get_recent_changes(
+            limit=limit,
+            entity=entity_type,
+            event_type=operation,
+            since=since,
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+    next_cursor = since
+    if len(events) > 0:
+        next_cursor = str(events[-1].get("event_id"))
+
+    return {
+        "events": events,
+        "count": len(events),
+        "next_cursor": next_cursor,
+        "generated_at": datetime.utcnow().isoformat() + "Z"
+    }
+
+
 @app.get("/stream/changes")
 async def stream_changes(
     limit: int = Query(100, ge=1, le=500, description="How many recent changes to return"),
@@ -488,7 +524,7 @@ async def stream_changes(
     """
     Polling-friendly change feed.
 
-    Returns the latest in-memory create/update/delete events.
+    Returns recent persisted CDC events.
     """
     try:
         events = await get_recent_changes(limit=limit, entity=entity, event_type=event_type, since=since)

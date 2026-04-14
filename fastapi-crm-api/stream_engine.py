@@ -1,8 +1,8 @@
 """
-Continuous in-memory stream engine for the CRM API.
+Live mutation engine with persisted CDC event logging for the CRM API.
 
 This module keeps the loaded dataset "live" by incrementally creating and mutating
-records in memory. It is intentionally lightweight for serverless runtimes.
+records in memory, while writing every change to an append-only SQLite event log.
 """
 
 import asyncio
@@ -13,6 +13,7 @@ import random
 from datetime import datetime, timedelta, timezone
 from typing import Any, Dict, List, Optional, Tuple
 
+from cdc_store import cdc_store
 from data_loader import data_loader
 
 try:
@@ -1533,53 +1534,32 @@ def _append_change_event(
     record_id: Any,
     data: Dict[str, Any],
 ) -> None:
-    global _EVENT_SEQUENCE
-    _EVENT_SEQUENCE += 1
+    normalized_event_type = str(event_type).strip().lower()
+    if normalized_event_type not in {"create", "update", "delete"}:
+        normalized_event_type = "update"
 
-    event = {
-        "sequence": _EVENT_SEQUENCE,
-        "event_type": event_type,
-        "entity": _ENTITY_CONFIG[entity]["singular"],
-        "id": record_id,
-        "timestamp": _now_iso(),
-        "data": data,
-    }
-
-    if CHANGE_LOG and random.random() < _STREAM_DYNAMICS["out_of_order_probability"]:
-        back_window = min(5, len(CHANGE_LOG))
-        insert_distance = random.randint(1, max(1, back_window))
-        insert_index = max(0, len(CHANGE_LOG) - insert_distance)
-        CHANGE_LOG.insert(insert_index, event)
-    else:
-        CHANGE_LOG.append(event)
-    _trim_change_log()
+    cdc_store.append_event(
+        entity_type=entity,
+        entity_id=record_id,
+        operation=normalized_event_type,
+        payload=copy.deepcopy(data) if isinstance(data, dict) else {"value": data},
+        timestamp=_now_iso(),
+    )
 
 
 def _record_change(event_type: str, entity: str, record: Dict[str, Any]) -> None:
-    full_data = copy.deepcopy(record)
+    full_data = copy.deepcopy(record) if isinstance(record, dict) else {}
+    id_field = _entity_id_field(entity)
+
     record_id = full_data.get("id")
+    if record_id is None and id_field in full_data:
+        record_id = full_data.get(id_field)
 
-    normalized_event_type = event_type
-    if normalized_event_type == "delete":
-        normalized_event_type = "activity"
-    elif normalized_event_type == "update" and random.random() < _STREAM_DYNAMICS["activity_event_probability"]:
-        normalized_event_type = "activity"
+    normalized_event_type = str(event_type).strip().lower()
+    if normalized_event_type not in {"create", "update", "delete"}:
+        normalized_event_type = "update"
 
-    if event_type == "update" and random.random() < PARTIAL_UPDATE_EVENT_RATE:
-        base_data = _build_partial_event_data(entity, full_data)
-    else:
-        base_data = full_data
-
-    _append_change_event(normalized_event_type, entity, record_id, base_data)
-
-    if normalized_event_type in {"create", "update", "activity"} and random.random() < DUPLICATE_EVENT_RATE:
-        if random.random() < 0.55:
-            duplicate_data = _build_partial_event_data(entity, full_data)
-        else:
-            duplicate_data = copy.deepcopy(base_data)
-
-        _mutate_duplicate_payload(entity, duplicate_data)
-        _append_change_event(normalized_event_type, entity, record_id, duplicate_data)
+    _append_change_event(normalized_event_type, entity, record_id, full_data)
 
 
 async def _creation_loop() -> None:
@@ -1703,7 +1683,7 @@ async def _mutation_loop() -> None:
                             record["deal_state"] = "disappeared"
                             _set_update_timestamp(record, source)
                             _sanitize_record(entity, record)
-                            event_type = "activity"
+                            event_type = "delete"
                             _record_change(event_type, entity, record)
                             continue
 
@@ -1742,6 +1722,7 @@ async def start_stream_engine() -> None:
     global _TASKS
 
     _load_stream_dynamics_profile()
+    cdc_store.initialize()
 
     active_tasks = [task for task in _TASKS if not task.done()]
     if active_tasks:
@@ -1797,33 +1778,27 @@ async def get_recent_changes(
     event_type: Optional[str] = None,
     since: Optional[str] = None,
 ) -> List[Dict[str, Any]]:
-    """Return latest change events with optional filters."""
+    """Return persisted CDC events with optional filters."""
     normalized_limit = max(1, min(limit, 500))
-    normalized_entity = entity.lower().rstrip("s") if isinstance(entity, str) and entity else None
+    normalized_entity = entity.lower() if isinstance(entity, str) and entity else None
     normalized_event_type = event_type.lower() if isinstance(event_type, str) and event_type else None
-    parsed_since = _parse_datetime(since) if since else None
 
-    if since and parsed_since is None:
-        raise ValueError("Invalid 'since' timestamp format")
-
-    async with _LOCK:
-        events = list(CHANGE_LOG)
-
-    if parsed_since is not None:
-        filtered_events: List[Dict[str, Any]] = []
-        for event in events:
-            event_dt = _parse_datetime(event.get("timestamp"))
-            if event_dt and event_dt > parsed_since:
-                filtered_events.append(event)
-        events = filtered_events
-
-    if normalized_entity:
-        events = [event for event in events if str(event.get("entity", "")).lower() == normalized_entity]
-
+    operation_filter = None
     if normalized_event_type:
-        events = [event for event in events if str(event.get("event_type", "")).lower() == normalized_event_type]
+        if normalized_event_type in {"create", "update", "delete"}:
+            operation_filter = normalized_event_type
+        elif normalized_event_type == "activity":
+            operation_filter = "update"
+        else:
+            raise ValueError("Invalid event_type filter; use create, update, or delete")
 
-    return events[-normalized_limit:]
+    return cdc_store.list_events(
+        since=since,
+        limit=normalized_limit,
+        entity_type=normalized_entity,
+        operation=operation_filter,
+        latest_when_no_since=True,
+    )
 
 
 async def get_batch_export(
@@ -1863,8 +1838,8 @@ async def get_batch_export(
 
 def _format_sse(event: Dict[str, Any]) -> str:
     payload = json.dumps(event, separators=(",", ":"), ensure_ascii=True)
-    sequence = event.get("sequence", "")
-    event_type = event.get("event_type", "update")
+    sequence = event.get("event_id", event.get("sequence", ""))
+    event_type = event.get("operation", event.get("event_type", "update"))
     return f"id: {sequence}\nevent: {event_type}\ndata: {payload}\n\n"
 
 
@@ -1875,11 +1850,11 @@ async def sse_event_generator(limit: int = 100):
     Emits periodic keep-alive comments while idle.
     """
     initial = await get_recent_changes(limit=limit)
-    last_sequence = 0
+    last_event_id = 0
 
     for event in initial:
-        sequence = int(event.get("sequence", 0))
-        last_sequence = max(last_sequence, sequence)
+        event_id = int(event.get("event_id", event.get("sequence", 0)))
+        last_event_id = max(last_event_id, event_id)
         yield _format_sse(event)
 
     idle_ticks = 0
@@ -1888,17 +1863,16 @@ async def sse_event_generator(limit: int = 100):
         while True:
             await asyncio.sleep(1.0)
 
-            async with _LOCK:
-                pending = [
-                    event
-                    for event in CHANGE_LOG
-                    if int(event.get("sequence", 0)) > last_sequence
-                ]
+            pending = cdc_store.list_events(
+                since=str(last_event_id),
+                limit=limit,
+                latest_when_no_since=False,
+            )
 
             if pending:
                 for event in pending:
-                    sequence = int(event.get("sequence", 0))
-                    last_sequence = max(last_sequence, sequence)
+                    event_id = int(event.get("event_id", event.get("sequence", 0)))
+                    last_event_id = max(last_event_id, event_id)
                     yield _format_sse(event)
                 idle_ticks = 0
             else:
